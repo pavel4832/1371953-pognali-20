@@ -1,0 +1,80 @@
+/*Fonts*/
+@font-face {
+  font-family: "BloggerSans";
+  src: url("../fonts/Bloggersans.woff2") format("woff2"),
+  url("../fonts/Bloggersans.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "BloggerSans Medium";
+  src: url("../fonts/Bloggersansmedium.woff2") format("woff2"),
+  url("../fonts/Bloggersansmedium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "BloggerSans Bold";
+  src: url("../fonts/Bloggersansbold.woff2") format("woff2"),
+  url("../fonts/Bloggersansbold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
+
+/* Variables */
+:root {
+  --basic-white: #ffffff;
+  --basic-black: #000000;
+}
+
+/* Global */
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  min-width: 320px;
+  margin: 0;
+  padding: 0;
+
+  background-color: var(--basic-white);
+
+  font-family: "BloggerSans", Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  color: var(--basic-black);
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.document-page {
+  height: 100%;
+}
