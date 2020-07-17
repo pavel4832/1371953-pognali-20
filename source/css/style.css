@@ -2,7 +2,7 @@
 @font-face {
   font-family: "BloggerSans";
   src: url("../fonts/Bloggersans.woff2") format("woff2"),
-  url("../fonts/Bloggersans.woff") format("woff");
+    url("../fonts/Bloggersans.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
@@ -10,7 +10,7 @@
 @font-face {
   font-family: "BloggerSans Medium";
   src: url("../fonts/Bloggersansmedium.woff2") format("woff2"),
-  url("../fonts/Bloggersansmedium.woff") format("woff");
+    url("../fonts/Bloggersansmedium.woff") format("woff");
   font-weight: 500;
   font-style: normal;
 }
@@ -18,7 +18,7 @@
 @font-face {
   font-family: "BloggerSans Bold";
   src: url("../fonts/Bloggersansbold.woff2") format("woff2"),
-  url("../fonts/Bloggersansbold.woff") format("woff");
+    url("../fonts/Bloggersansbold.woff") format("woff");
   font-weight: bold;
   font-style: normal;
 }
@@ -47,7 +47,7 @@ body {
 
   background-color: var(--basic-white);
 
-  font-family: "BloggerSans", Arial, sans-serif;
+  font-family: "BloggerSans", "Arial", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
