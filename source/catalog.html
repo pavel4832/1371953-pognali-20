@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="page" lang="ru">
+<html lang="ru">
   <head>
     <title>HTML Academy: Погнали</title>
     <meta charset="utf-8">
@@ -7,9 +7,9 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
   </head>
 
-  <body class="page__body">
-    <header class="page-header">
-      <a href="index.html" class="page-header__logo">
+  <body class="catalog-body">
+    <header class="catalog-body__header page-header">
+      <a href="index.html" class="logo">
         <img src="img/logo-white.png" width="100" height="15" alt="Сервис «Погнали?»">
       </a>
 
@@ -43,7 +43,7 @@
 
           <ul class="main-nav__list user-list">
             <li class="user-list__item">
-              <a href="login.html" class="user-list__login js-login">
+              <a href="#" class="user-list__login js-login">
                 авторизация
               </a>
             </li>
@@ -63,7 +63,7 @@
             </li>
           </ul>
 
-          <ul class="main-nav__list social-list">
+          <ul class="main-nav__list social-list social">
             <li class="social__item">
               <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">Мы в Вконтакте</a>
             </li>
@@ -78,15 +78,19 @@
       </nav>
     </header>
 
-    <main>
+    <main class="catalog-body__main">
       <section class="catalog-companions">
         <h2 class="visually-hidden">Список попутчиков</h2>
 
         <div class="catalog-companions__list">
           <article class="catalog-companions__item profile-item companion-offline">
-            <img class="profile-item__image like-active" src="https://via.placeholder.com/70x70" alt="Фото Тани" >
+            <a href="#">
+              <img class="profile-item__image like-active" src="https://via.placeholder.com/70x70" alt="Фото Тани" >
+            </a>
 
-            <h3 class="profile-item__name">Таня Фирсова</h3>
+            <a href="#">
+              <h3 class="profile-item__name">Таня Фирсова</h3>
+            </a>
 
             <p class="profile-item__distance">1,5 М</p>
 
@@ -127,18 +131,24 @@
                 </li>
               </ul>
 
-              <div class="properties-info__level">
-                <b>99</b>
+              <div class="properties-info__level level">
+                <b class="level__number">99</b>
+
+                <small class="level__text visually-hidden">level</small>
               </div>
             </div>
 
-            <button class="profile-item__invite" type="button">позвать!</button>
+            <a href="#" class="profile-item__invite button">позвать!</a>
           </article>
 
           <article class="catalog-companions__item profile-item companion-offline">
-            <img class="profile-item__image like-active" src="https://via.placeholder.com/70x70" alt="Фото Пети" >
+            <a href="#">
+              <img class="profile-item__image like-active" src="https://via.placeholder.com/70x70" alt="Фото Пети" >
+            </a>
 
-            <h3 class="profile-item__name">Петя Демин</h3>
+            <a href="#">
+              <h3 class="profile-item__name">Петя Демин</h3>
+            </a>
 
             <p class="profile-item__distance">1500</p>
 
@@ -176,19 +186,24 @@
                 </li>
               </ul>
 
-              <div class="properties-info__level">
-                <b>80</b>
+              <div class="properties-info__level level">
+                <b class="level__number">80</b>
+
+                <small class="level__text visually-hidden">level</small>
               </div>
             </div>
 
-            <button class="profile-item__invite" type="button">позвать!</button>
+            <a href="#" class="profile-item__invite button">позвать!</a>
           </article>
 
           <article class="catalog-companions__item profile-item companion-offline">
-            <img class="profile-item__image like-active" src="https://via.placeholder.com/70x70" alt="Фото Марка" >
+            <a href="#">
+              <img class="profile-item__image like-active" src="https://via.placeholder.com/70x70" alt="Фото Марка" >
+            </a>
 
-            <h3 class="profile-item__name">Марк Смолов</h3>
-
+            <a href="#">
+              <h3 class="profile-item__name">Марк Смолов</h3>
+            </a>
             <p class="profile-item__distance">170</p>
 
             <p class="profile-item__interests">
@@ -228,18 +243,24 @@
                 </li>
               </ul>
 
-              <div class="properties-info__level">
-                <b>25</b>
+              <div class="properties-info__level level">
+                <b class="level__number">25</b>
+
+                <small class="level__text visually-hidden">level</small>
               </div>
             </div>
 
-            <button class="profile-item__invite" type="button">позвать!</button>
+            <a href="#" class="profile-item__invite button">позвать!</a>
           </article>
 
           <article class="catalog-companions__item profile-item companion-online">
-            <img class="profile-item__image like-active" src="https://via.placeholder.com/70x70" alt="Фото Ларисы" >
+            <a href="#">
+              <img class="profile-item__image like-active" src="https://via.placeholder.com/70x70" alt="Фото Ларисы" >
+            </a>
 
-            <h3 class="profile-item__name">Лариса Роговая</h3>
+            <a href="#">
+              <h3 class="profile-item__name">Лариса Роговая</h3>
+            </a>
 
             <p class="profile-item__distance">23</p>
 
@@ -277,16 +298,18 @@
                 </li>
               </ul>
 
-              <div class="properties-info__level">
-                <b>50</b>
+              <div class="properties-info__level level">
+                <b class="level__number">50</b>
+
+                <small class="level__text visually-hidden">level</small>
               </div>
             </div>
 
-            <button class="profile-item__invite" type="button">позвать!</button>
+            <a href="#" class="profile-item__invite button">позвать!</a>
           </article>
         </div>
 
-        <a href="#" class="catalog-companions__button show-more__btn">показать еще</a>
+        <a href="#" class="catalog-companions__button button">показать еще</a>
 
         <div class="catalog-companions__pagination pagination">
           <a href="" class="pagination__button button-back" aria-label="назад"></a>
@@ -296,12 +319,12 @@
       </section>
     </main>
 
-    <footer class="page-footer">
-      <a href="index.html" class="page-footer__logo">
+    <footer class="catalog-body__footer page-footer">
+      <a href="index.html" class="logo">
         <img src="img/logo-dark.png" width="100" height="15" alt="Сервис «Погнали?»">
       </a>
 
-      <ul class="page-footer social-list">
+      <ul class="page-footer__socials social">
         <li class="social__item">
           <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">Мы в Вконтакте</a>
         </li>
