@@ -79,7 +79,407 @@
     </header>
 
     <main class="form-body__main">
+      <section class="profile">
+        <h2 class="visually-hidden">Профиль пользователя</h2>
+        <div class="profile__wrapper">
+          <div class="profile__level level">
+            <b class="level__number">99</b>
 
+            <small class="level__text">level</small>
+          </div>
+
+          <a href="#">
+            <img class="profile__image" src="https://via.placeholder.com/70x70" alt="Фото пользователя" >
+          </a>
+
+          <a href="#" class="profile__change-btn button">сменить фото</a>
+
+          <label for="tags" class="profile__tags">тэги</label>
+
+          <textarea name="tags" id="tags" cols="30" rows="10" class="profile__tags-list">#бургер #бар #футбол #концерт #крафт</textarea>
+
+          <fieldset class="profile__transport transport-set">
+            <legend class="transport-set__legend">транспорт</legend>
+
+            <ul class="transport-set__list">
+              <li class="transport-set__item transport-air transport-enable">
+                <label class="visually-hidden" for="air">Самолет</label>
+                <input id="air" type="checkbox" class="transport-set__choose visually-hidden" checked>
+              </li>
+
+              <li class="transport-set__item transport-bus transport-enable">
+                <label class="visually-hidden" for="bus">Автобус</label>
+                <input id="bus" type="checkbox" class="transport-set__choose visually-hidden" checked>
+              </li>
+
+              <li class="transport-set__item transport-bicycle">
+                <label class="visually-hidden" for="bike">Велосипед</label>
+                <input id="bike" type="checkbox" class="transport-set__choose visually-hidden">
+              </li>
+
+              <li class="transport-set__item transport-walk transport-enable">
+                <label class="visually-hidden" for="walk">Пешком</label>
+                <input id="walk" type="checkbox" class="transport-set__choose visually-hidden" checked>
+              </li>
+            </ul>
+          </fieldset>
+        </div>
+      </section>
+
+      <section class="my-plans">
+        <div class="my-plans__wrapper">
+          <h2 class="my-plans__title">Мои планы:</h2>
+
+          <ul class="my-plans__list">
+            <li class="my-plans__item plan-item">
+              <div class="plan-item__wrapper">
+                <h3 class="plan-item__title">
+                  <span class="plan-item__number">1.</span>
+                  Франция, Италия
+                </h3>
+
+                <p class="plan-item__companions">3 попутчика</p>
+
+                <p class="plan-item__date">26 мар — 29 мар</p>
+
+                <a href="#" class="plan-item__link change-link">изменить</a>
+              </div>
+            </li>
+
+            <li class="my-plans__item plan-item">
+              <div class="plan-item__wrapper">
+                <h3 class="plan-item__title">
+                  <span class="plan-item__number">2.</span>
+                  Таиланд, Индонезия
+                </h3>
+
+                <p class="plan-item__companions">1 попутчик</p>
+
+                <p class="plan-item__date">1 июл — 15 июл</p>
+
+                <a href="#" class="plan-item__link change-link">изменить</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="add-new-plan">
+        <div class="add-new-plan__wrapper">
+          <h2 class="add-new-plan__title">Добавить план:</h2>
+
+          <ul class="add-new-plan__slider slider">
+            <li class="slider__item slider-active">
+              <a href="#" class="slider__button" aria-label="страница 1"></a>
+            </li>
+
+            <li class="slider__item">
+              <a href="#" class="slider__button" aria-label="страница 2"></a>
+            </li>
+
+            <li class="slider__item">
+              <a href="#" class="slider__button" aria-label="страница 3"></a>
+            </li>
+          </ul>
+
+          <form class="add-new-plan__form plans-form" action="https://echo.htmlacademy.ru" method="get">
+            <fieldset id="step-one" class="plans-form__set step-one">
+              <legend class="plans-form__legend">Шаг 1. Даты пребывания</legend>
+
+              <p class="plans-form__text">Укажите предпочтительное количество попутчиков, которых вы хотели бы позвать в поездку и ее предполагаемую длительность.</p>
+
+              <div class="step-one__companions">
+                <label class="step-one__label" for="companions">ищу попутчиков:
+                  <span class="step-one__unit">чел.</span>
+                </label>
+
+                <button class="step-one__button button-increase" aria-label="Увеличить"></button>
+
+                <input id="companions" class="step-one__input" type="text" value="2">
+
+                <button class="step-one__button button-decrease" aria-label="Уменьшить"></button>
+              </div>
+
+              <div class="step-one__duration">
+                <label class="step-one__label" for="duration">длительность:
+                  <span class="step-one__unit">дн.</span>
+                </label>
+
+                <button class="step-one__button button-increase" aria-label="Увеличить"></button>
+
+                <input id="duration" class="step-one__input" type="text" value="2">
+
+                <button class="step-one__button button-decrease" aria-label="Уменьшить"></button>
+              </div>
+
+              <input id="children" class="step-one__checkbox visually-hidden" type="checkbox" name="children" checked>
+
+              <label for="children">Можно с детьми</label>
+
+              <div class="step-one__calendar calendar-form">
+                <label class="visually-hidden" for="month">Март 2019</label>
+
+                <button class="step-one__button button-increase--arrow" aria-label="Увеличить"></button>
+
+                <input id="month" class="step-one__input" type="text" value="Март 2019">
+
+                <button class="step-one__button button-decrease--arrow" aria-label="Уменьшить"></button>
+
+                <table class="calendar-form__table">
+                  <tr class="calendar-form__rows">
+                    <th class="calendar-form__head">п</th>
+                    <th class="calendar-form__head">в</th>
+                    <th class="calendar-form__head">с</th>
+                    <th class="calendar-form__head">ч</th>
+                    <th class="calendar-form__head">п</th>
+                    <th class="calendar-form__head weekend">с</th>
+                    <th class="calendar-form__head weekend">в</th>
+                  </tr>
+
+                  <tr class="calendar-form__rows">
+                    <td class="calendar-form__columns"><a href="#" class="calendar-form__link">23</a></td>
+                    <td class="calendar-form__columns"><a href="#" class="calendar-form__link">24</a></td>
+                    <td class="calendar-form__columns"><a href="#" class="calendar-form__link">25</a></td>
+                    <td class="calendar-form__columns"><a href="#" class="calendar-form__link">26</a></td>
+                    <td class="calendar-form__columns"><a href="#" class="calendar-form__link">27</a></td>
+                    <td class="calendar-form__columns"><a href="#" class="calendar-form__link">28</a></td>
+                    <td class="calendar-form__columns"><a href="#" class="calendar-form__link">1</a></td>
+                  </tr>
+
+                  <tr class="calendar-form__rows">
+                    <td class="calendar-form__columns"><a href="#" class="calendar-form__link">2</a></td>
+                    <td class="calendar-form__columns"><a href="#" class="calendar-form__link">3</a></td>
+                    <td class="calendar-form__columns"><a href="#" class="calendar-form__link">4</a></td>
+                    <td class="calendar-form__columns"><a href="#" class="calendar-form__link">5</a></td>
+                    <td class="calendar-form__columns"><a href="#" class="calendar-form__link">6</a></td>
+                    <td class="calendar-form__columns"><a href="#" class="calendar-form__link">7</a></td>
+                    <td class="calendar-form__columns"><a href="#" class="calendar-form__link">8</a></td>
+                  </tr>
+
+                  <tr class="calendar-form__rows">
+                    <td class="calendar-form__columns"><a href="#" class="calendar-form__link">9</a></td>
+                    <td class="calendar-form__columns"><a href="#" class="calendar-form__link">10</a></td>
+                    <td class="calendar-form__columns"><a href="#" class="calendar-form__link">11</a></td>
+                    <td class="calendar-form__columns"><a href="#" class="calendar-form__link">12</a></td>
+                    <td class="calendar-form__columns"><a href="#" class="calendar-form__link">13</a></td>
+                    <td class="calendar-form__columns"><a href="#" class="calendar-form__link">14</a></td>
+                    <td class="calendar-form__columns"><a href="#" class="calendar-form__link">15</a></td>
+                  </tr>
+
+                  <tr class="calendar-form__rows">
+                    <td class="calendar-form__columns"><a href="#" class="calendar-form__link">16</a></td>
+                    <td class="calendar-form__columns"><a href="#" class="calendar-form__link">17</a></td>
+                    <td class="calendar-form__columns"><a href="#" class="calendar-form__link">18</a></td>
+                    <td class="calendar-form__columns"><a href="#" class="calendar-form__link">19</a></td>
+                    <td class="calendar-form__columns"><a href="#" class="calendar-form__link">20</a></td>
+                    <td class="calendar-form__columns"><a href="#" class="calendar-form__link">21</a></td>
+                    <td class="calendar-form__columns"><a href="#" class="calendar-form__link">22</a></td>
+                  </tr>
+
+                  <tr class="calendar-form__rows">
+                    <td class="calendar-form__columns"><a href="#" class="calendar-form__link">23</a></td>
+                    <td class="calendar-form__columns"><a href="#" class="calendar-form__link">24</a></td>
+                    <td class="calendar-form__columns"><a href="#" class="calendar-form__link">25</a></td>
+                    <td class="calendar-form__columns"><a href="#" class="calendar-form__link choosing-day">26</a></td>
+                    <td class="calendar-form__columns"><a href="#" class="calendar-form__link choosing-day">27</a></td>
+                    <td class="calendar-form__columns"><a href="#" class="calendar-form__link choosing-day">28</a></td>
+                    <td class="calendar-form__columns"><a href="#" class="calendar-form__link enable-day">29</a></td>
+                  </tr>
+
+                  <tr class="calendar-form__rows">
+                    <td class="calendar-form__columns"><a href="#" class="calendar-form__link enable-day">30</a></td>
+                    <td class="calendar-form__columns"><a href="#" class="calendar-form__link enable-day">31</a></td>
+                    <td class="calendar-form__columns"><a href="#" class="calendar-form__link enable-day">1</a></td>
+                    <td class="calendar-form__columns"><a href="#" class="calendar-form__link enable-day">2</a></td>
+                    <td class="calendar-form__columns"><a href="#" class="calendar-form__link enable-day">3</a></td>
+                    <td class="calendar-form__columns"><a href="#" class="calendar-form__link enable-day">4</a></td>
+                    <td class="calendar-form__columns"><a href="#" class="calendar-form__link enable-day">5</a></td>
+                  </tr>
+                </table>
+              </div>
+
+              <a href="#step-two" class="step-one__next-step button">следующий шаг</a>
+            </fieldset>
+
+            <fieldset id="step-two" class="plans-form__set step-two">
+              <legend class="plans-form__legend">Шаг 2. Маршрут</legend>
+
+              <p class="plans-form__text">Укажите страны, которые вы хотели посетить. Это может быть одна или сразу несколько.</p>
+
+              <ul class="step-two__choosing choosing-country">
+                <li class="choosing-country__item">
+                  <div class="choosing-country__name">
+                    <label aria-label="босния и герцеговина">
+                      <input class="step-two__input" type="text" value="босния и герцеговина">
+                    </label>
+
+                    <button class="step-two__open-btn" type="button" aria-label="Открыть выбор"></button>
+                  </div>
+
+                  <div class="choosing-country__flag">
+                    <img src="img/Bosnia-and-Herzegovina%201.png" width="35" height="24" alt="Флаг Боснии и герцеговины">
+                  </div>
+                </li>
+                <li class="choosing-country__item">
+                  <div class="choosing-country__name">
+                    <label aria-label="чехия">
+                      <input class="step-two__input" type="text" value="чехия">
+                    </label>
+
+                    <button class="step-two__open-btn" type="button" aria-label="Открыть выбор"></button>
+                  </div>
+
+                  <div class="choosing-country__flag">
+                    <img src="img/Czech%201.png" width="35" height="24" alt="Флаг Чехии">
+                  </div>
+                </li>
+              </ul>
+
+              <div class="step-two__new-country">
+                <label aria-label="выберите страну">
+                  <input class="step-two__input" type="text" placeholder="выберите страну">
+                </label>
+
+                <button class="step-two__open-btn" type="button" aria-label="Открыть выбор"></button>
+              </div>
+
+              <div class="step-two__hidden country-choose">
+                <b class="country-choose__title">выберите страну</b>
+
+                <button class="country-choose__close-btn" type="button" aria-label="Закрыть"></button>
+
+                <table class="country-choose__table alphabet">
+                  <tr class="alphabet__rows">
+                    <td class="alphabet__columns choosing-letter"><a href="" class="alphabet__link">а</a></td>
+                    <td class="alphabet__columns"><a href="" class="alphabet__link">б</a></td>
+                    <td class="alphabet__columns"><a href="" class="alphabet__link">в</a></td>
+                    <td class="alphabet__columns"><a href="" class="alphabet__link">г</a></td>
+                    <td class="alphabet__columns"><a href="" class="alphabet__link">д</a></td>
+                  </tr>
+
+                  <tr class="alphabet__rows">
+                    <td class="alphabet__columns"><a href="" class="alphabet__link">е</a></td>
+                    <td class="alphabet__columns"><a href="" class="alphabet__link">з</a></td>
+                    <td class="alphabet__columns"><a href="" class="alphabet__link">и</a></td>
+                    <td class="alphabet__columns"><a href="" class="alphabet__link">к</a></td>
+                    <td class="alphabet__columns"><a href="" class="alphabet__link">л</a></td>
+                  </tr>
+
+                  <tr class="alphabet__rows">
+                    <td class="alphabet__columns"><a href="" class="alphabet__link">м</a></td>
+                    <td class="alphabet__columns"><a href="" class="alphabet__link">н</a></td>
+                    <td class="alphabet__columns"><a href="" class="alphabet__link">о</a></td>
+                    <td class="alphabet__columns"><a href="" class="alphabet__link">п</a></td>
+                    <td class="alphabet__columns"><a href="" class="alphabet__link">р</a></td>
+                  </tr>
+
+                  <tr class="alphabet__rows">
+                    <td class="alphabet__columns"><a href="" class="alphabet__link">с</a></td>
+                    <td class="alphabet__columns"><a href="" class="alphabet__link">т</a></td>
+                    <td class="alphabet__columns"><a href="" class="alphabet__link">у</a></td>
+                    <td class="alphabet__columns"><a href="" class="alphabet__link">ф</a></td>
+                    <td class="alphabet__columns"><a href="" class="alphabet__link">х</a></td>
+                  </tr>
+
+                  <tr class="alphabet__rows">
+                    <td class="alphabet__columns"><a href="" class="alphabet__link">ч</a></td>
+                    <td class="alphabet__columns"><a href="" class="alphabet__link">ш</a></td>
+                    <td class="alphabet__columns"><a href="" class="alphabet__link">э</a></td>
+                    <td class="alphabet__columns"><a href="" class="alphabet__link">ю</a></td>
+                    <td class="alphabet__columns"><a href="" class="alphabet__link">я</a></td>
+                  </tr>
+                </table>
+
+                <ul class="country-choose__list country-list">
+                  <li class="country-list__item">
+                    <a href="" class="country-list__link">Австралия</a>
+                  </li>
+
+                  <li class="country-list__item">
+                    <a href="" class="country-list__link">Австрия</a>
+                  </li>
+
+                  <li class="country-list__item">
+                    <a href="" class="country-list__link">Азербайджан</a>
+                  </li>
+
+                  <li class="country-list__item">
+                    <a href="" class="country-list__link">Албания</a>
+                  </li>
+
+                  <li class="country-list__item">
+                    <a href="" class="country-list__link">Алжир</a>
+                  </li>
+
+                  <li class="country-list__item">
+                    <a href="" class="country-list__link">Ангола</a>
+                  </li>
+
+                  <li class="country-list__item">
+                    <a href="" class="country-list__link">Андора</a>
+                  </li>
+
+                  <li class="country-list__item">
+                    <a href="" class="country-list__link">Антигуа и Барбуда</a>
+                  </li>
+
+                  <li class="country-list__item">
+                    <a href="" class="country-list__link">Аргентина</a>
+                  </li>
+
+                  <li class="country-list__item">
+                    <a href="" class="country-list__link">Армения</a>
+                  </li>
+
+                  <li class="country-list__item">
+                    <a href="" class="country-list__link">Афганистан</a>
+                  </li>
+                </ul>
+              </div>
+
+              <button class="step-two__add-btn button" type="button">добавить страну</button>
+
+              <a href="#step-three" class="step-two__next-step button">следующий шаг</a>
+
+              <a href="#step-one" class="step-two__step-before">на шаг назад</a>
+            </fieldset>
+
+            <fieldset id="step-three" class="plans-form__set step-three">
+              <legend class="plans-form__legend">Шаг 3. Развлечения</legend>
+
+              <p class="plans-form__text">Наконец, расскажите о своих планах времяпровождения. Можно писать в свободной форме и ставить тэги.</p>
+
+              <ul class="step-three__list">
+                <li class="step-three__item country-fun">
+                  <div class="country-fun__title">
+                    <b class="country-fun__text">Босния и Герцеговина</b>
+
+                    <img src="img/Bosnia-and-Herzegovina%201.png" width="35" height="24" alt="Флаг Боснии и герцеговины">
+                  </div>
+
+                  <label for="fun1" class="visually-hidden">Ваш план действий</label>
+                  <textarea class="country-fun__description" name="fun1" id="fun1" cols="30" rows="10" placeholder="План действий"></textarea>
+                </li>
+
+                <li class="step-three__item">
+                  <div class="country-fun__title">
+                    <b class="country-fun__text">Чехия</b>
+
+                    <img src="img/Czech%201.png" width="35" height="24" alt="Флаг Чехии">
+                  </div>
+
+                  <label for="fun2" class="visually-hidden">Ваш план действий</label>
+                  <textarea class="country-fun__description" name="fun2" id="fun2" cols="30" rows="10">Пить пиво и лазить по старым замкам, наслаждаться архитектурой и вот это все.</textarea>
+                </li>
+              </ul>
+
+              <button class="step-three__submit button" type="submit">отправить</button>
+
+              <a href="#step-two" class="step-three__step-before">на шаг назад</a>
+            </fieldset>
+          </form>
+        </div>
+      </section>
     </main>
 
     <footer class="form-body__footer page-footer">
