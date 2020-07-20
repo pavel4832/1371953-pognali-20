@@ -88,11 +88,14 @@
             <small class="level__text">level</small>
           </div>
 
-          <a href="#">
-            <img class="profile__image" src="https://via.placeholder.com/70x70" alt="Фото пользователя" >
-          </a>
+          <div class="profile__image">
+            <img src="https://via.placeholder.com/70x70" alt="Фото пользователя" >
+          </div>
 
-          <a href="#" class="profile__change-btn button">сменить фото</a>
+          <div class="profile__change-img change-img">
+            <input type="file" name="file" id="input__file" class="visually-hidden">
+            <label for="input__file" class="change-img__btn button">сменить фото</label>
+          </div>
 
           <label for="tags" class="profile__tags">тэги</label>
 
@@ -308,29 +311,29 @@
 
               <ul class="step-two__choosing choosing-country">
                 <li class="choosing-country__item">
-                  <div class="choosing-country__name">
-                    <label aria-label="босния и герцеговина">
-                      <input class="step-two__input" type="text" value="босния и герцеговина">
-                    </label>
+                  <label for="country-name_1" class="visually-hidden" aria-label="босния и герцеговина"></label>
 
-                    <button class="step-two__open-btn" type="button" aria-label="Открыть выбор"></button>
-                  </div>
+                  <select class="choosing-country__name" name="country-name_1" id="country-name_1">
+                    <option class="choosing-country__value" value="bos_gerc" selected>босния и герцеговина</option>
+                  </select>
 
                   <div class="choosing-country__flag">
                     <img src="img/Bosnia-and-Herzegovina%201.png" width="35" height="24" alt="Флаг Боснии и герцеговины">
+
+                    <button class="choosing-country__close-btn" type="button" aria-label="удалить из выбора"></button>
                   </div>
                 </li>
                 <li class="choosing-country__item">
-                  <div class="choosing-country__name">
-                    <label aria-label="чехия">
-                      <input class="step-two__input" type="text" value="чехия">
-                    </label>
+                  <label for="country-name_2" class="visually-hidden" aria-label="чехия"></label>
 
-                    <button class="step-two__open-btn" type="button" aria-label="Открыть выбор"></button>
-                  </div>
+                  <select class="choosing-country__name" name="country-name_2" id="country-name_2">
+                    <option class="choosing-country__value" value="czech" selected>чехия</option>
+                  </select>
 
                   <div class="choosing-country__flag">
                     <img src="img/Czech%201.png" width="35" height="24" alt="Флаг Чехии">
+
+                    <button class="choosing-country__close-btn" type="button" aria-label="удалить из выбора"></button>
                   </div>
                 </li>
               </ul>

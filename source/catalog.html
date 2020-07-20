@@ -195,6 +195,108 @@
         </div>
       </section>
 
+      <section class="catalog-search">
+        <div class="catalog-search__wrapper">
+          <h2 class="catalog-search__title">Подберите идеального попутчика</h2>
+
+          <form class="catalog-search__form search-form" action="https://echo.htmlacademy.ru" method="get">
+            <fieldset class="search-form__hobby">
+              <legend class="search-form__legend">хобби</legend>
+
+              <button class="search-form__toggle" type="button" aria-label="развернуть"></button>
+            </fieldset>
+
+            <fieldset class="search-form__music">
+              <legend class="search-form__legend">музыка</legend>
+
+              <button class="search-form__toggle close-arrow" type="button" aria-label="свернуть"></button>
+
+              <ul class="search-form__music-list">
+                <li class="search-form__music-item">
+                  <input id="rock" class="search-form__input-music" type="checkbox" name="rock" checked>
+
+                  <label for="rock">Тяжелый рок</label>
+                </li>
+                <li class="search-form__music-item">
+                  <input id="rap" class="search-form__input-music" type="checkbox" name="rap" checked>
+
+                  <label for="rap">Русский рэп</label>
+                </li>
+                <li class="search-form__music-item">
+                  <input id="dance" class="search-form__input-music" type="checkbox" name="dance">
+
+                  <label for="dance">Евроденс</label>
+                </li>
+              </ul>
+            </fieldset>
+
+            <fieldset class="search-form__eat">
+              <legend class="search-form__legend">еда</legend>
+
+              <button class="search-form__toggle" type="button" aria-label="развернуть"></button>
+            </fieldset>
+
+            <fieldset class="search-form__transport transport-set">
+              <legend class="search-form__legend">транспорт</legend>
+
+              <button class="search-form__toggle close-arrow" type="button" aria-label="свернуть"></button>
+
+              <ul class="transport-set__list">
+                <li class="transport-set__item transport-air transport-enable">
+                  <label class="visually-hidden" for="air">Самолет</label>
+                  <input id="air" type="checkbox" class="transport-set__choose visually-hidden" checked>
+                </li>
+
+                <li class="transport-set__item transport-bus transport-enable">
+                  <label class="visually-hidden" for="bus">Автобус</label>
+                  <input id="bus" type="checkbox" class="transport-set__choose visually-hidden" checked>
+                </li>
+
+                <li class="transport-set__item transport-bicycle">
+                  <label class="visually-hidden" for="bike">Велосипед</label>
+                  <input id="bike" type="checkbox" class="transport-set__choose visually-hidden">
+                </li>
+
+                <li class="transport-set__item transport-walk transport-enable">
+                  <label class="visually-hidden" for="walk">Пешком</label>
+                  <input id="walk" type="checkbox" class="transport-set__choose visually-hidden" checked>
+                </li>
+              </ul>
+            </fieldset>
+
+            <fieldset class="search-form__level search-level">
+              <legend class="search-form__legend">левел</legend>
+
+              <button class="search-form__toggle close-arrow" type="button" aria-label="свернуть"></button>
+
+              <div class="search-level__range range">
+                <div class="range__controls">
+                  <div class="range__levels levels">
+                    <label class="levels__min" aria-label="минимальный уровень">
+                      <input type="text" name="min-price" value="30">
+                    </label>
+
+                    <label class="levels__max" aria-label="максимальный уровень">
+                      <input type="text" name="max-price" value="100">
+                    </label>
+                  </div>
+
+                  <div class="range__scale">
+                    <div class="range__bar"></div>
+                  </div>
+
+                  <a class="range__toggle toggle-min" href="#" aria-label="Установить минимальный уровень"></a>
+
+                  <a class="range__toggle toggle-max" href="#" aria-label="Установить максимальный уровень"></a>
+                </div>
+              </div>
+            </fieldset>
+
+            <button class="search-form__submit button" type="submit">показать</button>
+          </form>
+        </div>
+      </section>
+
       <section class="catalog-companions">
         <h2 class="visually-hidden">Список попутчиков</h2>
 

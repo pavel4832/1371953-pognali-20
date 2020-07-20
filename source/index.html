@@ -13,53 +13,39 @@
         <img src="img/logo-dark.png" width="100" height="15" alt="Сервис «Погнали?»">
       </a>
 
-      <h1 class="page-header__title visually-hidden">Сервис «Погнали?»</h1>
-
-      <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">
+      <nav class="main-nav hidden-menu">
+        <button class="main-nav__toggle close-menu" type="button">
           <span class="visually-hidden">Закрыть меню</span>
         </button>
 
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
             <li class="site-list__item site-list__item--active">
-              <a>
-                о сервисе
-              </a>
+              <a>о сервисе</a>
             </li>
 
             <li class="site-list__item">
-              <a href="form.html">
-                направления
-              </a>
+              <a href="form.html">направления</a>
             </li>
 
             <li class="site-list__item">
-              <a href="catalog.html">
-                попутчики
-              </a>
+              <a href="catalog.html">попутчики</a>
             </li>
           </ul>
 
           <ul class="main-nav__list user-list">
             <li class="user-list__item">
-              <a href="#" class="user-list__login js-login">
-                авторизация
-              </a>
+              <a href="#" class="user-list__login js-login">авторизация</a>
             </li>
           </ul>
 
           <ul class="main-nav__list contact-list">
             <li class="contact-list__item">
-              <a href="tel:88005558628" class="contact-list__tell">
-                8 800 555-86-28
-              </a>
+              <a href="tel:88005558628" class="contact-list__tell">8 800 555-86-28</a>
             </li>
 
             <li class="contact-list__item">
-              <a href="mailto:mail@htmlacademy.ru" class="contact-list__mail">
-                mail@htmlacademy.ru
-              </a>
+              <a href="mailto:mail@htmlacademy.ru" class="contact-list__mail">mail@htmlacademy.ru</a>
             </li>
           </ul>
 
@@ -76,17 +62,37 @@
           </ul>
         </div>
       </nav>
+
+      <h1 class="page-header__title visually-hidden">В путешествие с крутыми попутчиками!</h1>
+
+      <ul class="page-header__list contact-list">
+        <li class="contact-list__item">
+          <a href="tel:88005558628" class="contact-list__tell icon-tel" aria-label="позвонить с сайта"></a>
+        </li>
+
+        <li class="contact-list__item">
+          <a href="mailto:mail@htmlacademy.ru" class="contact-list__mail icon-mail" aria-label="написать письмо"></a>
+        </li>
+      </ul>
+
+      <ul class="page-header__list user-list">
+        <li class="user-list__item">
+          <a href="#" class="user-list__login button js-login">авторизация</a>
+        </li>
+      </ul>
     </header>
 
     <main class="index-body__main page-main">
       <section class="page-main__promo promo">
-        <header class="promo__header">
-          <h2 class="visually-hidden">Отзывы о нас</h2>
+        <h2 class="visually-hidden">Отзывы о нас</h2>
 
-          <p class="promo__author">
-            Мурат Эльтазин<br>главный редактор<br>газеты «гаджетлайф»
-          </p>
-        </header>
+        <blockquote class="promo__item">
+          <div class="promo__author-info">
+            <p class="promo__text">«Лучшее приложение, что я видел в жизни!»</p>
+
+            <cite class="promo__author-name">Мурат Эльтазин главный редактор газеты «гаджетлайф»</cite>
+          </div>
+        </blockquote>
 
         <ul class="promo__list">
           <li class="promo__item">
@@ -406,13 +412,13 @@
             <a href="#">авторизуйтесь</a>.
           </p>
 
-          <div class="sign-up__login login-field">
+          <form class="sign-up__login login-field" action="https://echo.htmlacademy.ru" method="get">
             <label for="login-email" class="visually-hidden">Введите Ваш e-mail</label>
 
             <input id="login-email" type="email" class="login-field__input" placeholder="E-mail">
 
-            <button class="login-field__button" type="button" aria-label="Войти"></button>
-          </div>
+            <button class="login-field__button" type="submit" aria-label="Войти"></button>
+          </form>
 
           <p class="sign-up__text">Остались вопросы? Мы с радостью на них ответим!</p>
 
