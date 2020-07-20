@@ -338,12 +338,14 @@
                 </li>
               </ul>
 
-              <div class="step-two__new-country">
-                <label aria-label="выберите страну">
-                  <input class="step-two__input" type="text" placeholder="выберите страну">
-                </label>
+              <div class="step-two__new-country new-country">
+                <label class="visually-hidden" for="country-name_new" aria-label="выберите страну"></label>
 
-                <button class="step-two__open-btn" type="button" aria-label="Открыть выбор"></button>
+                <select class="new-country__name" name="new-country" id="country-name_new">
+                  <option class="new-country__value" value="empty" selected>выберите страну</option>
+                </select>
+
+                <button class="new-country__close-btn" type="button" aria-label="удалить из выбора"></button>
               </div>
 
               <div class="step-two__hidden country-choose">
