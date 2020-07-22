@@ -1,1 +1,123 @@
-// Начните писать стили здесь
+/*Main styles*/
+
+@import "variables.less";
+@import "no-js";
+
+/*Fonts*/
+@font-face {
+  font-family: "BloggerSans-Light";
+  src: url("../fonts/bloggersans-light.woff2") format("woff2"),
+    url("../fonts/bloggersans-light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: fallback;
+}
+
+@font-face {
+  font-family: "BloggerSans";
+  src: url("../fonts/Bloggersans.woff2") format("woff2"),
+    url("../fonts/Bloggersans.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: fallback;
+}
+
+@font-face {
+  font-family: "BloggerSans-Medium";
+  src: url("../fonts/bloggersans-medium.woff2") format("woff2"),
+    url("../fonts/bloggersans-medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: fallback;
+}
+
+@font-face {
+  font-family: "BloggerSans-Bold";
+  src: url("../fonts/bloggersans-bold.woff2") format("woff2"),
+    url("../fonts/bloggersans-bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-display: fallback;
+}
+
+/*Global*/
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  min-width: 320px;
+  margin: 0;
+  padding: 0;
+
+  background-color: @basic-white;
+
+  font-family: "BloggerSans", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  color: @basic-black;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.container {
+  width: 270px;
+  padding: 0 25px;
+  margin: 0 auto;
+
+  @media screen and(min-width: 768px) {
+    width: 718px;
+  }
+
+  @media screen and(min-width: 1440px) {
+    width: 1390px;
+  }
+}
+
+.button {
+  display: inline-block;
+
+  font-family: "BloggerSans-Bold", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+
+  border-radius: 25px;
+}
+
+@import "blocks/page-header";
+@import "blocks/page-main";
+@import "blocks/logo";
+@import "blocks/main-nav";
+@import "blocks/site-list";
+@import "blocks/contact-list";
+@import "blocks/user-list";
+@import "blocks/social-list";
+@import "blocks/promo";
+@import "blocks/service";
+@import "blocks/directions";
+
