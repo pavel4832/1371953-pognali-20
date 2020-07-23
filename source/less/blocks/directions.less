@@ -1,3 +1,7 @@
+.directions {
+  padding-bottom: 35px;
+}
+
 .directions__wrapper {
   padding-top: 39px;
 }
@@ -124,4 +128,29 @@
   font-size: 16px;
   line-height: 18px;
   color: fade(@special-grey, 30%);
+}
+
+.directions__to-all {
+  position: relative;
+  width: 270px;
+  height: 62px;
+  margin-top: 12px;
+  padding: 0 24px;
+
+  font-size: 18px;
+  line-height: 62px;
+  color: @basic-blue-light;
+  text-align: justify;
+  text-transform: none;
+
+  background-color: @basic-yellow;
+  border-radius: 10px;
+  box-sizing: border-box;
+
+  &::after {
+    content: url("../../img/show-more-triangle.svg");
+    position: absolute;
+    top: 1px;
+    right: 22px;
+  }
 }

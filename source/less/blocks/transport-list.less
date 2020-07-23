@@ -1,0 +1,44 @@
+.transport-list {
+  display: flex;
+  justify-content: space-between;
+  width: 132px;
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.transport-list__item {
+  width: 30px;
+  height: 25px;
+
+  opacity: 0.15;
+}
+
+.transport-air {
+  background-image: url("../../img/plane.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.transport-bus {
+  background-image: url("../../img/bus.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.transport-bicycle {
+  background-image: url("../../img/bike.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.transport-walk {
+  background-image: url("../../img/run.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.transport-list__item.transport-enable {
+  opacity: 1;
+}

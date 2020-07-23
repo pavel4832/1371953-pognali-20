@@ -1,8 +1,13 @@
-.page-header__container {
+
+.page-header__wrapper {
+  position: relative;
   display: flex;
   flex-direction: column;
-  margin-bottom: 5px;
+
+  background-color: #161c35;
   background-image: url("../../img/globe-back-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position-x: center;
   background-position-y: -74px;
 }
 
@@ -20,14 +25,26 @@
 }
 
 .page-header__image {
-  margin-top: 10px;
+  margin-top: 11px;
   padding-left: 55px;
 }
 
 .page-header__login {
-  display: flex;
-  justify-content: flex-start;
-  margin-top: -39px;
-  padding: 0 27px;
+  position: absolute;
+  bottom: -20px;
+  left: 0;
+  width: 100%;
   background-color: transparent;
+  z-index: 5;
+}
+
+.page-header__wrapper .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.page-header__login .container {
+  display: flex;
+  flex-direction: row;
 }

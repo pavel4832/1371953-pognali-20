@@ -1,0 +1,69 @@
+.level {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+
+.level--firsova {
+  background-image: url("../../img/subtract-1.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.level--demin {
+  background-image: url("../../img/subtract-2.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.page-main__companions .level {
+  width: 60px;
+  height: 60px;
+
+  background-color: fade(@basic-black, 60%);
+}
+
+.catalog-body__main .level {
+  width: 45px;
+  height: 45px;
+}
+
+.level__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.level__number {
+  margin-top: 5px;
+  margin-left: 2px;
+
+  font-family: "BloggerSans-Bold", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 24px;
+  color: @basic-white;
+
+  &::after {
+    content: "";
+    display: block;
+    width: 30px;
+    height: 1px;
+    margin-left: -2px;
+
+    background-color: fade(@basic-white, 30%);
+  }
+}
+
+.level__text {
+  font-family: "BloggerSans", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 14px;
+  color: @basic-white;
+}
