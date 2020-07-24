@@ -8,7 +8,45 @@
   list-style: none;
 }
 
+.catalog-companions__list .transport-list {
+  position: relative;
+  margin-top: 24px;
+  margin-left: 23px;
+
+  &::before {
+    content: "транспорт:";
+    position: absolute;
+    top: -34px;
+    left: -5px;
+    padding: 0 12px;
+
+    font-family: "BloggerSans", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 16px;
+    color: @special-grey;
+
+    background-color: @basic-white;
+  }
+}
+
 .transport-list__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 32px;
+  height: 32px;
+
+  border-radius: 50%;
+}
+
+.catalog-companions__list .transport-list__item {
+  background-color: #edeff6;
+}
+
+.transport-list__icon {
+  display: inline-block;
   width: 30px;
   height: 25px;
 
@@ -21,10 +59,18 @@
   background-position: center;
 }
 
+.catalog-companions__list .transport-air {
+  background-image: url("../../img/plane-small.svg");
+}
+
 .transport-bus {
   background-image: url("../../img/bus.svg");
   background-repeat: no-repeat;
   background-position: center;
+}
+
+.catalog-companions__list .transport-bus {
+  background-image: url("../../img/bus-small.svg");
 }
 
 .transport-bicycle {
@@ -33,12 +79,20 @@
   background-position: center;
 }
 
+.catalog-companions__list .transport-bicycle {
+  background-image: url("../../img/bike-small.svg");
+}
+
 .transport-walk {
   background-image: url("../../img/run.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
 
-.transport-list__item.transport-enable {
+.catalog-companions__list .transport-walk {
+  background-image: url("../../img/run-small.svg");
+}
+
+.transport-list__icon.transport-enable {
   opacity: 1;
 }

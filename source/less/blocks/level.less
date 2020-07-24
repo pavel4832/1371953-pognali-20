@@ -3,19 +3,60 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
   border-radius: 50%;
+
+  background-position-x: right;
+  background-position-y: top;
+}
+
+.catalog-companions__list .level {
+  &::before {
+    content: "левел:";
+    position: absolute;
+    top: -26px;
+    left: -5px;
+    padding: 0 12px;
+
+    font-family: "BloggerSans", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 16px;
+    color: @special-grey;
+
+    background-color: @basic-white;
+  }
 }
 
 .level--firsova {
   background-image: url("../../img/subtract-1.svg");
   background-repeat: no-repeat;
-  background-position: center;
+}
+
+.catalog-companions__list .level--firsova {
+  background-image: url("../../img/subtract-firsova.svg");
+  background-repeat: no-repeat;
 }
 
 .level--demin {
   background-image: url("../../img/subtract-2.svg");
   background-repeat: no-repeat;
-  background-position: center;
+}
+
+.catalog-companions__list .level--demin {
+  background-image: url("../../img/subtract-demin.svg");
+  background-repeat: no-repeat;
+}
+
+.catalog-companions__list .level--smolov {
+  background-image: url("../../img/subtract-smolov.svg");
+  background-repeat: no-repeat;
+}
+
+.catalog-companions__list .level--rogovay {
+  background-image: url("../../img/subtract-rogovay.svg");
+  background-repeat: no-repeat;
 }
 
 .page-main__companions .level {
@@ -56,6 +97,15 @@
     margin-left: -2px;
 
     background-color: fade(@basic-white, 30%);
+  }
+}
+
+.catalog-companions__list .level__number {
+  line-height: 45px;
+  color: @basic-blue-light;
+
+  &::after {
+    display: none;
   }
 }
 
