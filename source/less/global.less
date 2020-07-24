@@ -1,0 +1,66 @@
+/*Global*/
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  min-width: 320px;
+  margin: 0;
+  padding: 0;
+
+  background-color: @basic-white;
+
+  font-family: "BloggerSans", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  color: @basic-black;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.container {
+  width: 270px;
+  padding: 0 25px;
+  margin: 0 auto;
+
+  @media screen and(min-width: 768px) {
+    width: 718px;
+  }
+
+  @media screen and(min-width: 1440px) {
+    width: 1390px;
+  }
+}
+
+.button {
+  display: inline-block;
+
+  font-family: "BloggerSans-Bold", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+  vertical-align: baseline;
+}

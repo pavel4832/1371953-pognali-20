@@ -1,8 +1,8 @@
-
 .page-header__wrapper {
   position: relative;
   display: flex;
   flex-direction: column;
+  margin-top: -1px;
 
   background-color: #161c35;
   background-image: url("../../img/globe-back-mobile@1x.jpg");
@@ -11,10 +11,9 @@
   background-position-y: -74px;
 }
 
-
 .page-header__title {
   margin: 0;
-  padding-top: 18px;
+  padding-top: 27px;
   font-family: "BloggerSans-Bold", "Arial", sans-serif;
   font-style: normal;
   font-weight: bold;
@@ -47,4 +46,38 @@
 .page-header__login .container {
   display: flex;
   flex-direction: row;
+}
+
+.form-body__header .page-header__title {
+  position: relative;
+
+  text-align: left;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: -13px;
+    left: 0;
+    display: block;
+    width: 214px;
+    height: 5px;
+    background-color: @special-orange;
+  }
+}
+
+.catalog-body__header .page-header__title {
+  position: relative;
+
+  text-align: left;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: -13px;
+    left: 0;
+    display: block;
+    width: 173px;
+    height: 5px;
+    background-color: @special-orange;
+  }
 }
