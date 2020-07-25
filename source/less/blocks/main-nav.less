@@ -1,0 +1,38 @@
+.main-nav {
+  margin-top: -8px;
+
+  background-color: @basic-white;
+
+  @media screen and (max-width: 767px) {
+    width: 100%;
+    height: 0;
+
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+.main-nav__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+  padding-top: 44px;
+
+  background-color: @basic-white;
+  z-index: 2;
+}
+
+.main-nav__list {
+  margin-top: 0;
+  margin-bottom: 52px;
+}
+
+.main-nav__list.user-list {
+  margin-bottom: 51px;
+}
+
+.main-nav__list.contact-list {
+  margin-bottom: 30px;
+}

@@ -1,0 +1,41 @@
+.catalog-companions {
+  padding-bottom: 78px;
+}
+
+.catalog-companions .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.catalog-companions__list {
+  width: 270px;
+}
+
+.catalog-companions__button {
+  position: relative;
+  margin-top: 5px;
+  margin-left: 30px;
+
+  font-size: 17px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: @basic-blue-light;
+
+  &::before {
+    content: url("../../img/show-more-plus.svg");
+    position: absolute;
+    top: 3px;
+    left: -33px;
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    margin-right: 10px;
+
+    vertical-align: baseline;
+  }
+}
+
+.catalog-companions__pagination {
+  margin-top: 20px;
+}

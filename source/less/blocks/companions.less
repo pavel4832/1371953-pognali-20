@@ -1,0 +1,96 @@
+.companions {
+  margin-top: -25px;
+}
+
+.companions__wrapper {
+  padding-top: 92px;
+  padding-bottom: 30px;
+
+  background-image: url("../../img/rogovaya-back-mobile@1x.png"), url("../../img/smolov-back-desktop@1x.png");
+  background-repeat: no-repeat;
+  background-position: -9px 332px, 152px 60px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 59px;
+    left: 0;
+    width: 113px;
+    height: 132px;
+
+    background-color: #141b3b;
+
+    border-top-right-radius: 20px;
+    z-index: -1;
+  }
+}
+
+.companions__title {
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 23px;
+
+  font-family: "BloggerSans-Bold", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 24px;
+  color: @special-orange;
+}
+
+.companions__description {
+  margin-top: 20px;
+  margin-bottom: 0;
+  margin-left: 23px;
+  padding-right: 5px;
+
+  font-family: "BloggerSans-Light", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 22px;
+  color: @basic-white;
+}
+
+.companions__slogan {
+  margin-top: 20px;
+  margin-bottom: 0;
+  margin-left: 23px;
+  padding-right: 5px;
+
+  font-family: "BloggerSans-Bold", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 22px;
+  color: @basic-white;
+}
+
+.companions__list {
+  margin-top: 55px;
+}
+
+.companions__to-all {
+  position: relative;
+  width: 270px;
+  height: 62px;
+  margin-top: 10px;
+  padding: 0 24px;
+
+  font-size: 18px;
+  line-height: 62px;
+  color: @basic-blue-light;
+  text-align: justify;
+  text-transform: none;
+
+  background-color: @basic-yellow;
+  border-radius: 10px;
+  box-sizing: border-box;
+
+  &::after {
+    content: url("../../img/show-more-triangle.svg");
+    position: absolute;
+    top: 1px;
+    right: 22px;
+  }
+}

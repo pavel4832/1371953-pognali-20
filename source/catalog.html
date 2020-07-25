@@ -5,77 +5,81 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.8">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="preload" href="fonts/Bloggersans.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/Bloggersans.woff" as="font" type="font/woff" crossorigin>
+    <link rel="preload" href="fonts/bloggersans-medium.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/bloggersans-medium.woff" as="font" type="font/woff" crossorigin>
+    <link rel="preload" href="fonts/bloggersans-bold.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/bloggersans-bold.woff" as="font" type="font/woff" crossorigin>
+    <link rel="stylesheet" href="css/style.css">
   </head>
 
-  <body class="catalog-body">
-    <header class="catalog-body__header page-header">
-      <a href="index.html" class="logo">
-        <img src="img/logo-white.png" width="100" height="15" alt="Сервис «Погнали?»">
-      </a>
+  <body class="catalog-body no-js">
+    <header class="catalog-body__header page-header js-header">
+      <div class="logo">
+        <div class="logo__wrapper container">
+          <a class="logo__link">
+            <img class="no-js-logo" src="img/logo-mobile-blue@1x.png" width="100" height="19" alt="Сервис «Погнали?»">
+            <img class="logo__image js-image" src="img/logo-mobile-white@1x.png" width="100" height="19" alt="Сервис «Погнали?»">
+          </a>
 
-      <h1 class="page-header__title">Попутчики</h1>
+          <button class="logo__menu-btn js-menu-toggle" type="button">
+            <span class="visually-hidden js-label">Открыть меню</span>
+          </button>
+        </div>
+      </div>
 
       <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">
-          <span class="visually-hidden">Открыть меню</span>
-        </button>
-
-        <div class="main-nav__wrapper">
+        <div class="main-nav__wrapper container">
           <ul class="main-nav__list site-list">
-            <li class="site-list__item">
-              <a href="index.html">
-                о сервисе
-              </a>
-            </li>
-
-            <li class="site-list__item">
-              <a href="form.html">
-                направления
-              </a>
-            </li>
-
             <li class="site-list__item site-list__item--active">
-              <a>
-                попутчики
-              </a>
+              <a class="site-list__link" href="index.html">о сервисе</a>
+            </li>
+
+            <li class="site-list__item">
+              <a class="site-list__link" href="form.html">направления</a>
+            </li>
+
+            <li class="site-list__item">
+              <a class="site-list__link">попутчики</a>
             </li>
           </ul>
 
           <ul class="main-nav__list user-list">
             <li class="user-list__item">
-              <a href="#" class="user-list__login js-login">
-                авторизация
-              </a>
+              <a href="#" class="user-list__login button top-login">авторизация</a>
             </li>
           </ul>
 
           <ul class="main-nav__list contact-list">
             <li class="contact-list__item">
-              <a href="tel:88005558628" class="contact-list__tell">
-                8 800 555-86-28
-              </a>
+              <a href="tel:88005558628" class="contact-list__tell top-tell">8 800 555-86-28</a>
             </li>
 
             <li class="contact-list__item">
-              <a href="mailto:mail@htmlacademy.ru" class="contact-list__mail">
-                mail@htmlacademy.ru
-              </a>
+              <a href="mailto:mail@htmlacademy.ru" class="contact-list__mail top-mail">mail@htmlacademy.ru</a>
             </li>
           </ul>
 
           <ul class="main-nav__list social-list social">
             <li class="social__item">
-              <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">Мы в Вконтакте</a>
+              <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy" aria-label="Мы в Фейсбуке"></a>
             </li>
+
             <li class="social__item">
-              <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a>
+              <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy" aria-label="Мы в Вконтакте"></a>
             </li>
+
             <li class="social__item">
-              <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy">Мы в Инстаграме</a>
+              <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy" aria-label="Мы в Инстаграме"></a>
             </li>
           </ul>
         </div>
       </nav>
+
+      <div class="container">
+        <h1 class="page-header__title">Попутчики</h1>
+      </div>
     </header>
 
     <main class="catalog-body__main">
@@ -299,267 +303,313 @@
 
       <section class="catalog-companions">
         <h2 class="visually-hidden">Список попутчиков</h2>
+        <div class="container">
+          <div class="catalog-companions__list">
+            <article class="catalog-companions__item profile-item companion-offline like-active">
+              <div class="profile-item__info">
+                <div class="profile-item__image">
+                  <img src="img/firsova-mobile@1x.jpg" width="70" height="70" alt="Фото Тани" >
+                </div>
 
-        <div class="catalog-companions__list">
-          <article class="catalog-companions__item profile-item companion-offline">
-            <a href="#">
-              <img class="profile-item__image like-active" src="https://via.placeholder.com/70x70" alt="Фото Тани" >
-            </a>
-
-            <a href="#">
-              <h3 class="profile-item__name">Таня Фирсова</h3>
-            </a>
-
-            <p class="profile-item__distance">1,5 М</p>
-
-            <p class="profile-item__interests">
-              #ЗОЖ #ПП #Фитнес #пляж #авокадо #смузи
-            </p>
-
-            <div class="profile-item__request country-request">
-              <ul class="country-request__list">
-                <li class="country-request__item country-request__item--sri_lanka">
-                  <span>шри-ланка</span>
-                </li>
-                <li class="country-request__item country-request__item--thailand">
-                  <span>тайланд</span>
-                </li>
-                <li class="country-request__item country-request__item--seychelles">
-                  <span>сейшелы</span>
-                </li>
-              </ul>
-            </div>
-
-            <div class="profile-item__properties properties-info">
-              <ul class="properties-info__transport transport-list">
-                <li class="transport-list__item transport-air transport-enable">
-                  <p class="visually-hidden">Самолет</p>
-                </li>
-
-                <li class="transport-list__item transport-bus">
-                  <p class="visually-hidden">Автобус</p>
-                </li>
-
-                <li class="transport-list__item transport-bicycle">
-                  <p class="visually-hidden">Велосипед</p>
-                </li>
-
-                <li class="transport-list__item transport-walk">
-                  <p class="visually-hidden">Пешком</p>
-                </li>
-              </ul>
-
-              <div class="properties-info__level level">
-                <b class="level__number">99</b>
-
-                <small class="level__text visually-hidden">level</small>
+                <a href="#">
+                  <h3 class="profile-item__name">Таня Фирсова
+                    <span class="profile-item__distance">1,5 М</span>
+                  </h3>
+                </a>
               </div>
-            </div>
 
-            <a href="#" class="profile-item__invite button">позвать!</a>
-          </article>
+              <p class="profile-item__interests">
+                #ЗОЖ #ПП #Фитнес #пляж #авокадо #смузи
+              </p>
 
-          <article class="catalog-companions__item profile-item companion-offline">
-            <a href="#">
-              <img class="profile-item__image like-active" src="https://via.placeholder.com/70x70" alt="Фото Пети" >
-            </a>
+              <div class="profile-item__request country-request">
+                <ul class="country-request__list">
+                  <li class="country-request__item">
+                    <span class="country-request__flag country-request__flag--sri_lanka" aria-label="Флаг шри-ланки"></span>
 
-            <a href="#">
-              <h3 class="profile-item__name">Петя Демин</h3>
-            </a>
+                    <span class="country-request__name">шри-ланка</span>
+                  </li>
 
-            <p class="profile-item__distance">1500</p>
+                  <li class="country-request__item">
+                    <span class="country-request__flag country-request__flag--thailand" aria-label="Флаг тайланда"></span>
 
-            <p class="profile-item__interests">
-              #бургер #бар #футбол #концерт #крафт
-            </p>
+                    <span class="country-request__name">тайланд</span>
+                  </li>
 
-            <div class="profile-item__request country-request">
-              <ul class="country-request__list">
-                <li class="country-request__item country-request__item--belgium">
-                  <span>бельгия</span>
-                </li>
-                <li class="country-request__item country-request__item--czech">
-                  <span>чехия</span>
-                </li>
-              </ul>
-            </div>
+                  <li class="country-request__item">
+                    <span class="country-request__flag country-request__flag--seychelles" aria-label="Флаг сейшел"></span>
 
-            <div class="profile-item__properties properties-info">
-              <ul class="properties-info__transport transport-list">
-                <li class="transport-list__item transport-air transport-enable">
-                  <p class="visually-hidden">Самолет</p>
-                </li>
-
-                <li class="transport-list__item transport-bus">
-                  <p class="visually-hidden">Автобус</p>
-                </li>
-
-                <li class="transport-list__item transport-bicycle transport-enable">
-                  <p class="visually-hidden">Велосипед</p>
-                </li>
-
-                <li class="transport-list__item transport-walk transport-enable">
-                  <p class="visually-hidden">Пешком</p>
-                </li>
-              </ul>
-
-              <div class="properties-info__level level">
-                <b class="level__number">80</b>
-
-                <small class="level__text visually-hidden">level</small>
+                    <span class=" country-request__name">сейшелы</span>
+                  </li>
+                </ul>
               </div>
-            </div>
 
-            <a href="#" class="profile-item__invite button">позвать!</a>
-          </article>
+              <div class="profile-item__properties properties-info">
+                <ul class="properties-info__transport transport-list">
+                  <li class="transport-list__item">
+                    <span class="transport-list__icon transport-air transport-enable" aria-label="самолет"></span>
+                  </li>
 
-          <article class="catalog-companions__item profile-item companion-offline">
-            <a href="#">
-              <img class="profile-item__image like-active" src="https://via.placeholder.com/70x70" alt="Фото Марка" >
-            </a>
+                  <li class="transport-list__item">
+                    <span class="transport-list__icon transport-bus" aria-label="автобус"></span>
+                  </li>
 
-            <a href="#">
-              <h3 class="profile-item__name">Марк Смолов</h3>
-            </a>
-            <p class="profile-item__distance">170</p>
+                  <li class="transport-list__item">
+                    <span class="transport-list__icon transport-bicycle" aria-label="велосипед"></span>
+                  </li>
 
-            <p class="profile-item__interests">
-              #рэп #тату #хайпбист #кроссовки #суприм
-            </p>
+                  <li class="transport-list__item">
+                    <span class="transport-list__icon transport-walk" aria-label="пешком"></span>
+                  </li>
+                </ul>
 
-            <div class="profile-item__request country-request">
-              <ul class="country-request__list">
-                <li class="country-request__item country-request__item--usa">
-                  <span>сша</span>
-                </li>
-                <li class="country-request__item country-request__item--aus">
-                  <span>австралия</span>
-                </li>
-                <li class="country-request__item country-request__item--dom">
-                  <span>доминикана</span>
-                </li>
-              </ul>
-            </div>
+                <div class="properties-info__level level level--firsova">
+                  <b class="level__number">99</b>
 
-            <div class="profile-item__properties properties-info">
-              <ul class="properties-info__transport transport-list">
-                <li class="transport-list__item transport-air transport-enable">
-                  <p class="visually-hidden">Самолет</p>
-                </li>
-
-                <li class="transport-list__item transport-bus">
-                  <p class="visually-hidden">Автобус</p>
-                </li>
-
-                <li class="transport-list__item transport-bicycle transport-enable">
-                  <p class="visually-hidden">Велосипед</p>
-                </li>
-
-                <li class="transport-list__item transport-walk">
-                  <p class="visually-hidden">Пешком</p>
-                </li>
-              </ul>
-
-              <div class="properties-info__level level">
-                <b class="level__number">25</b>
-
-                <small class="level__text visually-hidden">level</small>
+                  <small class="level__text visually-hidden">level</small>
+                </div>
               </div>
-            </div>
 
-            <a href="#" class="profile-item__invite button">позвать!</a>
-          </article>
+              <a href="#" class="profile-item__invite button">позвать!</a>
+            </article>
 
-          <article class="catalog-companions__item profile-item companion-online">
-            <a href="#">
-              <img class="profile-item__image like-active" src="https://via.placeholder.com/70x70" alt="Фото Ларисы" >
-            </a>
+            <article class="catalog-companions__item profile-item companion-offline">
+              <div class="profile-item__info">
+                <div class="profile-item__image">
+                  <img src="img/demin-mobile@1x.jpg" width="70" height="70" alt="Фото Пети" >
+                </div>
 
-            <a href="#">
-              <h3 class="profile-item__name">Лариса Роговая</h3>
-            </a>
-
-            <p class="profile-item__distance">23</p>
-
-            <p class="profile-item__interests">
-              #образование #карьера #учеба #линкедин
-            </p>
-
-            <div class="profile-item__request country-request">
-              <ul class="country-request__list">
-                <li class="country-request__item country-request__item--gb">
-                  <span>великобритания</span>
-                </li>
-                <li class="country-request__item country-request__item--germany">
-                  <span>германия</span>
-                </li>
-              </ul>
-            </div>
-
-            <div class="profile-item__properties properties-info">
-              <ul class="properties-info__transport transport-list">
-                <li class="transport-list__item transport-air transport-enable">
-                  <p class="visually-hidden">Самолет</p>
-                </li>
-
-                <li class="transport-list__item transport-bus transport-enable">
-                  <p class="visually-hidden">Автобус</p>
-                </li>
-
-                <li class="transport-list__item transport-bicycle">
-                  <p class="visually-hidden">Велосипед</p>
-                </li>
-
-                <li class="transport-list__item transport-walk">
-                  <p class="visually-hidden">Пешком</p>
-                </li>
-              </ul>
-
-              <div class="properties-info__level level">
-                <b class="level__number">50</b>
-
-                <small class="level__text visually-hidden">level</small>
+                <a href="#">
+                  <h3 class="profile-item__name">Петя Демин
+                    <span class="profile-item__distance">1500</span>
+                  </h3>
+                </a>
               </div>
-            </div>
 
-            <a href="#" class="profile-item__invite button">позвать!</a>
-          </article>
-        </div>
+              <p class="profile-item__interests">
+                #бургер #бар #футбол #концерт #крафт
+              </p>
 
-        <a href="#" class="catalog-companions__button button">показать еще</a>
+              <div class="profile-item__request country-request">
+                <ul class="country-request__list">
+                  <li class="country-request__item">
+                    <span class="country-request__flag country-request__flag--belgium" aria-label="Флаг белгии"></span>
 
-        <div class="catalog-companions__pagination pagination">
-          <a href="" class="pagination__button button-back" aria-label="назад"></a>
+                    <span class="country-request__name">бельгия</span>
+                  </li>
 
-          <a href="" class="pagination__button button-forward" aria-label="вперед"></a>
+                  <li class="country-request__item">
+                    <span class="country-request__flag country-request__flag--czech" aria-label="Флаг чехии"></span>
+
+                    <span class="country-request__name">чехия</span>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="profile-item__properties properties-info">
+                <ul class="properties-info__transport transport-list">
+                  <li class="transport-list__item">
+                    <span class="transport-list__icon transport-air transport-enable" aria-label="самолет"></span>
+                  </li>
+
+                  <li class="transport-list__item">
+                    <span class="transport-list__icon transport-bus" aria-label="автобус"></span>
+                  </li>
+
+                  <li class="transport-list__item">
+                    <span class="transport-list__icon transport-bicycle" aria-label="велосипед"></span>
+                  </li>
+
+                  <li class="transport-list__item">
+                    <span class="transport-list__icon transport-walk" aria-label="пешком"></span>
+                  </li>
+                </ul>
+
+                <div class="properties-info__level level level--demin">
+                  <b class="level__number">80</b>
+
+                  <small class="level__text visually-hidden">level</small>
+                </div>
+              </div>
+
+              <a href="#" class="profile-item__invite button">позвать!</a>
+            </article>
+
+            <article class="catalog-companions__item profile-item companion-offline">
+              <div class="profile-item__info">
+                <div class="profile-item__image">
+                  <img src="img/smolov-mobile@1x.jpg" width="70" height="70" alt="Фото Марка" >
+                </div>
+
+                <a href="#">
+                  <h3 class="profile-item__name">Марк Смолов
+                    <span class="profile-item__distance">170</span>
+                  </h3>
+                </a>
+              </div>
+
+              <p class="profile-item__interests">
+                #рэп #тату #хайпбист #кроссовки #суприм
+              </p>
+
+              <div class="profile-item__request country-request">
+                <ul class="country-request__list">
+                  <li class="country-request__item">
+                    <span class="country-request__flag country-request__flag--usa" aria-label="Флаг США"></span>
+
+                    <span class="country-request__name">сша</span>
+                  </li>
+
+                  <li class="country-request__item">
+                    <span class="country-request__flag country-request__flag--aus" aria-label="Флаг австралии"></span>
+
+                    <span class="country-request__name">австралия</span>
+                  </li>
+
+                  <li class="country-request__item">
+                    <span class="country-request__flag country-request__flag--dom" aria-label="Флаг доминиканы"></span>
+
+                    <span class="country-request__name">доминикана</span>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="profile-item__properties properties-info">
+                <ul class="properties-info__transport transport-list">
+                  <li class="transport-list__item">
+                    <span class="transport-list__icon transport-air transport-enable" aria-label="самолет"></span>
+                  </li>
+
+                  <li class="transport-list__item">
+                    <span class="transport-list__icon transport-bus" aria-label="автобус"></span>
+                  </li>
+
+                  <li class="transport-list__item">
+                    <span class="transport-list__icon transport-bicycle" aria-label="велосипед"></span>
+                  </li>
+
+                  <li class="transport-list__item">
+                    <span class="transport-list__icon transport-walk" aria-label="пешком"></span>
+                  </li>
+                </ul>
+
+                <div class="properties-info__level level level--smolov">
+                  <b class="level__number">25</b>
+
+                  <small class="level__text visually-hidden">level</small>
+                </div>
+              </div>
+
+              <a href="#" class="profile-item__invite button">позвать!</a>
+            </article>
+
+            <article class="catalog-companions__item profile-item companion-online">
+              <div class="profile-item__info">
+                <div class="profile-item__image">
+                  <img src="img/rogovaya-mobile@1x.jpg" width="70" height="70" alt="Фото Ларисы" >
+                </div>
+
+                <a href="#">
+                  <h3 class="profile-item__name">Лариса Роговая
+                    <span class="profile-item__distance">23</span>
+                  </h3>
+                </a>
+              </div>
+
+              <p class="profile-item__interests">
+                #образование #карьера #учеба #линкедин
+              </p>
+
+              <div class="profile-item__request country-request">
+                <ul class="country-request__list">
+                  <li class="country-request__item">
+                    <span class="country-request__flag country-request__flag--gb" aria-label="Флаг великобритании"></span>
+
+                    <span class="country-request__name">великобритания</span>
+                  </li>
+
+                  <li class="country-request__item">
+                    <span class="country-request__flag country-request__flag--germany" aria-label="Флаг германии"></span>
+
+                    <span class="country-request__name">германия</span>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="profile-item__properties properties-info">
+                <ul class="properties-info__transport transport-list">
+                  <li class="transport-list__item">
+                    <span class="transport-list__icon transport-air transport-enable" aria-label="самолет"></span>
+                  </li>
+
+                  <li class="transport-list__item">
+                    <span class="transport-list__icon transport-bus" aria-label="автобус"></span>
+                  </li>
+
+                  <li class="transport-list__item">
+                    <span class="transport-list__icon transport-bicycle" aria-label="велосипед"></span>
+                  </li>
+
+                  <li class="transport-list__item">
+                    <span class="transport-list__icon transport-walk" aria-label="пешком"></span>
+                  </li>
+                </ul>
+
+                <div class="properties-info__level level level--rogovay">
+                  <b class="level__number">50</b>
+
+                  <small class="level__text visually-hidden">level</small>
+                </div>
+              </div>
+
+              <a href="#" class="profile-item__invite button">позвать!</a>
+            </article>
+          </div>
+
+          <a href="#" class="catalog-companions__button button">показать еще</a>
+
+          <div class="catalog-companions__pagination pagination">
+            <a href="" class="pagination__button button-back" aria-label="назад"></a>
+
+            <a href="" class="pagination__button button-forward" aria-label="вперед"></a>
+          </div>
         </div>
       </section>
     </main>
 
     <footer class="catalog-body__footer page-footer">
-      <a href="index.html" class="logo">
-        <img src="img/logo-dark.png" width="100" height="15" alt="Сервис «Погнали?»">
-      </a>
+      <div class="container">
+        <div class="page-footer__logo logo">
+          <a class="logo__link">
+            <img src="img/logo-mobile-blue@1x.png" width="100" height="19" alt="Сервис «Погнали?»">
+          </a>
+        </div>
 
-      <ul class="page-footer__socials social">
-        <li class="social__item">
-          <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">Мы в Вконтакте</a>
-        </li>
-        <li class="social__item">
-          <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a>
-        </li>
-        <li class="social__item">
-          <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy">Мы в Инстаграме</a>
-        </li>
-      </ul>
+        <ul class="page-footer__socials social">
+          <li class="social__item">
+            <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy" aria-label="Мы в Фейсбуке"></a>
+          </li>
 
-      <div class="page-footer__copyright copyright">
-        <b class="copyright__text">Разработано</b>
-        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-          <img src="img/htmlacademy.svg" width="27" height="33" alt="Логотип академии">
-        </a>
+          <li class="social__item">
+            <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy" aria-label="Мы в Вконтакте"></a>
+          </li>
+
+          <li class="social__item">
+            <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy" aria-label="Мы в Инстаграме"></a>
+          </li>
+        </ul>
+
+        <div class="page-footer__copyright copyright">
+          <b class="copyright__text">Разработано</b>
+
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+            <img src="img/htmlacademy.svg" width="27" height="34" alt="Логотип академии">
+          </a>
+        </div>
       </div>
     </footer>
+
+    <script src="js/script-no-js.js"></script>
+    <script src="js/open-menu.js"></script>
   </body>
 </html>

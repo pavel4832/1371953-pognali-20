@@ -1,0 +1,156 @@
+.directions {
+  padding-bottom: 35px;
+}
+
+.directions__wrapper {
+  padding-top: 39px;
+}
+
+.directions__title {
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 23px;
+  padding-top: 31px;
+
+  font-family: "BloggerSans-Bold", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 24px;
+  color: @special-orange;
+}
+
+.directions__description {
+  margin-top: 20px;
+  margin-bottom: 0;
+  margin-left: 23px;
+  padding-right: 50px;
+
+  font-family: "BloggerSans-Light", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 22px;
+  color: @special-grey;
+}
+
+.directions__list {
+  margin-top: 60px;
+  padding: 0;
+  list-style: none;
+}
+
+.directions-country {
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.directions-country__image {
+  position: relative;
+  border-radius: 10px;
+  z-index: 0;
+}
+
+.directions-country__flag {
+  position: absolute;
+  top: 85px;
+  left: 25px;
+  display: block;
+  width: 35px;
+  height: 24px;
+  z-index: 5;
+}
+
+.thai-flag {
+  background-image: url("../../img/flags05@1x.png");
+  background-repeat: no-repeat;
+  background-position: -80px 0;
+}
+
+.france-flag {
+  background-image: url("../../img/flags05@1x.png");
+  background-repeat: no-repeat;
+  background-position: -120px -28px;
+}
+
+.czech-flag {
+  background-image: url("../../img/flags05@1x.png");
+  background-repeat: no-repeat;
+  background-position: -40px -28px;
+}
+
+.directions-country__info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  position: relative;
+  height: 89px;
+  margin-top: -16px;
+  padding: 25px 23px 5px;
+
+  border-radius: 10px;
+  background-color: @basic-white;
+  z-index: 2;
+  box-sizing: border-box;
+}
+
+.directions-country__title {
+  width: 50%;
+  margin: 0;
+
+  font-family: "BloggerSans-Bold", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 21px;
+  color: @basic-black;
+}
+
+.directions-country__count {
+  width: 50%;
+
+  font-family: "BloggerSans-Medium", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  color: fade(#161c35, 30%);
+  text-align: right;
+}
+
+.directions-country__description {
+  width: 50%;
+  margin: 0;
+
+  font-family: "BloggerSans-Medium", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
+  color: fade(@special-grey, 30%);
+}
+
+.directions__to-all {
+  position: relative;
+  width: 270px;
+  height: 62px;
+  margin-top: 12px;
+  padding: 0 24px;
+
+  font-size: 18px;
+  line-height: 62px;
+  color: @basic-blue-light;
+  text-align: justify;
+  text-transform: none;
+
+  background-color: @basic-yellow;
+  border-radius: 10px;
+  box-sizing: border-box;
+
+  &::after {
+    content: url("../../img/show-more-triangle.svg");
+    position: absolute;
+    top: 1px;
+    right: 22px;
+  }
+}

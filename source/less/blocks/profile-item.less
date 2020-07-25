@@ -1,0 +1,238 @@
+.profile-item {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin-bottom: 11px;
+
+  background-color: @basic-white;
+
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.16);
+}
+
+.catalog-companions__list .profile-item {
+  padding-top: 12px;
+  padding-bottom: 20px;
+
+  border-radius: 15px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 54px;
+    left: 68px;
+    display: block;
+    width: 31px;
+    height: 31px;
+
+    border-radius: 50%;
+
+    background-color: #e2e5f2;
+    background-image: url("../../img/heart.svg");
+    background-size: 13px 11px;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+
+.profile-item.like-active {
+  &::after {
+    background-color: #f9eaea;
+    background-image: url("../../img/heart-active.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+
+.profile-item__info {
+  display: flex;
+  margin-left: 19px;
+}
+
+.profile-item__image {
+  width: 270px;
+  height: 270px;
+
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  overflow: hidden;
+}
+
+.catalog-companions__list .profile-item__image {
+  position: relative;
+  width: 70px;
+  height: 70px;
+  margin-top: 3px;
+
+  border-radius: 50%;
+}
+
+.profile-item__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: -1px;
+  padding-top: 25px;
+  padding-bottom: 21px;
+
+  background-color: @basic-white;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.profile-item__name {
+  position: relative;
+  margin: 0;
+  padding: 0;
+
+  font-family: "BloggerSans-Bold", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 21px;
+  text-align: center;
+  color: @basic-blue-light;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: calc(45% - 6px / 2 - 71px);
+    top: calc(50% - 6px / 2);
+    display: block;
+    width: 6px;
+    height: 6px;
+
+    border-radius: 50%;
+  }
+}
+
+.catalog-companions__list .profile-item__name {
+  position: static;
+  width: 90px;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 14px;
+
+  text-align: left;
+
+  &::before {
+    display: none;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    right: 22px;
+    top: 23px;
+    display: block;
+    width: 6px;
+    height: 6px;
+
+    border-radius: 50%;
+  }
+}
+
+.companion-offline .profile-item__name {
+  &::before {
+    background-color: #f97676;
+  }
+
+  &::after {
+    background-color: #f97676;
+  }
+}
+
+.companion-online .profile-item__name {
+  &::before {
+    background-color: #81e31e;
+  }
+
+  &::after {
+    background-color: #81e31e;
+  }
+}
+
+.profile-item__distance {
+  display: block;
+  margin-top: 9px;
+
+  font-size: 14px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: @basic-blue;
+}
+
+.profile-item__interests {
+  width: 188px;
+  margin-top: 16px;
+  margin-bottom: 0;
+
+  line-height: 18px;
+  color: @special-grey;
+  text-align: center;
+}
+
+.catalog-companions__list .profile-item__interests {
+  margin-top: 11px;
+  margin-left: 25px;
+
+  text-align: left;
+}
+
+.profile-item__request {
+  position: absolute;
+  width: 100%;
+  top: 260px;
+  left: 0;
+  z-index: 2;
+}
+
+.catalog-companions__list .profile-item__request {
+  position: relative;
+  top: auto;
+  left: auto;
+  margin-top: 22px;
+
+  border-top: 1px solid #edeff6;
+
+  &::before {
+    content: "хочет посетить:";
+    position: absolute;
+    top: -9px;
+    left: 18px;
+    padding: 0 11px;
+
+    font-family: "BloggerSans", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 16px;
+    color: @special-grey;
+
+    background-color: @basic-white;
+  }
+}
+
+.profile-item__properties {
+  margin-top: 14px;
+}
+
+.catalog-companions__list .profile-item__properties {
+  border-top: 1px solid #edeff6;
+}
+
+.profile-item__invite {
+  align-self: center;
+  width: 230px;
+  height: 40px;
+  margin-top: 15px;
+
+  font-size: 17px;
+  line-height: 40px;
+  text-align: center;
+  color: @basic-blue;
+
+  background: @basic-yellow;
+
+  border-radius: 25px;
+}
