@@ -1,3 +1,3 @@
 let bodyPage = document.querySelector('body');
 
-  bodyPage.classList.remove('no-js');
+bodyPage.classList.remove('no-js');
