@@ -7,6 +7,11 @@
   list-style: none;
 }
 
+.sign-up__contact.contact-list {
+  flex-direction: column;
+  align-self: flex-start;
+}
+
 .contact-list__item {
   display: inline-block;
 }
@@ -41,6 +46,15 @@
 
     background-color: @special-orange;
     border-radius: 50%;
+  }
+}
+
+.sign-up__contact .contact-list__link {
+  line-height: 22px;
+  color: @basic-yellow;
+
+  &::before {
+    margin-right: 12px;
   }
 }
 
