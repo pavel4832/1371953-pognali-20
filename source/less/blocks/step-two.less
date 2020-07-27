@@ -1,0 +1,54 @@
+.step-two {
+  padding-bottom: 7px;
+}
+
+.step-two__choosing {
+  margin-top: 20px;
+  margin-bottom: 0;
+}
+
+.step-two__hidden {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.step-two__add-btn {
+  position: relative;
+  width: 220px;
+  height: 42px;
+  margin-top: 22px;
+  padding-left: 10px;
+
+  font-family: "BloggerSans-Medium", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: @basic-blue-light;
+  text-align: left;
+
+  background-color: #edeff6;
+  background-image: url("../img/icon-plus.svg");
+  background-repeat: no-repeat;
+  background-position: 192px 13px;
+
+  border: none;
+  border-radius: 4px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 17px;
+    right: 49px;
+    width: 8px;
+    height: 8px;
+
+    border: 1px solid #cbced9;
+    box-sizing: border-box;
+    border-radius: 50%;
+  }
+}

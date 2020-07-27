@@ -71,6 +71,14 @@
   height: 45px;
 }
 
+.profile .level {
+  width: 100px;
+  height: 100px;
+
+  background-image: url("../img/subtract-profile.svg");
+  background-repeat: no-repeat;
+}
+
 .level__wrapper {
   display: flex;
   flex-direction: column;
@@ -109,6 +117,26 @@
   }
 }
 
+.profile .level__number {
+  margin-top: 0;
+
+  font-size: 38px;
+  line-height: 38px;
+  text-align: center;
+  color: #161c35;
+
+  &::after {
+    content: "";
+    display: block;
+    width: 51px;
+    height: 1px;
+    margin-top: 2px;
+    margin-left: -2px;
+
+    background-color: fade(@special-grey, 30%);
+  }
+}
+
 .level__text {
   font-family: "BloggerSans", "Arial", sans-serif;
   font-style: normal;
@@ -116,4 +144,13 @@
   font-size: 14px;
   line-height: 14px;
   color: @basic-white;
+}
+
+.profile .level__text {
+  margin-top: 5px;
+
+  font-size: 18px;
+  line-height: 18px;
+  text-align: center;
+  color: @special-grey;
 }

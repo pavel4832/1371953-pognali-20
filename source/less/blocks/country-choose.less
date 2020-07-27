@@ -1,0 +1,67 @@
+.country-choose.open-choose {
+  display: block;
+
+  z-index: 10;
+}
+
+.country-choose {
+  border-radius: 4px;
+}
+
+.country-choose__header {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 11px;
+  padding-bottom: 10px;
+
+  background-color: @basic-blue-light;
+
+  border: none;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+}
+
+.country-choose__title {
+  margin-left: 17px;
+
+  font-family: "BloggerSans-Medium", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: @basic-white;
+}
+
+.country-choose__close-btn {
+  width: 20px;
+  height: 20px;
+  margin-right: 12px;
+
+  background-color: transparent;
+  background-image: url("../img/small-cross-white.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+
+  border: none;
+}
+
+.country-choose__list {
+  width: 100%;
+  margin-top: 0;
+  padding-top: 15px;
+  padding-left: 18px;
+
+  background-color: @basic-white;
+
+  border: 2px solid #cbced9;
+  border-top: none;
+  border-bottom-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+  box-sizing: border-box;
+}
+
+.country-choose__list .country-list__item {
+  margin-bottom: 4px;
+}
