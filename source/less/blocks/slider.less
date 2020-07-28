@@ -1,0 +1,24 @@
+.slider {
+  display: flex;
+  justify-content: space-between;
+  width: 47px;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.slider__button {
+  display: inline-block;
+  width: 5px;
+  height: 5px;
+
+  background-color: fade(@basic-blue-light, 30%);
+  border: none;
+  border-radius: 50%;
+}
+
+.slider-active .slider__button {
+  background-color: @basic-blue-light;
+}

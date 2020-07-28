@@ -7,6 +7,11 @@
   list-style: none;
 }
 
+.sign-up__contact.contact-list {
+  flex-direction: column;
+  align-self: flex-start;
+}
+
 .contact-list__item {
   display: inline-block;
 }
@@ -44,26 +49,35 @@
   }
 }
 
+.sign-up__contact .contact-list__link {
+  line-height: 22px;
+  color: @basic-yellow;
+
+  &::before {
+    margin-right: 12px;
+  }
+}
+
 .top-tell {
   &::before {
-    content: url("../../img/contacts-phone.svg");
+    content: url("../img/contacts-phone.svg");
   }
 }
 
 .top-mail {
   &::before {
-    content: url("../../img/contacts-mail.svg");
+    content: url("../img/contacts-mail.svg");
   }
 }
 
 .icon-tel {
   &::before {
-    content: url("../../img/topmenu-phone.svg");
+    content: url("../img/topmenu-phone.svg");
   }
 }
 
 .icon-mail {
   &::before {
-    content: url("../../img/topmenu-mail.svg");
+    content: url("../img/topmenu-mail.svg");
   }
 }

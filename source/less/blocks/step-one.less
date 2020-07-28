@@ -1,0 +1,116 @@
+.step-one__companions {
+  margin-top: 22px;
+}
+
+.step-one__duration {
+  margin-top: 20px;
+  margin-bottom: 18px;
+}
+
+.step-one__label {
+  display: flex;
+  justify-content: space-between;
+
+  font-family: "BloggerSans-Medium", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 16px;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  color: @basic-blue-light;
+}
+
+.step-one__unit {
+  margin-right: 8px;
+
+  text-align: right;
+  letter-spacing: 0.07em;
+  color: fade(@basic-blue-light, 30%);
+}
+
+.step-one__button-group {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 220px;
+  height: 43px;
+  margin-top: 10px;
+
+  border: 1px solid #cbced9;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+
+.step-one__button {
+  width: 14px;
+  height: 14px;
+
+  background-color: @basic-white;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  border: none;
+}
+
+.button-decrease {
+  margin-left: 14px;
+
+  background-image: url("../img/qty-minus-mobile.svg");
+}
+
+.button-increase {
+  margin-right: 14px;
+
+  background-image: url("../img/qty-plus-mobile.svg");
+}
+
+.step-one__input {
+  font-family: "BloggerSans-Medium", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14.86px;
+  line-height: 14px;
+  text-transform: uppercase;
+  text-align: center;
+  color: @basic-blue-light;
+
+  border: none;
+}
+
+.step-one__children {
+  font-family: "BloggerSans", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 15px;
+  color: @basic-blue-light;
+
+  &::before {
+    content: "";
+    display: inline-block;
+    width: 26px;
+    height: 26px;
+    margin-right: 13px;
+
+    text-align: center;
+    line-height: 18px;
+    vertical-align: -40%;
+
+    background-color: @basic-white;
+
+    border: 1px solid #cbced9;
+    box-sizing: border-box;
+    border-radius: 4px;
+  }
+
+  .step-one__checkbox:checked + &::before {
+    content: url("../img/tick-small.svg");
+
+    vertical-align: 20%;
+  }
+}
+
+.step-one__calendar {
+  margin-top: 22px;
+}

@@ -1,0 +1,102 @@
+.calendar-form .step-one__button-group {
+  border-radius: 0;
+  border-left: none;
+  border-right: none;
+}
+
+.calendar-form .step-one__input {
+  font-family: "BloggerSans-Bold", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 20px;
+  text-transform: none;
+  color: @basic-blue-light;
+}
+
+.calendar-form .step-one__button {
+  width: 15px;
+  height: 21px;
+
+  opacity: 0.3;
+}
+
+.step-one__button--left {
+  background-image: url("../img/month-arrow-left.svg");
+}
+
+.step-one__button--right {
+  background-image: url("../img/month-arrow-right.svg");
+}
+
+.calendar-form__table {
+  margin-top: 16px;
+
+  border-collapse: collapse;
+}
+
+.calendar-form__head {
+  width: 31px;
+  height: 31px;
+  padding: 0;
+
+  font-family: "BloggerSans", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: @special-grey;
+}
+
+.weekend {
+  color: #ff5c23;
+}
+
+.calendar-form__columns {
+  width: 31px;
+  height: 31px;
+  padding: 0;
+
+  text-align: center;
+
+  background-color: @basic-white;
+
+  border: 1px solid #cbced9;
+  box-sizing: border-box;
+}
+
+.enable-day {
+  background-color: #edeff6;
+}
+
+.choosing-day {
+  background-color: @basic-blue-light;
+}
+
+.start-day {
+  border: 2px solid #ff5c23;
+}
+
+.calendar-form__link {
+  font-family: "BloggerSans", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  color: fade(@special-grey, 30%);
+}
+
+.enable-day .calendar-form__link {
+  font-family: "BloggerSans-Medium", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  color: @basic-blue-light;
+}
+
+.choosing-day .calendar-form__link {
+  font-family: "BloggerSans-Medium", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  color: @basic-white;
+}

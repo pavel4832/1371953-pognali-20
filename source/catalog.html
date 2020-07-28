@@ -5,8 +5,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.8">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="preload" href="fonts/Bloggersans.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="preload" href="fonts/Bloggersans.woff" as="font" type="font/woff" crossorigin>
+    <link rel="preload" href="fonts/bloggersans.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/bloggersans.woff" as="font" type="font/woff" crossorigin>
     <link rel="preload" href="fonts/bloggersans-medium.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="fonts/bloggersans-medium.woff" as="font" type="font/woff" crossorigin>
     <link rel="preload" href="fonts/bloggersans-bold.woff2" as="font" type="font/woff2" crossorigin>
@@ -53,11 +53,11 @@
 
           <ul class="main-nav__list contact-list">
             <li class="contact-list__item">
-              <a href="tel:88005558628" class="contact-list__tell top-tell">8 800 555-86-28</a>
+              <a href="tel:88005558628" class="contact-list__link top-tell">8 800 555-86-28</a>
             </li>
 
             <li class="contact-list__item">
-              <a href="mailto:mail@htmlacademy.ru" class="contact-list__mail top-mail">mail@htmlacademy.ru</a>
+              <a href="mailto:mail@htmlacademy.ru" class="contact-list__link top-mail">mail@htmlacademy.ru</a>
             </li>
           </ul>
 
@@ -83,221 +83,243 @@
     </header>
 
     <main class="catalog-body__main">
-      <section class="catalog-filter">
-        <div class="catalog-filter__wrapper">
+      <section class="catalog-filter js-filter">
+        <div class="container">
           <h2 class="catalog-filter__title">Фильтрация по странам:</h2>
 
-          <button class="catalog-filter__close-btn icon-btn" type="button" aria-label="Свернуть"></button>
+          <button class="catalog-filter__btn js-filter-toggle" type="button">
+            <span class="visually-hidden js-filter-label">Открыть фильтр</span>
+          </button>
 
-          <ul class="catalog-filter__list compass-list">
-            <li class="compass-list__item">
-              <a href="#" class="compass-list__link link-active">европа</a>
-            </li>
+          <div class="catalog-filter__wrapper">
+            <div class="container">
+              <ul class="catalog-filter__list compass-list">
+                <li class="compass-list__item">
+                  <a href="#" class="compass-list__link link-active">европа</a>
+                </li>
 
-            <li class="compass-list__item">
-              <a href="#" class="compass-list__link">азия</a>
-            </li>
+                <li class="compass-list__item">
+                  <a href="#" class="compass-list__link">азия</a>
+                </li>
 
-            <li class="compass-list__item">
-              <a href="#" class="compass-list__link">америка</a>
-            </li>
+                <li class="compass-list__item">
+                  <a href="#" class="compass-list__link">америка</a>
+                </li>
 
-            <li class="compass-list__item">
-              <a href="#" class="compass-list__link">острова</a>
-            </li>
-          </ul>
+                <li class="compass-list__item">
+                  <a href="#" class="compass-list__link">острова</a>
+                </li>
+              </ul>
 
-          <table class="catalog-filter__table alphabet">
-            <tr class="alphabet__rows">
-              <td class="alphabet__columns choosing-letter"><a href="" class="alphabet__link">а</a></td>
-              <td class="alphabet__columns"><a href="" class="alphabet__link">б</a></td>
-              <td class="alphabet__columns"><a href="" class="alphabet__link">в</a></td>
-              <td class="alphabet__columns"><a href="" class="alphabet__link">г</a></td>
-              <td class="alphabet__columns"><a href="" class="alphabet__link">д</a></td>
-            </tr>
+              <table class="catalog-filter__table alphabet">
+                <tr class="alphabet__rows">
+                  <td class="alphabet__columns choosing-letter"><a href="" class="alphabet__link">а</a></td>
+                  <td class="alphabet__columns"><a href="#" class="alphabet__link">б</a></td>
+                  <td class="alphabet__columns"><a href="#" class="alphabet__link">в</a></td>
+                  <td class="alphabet__columns"><a href="#" class="alphabet__link">г</a></td>
+                  <td class="alphabet__columns"><a href="#" class="alphabet__link">д</a></td>
+                </tr>
 
-            <tr class="alphabet__rows">
-              <td class="alphabet__columns"><a href="" class="alphabet__link">е</a></td>
-              <td class="alphabet__columns"><a href="" class="alphabet__link">з</a></td>
-              <td class="alphabet__columns"><a href="" class="alphabet__link">и</a></td>
-              <td class="alphabet__columns"><a href="" class="alphabet__link">к</a></td>
-              <td class="alphabet__columns"><a href="" class="alphabet__link">л</a></td>
-            </tr>
+                <tr class="alphabet__rows">
+                  <td class="alphabet__columns"><a href="#" class="alphabet__link">е</a></td>
+                  <td class="alphabet__columns"><a href="#" class="alphabet__link">з</a></td>
+                  <td class="alphabet__columns"><a href="#" class="alphabet__link">и</a></td>
+                  <td class="alphabet__columns"><a href="#" class="alphabet__link">к</a></td>
+                  <td class="alphabet__columns"><a href="#" class="alphabet__link">л</a></td>
+                </tr>
 
-            <tr class="alphabet__rows">
-              <td class="alphabet__columns"><a href="" class="alphabet__link">м</a></td>
-              <td class="alphabet__columns"><a href="" class="alphabet__link">н</a></td>
-              <td class="alphabet__columns"><a href="" class="alphabet__link">о</a></td>
-              <td class="alphabet__columns"><a href="" class="alphabet__link">п</a></td>
-              <td class="alphabet__columns"><a href="" class="alphabet__link">р</a></td>
-            </tr>
+                <tr class="alphabet__rows">
+                  <td class="alphabet__columns"><a href="#" class="alphabet__link">м</a></td>
+                  <td class="alphabet__columns"><a href="#" class="alphabet__link">н</a></td>
+                  <td class="alphabet__columns"><a href="#" class="alphabet__link">о</a></td>
+                  <td class="alphabet__columns"><a href="#" class="alphabet__link">п</a></td>
+                  <td class="alphabet__columns"><a href="#" class="alphabet__link">р</a></td>
+                </tr>
 
-            <tr class="alphabet__rows">
-              <td class="alphabet__columns"><a href="" class="alphabet__link">с</a></td>
-              <td class="alphabet__columns"><a href="" class="alphabet__link">т</a></td>
-              <td class="alphabet__columns"><a href="" class="alphabet__link">у</a></td>
-              <td class="alphabet__columns"><a href="" class="alphabet__link">ф</a></td>
-              <td class="alphabet__columns"><a href="" class="alphabet__link">х</a></td>
-            </tr>
+                <tr class="alphabet__rows">
+                  <td class="alphabet__columns"><a href="#" class="alphabet__link">с</a></td>
+                  <td class="alphabet__columns"><a href="#" class="alphabet__link">т</a></td>
+                  <td class="alphabet__columns"><a href="#" class="alphabet__link">у</a></td>
+                  <td class="alphabet__columns"><a href="#" class="alphabet__link">ф</a></td>
+                  <td class="alphabet__columns"><a href="#" class="alphabet__link">х</a></td>
+                </tr>
 
-            <tr class="alphabet__rows">
-              <td class="alphabet__columns"><a href="" class="alphabet__link">ч</a></td>
-              <td class="alphabet__columns"><a href="" class="alphabet__link">ш</a></td>
-              <td class="alphabet__columns"><a href="" class="alphabet__link">э</a></td>
-              <td class="alphabet__columns"><a href="" class="alphabet__link">ю</a></td>
-              <td class="alphabet__columns"><a href="" class="alphabet__link">я</a></td>
-            </tr>
-          </table>
+                <tr class="alphabet__rows">
+                  <td class="alphabet__columns"><a href="#" class="alphabet__link">ч</a></td>
+                  <td class="alphabet__columns"><a href="#" class="alphabet__link">ш</a></td>
+                  <td class="alphabet__columns"><a href="#" class="alphabet__link">э</a></td>
+                  <td class="alphabet__columns"><a href="#" class="alphabet__link">ю</a></td>
+                  <td class="alphabet__columns"><a href="#" class="alphabet__link">я</a></td>
+                </tr>
+              </table>
 
-          <ul class="catalog-filter__list country-list">
-            <li class="country-list__item">
-              <a href="" class="country-list__link">Австралия</a>
-            </li>
+              <ul class="catalog-filter__list country-list">
+                <li class="country-list__item">
+                  <a href="" class="country-list__link">Австралия</a>
+                </li>
 
-            <li class="country-list__item">
-              <a href="" class="country-list__link">Австрия</a>
-            </li>
+                <li class="country-list__item">
+                  <a href="" class="country-list__link">Австрия</a>
+                </li>
 
-            <li class="country-list__item">
-              <a href="" class="country-list__link">Азербайджан</a>
-            </li>
+                <li class="country-list__item">
+                  <a href="" class="country-list__link">Азербайджан</a>
+                </li>
 
-            <li class="country-list__item">
-              <a href="" class="country-list__link">Албания</a>
-            </li>
+                <li class="country-list__item">
+                  <a href="" class="country-list__link">Албания</a>
+                </li>
 
-            <li class="country-list__item">
-              <a href="" class="country-list__link">Алжир</a>
-            </li>
+                <li class="country-list__item">
+                  <a href="" class="country-list__link">Алжир</a>
+                </li>
 
-            <li class="country-list__item">
-              <a href="" class="country-list__link">Ангола</a>
-            </li>
+                <li class="country-list__item">
+                  <a href="" class="country-list__link">Ангола</a>
+                </li>
 
-            <li class="country-list__item">
-              <a href="" class="country-list__link">Андора</a>
-            </li>
+                <li class="country-list__item">
+                  <a href="" class="country-list__link">Андора</a>
+                </li>
 
-            <li class="country-list__item">
-              <a href="" class="country-list__link">Антигуа и Барбуда</a>
-            </li>
+                <li class="country-list__item">
+                  <a href="" class="country-list__link">Антигуа и Барбуда</a>
+                </li>
 
-            <li class="country-list__item">
-              <a href="" class="country-list__link">Аргентина</a>
-            </li>
+                <li class="country-list__item">
+                  <a href="" class="country-list__link">Аргентина</a>
+                </li>
 
-            <li class="country-list__item">
-              <a href="" class="country-list__link">Армения</a>
-            </li>
+                <li class="country-list__item">
+                  <a href="" class="country-list__link">Армения</a>
+                </li>
 
-            <li class="country-list__item">
-              <a href="" class="country-list__link">Афганистан</a>
-            </li>
-          </ul>
+                <li class="country-list__item">
+                  <a href="" class="country-list__link">Афганистан</a>
+                </li>
+              </ul>
 
-          <button class="catalog-filter__close-btn button" type="button">свернуть</button>
+              <button class="catalog-filter__close-btn button js-filter-close" type="button">свернуть</button>
+            </div>
+          </div>
         </div>
       </section>
 
       <section class="catalog-search">
-        <div class="catalog-search__wrapper">
-          <h2 class="catalog-search__title">Подберите идеального попутчика</h2>
+        <div class="container">
+          <div class="catalog-search__wrapper">
+            <h2 class="catalog-search__title">Подберите идеального попутчика</h2>
 
-          <form class="catalog-search__form search-form" action="https://echo.htmlacademy.ru" method="get">
-            <fieldset class="search-form__hobby">
-              <legend class="search-form__legend">хобби</legend>
+            <form class="catalog-search__form search-form" action="https://echo.htmlacademy.ru" method="get">
+              <fieldset class="search-form__field">
+                <legend class="search-form__legend">хобби</legend>
 
-              <button class="search-form__toggle" type="button" aria-label="развернуть"></button>
-            </fieldset>
-
-            <fieldset class="search-form__music">
-              <legend class="search-form__legend">музыка</legend>
-
-              <button class="search-form__toggle close-arrow" type="button" aria-label="свернуть"></button>
-
-              <ul class="search-form__music-list">
-                <li class="search-form__music-item">
-                  <input id="rock" class="search-form__input-music" type="checkbox" name="rock" checked>
-
-                  <label for="rock">Тяжелый рок</label>
-                </li>
-                <li class="search-form__music-item">
-                  <input id="rap" class="search-form__input-music" type="checkbox" name="rap" checked>
-
-                  <label for="rap">Русский рэп</label>
-                </li>
-                <li class="search-form__music-item">
-                  <input id="dance" class="search-form__input-music" type="checkbox" name="dance">
-
-                  <label for="dance">Евроденс</label>
-                </li>
-              </ul>
-            </fieldset>
-
-            <fieldset class="search-form__eat">
-              <legend class="search-form__legend">еда</legend>
-
-              <button class="search-form__toggle" type="button" aria-label="развернуть"></button>
-            </fieldset>
-
-            <fieldset class="search-form__transport transport-set">
-              <legend class="search-form__legend">транспорт</legend>
-
-              <button class="search-form__toggle close-arrow" type="button" aria-label="свернуть"></button>
-
-              <ul class="transport-set__list">
-                <li class="transport-set__item transport-air transport-enable">
-                  <label class="visually-hidden" for="air">Самолет</label>
-                  <input id="air" type="checkbox" class="transport-set__choose visually-hidden" checked>
-                </li>
-
-                <li class="transport-set__item transport-bus transport-enable">
-                  <label class="visually-hidden" for="bus">Автобус</label>
-                  <input id="bus" type="checkbox" class="transport-set__choose visually-hidden" checked>
-                </li>
-
-                <li class="transport-set__item transport-bicycle">
-                  <label class="visually-hidden" for="bike">Велосипед</label>
-                  <input id="bike" type="checkbox" class="transport-set__choose visually-hidden">
-                </li>
-
-                <li class="transport-set__item transport-walk transport-enable">
-                  <label class="visually-hidden" for="walk">Пешком</label>
-                  <input id="walk" type="checkbox" class="transport-set__choose visually-hidden" checked>
-                </li>
-              </ul>
-            </fieldset>
-
-            <fieldset class="search-form__level search-level">
-              <legend class="search-form__legend">левел</legend>
-
-              <button class="search-form__toggle close-arrow" type="button" aria-label="свернуть"></button>
-
-              <div class="search-level__range range">
-                <div class="range__controls">
-                  <div class="range__levels levels">
-                    <label class="levels__min" aria-label="минимальный уровень">
-                      <input type="text" name="min-price" value="30">
-                    </label>
-
-                    <label class="levels__max" aria-label="максимальный уровень">
-                      <input type="text" name="max-price" value="100">
-                    </label>
-                  </div>
-
-                  <div class="range__scale">
-                    <div class="range__bar"></div>
-                  </div>
-
-                  <a class="range__toggle toggle-min" href="#" aria-label="Установить минимальный уровень"></a>
-
-                  <a class="range__toggle toggle-max" href="#" aria-label="Установить максимальный уровень"></a>
+                <div class="search-form__wrapper">
+                  <button class="search-form__toggle js-search-toggle" type="button" aria-label="развернуть"></button>
                 </div>
-              </div>
-            </fieldset>
+              </fieldset>
 
-            <button class="search-form__submit button" type="submit">показать</button>
-          </form>
+              <fieldset class="search-form__field">
+                <legend class="search-form__legend">музыка</legend>
+
+                <div class="search-form__wrapper">
+                  <button class="search-form__toggle js-search-toggle close-arrow" type="button" aria-label="свернуть"></button>
+
+                  <ul class="search-form__list music-list">
+                    <li class="music-list-item">
+                      <input id="rock" class="music-list__input visually-hidden" type="checkbox" name="rock" checked>
+
+                      <label for="rock" class="music-list__label">Тяжелый рок</label>
+                    </li>
+                    <li class="music-list-item">
+                      <input id="rap" class="music-list__input visually-hidden" type="checkbox" name="rap" checked>
+
+                      <label for="rap" class="music-list__label">Русский рэп</label>
+                    </li>
+                    <li class="music-list-item">
+                      <input id="dance" class="music-list__input visually-hidden" type="checkbox" name="dance">
+
+                      <label for="dance" class="music-list__label">Евроденс</label>
+                    </li>
+                  </ul>
+                </div>
+              </fieldset>
+
+              <fieldset class="search-form__field">
+                <legend class="search-form__legend">еда</legend>
+
+                <div class="search-form__wrapper">
+                  <button class="search-form__toggle js-search-toggle" type="button" aria-label="развернуть"></button>
+                </div>
+              </fieldset>
+
+              <fieldset class="search-form__field">
+                <legend class="search-form__legend">транспорт</legend>
+
+                <div class="search-form__wrapper">
+                  <button class="search-form__toggle js-search-toggle close-arrow" type="button" aria-label="свернуть"></button>
+
+                  <ul class="search-form__list transport-list">
+                    <li class="transport-list__item">
+                      <input id="air" type="checkbox" class="transport-list__choose visually-hidden" checked>
+
+                      <label class="transport-list__icon transport-air" for="air" aria-label="Самолет"></label>
+                    </li>
+
+                    <li class="transport-list__item">
+                      <input id="bus" type="checkbox" class="transport-list__choose visually-hidden" checked>
+
+                      <label class="transport-list__icon transport-bus" for="bus" aria-label="Автобус"></label>
+                    </li>
+
+                    <li class="transport-list__item">
+                      <input id="bike" type="checkbox" class="transport-list__choose visually-hidden">
+
+                      <label class="transport-list__icon transport-bicycle" for="bike" aria-label="Велосипед"></label>
+                    </li>
+
+                    <li class="transport-list__item">
+                      <input id="walk" type="checkbox" class="transport-list__choose visually-hidden" checked>
+
+                      <label class="transport-list__icon transport-walk" for="walk" aria-label="Пешком"></label>
+                    </li>
+                  </ul>
+                </div>
+              </fieldset>
+
+              <fieldset class="search-form__field search-level">
+                <legend class="search-form__legend">левел</legend>
+
+                <div class="search-form__wrapper">
+                  <button class="search-form__toggle js-search-toggle close-arrow" type="button" aria-label="свернуть"></button>
+
+                  <div class="search-level__range range">
+                    <div class="range__levels">
+                      <label aria-label="минимальный уровень">
+                        <input class="range__input range__min" type="text" name="min-price" value="30">
+                      </label>
+
+                      <label aria-label="максимальный уровень">
+                        <input class="range__input range__max" type="text" name="max-price" value="100">
+                      </label>
+                    </div>
+
+                    <div class="range__controls">
+                      <div class="range__scale">
+                        <div class="range__bar"></div>
+                      </div>
+
+                      <a class="range__toggle toggle-min" href="#" aria-label="Установить минимальный уровень"></a>
+
+                      <a class="range__toggle toggle-max" href="#" aria-label="Установить максимальный уровень"></a>
+                    </div>
+                  </div>
+                </div>
+              </fieldset>
+
+              <button class="search-form__submit button" type="submit">показать</button>
+            </form>
+          </div>
         </div>
       </section>
 
@@ -611,5 +633,6 @@
 
     <script src="js/script-no-js.js"></script>
     <script src="js/open-menu.js"></script>
+    <script src="js/open-filter.js"></script>
   </body>
 </html>

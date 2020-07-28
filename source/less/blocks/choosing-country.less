@@ -1,0 +1,120 @@
+.choosing-country {
+  padding: 0;
+  list-style: none;
+}
+
+.choosing-country__item {
+  position: relative;
+  display: flex;
+  width: 100%;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 50px;
+    right: 60px;
+    width: 5px;
+    height: 10px;
+
+    background-image: url("../img/small-arrow.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+
+.choosing-country__selected {
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 17px;
+    right: -3px;
+    width: 8px;
+    height: 8px;
+
+    background-color: @basic-blue-light;
+
+    border: none;
+    border-radius: 50%;
+    z-index: 5;
+  }
+}
+
+.choosing-country__name {
+  width: 168px;
+  height: 42px;
+  margin-bottom: 23px;
+  padding-left: 10px;
+  padding-right: 40px;
+
+  font-family: "BloggerSans-Medium", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 42px;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  color: @basic-blue-light;
+
+  border: 1px solid #cbced9;
+  box-sizing: border-box;
+  border-radius: 4px;
+
+  appearance: none;
+  overflow: hidden;
+}
+
+.choosing-country__dropdown {
+  position: absolute;
+  top: 3px;
+  right: 1px;
+  width: 51px;
+  height: 36px;
+
+  background-color: @basic-white;
+  background-image: url("../img/dropdown-form.svg");
+  background-repeat: no-repeat;
+  background-position: 25px 14px;
+  background-size: 11px 11px;
+
+  border: none;
+  opacity: 0.3;
+}
+
+.choosing-country__flag {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 53px;
+  height: 42px;
+
+  border: 1px solid #cbced9;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+
+.choosing-country__flag-img {
+  display: block;
+  width: 35px;
+  height: 24px;
+
+  box-sizing: border-box;
+}
+
+.choosing-country__close-btn {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  width: 21px;
+  height: 21px;
+
+  background-color: #edeff6;
+  background-image: url("../img/small-cross-form.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+
+  border: none;
+  border-radius: 50%;
+}

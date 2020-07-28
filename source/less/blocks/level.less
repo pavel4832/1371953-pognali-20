@@ -30,32 +30,32 @@
 }
 
 .level--firsova {
-  background-image: url("../../img/subtract-1.svg");
+  background-image: url("../img/subtract-1.svg");
   background-repeat: no-repeat;
 }
 
 .catalog-companions__list .level--firsova {
-  background-image: url("../../img/subtract-firsova.svg");
+  background-image: url("../img/subtract-firsova.svg");
   background-repeat: no-repeat;
 }
 
 .level--demin {
-  background-image: url("../../img/subtract-2.svg");
+  background-image: url("../img/subtract-2.svg");
   background-repeat: no-repeat;
 }
 
 .catalog-companions__list .level--demin {
-  background-image: url("../../img/subtract-demin.svg");
+  background-image: url("../img/subtract-demin.svg");
   background-repeat: no-repeat;
 }
 
 .catalog-companions__list .level--smolov {
-  background-image: url("../../img/subtract-smolov.svg");
+  background-image: url("../img/subtract-smolov.svg");
   background-repeat: no-repeat;
 }
 
 .catalog-companions__list .level--rogovay {
-  background-image: url("../../img/subtract-rogovay.svg");
+  background-image: url("../img/subtract-rogovay.svg");
   background-repeat: no-repeat;
 }
 
@@ -69,6 +69,14 @@
 .catalog-body__main .level {
   width: 45px;
   height: 45px;
+}
+
+.profile .level {
+  width: 100px;
+  height: 100px;
+
+  background-image: url("../img/subtract-profile.svg");
+  background-repeat: no-repeat;
 }
 
 .level__wrapper {
@@ -109,6 +117,26 @@
   }
 }
 
+.profile .level__number {
+  margin-top: 0;
+
+  font-size: 38px;
+  line-height: 38px;
+  text-align: center;
+  color: #161c35;
+
+  &::after {
+    content: "";
+    display: block;
+    width: 51px;
+    height: 1px;
+    margin-top: 2px;
+    margin-left: -2px;
+
+    background-color: fade(@special-grey, 30%);
+  }
+}
+
 .level__text {
   font-family: "BloggerSans", "Arial", sans-serif;
   font-style: normal;
@@ -116,4 +144,13 @@
   font-size: 14px;
   line-height: 14px;
   color: @basic-white;
+}
+
+.profile .level__text {
+  margin-top: 5px;
+
+  font-size: 18px;
+  line-height: 18px;
+  text-align: center;
+  color: @special-grey;
 }
