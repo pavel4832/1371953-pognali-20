@@ -1,19 +1,28 @@
-.page-header__wrapper {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  margin-top: -1px;
-
-  background-color: #161c35;
+.page-header {
+  background-color: @basic-blue;
   background-image: url("../img/globe-back-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position-x: center;
-  background-position-y: -74px;
+  background-position-y: 0;
+
+  box-sizing: border-box;
+
+  @media (min-width: @tablet-width) {
+    background-color: #182044;
+    background-image: url("../img/globe-back-tablet@1x.jpg");
+    background-position-y: 380px;
+  }
+}
+
+.page-header .container {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .page-header__title {
   margin: 0;
-  padding-top: 33px;
+  padding-top: 18px;
   font-family: "BloggerSans-Bold", "Arial", sans-serif;
   font-style: normal;
   font-weight: bold;
@@ -21,31 +30,80 @@
   line-height: 40px;
   text-align: center;
   color: @basic-white;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 45px;
+    padding-right: 120px;
+    padding-left: 120px;
+    font-size: 60px;
+    line-height: 70px;
+  }
 }
 
 .page-header__image {
   margin-top: 11px;
-  padding-left: 55px;
+  margin-left: 55px;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 37px;
+    margin-left: 245px;
+  }
+}
+
+.page-header__image--mobile {
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+}
+
+.page-header__image--tablet {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: inline-block;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: none;
+  }
+}
+
+.page-header__image--desktop {
+  display: none;
+
+  @media (min-width: @desktop-width) {
+    display: inline-block;
+  }
+}
+
+.page-header__review {
+  background-color: @basic-blue;
 }
 
 .page-header__login {
   position: absolute;
   bottom: -20px;
-  left: 0;
-  width: 100%;
+  left: 25px;
+  display: flex;
+  justify-content: space-between;
+  width: 270px;
   background-color: transparent;
   z-index: 5;
+
+  @media (min-width: @tablet-width) {
+    position: static;
+    display: flex;
+    justify-content: flex-end;
+    width: 48%;
+    padding-top: 37px;
+    order: -1;
+  }
 }
 
-.page-header__wrapper .container {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-.page-header__login .container {
-  display: flex;
-  flex-direction: row;
+.page-header__list.contact-list {
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
 }
 
 .form-body__header .page-header__title {

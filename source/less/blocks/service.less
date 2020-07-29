@@ -1,5 +1,10 @@
 .service {
   margin-top: -1px;
+  padding-top: 566px;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 383px;
+  }
 }
 
 .service__wrapper {
@@ -10,6 +15,13 @@
   background-repeat: no-repeat;
 
   z-index: 2;
+
+  @media (min-width: @tablet-width) {
+    padding-bottom: 89px;
+
+    background-image: url("../img/about-tablet@1x.png");
+    background-position: 384px 40px;
+  }
 }
 
 .service__wrapper .container {
@@ -31,6 +43,16 @@
     border-top-right-radius: 20px;
     z-index: -1;
   }
+
+  @media (min-width: @tablet-width) {
+    &::before {
+      top: -8px;
+      left: 40px;
+      width: 688px;
+      height: 212px;
+      border-radius: 20px;
+    }
+  }
 }
 
 .service__title {
@@ -45,6 +67,13 @@
   font-size: 24px;
   line-height: 24px;
   color: @special-orange;
+
+  @media (min-width: @tablet-width) {
+    margin-left: 34px;
+
+    font-size: 45px;
+    line-height: 45px;
+  }
 }
 
 .service__description {
@@ -59,6 +88,15 @@
   font-size: 16px;
   line-height: 22px;
   color: @basic-white;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 40px;
+    margin-left: 34px;
+    padding-right: 352px;
+
+    font-size: 28px;
+    line-height: 33px;
+  }
 }
 
 .service__action {
@@ -73,4 +111,44 @@
   font-size: 16px;
   line-height: 22px;
   color: @basic-white;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 31px;
+    margin-left: 34px;
+    padding-right: 350px;
+
+    font-size: 21px;
+    line-height: 25px;
+  }
+}
+
+.service__bth {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: inline-block;
+    position: relative;
+    width: 276px;
+    height: 80px;
+    margin-top: 54px;
+    margin-left: 34px;
+    padding-left: 32px;
+
+    font-size: 24px;
+    line-height: 80px;
+    color: @basic-blue-light;
+    text-align: justify;
+    text-transform: none;
+
+    background-color: @basic-yellow;
+    border-radius: 20px;
+    box-sizing: border-box;
+
+    &::after {
+      content: url("../img/show-more-triangle.svg");
+      position: absolute;
+      top: -2px;
+      right: 35px;
+    }
+  }
 }

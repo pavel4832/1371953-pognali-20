@@ -1,9 +1,7 @@
 .main-nav {
   margin-top: -8px;
 
-  background-color: @basic-white;
-
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: @desktop-width) {
     width: 100%;
     height: 0;
 
@@ -22,6 +20,11 @@
 
   background-color: @basic-white;
   z-index: 2;
+
+  @media (min-width: @tablet-width) {
+    align-items: start;
+    padding-top: 88px;
+  }
 }
 
 .main-nav__list {
@@ -31,6 +34,10 @@
 
 .main-nav__list.user-list {
   margin-bottom: 51px;
+
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
 }
 
 .main-nav__list.contact-list {

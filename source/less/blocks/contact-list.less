@@ -5,6 +5,12 @@
   margin: 0;
   padding: 0;
   list-style: none;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 82px;
+    padding-left: 57px;
+    flex-direction: column;
+  }
 }
 
 .sign-up__contact.contact-list {
@@ -36,6 +42,17 @@
     background-color: #121936;
     border-radius: 50%;
   }
+
+  @media (min-width: @tablet-width) {
+    font-size: 28px;
+    line-height: 28px;
+
+    &::before {
+      width: 68px;
+      height: 68px;
+      margin-right: 23px;
+    }
+  }
 }
 
 .page-header__list .contact-list__link {
@@ -61,12 +78,20 @@
 .top-tell {
   &::before {
     content: url("../img/contacts-phone.svg");
+
+    @media (min-width: @tablet-width) {
+      content: url("../img/contacts-phone-tablet.svg");
+    }
   }
 }
 
 .top-mail {
   &::before {
     content: url("../img/contacts-mail.svg");
+
+    @media (min-width: @tablet-width) {
+      content: url("../img/contacts-mail-tablet.svg");
+    }
   }
 }
 
