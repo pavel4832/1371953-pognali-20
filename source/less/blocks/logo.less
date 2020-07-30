@@ -15,38 +15,20 @@
   }
 }
 
+.page-footer__logo.logo {
+  width: auto;
+
+  @media (min-width: @tablet-width) {
+    padding-bottom: 0;
+  }
+}
+
 .logo__link {
   display: inline-block;
   margin-top: 2px;
   margin-left: -4px;
 
   vertical-align: baseline;
-}
-
-.logo__link--mobile {
-  @media (min-width: @tablet-width) {
-    display: none;
-  }
-}
-
-.logo__link--tablet {
-  display: none;
-
-  @media (min-width: @tablet-width) {
-    display: inline-block;
-  }
-
-  @media (min-width: @desktop-width) {
-    display: none;
-  }
-}
-
-.logo__link--desktop {
-  display: none;
-
-  @media (min-width: @desktop-width) {
-    display: inline-block;
-  }
 }
 
 .no-js-logo {

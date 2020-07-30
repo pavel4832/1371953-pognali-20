@@ -5,6 +5,7 @@
 }
 
 .offers__wrapper {
+  flex-grow: 1;
   display: inline-block;
   width: 200px;
   padding: 13px 5px 15px 0;
@@ -13,6 +14,12 @@
 
   border-top: 1px solid #e1e3e9;
   border-bottom: 1px solid #e1e3e9;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 17px;
+  }
 }
 
 .offers__description {
@@ -24,6 +31,11 @@
   font-size: 16px;
   line-height: 16px;
   color: @special-grey;
+
+  @media (min-width: @tablet-width) {
+    font-size: 28px;
+    line-height: 28px;
+  }
 }
 
 .offers__price {
@@ -34,6 +46,13 @@
   font-size: 16px;
   line-height: 16px;
   color: @special-grey;
+
+  @media (min-width: @tablet-width) {
+    margin-right: 29px;
+
+    font-size: 28px;
+    line-height: 28px;
+  }
 }
 
 .offers__number {
@@ -63,5 +82,17 @@
 
   &--3 {
     background-color: @basic-yellow;
+  }
+
+  @media (min-width: @tablet-width) {
+    order: -1;
+    width: 68px;
+    height: 68px;
+    margin-top: 0px;
+    margin-left: 0;
+    margin-right: 22px;
+
+    font-size: 28px;
+    line-height: 68px;
   }
 }
