@@ -11,6 +11,12 @@
     padding-left: 57px;
     flex-direction: column;
   }
+
+  @media (min-width: @desktop-width) {
+    margin-top: 0;
+    padding-left: 0;
+    flex-direction: row;
+  }
 }
 
 .sign-up__contact.contact-list {
@@ -53,6 +59,13 @@
       margin-right: 23px;
     }
   }
+
+  @media (min-width: @desktop-width) {
+    &::before {
+      width: 50px;
+      height: 50px;
+    }
+  }
 }
 
 .page-header__list .contact-list__link {
@@ -63,6 +76,20 @@
 
     background-color: @special-orange;
     border-radius: 50%;
+  }
+
+  @media (min-width: @tablet-width) {
+    &::before {
+      width: 68px;
+      height: 68px;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    &::before {
+      width: 50px;
+      height: 50px;
+    }
   }
 }
 

@@ -4,6 +4,10 @@
   @media (min-width: @tablet-width) {
     padding-bottom: 80px;
   }
+
+  @media (min-width: @desktop-width) {
+    padding-bottom: 123px;
+  }
 }
 
 .directions__wrapper {
@@ -30,6 +34,21 @@
       z-index: -1;
     }
   }
+
+  @media (min-width: @desktop-width) {
+    display: grid;
+    grid-template-rows: min-content min-content min-content;
+    grid-template-columns: 1fr 1fr;
+
+    background-position: 1092px 88px;
+
+    &::before {
+      top: 90px;
+      left: 60px;
+      width: 140px;
+      height: 140px;
+    }
+  }
 }
 
 .directions__title {
@@ -50,6 +69,15 @@
 
     font-size: 45px;
     line-height: 45px;
+  }
+
+  @media (min-width: @desktop-width) {
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 2;
+    grid-column-end: -1;
+    margin-top: 92px;
+    margin-left: 140px;
   }
 }
 
@@ -74,6 +102,16 @@
     font-size: 28px;
     line-height: 33px;
   }
+
+  @media (min-width: @desktop-width) {
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 2;
+    grid-column-end: -1;
+    margin-top: 43px;
+    margin-left: 142px;
+    padding-right: 165px;
+  }
 }
 
 .directions__list {
@@ -84,6 +122,15 @@
   @media (min-width: @tablet-width) {
     margin-top: 104px;
     margin-left: 36px;
+  }
+
+  @media (min-width: @desktop-width) {
+    grid-row-start: 1;
+    grid-row-end: -1;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    margin-top: 122px;
+    margin-left: 70px;
   }
 }
 
@@ -98,6 +145,10 @@
     min-height: 140px;
     width: 616px;
     margin-bottom: 5px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 560px;
   }
 }
 
@@ -127,6 +178,11 @@
     top: 30px;
     left: 415px;
     transform: scale(2);
+  }
+
+  @media (min-width: @desktop-width) {
+    top: 35px;
+    left: 355px;
   }
 }
 
@@ -183,6 +239,11 @@
     border-bottom-left-radius: 20px;
     border-top-right-radius: 0;
     border-bottom-right-radius: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 22px;
+    padding-left: 30px;
   }
 }
 
@@ -247,6 +308,14 @@
       background-size: 18px 20px;
     }
   }
+
+  @media (min-width: @desktop-width) {
+    margin-top: 24px;
+
+    &::before {
+      vertical-align: -35%;
+    }
+  }
 }
 
 .directions-country__description {
@@ -305,6 +374,23 @@
 
     &::after {
       right: 30px;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    grid-row-start: 3;
+    grid-row-end: -1;
+    grid-column-start: 2;
+    grid-column-end: -1;
+    width: 275px;
+    height: 80px;
+    margin-top: 85px;
+    margin-left: 143px;
+
+    line-height: 80px;
+
+    &::after {
+      right: 34px;
     }
   }
 }

@@ -8,6 +8,11 @@
     opacity: 0;
     visibility: hidden;
   }
+
+  @media (min-width: @desktop-width) {
+    margin-left: 88px;
+    margin-top: 20px;
+  }
 }
 
 .main-nav__wrapper {
@@ -25,11 +30,25 @@
     align-items: start;
     padding-top: 88px;
   }
+
+  @media (min-width: @desktop-width) {
+    flex-direction: row;
+    width: auto;
+    padding: 0;
+
+    background-color: inherit;
+
+    z-index: 1;
+  }
 }
 
 .main-nav__list {
   margin-top: 0;
   margin-bottom: 52px;
+
+  @media (min-width: @desktop-width) {
+    margin: 0;
+  }
 }
 
 .main-nav__list.user-list {
@@ -42,4 +61,14 @@
 
 .main-nav__list.contact-list {
   margin-bottom: 30px;
+
+  @media (min-width: @desktop-width) {
+    display: none;
+  }
+}
+
+.main-nav__list.social-list {
+  @media (min-width: @desktop-width) {
+    display: none;
+  }
 }
