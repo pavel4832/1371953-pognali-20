@@ -2,10 +2,18 @@
   position: relative;
   padding-bottom: 12px;
   background-color: @basic-blue;
+  background-image: none;
 
   border-bottom-left-radius: 25px;
   border-bottom-right-radius: 25px;
   z-index: 2;
+
+  @media (min-width: @tablet-width) {
+    padding-bottom: 65px;
+
+    border-bottom-left-radius: 60px;
+    border-bottom-right-radius: 60px;
+  }
 }
 
 .form-body__main {
@@ -24,4 +32,9 @@
   border-top-left-radius: 25px;
   border-top-right-radius: 25px;
   z-index: 2;
+
+  @media (min-width: @tablet-width) {
+    border-top-left-radius: 60px;
+    border-top-right-radius: 60px;
+  }
 }
