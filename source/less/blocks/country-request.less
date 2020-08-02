@@ -21,6 +21,19 @@
   align-items: flex-start;
   margin-top: 23px;
   margin-left: 10px;
+
+  @media (min-width: @tablet-width) {
+    flex-direction: row;
+    margin-top: 28px;
+    margin-left: 27px;
+  }
+
+  @media (min-width: @desktop-width) {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 0;
+    margin-left: 0;
+  }
 }
 
 .country-request__item {
@@ -36,10 +49,27 @@
 
 .catalog-companions__list .country-request__item {
   margin-bottom: 3px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 3px;
+    margin-right: 19px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 12px;
+  }
 }
 
 .catalog-companions__list .country-request__flag {
   transform: scale(0.74);
+
+  @media (min-width: @tablet-width) {
+    transform: scale(1);
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-right: 8px;
+  }
 }
 
 .country-request__name {
@@ -52,6 +82,11 @@
   line-height: 25px;
   text-transform: uppercase;
   color: @basic-blue-light;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+  }
 }
 
 .country-request__flag--sri_lanka {

@@ -108,6 +108,8 @@
         </div>
 
         <h1 class="page-header__title">Попутчики</h1>
+
+        <a href="index.html" class="page-header__button button">на главную</a>
       </div>
     </header>
 
@@ -359,7 +361,13 @@
             <article class="catalog-companions__item profile-item companion-offline like-active">
               <div class="profile-item__info">
                 <div class="profile-item__image">
-                  <img src="img/firsova-mobile@1x.jpg" width="70" height="70" alt="Фото Тани" >
+                  <picture>
+                    <source media="(min-width: 1440px)" type="image/jpg" srcset="img/firsova-desktop@1x.jpg 1x">
+
+                    <source media="(min-width: 768px)" type="image/jpg" srcset="img/firsova-tablet@1x.jpg 1x">
+
+                    <img src="img/firsova-mobile@1x.jpg" alt="Фото Тани">
+                  </picture>
                 </div>
 
                 <a href="#">
@@ -417,7 +425,7 @@
                 <div class="properties-info__level level level--firsova">
                   <b class="level__number">99</b>
 
-                  <small class="level__text visually-hidden">level</small>
+                  <small class="level__text">level</small>
                 </div>
               </div>
 
@@ -427,7 +435,13 @@
             <article class="catalog-companions__item profile-item companion-offline">
               <div class="profile-item__info">
                 <div class="profile-item__image">
-                  <img src="img/demin-mobile@1x.jpg" width="70" height="70" alt="Фото Пети" >
+                  <picture>
+                    <source media="(min-width: 1440px)" type="image/jpg" srcset="img/demin-desktop@1x.jpg 1x">
+
+                    <source media="(min-width: 768px)" type="image/jpg" srcset="img/demin-tablet@1x.jpg 1x">
+
+                    <img src="img/demin-mobile@1x.jpg" alt="Фото Пети">
+                  </picture>
                 </div>
 
                 <a href="#">
@@ -479,7 +493,7 @@
                 <div class="properties-info__level level level--demin">
                   <b class="level__number">80</b>
 
-                  <small class="level__text visually-hidden">level</small>
+                  <small class="level__text">level</small>
                 </div>
               </div>
 
@@ -489,7 +503,13 @@
             <article class="catalog-companions__item profile-item companion-offline">
               <div class="profile-item__info">
                 <div class="profile-item__image">
-                  <img src="img/smolov-mobile@1x.jpg" width="70" height="70" alt="Фото Марка" >
+                  <picture>
+                    <source media="(min-width: 1440px)" type="image/jpg" srcset="img/smolov-desktop@1x.jpg 1x">
+
+                    <source media="(min-width: 768px)" type="image/jpg" srcset="img/smolov-tablet@1x.jpg 1x">
+
+                    <img src="img/smolov-mobile@1x.jpg" alt="Фото Марка">
+                  </picture>
                 </div>
 
                 <a href="#">
@@ -547,7 +567,7 @@
                 <div class="properties-info__level level level--smolov">
                   <b class="level__number">25</b>
 
-                  <small class="level__text visually-hidden">level</small>
+                  <small class="level__text">level</small>
                 </div>
               </div>
 
@@ -557,7 +577,13 @@
             <article class="catalog-companions__item profile-item companion-online">
               <div class="profile-item__info">
                 <div class="profile-item__image">
-                  <img src="img/rogovaya-mobile@1x.jpg" width="70" height="70" alt="Фото Ларисы" >
+                  <picture>
+                    <source media="(min-width: 1440px)" type="image/jpg" srcset="img/rogovaya-desktop@1x.jpg 1x">
+
+                    <source media="(min-width: 768px)" type="image/jpg" srcset="img/rogovaya-tablet@1x.jpg 1x">
+
+                    <img src="img/rogovaya-mobile@1x.jpg" alt="Фото Ларисы">
+                  </picture>
                 </div>
 
                 <a href="#">
@@ -609,7 +635,7 @@
                 <div class="properties-info__level level level--rogovay">
                   <b class="level__number">50</b>
 
-                  <small class="level__text visually-hidden">level</small>
+                  <small class="level__text">level</small>
                 </div>
               </div>
 
@@ -620,9 +646,28 @@
           <a href="#" class="catalog-companions__button button">показать еще</a>
 
           <div class="catalog-companions__pagination pagination">
-            <a href="" class="pagination__button button-back" aria-label="назад"></a>
+            <ul class="pagination__list">
+              <li class="pagination__item active-page">
+                <a href="" class="pagination__link">1</a>
+              </li>
 
-            <a href="" class="pagination__button button-forward" aria-label="вперед"></a>
+              <li class="pagination__item">
+                <a href="" class="pagination__link">2</a>
+              </li>
+
+              <li class="pagination__item">
+                <a href="" class="pagination__link">3</a>
+              </li>
+
+              <li class="pagination__item">
+                <a href="" class="pagination__link">4</a>
+              </li>
+            </ul>
+            <div class="pagination__buttons">
+              <a href="" class="pagination__button button-back" aria-label="назад"></a>
+
+              <a href="" class="pagination__button button-forward" aria-label="вперед"></a>
+            </div>
           </div>
         </div>
       </section>

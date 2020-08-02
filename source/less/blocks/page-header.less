@@ -194,3 +194,31 @@
     }
   }
 }
+
+.page-header__button {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: inline-block;
+    margin-left: 35px;
+    padding-top: 132px;
+    font-size: 20px;
+    line-height: 20px;
+    color: @basic-white;
+
+    &::after {
+      content: url("../img/return.svg");
+      display: inline-block;
+      width: 32px;
+      height: 16px;
+      margin-left: 28px;
+
+      vertical-align: 2%;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-left: 611px;
+    padding-top: 140px;
+  }
+}
