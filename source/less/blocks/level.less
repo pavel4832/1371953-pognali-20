@@ -135,6 +135,20 @@
 
     background-color: fade(@special-grey, 30%);
   }
+
+  @media (min-width: @desktop-width) {
+    margin-top: 8px;
+    margin-left: 0;
+
+    color: @basic-white;
+
+    &::after {
+      height: 2px;
+      margin-top: -1px;
+
+      background-color: fade(@basic-white, 30%);
+    }
+  }
 }
 
 .level__text {
@@ -153,4 +167,8 @@
   line-height: 18px;
   text-align: center;
   color: @special-grey;
+
+  @media (min-width: @desktop-width) {
+    color: @basic-white;
+  }
 }

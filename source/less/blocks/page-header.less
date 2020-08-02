@@ -171,4 +171,26 @@
     height: 5px;
     background-color: @special-orange;
   }
+
+  @media (min-width: @tablet-width) {
+    padding-top: 105px;
+    padding-left: 35px;
+
+    &::after {
+      bottom: -70px;
+      left: 36px;
+      width: 354px;
+      height: 8px;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 111px;
+    padding-left: 63px;
+
+    &::after {
+      width: 358px;
+      left: 65px;
+    }
+  }
 }

@@ -116,60 +116,69 @@
         <h2 class="visually-hidden">Профиль пользователя</h2>
 
         <div class="container">
-          <div class="profile__header">
-            <div class="profile__level level">
-              <b class="level__number">80</b>
+          <div class="desktop-wrapper">
+            <div class="profile__header">
+              <div class="profile__level level">
+                <b class="level__number">80</b>
 
-              <small class="level__text">level</small>
+                <small class="level__text">level</small>
+              </div>
+
+              <div class="profile__image">
+                <picture>
+                  <source media="(min-width: 1440px)" type="image/png" srcset="img/demin-tablet@1x.jpg 1x">
+
+                  <img src="../img/demin-desktop@1x.jpg" alt="Фото пользователя" >
+                </picture>
+              </div>
             </div>
 
-            <div class="profile__image">
-              <img src="../img/demin-desktop@1x.jpg" width="285" height="285" alt="Фото пользователя" >
+            <div class="profile__change-img change-img">
+              <input type="file" name="file" id="input__file" class="visually-hidden">
+
+              <label for="input__file" class="change-img__btn change-img__btn--mobile button">сменить фото</label>
+
+              <label for="input__file" class="change-img__btn change-img__btn--desktop button">фото</label>
             </div>
+
+            <fieldset class="profile__fieldset tags-set">
+              <legend class="profile__legend">тэги</legend>
+
+              <label for="tags" class="visually-hidden">тэги</label>
+
+              <textarea name="tags" id="tags" cols="30" rows="3" class="profile__textarea">#бургер #бар #футбол #концерт #крафт</textarea>
+            </fieldset>
+
+            <fieldset class="profile__fieldset transport-set">
+              <legend class="profile__legend">транспорт</legend>
+
+              <ul class="transport-set__list transport-list">
+                <li class="transport-list__item">
+                  <input id="air" type="checkbox" class="transport-list__choose visually-hidden" checked>
+
+                  <label class="transport-list__icon transport-air" for="air" aria-label="Самолет"></label>
+                </li>
+
+                <li class="transport-list__item">
+                  <input id="bus" type="checkbox" class="transport-list__choose visually-hidden" checked>
+
+                  <label class="transport-list__icon transport-bus" for="bus" aria-label="Автобус"></label>
+                </li>
+
+                <li class="transport-list__item">
+                  <input id="bike" type="checkbox" class="transport-list__choose visually-hidden">
+
+                  <label class="transport-list__icon transport-bicycle" for="bike" aria-label="Велосипед"></label>
+                </li>
+
+                <li class="transport-list__item">
+                  <input id="walk" type="checkbox" class="transport-list__choose visually-hidden" checked>
+
+                  <label class="transport-list__icon transport-walk" for="walk" aria-label="Пешком"></label>
+                </li>
+              </ul>
+            </fieldset>
           </div>
-
-          <div class="profile__change-img change-img">
-            <input type="file" name="file" id="input__file" class="visually-hidden">
-            <label for="input__file" class="change-img__btn button">сменить фото</label>
-          </div>
-
-          <fieldset class="profile__fieldset">
-            <legend class="profile__legend">тэги</legend>
-
-            <label for="tags" class="visually-hidden">тэги</label>
-
-            <textarea name="tags" id="tags" cols="30" rows="3" class="profile__textarea">#бургер #бар #футбол #концерт #крафт</textarea>
-          </fieldset>
-
-          <fieldset class="profile__fieldset transport-set">
-            <legend class="profile__legend">транспорт</legend>
-
-            <ul class="transport-set__list transport-list">
-              <li class="transport-list__item">
-                <input id="air" type="checkbox" class="transport-list__choose visually-hidden" checked>
-
-                <label class="transport-list__icon transport-air" for="air" aria-label="Самолет"></label>
-              </li>
-
-              <li class="transport-list__item">
-                <input id="bus" type="checkbox" class="transport-list__choose visually-hidden" checked>
-
-                <label class="transport-list__icon transport-bus" for="bus" aria-label="Автобус"></label>
-              </li>
-
-              <li class="transport-list__item">
-                <input id="bike" type="checkbox" class="transport-list__choose visually-hidden">
-
-                <label class="transport-list__icon transport-bicycle" for="bike" aria-label="Велосипед"></label>
-              </li>
-
-              <li class="transport-list__item">
-                <input id="walk" type="checkbox" class="transport-list__choose visually-hidden" checked>
-
-                <label class="transport-list__icon transport-walk" for="walk" aria-label="Пешком"></label>
-              </li>
-            </ul>
-          </fieldset>
         </div>
       </section>
 

@@ -1,3 +1,7 @@
+.form-body {
+  background-color: #edeff6;
+}
+
 .form-body__header {
   position: relative;
   padding-bottom: 12px;
@@ -14,6 +18,18 @@
     border-bottom-left-radius: 60px;
     border-bottom-right-radius: 60px;
   }
+
+  @media (min-width: @desktop-width) {
+    z-index: 1;
+  }
+}
+
+.form-body__header .page-header__login {
+  display: none;
+
+  @media (min-width: @desktop-width) {
+    display: flex;
+  }
 }
 
 .form-body__main {
@@ -22,6 +38,11 @@
 
   background-color: #edeff6;
   z-index: 1;
+
+  @media (min-width: @desktop-width) {
+    margin-top: 5px;
+    padding-top: 284px;
+  }
 }
 
 .form-body__footer {

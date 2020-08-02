@@ -9,6 +9,16 @@
 
   border: none;
   border-radius: 20px;
+
+  @media (min-width: @desktop-width) {
+    justify-self: end;
+    width: 190px;
+    height: 47px;
+
+    border-radius: unset;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
 }
 
 .change-img__btn {
@@ -22,4 +32,18 @@
   text-align: center;
   text-transform: uppercase;
   color: @basic-blue;
+}
+
+.change-img__btn--mobile {
+  @media (min-width: @desktop-width) {
+    display: none;
+  }
+}
+
+.change-img__btn--desktop {
+  display: none;
+
+  @media (min-width: @desktop-width) {
+    display: block;
+  }
 }
