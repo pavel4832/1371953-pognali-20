@@ -10,43 +10,9 @@
   background-position-y: top;
 }
 
-.catalog-companions__list .level {
-  &::before {
-    content: "левел:";
-    position: absolute;
-    top: -26px;
-    left: -5px;
-    padding: 0 12px;
-
-    font-family: "BloggerSans", "Arial", sans-serif;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 15px;
-    line-height: 16px;
-    color: @special-grey;
-
-    background-color: @basic-white;
-  }
-
-  @media (min-width: @tablet-width) {
-    &::before {
-      display: none;
-    }
-  }
-}
-
 .level--firsova {
   background-image: url("../img/subtract-1.svg");
   background-repeat: no-repeat;
-}
-
-.catalog-companions__list .level--firsova {
-  background-image: url("../img/subtract-firsova.svg");
-  background-repeat: no-repeat;
-
-  @media (min-width: @tablet-width) {
-    background-image: url("../img/subtract-1.svg");
-  }
 }
 
 .level--demin {
@@ -54,48 +20,11 @@
   background-repeat: no-repeat;
 }
 
-.catalog-companions__list .level--demin {
-  background-image: url("../img/subtract-demin.svg");
-  background-repeat: no-repeat;
-
-  @media (min-width: @tablet-width) {
-    background-image: url("../img/subtract-2.svg");
-  }
-}
-
-.catalog-companions__list .level--smolov {
-  background-image: url("../img/subtract-smolov.svg");
-  background-repeat: no-repeat;
-
-  @media (min-width: @tablet-width) {
-    background-image: url("../img/subtract-3.svg");
-  }
-}
-
-.catalog-companions__list .level--rogovay {
-  background-image: url("../img/subtract-rogovay.svg");
-  background-repeat: no-repeat;
-
-  @media (min-width: @tablet-width) {
-    background-image: url("../img/subtract-4.svg");
-  }
-}
-
 .page-main__companions .level {
   width: 60px;
   height: 60px;
 
   background-color: fade(@basic-black, 60%);
-}
-
-.catalog-body__main .level {
-  width: 45px;
-  height: 45px;
-
-  @media (min-width: @tablet-width) {
-    width: 60px;
-    height: 60px;
-  }
 }
 
 .profile .level {
@@ -132,25 +61,6 @@
     margin-left: -2px;
 
     background-color: fade(@basic-white, 30%);
-  }
-}
-
-.catalog-companions__list .level__number {
-  line-height: 45px;
-  color: @basic-blue-light;
-
-  &::after {
-    display: none;
-  }
-
-  @media (min-width: @tablet-width) {
-    line-height: 24px;
-
-    &::after {
-      display: block;
-
-      background-color: fade(@basic-black, 30%);
-    }
   }
 }
 
@@ -195,16 +105,6 @@
   font-size: 14px;
   line-height: 14px;
   color: @basic-white;
-}
-
-.catalog-companions__list .level__text {
-  display: none;
-
-  @media (min-width: @tablet-width) {
-    display: block;
-
-    color: fade(@basic-black, 40%);
-  }
 }
 
 .profile .level__text {
