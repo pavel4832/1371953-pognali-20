@@ -1,3 +1,20 @@
+.form-body__main .main-header {
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+  z-index: 2;
+
+  @media (min-width: @tablet-width) {
+    padding-bottom: 65px;
+
+    border-bottom-left-radius: 60px;
+    border-bottom-right-radius: 60px;
+  }
+
+  @media (min-width: @desktop-width) {
+    z-index: 1;
+  }
+}
+
 .profile {
   position: relative;
   padding-bottom: 60px;
@@ -17,6 +34,11 @@
   border-top-left-radius: 25px;
   border-top-right-radius: 25px;
   z-index: 2;
+
+  @media (min-width: @desktop-width) {
+    border-top-left-radius: 60px;
+    border-top-right-radius: 60px;
+  }
 }
 
 .add-new-plan {
@@ -30,4 +52,9 @@
   border-top-left-radius: 25px;
   border-top-right-radius: 25px;
   z-index: 3;
+
+  @media (min-width: @desktop-width) {
+    border-top-left-radius: 60px;
+    border-top-right-radius: 60px;
+  }
 }

@@ -10,32 +10,8 @@
   background-position-y: top;
 }
 
-.catalog-companions__list .level {
-  &::before {
-    content: "левел:";
-    position: absolute;
-    top: -26px;
-    left: -5px;
-    padding: 0 12px;
-
-    font-family: "BloggerSans", "Arial", sans-serif;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 15px;
-    line-height: 16px;
-    color: @special-grey;
-
-    background-color: @basic-white;
-  }
-}
-
 .level--firsova {
   background-image: url("../img/subtract-1.svg");
-  background-repeat: no-repeat;
-}
-
-.catalog-companions__list .level--firsova {
-  background-image: url("../img/subtract-firsova.svg");
   background-repeat: no-repeat;
 }
 
@@ -44,31 +20,11 @@
   background-repeat: no-repeat;
 }
 
-.catalog-companions__list .level--demin {
-  background-image: url("../img/subtract-demin.svg");
-  background-repeat: no-repeat;
-}
-
-.catalog-companions__list .level--smolov {
-  background-image: url("../img/subtract-smolov.svg");
-  background-repeat: no-repeat;
-}
-
-.catalog-companions__list .level--rogovay {
-  background-image: url("../img/subtract-rogovay.svg");
-  background-repeat: no-repeat;
-}
-
 .page-main__companions .level {
   width: 60px;
   height: 60px;
 
   background-color: fade(@basic-black, 60%);
-}
-
-.catalog-body__main .level {
-  width: 45px;
-  height: 45px;
 }
 
 .profile .level {
@@ -108,15 +64,6 @@
   }
 }
 
-.catalog-companions__list .level__number {
-  line-height: 45px;
-  color: @basic-blue-light;
-
-  &::after {
-    display: none;
-  }
-}
-
 .profile .level__number {
   margin-top: 0;
 
@@ -134,6 +81,20 @@
     margin-left: -2px;
 
     background-color: fade(@special-grey, 30%);
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: 8px;
+    margin-left: 0;
+
+    color: @basic-white;
+
+    &::after {
+      height: 2px;
+      margin-top: -1px;
+
+      background-color: fade(@basic-black, 30%);
+    }
   }
 }
 
@@ -153,4 +114,8 @@
   line-height: 18px;
   text-align: center;
   color: @special-grey;
+
+  @media (min-width: @desktop-width) {
+    color: @basic-white;
+  }
 }

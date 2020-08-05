@@ -1,9 +1,54 @@
 .directions {
   padding-bottom: 35px;
+
+  @media (min-width: @tablet-width) {
+    padding-bottom: 80px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-bottom: 123px;
+  }
 }
 
 .directions__wrapper {
   padding-top: 39px;
+
+  @media (min-width: @tablet-width) {
+    position: relative;
+
+    background-image: url("../img/flags-back@1x.png");
+    background-repeat: no-repeat;
+    background-position: 440px 80px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 408px;
+      left: 40px;
+      width: 141px;
+      height: 141px;
+
+      background-color: #e2e5f2;
+
+      border-radius: 20px;
+      z-index: -1;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    display: grid;
+    grid-template-rows: min-content min-content min-content;
+    grid-template-columns: 1fr 1fr;
+
+    background-position: 1092px 88px;
+
+    &::before {
+      top: 90px;
+      left: 60px;
+      width: 140px;
+      height: 140px;
+    }
+  }
 }
 
 .directions__title {
@@ -18,6 +63,22 @@
   font-size: 24px;
   line-height: 24px;
   color: @special-orange;
+
+  @media (min-width: @tablet-width) {
+    margin-left: 33px;
+
+    font-size: 45px;
+    line-height: 45px;
+  }
+
+  @media (min-width: @desktop-width) {
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 2;
+    grid-column-end: -1;
+    margin-top: 92px;
+    margin-left: 140px;
+  }
 }
 
 .directions__description {
@@ -32,57 +93,93 @@
   font-size: 16px;
   line-height: 22px;
   color: @special-grey;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 60px;
+    margin-left: 33px;
+    padding-right: 305px;
+
+    font-size: 28px;
+    line-height: 33px;
+  }
+
+  @media (min-width: @desktop-width) {
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 2;
+    grid-column-end: -1;
+    margin-top: 43px;
+    margin-left: 142px;
+    padding-right: 165px;
+  }
 }
 
 .directions__list {
   margin-top: 60px;
   padding: 0;
   list-style: none;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 104px;
+    margin-left: 36px;
+  }
+
+  @media (min-width: @desktop-width) {
+    grid-row-start: 1;
+    grid-row-end: -1;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    margin-top: 122px;
+    margin-left: 70px;
+  }
 }
 
 .directions-country {
   position: relative;
   margin-bottom: 10px;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    min-height: 140px;
+    width: 616px;
+    margin-bottom: 5px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 560px;
+  }
 }
 
 .directions-country__image {
   position: relative;
   border-radius: 10px;
   z-index: 0;
+
+  @media (min-width: @tablet-width) {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+  }
 }
 
 .directions-country__flag {
   position: absolute;
   top: 85px;
   left: 25px;
-  display: block;
-  width: 35px;
-  height: 24px;
   z-index: 5;
-}
 
-.thai-flag {
-  background-image: url("../img/flags05@1x.png");
-  background-repeat: no-repeat;
-  background-position: -80px 0;
-}
+  @media (min-width: @tablet-width) {
+    top: 30px;
+    left: 415px;
+  }
 
-.france-flag {
-  background-image: url("../img/flags05@1x.png");
-  background-repeat: no-repeat;
-  background-position: -120px -28px;
-}
-
-.czech-flag {
-  background-image: url("../img/flags05@1x.png");
-  background-repeat: no-repeat;
-  background-position: -40px -28px;
-}
-
-.boc-flag {
-  background-image: url("../img/flags05@1x.png");
-  background-repeat: no-repeat;
-  background-position: -120px -56px;
+  @media (min-width: @desktop-width) {
+    top: 35px;
+    left: 355px;
+  }
 }
 
 .directions-country__info {
@@ -98,6 +195,28 @@
   background-color: @basic-white;
   z-index: 2;
   box-sizing: border-box;
+
+  @media (min-width: @tablet-width) {
+    order: -1;
+    flex-grow: 1;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-top: 0;
+    min-height: 140px;
+    padding-top: 28px;
+    padding-left: 29px;
+
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 22px;
+    padding-left: 30px;
+  }
 }
 
 .directions-country__title {
@@ -110,10 +229,15 @@
   font-size: 21px;
   line-height: 21px;
   color: @basic-black;
+
+  @media (min-width: @tablet-width) {
+    font-size: 24px;
+    line-height: 24px;
+  }
 }
 
 .directions-country__count {
-  width: 50%;
+  margin-top: 3px;
 
   font-family: "BloggerSans-Medium", "Arial", sans-serif;
   font-style: normal;
@@ -122,10 +246,51 @@
   line-height: 20px;
   color: fade(#161c35, 30%);
   text-align: right;
+
+  &::before {
+    content: "";
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    margin-right: 6px;
+
+    vertical-align: -10%;
+
+    background-image: url("../img/user.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 10.5px 11.67px;
+
+    opacity: 0.3;
+  }
+
+  @media (min-width: @tablet-width) {
+    order: 3;
+    margin-top: 18px;
+
+    font-size: 20px;
+    line-height: 20px;
+
+    &::before {
+      width: 24px;
+      height: 24px;
+
+      vertical-align: -25%;
+
+      background-size: 18px 20px;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: 24px;
+
+    &::before {
+      vertical-align: -35%;
+    }
+  }
 }
 
 .directions-country__description {
-  width: 50%;
   margin: 0;
 
   font-family: "BloggerSans-Medium", "Arial", sans-serif;
@@ -134,12 +299,18 @@
   font-size: 16px;
   line-height: 18px;
   color: fade(@special-grey, 30%);
+
+  @media (min-width: @tablet-width) {
+    margin-top: 5px;
+
+    font-size: 20px;
+    line-height: 20px;
+  }
 }
 
 .directions__to-all {
   position: relative;
   width: 270px;
-  height: 62px;
   margin-top: 12px;
   padding: 0 24px;
 
@@ -158,5 +329,38 @@
     position: absolute;
     top: 1px;
     right: 22px;
+  }
+
+  @media (min-width: @tablet-width) {
+    width: 616px;
+    margin-left: 35px;
+    margin-top: 26px;
+    padding: 0 33px;
+
+    font-size: 24px;
+    line-height: 82px;
+
+    border-radius: 20px;
+
+    &::after {
+      right: 30px;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    grid-row-start: 3;
+    grid-row-end: -1;
+    grid-column-start: 2;
+    grid-column-end: -1;
+    width: 275px;
+    height: 80px;
+    margin-top: 85px;
+    margin-left: 143px;
+
+    line-height: 80px;
+
+    &::after {
+      right: 34px;
+    }
   }
 }

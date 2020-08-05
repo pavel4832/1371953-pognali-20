@@ -18,150 +18,157 @@
 
   <body class="index-body no-js">
     <header class="index-body__header page-header js-header">
-      <div class="logo">
-        <div class="logo__wrapper container">
+      <div class="container">
+        <div class="logo">
           <a class="logo__link">
-            <img class="no-js-logo" src="img/logo-mobile-blue@1x.png" width="100" height="19" alt="Сервис «Погнали?»">
-            <img class="logo__image js-image" src="img/logo-mobile-white@1x.png" width="100" height="19" alt="Сервис «Погнали?»">
+            <picture>
+              <source media="(min-width: 1440px)" type="image/png" srcset="img/logo-desktop-blue@1x.png 1x">
+
+              <source media="(min-width: 768px)" type="image/png" srcset="img/logo-tablet-blue@1x.png 1x">
+
+              <img class="no-js-logo" src="img/logo-mobile-blue@1x.png" alt="Сервис «Погнали?»">
+            </picture>
+
+            <picture>
+              <source media="(min-width: 1440px)" type="image/png" srcset="img/logo-desktop-white@1x.png 1x">
+
+              <source media="(min-width: 768px)" type="image/png" srcset="img/logo-tablet-white@1x.png 1x">
+
+              <img class="logo__image js-image" src="img/logo-mobile-white@1x.png" alt="Сервис «Погнали?»">
+            </picture>
           </a>
 
           <button class="logo__menu-btn js-menu-toggle" type="button">
             <span class="visually-hidden js-label">Открыть меню</span>
           </button>
         </div>
-      </div>
 
-      <nav class="main-nav">
-        <div class="main-nav__wrapper container">
-          <ul class="main-nav__list site-list">
-            <li class="site-list__item site-list__item--active">
-              <a class="site-list__link">о сервисе</a>
-            </li>
-
-            <li class="site-list__item">
-              <a class="site-list__link" href="form.html">направления</a>
-            </li>
-
-            <li class="site-list__item">
-              <a class="site-list__link" href="catalog.html">попутчики</a>
-            </li>
-          </ul>
-
-          <ul class="main-nav__list user-list">
-            <li class="user-list__item">
-              <a href="#" class="user-list__login button top-login">авторизация</a>
-            </li>
-          </ul>
-
-          <ul class="main-nav__list contact-list">
-            <li class="contact-list__item">
-              <a href="tel:88005558628" class="contact-list__link top-tell">8 800 555-86-28</a>
-            </li>
-
-            <li class="contact-list__item">
-              <a href="mailto:mail@htmlacademy.ru" class="contact-list__link top-mail">mail@htmlacademy.ru</a>
-            </li>
-          </ul>
-
-          <ul class="main-nav__list social-list social">
-            <li class="social__item">
-              <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy" aria-label="Мы в Фейсбуке"></a>
-            </li>
-
-            <li class="social__item">
-              <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy" aria-label="Мы в Вконтакте"></a>
-            </li>
-
-            <li class="social__item">
-              <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy" aria-label="Мы в Инстаграме"></a>
-            </li>
-          </ul>
-        </div>
-      </nav>
-
-    <div class="page-header__wrapper">
-        <div class="container">
-          <h1 class="page-header__title">В путешествие с&nbsp;крутыми попутчиками!</h1>
-
-          <img class="page-header__image" src="img/traveller-illustration-mobile@1x.png" height="255" width="192" alt="Картинка путешественника">
-        </div>
-
-        <div class="page-header__login">
-          <div class="container">
-            <ul class="page-header__list contact-list">
-              <li class="contact-list__item">
-                <a href="tel:88005558628" class="contact-list__link icon-tel" aria-label="позвонить с сайта"></a>
+        <nav class="main-nav">
+          <div class="main-nav__wrapper container">
+            <ul class="main-nav__list site-list">
+              <li class="site-list__item site-list__item--active">
+                <a class="site-list__link">о сервисе</a>
               </li>
 
-              <li class="contact-list__item">
-                <a href="mailto:mail@htmlacademy.ru" class="contact-list__link icon-mail" aria-label="написать письмо"></a>
+              <li class="site-list__item">
+                <a class="site-list__link" href="form.html">направления</a>
+              </li>
+
+              <li class="site-list__item">
+                <a class="site-list__link" href="catalog.html">попутчики</a>
               </li>
             </ul>
 
-            <ul class="page-header__list user-list">
+            <ul class="main-nav__list user-list">
               <li class="user-list__item">
-                <a href="#" class="user-list__login button">авторизация</a>
+                <a href="#" class="user-list__login button top-login">авторизация</a>
+              </li>
+            </ul>
+
+            <ul class="main-nav__list contact-list">
+              <li class="contact-list__item">
+                <a href="tel:88005558628" class="contact-list__link top-tell">8 800 555-86-28</a>
+              </li>
+
+              <li class="contact-list__item">
+                <a href="mailto:mail@htmlacademy.ru" class="contact-list__link top-mail">mail@htmlacademy.ru</a>
+              </li>
+            </ul>
+
+            <ul class="main-nav__list social-list social">
+              <li class="social__item">
+                <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy" aria-label="Мы в Фейсбуке"></a>
+              </li>
+
+              <li class="social__item">
+                <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy" aria-label="Мы в Вконтакте"></a>
+              </li>
+
+              <li class="social__item">
+                <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy" aria-label="Мы в Инстаграме"></a>
               </li>
             </ul>
           </div>
+        </nav>
+
+        <div class="page-header__login">
+          <ul class="page-header__list contact-list">
+            <li class="contact-list__item">
+              <a href="tel:88005558628" class="contact-list__link icon-tel" aria-label="позвонить с сайта"></a>
+            </li>
+
+            <li class="contact-list__item">
+              <a href="mailto:mail@htmlacademy.ru" class="contact-list__link icon-mail" aria-label="написать письмо"></a>
+            </li>
+          </ul>
+
+          <ul class="page-header__list user-list">
+            <li class="user-list__item">
+              <a href="#" class="user-list__login button">авторизация</a>
+            </li>
+          </ul>
         </div>
       </div>
     </header>
 
     <main class="index-body__main page-main">
-      <section class="page-main__promo promo">
-        <h2 class="visually-hidden">Отзывы о нас</h2>
+      <section class="page-main__header main-header">
+        <div class="main-header__wrapper">
+          <div class="container">
+            <h1 class="main-header__title">В путешествие с&nbsp;крутыми попутчиками!</h1>
 
-        <blockquote class="promo__review">
-          <div class="promo__author-info container">
-            <p class="promo__text">«Лучшее приложение, что&nbsp;я&nbsp;видел в жизни!»</p>
+            <blockquote class="main-header__review promo">
+              <div class="promo__author-info">
+                <p class="promo__text">«Лучшее приложение, что&nbsp;я&nbsp;видел в жизни!»</p>
 
-            <p class="promo__author-name">Мурат Эльтазин главный&nbsp;редактор газеты&nbsp;«гаджетлайф»</p>
+                <p class="promo__author-name">Мурат Эльтазин главный&nbsp;редактор газеты «гаджетлайф»</p>
+              </div>
+            </blockquote>
+
+            <div class="main-header__list instructions">
+              <ul class="instructions__list">
+                <li class="instructions__item">
+                  <p class="instructions__description">
+                    Выберите направление
+                  </p>
+
+                  <span class="instructions__number">
+                      1
+                    </span>
+                </li>
+
+                <li class="instructions__item">
+                  <p class="instructions__description">
+                    Изучите идеи путешественников
+                  </p>
+
+                  <span class="instructions__number">
+                      2
+                    </span>
+                </li>
+
+                <li class="instructions__item">
+                  <p class="instructions__description">
+                    Находите тех, кто&nbsp;похож на вас
+                  </p>
+
+                  <span class="instructions__number">
+                      3
+                    </span>
+                </li>
+
+                <li class="instructions__item">
+                  <p class="instructions__description">
+                    Путешествуйте вместе!
+                  </p>
+
+                  <span class="instructions__number">
+                      4
+                    </span>
+                </li>
+              </ul>
+            </div>
           </div>
-        </blockquote>
-
-        <div class="container">
-          <ul class="promo__list">
-            <li class="promo__item">
-              <p class="promo__description">
-                Выберите направление
-              </p>
-
-              <span class="promo__number">
-                1
-              </span>
-            </li>
-
-            <li class="promo__item">
-              <p class="promo__description">
-                Изучите идеи путешественников
-              </p>
-
-              <span class="promo__number">
-                2
-              </span>
-            </li>
-
-            <li class="promo__item">
-              <p class="promo__description">
-                Находите тех, кто&nbsp;похож на вас
-              </p>
-
-              <span class="promo__number">
-                3
-              </span>
-            </li>
-
-            <li class="promo__item">
-              <p class="promo__description">
-                Путешествуйте вместе!
-              </p>
-
-              <span class="promo__number">
-                4
-              </span>
-            </li>
-          </ul>
         </div>
       </section>
 
@@ -171,12 +178,14 @@
             <h2 class="service__title">О сервисе</h2>
 
             <p class="service__description">
-              Любое путешествие веселее с&nbsp;попутчиками, которые на одной&nbsp;волне с тобой! Делитесь своими идеями путешествий и черпайте вдохновение в чужих.
+              Любое путешествие веселее с&nbsp;попутчиками, которые на одной&nbsp;волне с тобой! Делитесь своими идеями путешествий и&nbsp;черпайте вдохновение в чужих.
             </p>
 
             <p class="service__action">
               А если найдете кого-то близкого&nbsp;по духу — скорее зовите&nbsp;в совместный трип!
             </p>
+
+            <a href="#" class="service__bth button">Подробнее</a>
           </div>
         </div>
       </section>
@@ -186,14 +195,22 @@
           <h2 class="directions__title">Направления</h2>
 
           <p class="directions__description">
-            Мы не продаем туры и&nbsp;ничего не рекламируем. Люди сами пишут о странах, куда хотели бы отправиться и чем можно там заняться.
+            Мы не продаем туры и&nbsp;ничего не рекламируем.<br> Люди сами пишут о странах, куда хотели бы отправиться и&nbsp;чем можно там заняться.
           </p>
 
           <ul class="directions__list">
             <li class="directions__item directions-country">
-              <img class="directions-country__image" src="img/thailand-mobile@1x.jpg" width="270" height="110" alt="Тайланд">
+              <picture>
+                <source media="(min-width: 768px)" type="image/jpg" srcset="img/thailand-desktop@1x.jpg 1x">
 
-              <span class="directions-country__flag thai-flag" aria-label="Флаг Тайланда"></span>
+                <img class="directions-country__image" src="img/thailand-mobile@1x.jpg" alt="Тайланд">
+              </picture>
+
+              <picture>
+                <source media="(min-width: 768px)" type="image/png" srcset="img/thailand-flag-tablet.png 1x">
+
+                <img class="directions-country__flag" src="img/thailand-flag-mobile.png" alt="Флаг Тайланда">
+              </picture>
 
               <div class="directions-country__info">
                 <a class="directions-country__link" href="#">
@@ -209,9 +226,17 @@
             </li>
 
             <li class="directions__item directions-country">
-              <img class="directions-country__image" src="img/france-mobile@1x.jpg" width="270" height="110" alt="Франция">
+              <picture>
+                <source media="(min-width: 768px)" type="image/jpg" srcset="img/france-desktop@1x.jpg 1x">
 
-              <span class="directions-country__flag france-flag" aria-label="Флаг Франции"></span>
+                <img class="directions-country__image" src="img/france-mobile@1x.jpg" alt="Франция">
+              </picture>
+
+              <picture>
+                <source media="(min-width: 768px)" type="image/png" srcset="img/france-flag-tablet.png 1x">
+
+                <img class="directions-country__flag" src="img/france-flag-mobile.png" alt="Флаг Франции">
+              </picture>
 
               <div class="directions-country__info">
                 <a class="directions-country__link" href="#">
@@ -227,9 +252,17 @@
             </li>
 
             <li class="directions__item directions-country">
-              <img class="directions-country__image" src="img/czech-mobile@1x.jpg" width="270" height="110" alt="Чехия">
+              <picture>
+                <source media="(min-width: 768px)" type="image/jpg" srcset="img/czech-desktop@1x.jpg 1x">
 
-              <span class="directions-country__flag czech-flag" aria-label="Флаг Чехии"></span>
+                <img class="directions-country__image" src="img/czech-mobile@1x.jpg" alt="Чехия">
+              </picture>
+
+              <picture>
+                <source media="(min-width: 768px)" type="image/png" srcset="img/czech-flag-tablet.png 1x">
+
+                <img class="directions-country__flag" src="img/czech-flag-mobile.png" alt="Флаг Чехии">
+              </picture>
 
               <div class="directions-country__info">
                 <a class="directions-country__link" href="#">
@@ -257,11 +290,11 @@
             </h2>
 
             <p class="companions__description">
-              Все мы индивидуальны и у каждогосвой взгляд на идеальный&nbsp;отдых. Одному нужен&nbsp;пляж и коктейль, а другому&nbsp;маршрут для хайкинга.
+              Все мы индивидуальны и у каждого свой взгляд на идеальный&nbsp;отдых. Одному нужен&nbsp;пляж и коктейль, а&nbsp;другому&nbsp;маршрут для хайкинга.
             </p>
 
             <p class="companions__slogan">
-              Теперь можно легко найти единомышленников!
+              Теперь можно легко найти&nbsp&nbsp;единомышленников!
             </p>
 
             <div class="companions__list">
@@ -273,21 +306,15 @@
                 <div class="profile-item__request country-request">
                   <ul class="country-request__list">
                     <li class="country-request__item">
-                      <span class="country-request__flag country-request__flag--sri_lanka" aria-label="Флаг шри-ланки"></span>
-
-                      <span class="country-request__name visually-hidden">шри-ланка</span>
+                      <img class="country-request__flag" src="img/sri-lanka-flag-mobile.png" height="25" width="35" alt="Флаг шри-ланки">
                     </li>
 
                     <li class="country-request__item">
-                      <span class="country-request__flag country-request__flag--thailand" aria-label="Флаг тайланда"></span>
-
-                      <span class="country-request__name visually-hidden">тайланд</span>
+                      <img class="country-request__flag" src="img/thailand-flag-mobile.png" height="25" width="35" alt="Флаг тайланд">
                     </li>
 
                     <li class="country-request__item">
-                      <span class="country-request__flag country-request__flag--seychelles" aria-label="Флаг сейшел"></span>
-
-                      <span class=" country-request__name visually-hidden">сейшелы</span>
+                      <img class="country-request__flag" src="img/seychelles-flag-mobile.png" height="25" width="35" alt="Флаг сейшел">
                     </li>
                   </ul>
                 </div>
@@ -328,8 +355,6 @@
                       </div>
                     </div>
                   </div>
-
-                  <a href="#" class="profile-item__invite button visually-hidden">позвать!</a>
                 </div>
               </article>
 
@@ -341,15 +366,11 @@
                 <div class="profile-item__request country-request">
                   <ul class="country-request__list">
                     <li class="country-request__item">
-                      <span class="country-request__flag country-request__flag--belgium" aria-label="Флаг белгии"></span>
-
-                      <span class="country-request__name visually-hidden">бельгия</span>
+                      <img class="country-request__flag" src="img/belgium-flag-mobile.png" height="24" width="35" alt="Флаг белгии">
                     </li>
 
                     <li class="country-request__item">
-                      <span class="country-request__flag country-request__flag--czech" aria-label="Флаг чехии"></span>
-
-                      <span class="country-request__name visually-hidden">чехия</span>
+                      <img class="country-request__flag" src="img/czech-flag-mobile.png" height="25" width="35" alt="Флаг чехии">
                     </li>
                   </ul>
                 </div>
@@ -388,13 +409,11 @@
                       <small class="level__text">level</small>
                     </div>
                   </div>
-
-                  <a href="#" class="profile-item__invite button visually-hidden">позвать!</a>
                 </div>
               </article>
             </div>
 
-            <a class="companions__to-all button" href="form.html">Показать все</a>
+            <a class="companions__to-all button" href="form.html">Показать всех</a>
             </div>
         </div>
       </section>
@@ -516,7 +535,13 @@
       <div class="container">
         <div class="page-footer__logo logo">
           <a class="logo__link">
-            <img src="img/logo-mobile-blue@1x.png" width="100" height="19" alt="Сервис «Погнали?»">
+            <picture>
+              <source media="(min-width: 1440px)" type="image/png" srcset="img/logo-desktop-blue@1x.png 1x">
+
+              <source media="(min-width: 768px)" type="image/png" srcset="img/logo-tablet-blue@1x.png 1x">
+
+              <img src="img/logo-mobile-blue@1x.png" alt="Сервис «Погнали?»">
+            </picture>
           </a>
         </div>
 

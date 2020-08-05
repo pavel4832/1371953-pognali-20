@@ -1,14 +1,10 @@
 .main-nav {
-  margin-top: -8px;
+  display: none;
 
-  background-color: @basic-white;
-
-  @media screen and (max-width: 767px) {
-    width: 100%;
-    height: 0;
-
-    opacity: 0;
-    visibility: hidden;
+  @media (min-width: @desktop-width) {
+    display: block;
+    margin-left: 88px;
+    margin-top: 20px;
   }
 }
 
@@ -22,17 +18,50 @@
 
   background-color: @basic-white;
   z-index: 2;
+
+  @media (min-width: @tablet-width) {
+    align-items: start;
+    padding-top: 88px;
+  }
+
+  @media (min-width: @desktop-width) {
+    flex-direction: row;
+    width: auto;
+    padding: 0;
+
+    background-color: inherit;
+
+    z-index: 1;
+  }
 }
 
 .main-nav__list {
   margin-top: 0;
   margin-bottom: 52px;
+
+  @media (min-width: @desktop-width) {
+    margin: 0;
+  }
 }
 
 .main-nav__list.user-list {
   margin-bottom: 51px;
+
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
 }
 
 .main-nav__list.contact-list {
   margin-bottom: 30px;
+
+  @media (min-width: @desktop-width) {
+    display: none;
+  }
+}
+
+.main-nav__list.social-list {
+  @media (min-width: @desktop-width) {
+    display: none;
+  }
 }

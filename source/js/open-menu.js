@@ -13,9 +13,9 @@ openMenuBtn.addEventListener('click', function (element) {
 
   if(openMenuBtn.classList.contains('close-menu')) {
     labelMenuElement.textContent = 'Закрыть меню';
-    logoElement.src = 'img/logo-mobile-blue@1x.png';
+    logoElement.classList.add('hide');
   } else {
     labelMenuElement.textContent = 'Открыть меню';
-    logoElement.src = 'img/logo-mobile-white@1x.png'
+    logoElement.classList.remove('hide');
   }
 })

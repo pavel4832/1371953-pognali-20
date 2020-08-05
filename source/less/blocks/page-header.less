@@ -1,83 +1,56 @@
-.page-header__wrapper {
+.page-header {
+  background-color: @basic-blue;
+
+  box-sizing: border-box;
+
+  @media (min-width: @tablet-width) {
+    background-color: #182044;
+  }
+
+  @media (min-width: @desktop-width) {
+    background-color: @basic-blue;
+  }
+}
+
+.page-header .container {
   position: relative;
   display: flex;
-  flex-direction: column;
-  margin-top: -1px;
-
-  background-color: #161c35;
-  background-image: url("../img/globe-back-mobile@1x.jpg");
-  background-repeat: no-repeat;
-  background-position-x: center;
-  background-position-y: -74px;
-}
-
-.page-header__title {
-  margin: 0;
-  padding-top: 33px;
-  font-family: "BloggerSans-Bold", "Arial", sans-serif;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 36px;
-  line-height: 40px;
-  text-align: center;
-  color: @basic-white;
-}
-
-.page-header__image {
-  margin-top: 11px;
-  padding-left: 55px;
+  flex-wrap: wrap;
 }
 
 .page-header__login {
   position: absolute;
-  bottom: -20px;
-  left: 0;
-  width: 100%;
+  bottom: -425px;
+  left: 25px;
+  display: flex;
+  justify-content: space-between;
+  width: 270px;
   background-color: transparent;
   z-index: 5;
-}
 
-.page-header__wrapper .container {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
+  @media (min-width: @tablet-width) {
+    position: static;
+    display: flex;
+    justify-content: flex-end;
+    width: 48%;
+    padding-top: 39px;
+    order: -1;
+  }
 
-.page-header__login .container {
-  display: flex;
-  flex-direction: row;
-}
-
-.form-body__header .page-header__title {
-  position: relative;
-
-  text-align: left;
-
-  &::after {
-    content: "";
-    position: absolute;
-    bottom: -13px;
-    left: 0;
-    display: block;
-    width: 214px;
-    height: 5px;
-    background-color: @special-orange;
+  @media (min-width: @desktop-width) {
+    order: 0;
+    width: auto;
+    margin-left: auto;
+    padding-top: 48px;
   }
 }
 
-.catalog-body__header .page-header__title {
-  position: relative;
+.page-header__list.contact-list {
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
 
-  text-align: left;
-
-  &::after {
-    content: "";
-    position: absolute;
-    bottom: -13px;
-    left: 0;
-    display: block;
-    width: 173px;
-    height: 5px;
-    background-color: @special-orange;
+  @media (min-width: @desktop-width) {
+    display: flex;
   }
 }

@@ -5,6 +5,18 @@
   margin: 0;
   padding: 0;
   list-style: none;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 82px;
+    padding-left: 57px;
+    flex-direction: column;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: 0;
+    padding-left: 0;
+    flex-direction: row;
+  }
 }
 
 .sign-up__contact.contact-list {
@@ -36,6 +48,24 @@
     background-color: #121936;
     border-radius: 50%;
   }
+
+  @media (min-width: @tablet-width) {
+    font-size: 28px;
+    line-height: 28px;
+
+    &::before {
+      width: 68px;
+      height: 68px;
+      margin-right: 23px;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    &::before {
+      width: 50px;
+      height: 50px;
+    }
+  }
 }
 
 .page-header__list .contact-list__link {
@@ -46,6 +76,20 @@
 
     background-color: @special-orange;
     border-radius: 50%;
+  }
+
+  @media (min-width: @tablet-width) {
+    &::before {
+      width: 68px;
+      height: 68px;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    &::before {
+      width: 50px;
+      height: 50px;
+    }
   }
 }
 
@@ -61,12 +105,20 @@
 .top-tell {
   &::before {
     content: url("../img/contacts-phone.svg");
+
+    @media (min-width: @tablet-width) {
+      content: url("../img/contacts-phone-tablet.svg");
+    }
   }
 }
 
 .top-mail {
   &::before {
     content: url("../img/contacts-mail.svg");
+
+    @media (min-width: @tablet-width) {
+      content: url("../img/contacts-mail-tablet.svg");
+    }
   }
 }
 

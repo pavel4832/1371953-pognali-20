@@ -1,11 +1,19 @@
 .index-body__header {
   position: relative;
   z-index: 2;
+
+  @media (min-width: @desktop-width) {
+    z-index: 1;
+  }
 }
 
 .index-body__main {
   position: relative;
   z-index: 1;
+
+  @media (min-width: @desktop-width) {
+    margin-top: -3px;
+  }
 }
 
 .index-body__footer {
@@ -16,4 +24,9 @@
   border-top-left-radius: 25px;
   border-top-right-radius: 25px;
   z-index: 2;
+
+  @media (min-width: @tablet-width) {
+    border-top-left-radius: 60px;
+    border-top-right-radius: 60px;
+  }
 }

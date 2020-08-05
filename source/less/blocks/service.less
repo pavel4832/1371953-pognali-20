@@ -1,5 +1,15 @@
 .service {
   margin-top: -1px;
+  padding-top: 40px;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 100px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 158px;
+    margin-top: -60px;
+  }
 }
 
 .service__wrapper {
@@ -10,6 +20,20 @@
   background-repeat: no-repeat;
 
   z-index: 2;
+
+  @media (min-width: @tablet-width) {
+    padding-bottom: 89px;
+
+    background-image: url("../img/about-tablet@1x.png");
+    background-position: 384px 44px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-bottom: 164px;
+
+    background-image: url("../img/about-desktop@1x.png");
+    background-position: 982px -13px;
+  }
 }
 
 .service__wrapper .container {
@@ -31,6 +55,25 @@
     border-top-right-radius: 20px;
     z-index: -1;
   }
+
+  @media (min-width: @tablet-width) {
+    &::before {
+      top: -8px;
+      left: 40px;
+      width: 688px;
+      height: 212px;
+      border-radius: 20px;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    &::before {
+      top: -27px;
+      left: 60px;
+      width: 212px;
+      height: 212px;
+    }
+  }
 }
 
 .service__title {
@@ -45,6 +88,17 @@
   font-size: 24px;
   line-height: 24px;
   color: @special-orange;
+
+  @media (min-width: @tablet-width) {
+    margin-left: 34px;
+
+    font-size: 45px;
+    line-height: 45px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-left: 70px;
+  }
 }
 
 .service__description {
@@ -59,6 +113,21 @@
   font-size: 16px;
   line-height: 22px;
   color: @basic-white;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 44px;
+    margin-left: 34px;
+    padding-right: 352px;
+
+    font-size: 28px;
+    line-height: 33px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: 58px;
+    margin-left: 70px;
+    padding-right: 605px;
+  }
 }
 
 .service__action {
@@ -73,4 +142,56 @@
   font-size: 16px;
   line-height: 22px;
   color: @basic-white;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 31px;
+    margin-left: 34px;
+    padding-right: 350px;
+
+    font-size: 21px;
+    line-height: 25px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: 40px;
+    margin-left: 70px;
+    padding-right: 775px;
+  }
+}
+
+.service__bth {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: inline-block;
+    position: relative;
+    width: 276px;
+    height: 80px;
+    margin-top: 54px;
+    margin-left: 34px;
+    padding-left: 32px;
+
+    font-size: 24px;
+    line-height: 80px;
+    color: @basic-blue-light;
+    text-align: justify;
+    text-transform: none;
+
+    background-color: @basic-yellow;
+    border-radius: 20px;
+    box-sizing: border-box;
+
+    &::after {
+      content: url("../img/show-more-triangle.svg");
+      position: absolute;
+      top: -2px;
+      right: 35px;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 274px;
+    margin-top: 85px;
+    margin-left: 70px;
+  }
 }

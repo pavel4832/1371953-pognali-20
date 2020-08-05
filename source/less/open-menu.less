@@ -1,13 +1,16 @@
+.open-menu .container,
 .open-menu .logo {
   background-color: @basic-white;
 }
 
 .open-menu .main-nav {
+  display: block;
   position: absolute;
-  top: 72px;
+  top: 47px;
   left: 0;
-  height: auto;
-  opacity: 1;
-  visibility: visible;
   z-index: 10;
+
+  @media (min-width: @tablet-width) {
+    top: 100px;
+  }
 }

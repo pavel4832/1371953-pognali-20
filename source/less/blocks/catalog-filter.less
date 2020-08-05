@@ -1,8 +1,9 @@
 .catalog-filter {
   position: relative;
   width: 100%;
-  padding-top: 60px;
-  padding-bottom: 0;
+  margin-top: -20px;
+  padding-top: 0;
+  padding-bottom: 15px;
 
   background-color: #e2e5f2;
 
@@ -17,11 +18,8 @@
   background-color: #e2e5f2;
 
   @media screen and (max-width: 767px) {
+    display: none;
     width: 100%;
-    height: 0;
-
-    opacity: 0;
-    visibility: hidden;
   }
 }
 
@@ -33,8 +31,9 @@
 
 .catalog-filter__title {
   display: inline-block;
-  margin-left: 4px;
-  margin-top: 0;
+  justify-self: stretch;
+  margin-left: 0;
+  margin-top: 40px;
   margin-bottom: 0;
 
   font-family: "BloggerSans-Bold", "Arial", sans-serif;
@@ -88,7 +87,7 @@
 
 .catalog-filter__list.country-list {
   margin-top: 12px;
-  padding-left: 31px;
+  padding-left: 27px;
 }
 
 .catalog-filter__table {
@@ -97,10 +96,9 @@
 
 .catalog-filter__close-btn {
   position: relative;
-  width: 231px;
-  height: 39px;
+  width: 270px;
   margin-top: 16px;
-  padding-left: 39px;
+  padding-left: 32px;
 
   font-size: 16px;
   line-height: 39px;
@@ -116,7 +114,7 @@
     content: url("../img/small-cross.svg");
     position: absolute;
     top: 2px;
-    left: 91px;
+    left: 84px;
     width: 14px;
     height: 14px;
   }

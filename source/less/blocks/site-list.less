@@ -5,10 +5,27 @@
   flex-wrap: wrap;
   padding: 0;
   list-style: none;
+
+  @media (min-width: @tablet-width) {
+    padding-left: 57px;
+  }
+
+  @media (min-width: @desktop-width) {
+    flex-direction: row;
+    padding-top: 45px;
+  }
 }
 
 .site-list__item {
   text-align: center;
+
+  @media (min-width: @tablet-width) {
+    text-align: left;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-right: 34px;
+  }
 }
 
 .site-list__link {
@@ -19,4 +36,15 @@
   line-height: 35px;
   text-transform: uppercase;
   color: #192144;
+
+  @media (min-width: @tablet-width) {
+    font-size: 60px;
+    line-height: 71px;
+  }
+
+  @media (min-width: @desktop-width) {
+    font-size: 20px;
+    line-height: 20px;
+    color: @basic-white;
+  }
 }

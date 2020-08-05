@@ -16,131 +16,173 @@
 
   <body class="form-body no-js">
     <header class="form-body__header page-header js-header">
-      <div class="logo">
-        <div class="logo__wrapper container">
-          <a class="logo__link">
-            <img class="no-js-logo" src="img/logo-mobile-blue@1x.png" width="100" height="19" alt="Сервис «Погнали?»">
-            <img class="logo__image js-image" src="img/logo-mobile-white@1x.png" width="100" height="19" alt="Сервис «Погнали?»">
+      <div class="container">
+        <div class="logo">
+          <a class="logo__link" href="index.html">
+            <picture>
+              <source media="(min-width: 1440px)" type="image/png" srcset="img/logo-desktop-blue@1x.png 1x">
+
+              <source media="(min-width: 768px)" type="image/png" srcset="img/logo-tablet-blue@1x.png 1x">
+
+              <img class="no-js-logo" src="img/logo-mobile-blue@1x.png" alt="Сервис «Погнали?»">
+            </picture>
+
+            <picture>
+              <source media="(min-width: 1440px)" type="image/png" srcset="img/logo-desktop-white@1x.png 1x">
+
+              <source media="(min-width: 768px)" type="image/png" srcset="img/logo-tablet-white@1x.png 1x">
+
+              <img class="logo__image js-image" src="img/logo-mobile-white@1x.png" alt="Сервис «Погнали?»">
+            </picture>
           </a>
 
           <button class="logo__menu-btn js-menu-toggle" type="button">
             <span class="visually-hidden js-label">Открыть меню</span>
           </button>
         </div>
-      </div>
 
-      <nav class="main-nav">
-        <div class="main-nav__wrapper container">
-          <ul class="main-nav__list site-list">
-            <li class="site-list__item site-list__item--active">
-              <a class="site-list__link" href="index.html">о сервисе</a>
+        <nav class="main-nav">
+          <div class="main-nav__wrapper container">
+            <ul class="main-nav__list site-list">
+              <li class="site-list__item">
+                <a class="site-list__link" href="index.html">о сервисе</a>
+              </li>
+
+              <li class="site-list__item site-list__item--active">
+                <a class="site-list__link">направления</a>
+              </li>
+
+              <li class="site-list__item">
+                <a class="site-list__link" href="catalog.html">попутчики</a>
+              </li>
+            </ul>
+
+            <ul class="main-nav__list user-list">
+              <li class="user-list__item">
+                <a href="#" class="user-list__login button top-login">авторизация</a>
+              </li>
+            </ul>
+
+            <ul class="main-nav__list contact-list">
+              <li class="contact-list__item">
+                <a href="tel:88005558628" class="contact-list__link top-tell">8 800 555-86-28</a>
+              </li>
+
+              <li class="contact-list__item">
+                <a href="mailto:mail@htmlacademy.ru" class="contact-list__link top-mail">mail@htmlacademy.ru</a>
+              </li>
+            </ul>
+
+            <ul class="main-nav__list social-list social">
+              <li class="social__item">
+                <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy" aria-label="Мы в Фейсбуке"></a>
+              </li>
+
+              <li class="social__item">
+                <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy" aria-label="Мы в Вконтакте"></a>
+              </li>
+
+              <li class="social__item">
+                <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy" aria-label="Мы в Инстаграме"></a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+
+        <div class="page-header__login">
+          <ul class="page-header__list contact-list">
+            <li class="contact-list__item">
+              <a href="tel:88005558628" class="contact-list__link icon-tel" aria-label="позвонить с сайта"></a>
             </li>
 
-            <li class="site-list__item">
-              <a class="site-list__link">направления</a>
-            </li>
-
-            <li class="site-list__item">
-              <a class="site-list__link" href="catalog.html">попутчики</a>
+            <li class="contact-list__item">
+              <a href="mailto:mail@htmlacademy.ru" class="contact-list__link icon-mail" aria-label="написать письмо"></a>
             </li>
           </ul>
 
-          <ul class="main-nav__list user-list">
+          <ul class="page-header__list user-list">
             <li class="user-list__item">
-              <a href="#" class="user-list__login button top-login">авторизация</a>
-            </li>
-          </ul>
-
-          <ul class="main-nav__list contact-list">
-            <li class="contact-list__item">
-              <a href="tel:88005558628" class="contact-list__link top-tell">8 800 555-86-28</a>
-            </li>
-
-            <li class="contact-list__item">
-              <a href="mailto:mail@htmlacademy.ru" class="contact-list__link top-mail">mail@htmlacademy.ru</a>
-            </li>
-          </ul>
-
-          <ul class="main-nav__list social-list social">
-            <li class="social__item">
-              <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy" aria-label="Мы в Фейсбуке"></a>
-            </li>
-
-            <li class="social__item">
-              <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy" aria-label="Мы в Вконтакте"></a>
-            </li>
-
-            <li class="social__item">
-              <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy" aria-label="Мы в Инстаграме"></a>
+              <a href="#" class="user-list__login button">авторизация</a>
             </li>
           </ul>
         </div>
-      </nav>
-
-      <div class="container">
-        <h1 class="page-header__title">Направления</h1>
       </div>
     </header>
 
-    <main class="form-body__main">
+    <main class="form-body__main page-main">
+      <section class="page-main__header main-header">
+        <div class="container">
+          <h1 class="main-header__title">Направления</h1>
+        </div>
+      </section>
+
       <section class="profile">
         <h2 class="visually-hidden">Профиль пользователя</h2>
 
         <div class="container">
-          <div class="profile__header">
-            <div class="profile__level level">
-              <b class="level__number">80</b>
+          <div class="desktop-wrapper">
+            <div class="profile__header">
+              <div class="profile__level level">
+                <b class="level__number">80</b>
 
-              <small class="level__text">level</small>
+                <small class="level__text">level</small>
+              </div>
+
+              <div class="profile__image">
+                <picture>
+                  <source media="(min-width: 1440px)" type="image/jpg" srcset="img/demin-tablet@1x.jpg 1x">
+
+                  <img src="../img/demin-desktop@1x.jpg" alt="Фото пользователя" >
+                </picture>
+              </div>
             </div>
 
-            <div class="profile__image">
-              <img src="../img/demin-desktop@1x.jpg" width="285" height="285" alt="Фото пользователя" >
+            <div class="profile__change-img change-img">
+              <input type="file" name="file" id="input__file" class="visually-hidden">
+
+              <label for="input__file" class="change-img__btn change-img__btn--mobile button">сменить фото</label>
+
+              <label for="input__file" class="change-img__btn change-img__btn--desktop button">фото</label>
             </div>
+
+            <fieldset class="profile__fieldset tags-set">
+              <legend class="profile__legend">тэги</legend>
+
+              <label for="tags" class="visually-hidden">тэги</label>
+
+              <textarea name="tags" id="tags" cols="30" rows="3" class="profile__textarea">#бургер #бар #футбол #концерт #крафт</textarea>
+            </fieldset>
+
+            <fieldset class="profile__fieldset transport-set">
+              <legend class="profile__legend">транспорт</legend>
+
+              <ul class="transport-set__list transport-list">
+                <li class="transport-list__item">
+                  <input id="air" type="checkbox" class="transport-list__choose visually-hidden" checked>
+
+                  <label class="transport-list__icon transport-air" for="air" aria-label="Самолет"></label>
+                </li>
+
+                <li class="transport-list__item">
+                  <input id="bus" type="checkbox" class="transport-list__choose visually-hidden" checked>
+
+                  <label class="transport-list__icon transport-bus" for="bus" aria-label="Автобус"></label>
+                </li>
+
+                <li class="transport-list__item">
+                  <input id="bike" type="checkbox" class="transport-list__choose visually-hidden">
+
+                  <label class="transport-list__icon transport-bicycle" for="bike" aria-label="Велосипед"></label>
+                </li>
+
+                <li class="transport-list__item">
+                  <input id="walk" type="checkbox" class="transport-list__choose visually-hidden" checked>
+
+                  <label class="transport-list__icon transport-walk" for="walk" aria-label="Пешком"></label>
+                </li>
+              </ul>
+            </fieldset>
           </div>
-
-          <div class="profile__change-img change-img">
-            <input type="file" name="file" id="input__file" class="visually-hidden">
-            <label for="input__file" class="change-img__btn button">сменить фото</label>
-          </div>
-
-          <fieldset class="profile__fieldset">
-            <legend class="profile__legend">тэги</legend>
-
-            <label for="tags" class="visually-hidden">тэги</label>
-
-            <textarea name="tags" id="tags" cols="30" rows="3" class="profile__textarea">#бургер #бар #футбол #концерт #крафт</textarea>
-          </fieldset>
-
-          <fieldset class="profile__fieldset transport-set">
-            <legend class="profile__legend">транспорт</legend>
-
-            <ul class="transport-set__list transport-list">
-              <li class="transport-list__item">
-                <input id="air" type="checkbox" class="transport-list__choose visually-hidden" checked>
-
-                <label class="transport-list__icon transport-air" for="air" aria-label="Самолет"></label>
-              </li>
-
-              <li class="transport-list__item">
-                <input id="bus" type="checkbox" class="transport-list__choose visually-hidden" checked>
-
-                <label class="transport-list__icon transport-bus" for="bus" aria-label="Автобус"></label>
-              </li>
-
-              <li class="transport-list__item">
-                <input id="bike" type="checkbox" class="transport-list__choose visually-hidden">
-
-                <label class="transport-list__icon transport-bicycle" for="bike" aria-label="Велосипед"></label>
-              </li>
-
-              <li class="transport-list__item">
-                <input id="walk" type="checkbox" class="transport-list__choose visually-hidden" checked>
-
-                <label class="transport-list__icon transport-walk" for="walk" aria-label="Пешком"></label>
-              </li>
-            </ul>
-          </fieldset>
         </div>
       </section>
 
@@ -440,7 +482,11 @@
                   </div>
 
                   <div class="choosing-country__flag">
-                    <span class="choosing-country__flag-img boc-flag" aria-label="Флаг Боснии"></span>
+                    <picture>
+                      <source media="(min-width: 768px)" type="image/png" srcset="img/bosnia-and-Herzegovina-flag-tablet.png 1x">
+
+                      <img src="img/bosnia-and-Herzegovina-flag-mobile.png" alt="Флаг Боснии">
+                    </picture>
 
                     <button class="choosing-country__close-btn js-remove-btn" type="button" aria-label="удалить из выбора"></button>
                   </div>
@@ -553,7 +599,11 @@
                   </div>
 
                   <div class="choosing-country__flag">
-                    <span class="choosing-country__flag-img czech-flag" aria-label="Флаг Чехии"></span>
+                    <picture>
+                      <source media="(min-width: 768px)" type="image/png" srcset="img/czech-flag-tablet.png 1x">
+
+                      <img src="img/czech-flag-mobile.png" alt="Флаг Чехии">
+                    </picture>
 
                     <button class="choosing-country__close-btn js-remove-btn" type="button" aria-label="удалить из выбора"></button>
                   </div>
@@ -690,7 +740,11 @@
                         <div class="country-fun__mask"></div>
                       </div>
 
-                      <span class="country-fun__flag boc-flag" aria-label="Флаг Боснии"></span>
+                      <picture>
+                        <source media="(min-width: 768px)" type="image/png" srcset="img/bosnia-and-Herzegovina-flag-tablet.png 1x">
+
+                        <img class="country-fun__flag" src="img/bosnia-and-Herzegovina-flag-mobile.png" alt="Флаг Боснии">
+                      </picture>
                     </div>
 
                     <label for="fun1" class="visually-hidden">Ваш план действий</label>
@@ -706,7 +760,11 @@
                         <div class="country-fun__mask"></div>
                       </div>
 
-                      <span class="country-fun__flag czech-flag" aria-label="Флаг Чехии"></span>
+                      <picture>
+                        <source media="(min-width: 768px)" type="image/png" srcset="img/czech-flag-tablet.png 1x">
+
+                        <img class="country-fun__flag" src="img/czech-flag-mobile.png" alt="Флаг Чехии">
+                      </picture>
                     </div>
 
                     <label for="fun2" class="visually-hidden">Ваш план действий</label>
@@ -731,7 +789,13 @@
       <div class="container">
         <div class="page-footer__logo logo">
           <a class="logo__link">
-            <img src="img/logo-mobile-blue@1x.png" width="100" height="19" alt="Сервис «Погнали?»">
+            <picture>
+              <source media="(min-width: 1440px)" type="image/png" srcset="img/logo-desktop-blue@1x.png 1x">
+
+              <source media="(min-width: 768px)" type="image/png" srcset="img/logo-tablet-blue@1x.png 1x">
+
+              <img src="img/logo-mobile-blue@1x.png" alt="Сервис «Погнали?»">
+            </picture>
           </a>
         </div>
 

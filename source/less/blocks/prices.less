@@ -1,15 +1,56 @@
 .prices {
   padding-top: 38px;
   padding-bottom: 39px;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 58px;
+    padding-bottom: 13px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 90px;
+    padding-bottom: 115px;
+  }
 }
 
 .prices .container {
+  position: relative;
   display: flex;
   flex-direction: column;
 
   background-image: url("../img/rates-mobile@1x.png");
   background-repeat: no-repeat;
   background-position: 195px 0;
+
+  @media (min-width: @tablet-width) {
+    padding-bottom: 50px;
+    background-position: 583px 352px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 150px;
+      right: 40px;
+      width: 198px;
+      height: 285px;
+
+      background: #e2e5f2;
+      border-radius: 20px;
+      z-index: -1;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    background-image: url("../img/rates@1x.png");
+    background-position: 1109px 197px;
+
+    &::before {
+      top: 145px;
+      right: 245px;
+      width: 446px;
+      height: 300px;
+    }
+  }
 }
 
 .prices__title {
@@ -25,6 +66,17 @@
   font-size: 24px;
   line-height: 24px;
   color: @special-orange;
+
+  @media (min-width: @tablet-width) {
+    margin-left: 105px;
+
+    font-size: 45px;
+    line-height: 45px;
+  }
+
+  @media (min-width: @desktop-width) {
+    text-align: center;
+  }
 }
 
 .prices__list {
@@ -34,6 +86,17 @@
   padding: 0;
 
   list-style: none;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 78px;
+    margin-left: 0;
+    margin-bottom: 28px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: 139px;
+    margin-left: 70px;
+  }
 }
 
 .prices__link {
@@ -46,5 +109,34 @@
   line-height: 16px;
   color: #132576;
   text-align: center;
-  vertical-align: baseline;
+  vertical-align: middle;
+
+  @media (min-width: @tablet-width) {
+    align-self: flex-start;
+    font-size: 20px;
+    line-height: 68px;
+
+    &::before {
+      content: "";
+      display: inline-block;
+      width: 68px;
+      height: 68px;
+      margin-right: 21px;
+
+      vertical-align: middle;
+
+      background-color: #e2e5f2;
+      background-image: url("../img/business.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: 24px 24px;
+
+      border: none;
+      border-radius: 50%;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-left: 70px;
+  }
 }

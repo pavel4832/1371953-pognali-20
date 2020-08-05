@@ -16,73 +16,108 @@
 
   <body class="catalog-body no-js">
     <header class="catalog-body__header page-header js-header">
-      <div class="logo">
-        <div class="logo__wrapper container">
-          <a class="logo__link">
-            <img class="no-js-logo" src="img/logo-mobile-blue@1x.png" width="100" height="19" alt="Сервис «Погнали?»">
-            <img class="logo__image js-image" src="img/logo-mobile-white@1x.png" width="100" height="19" alt="Сервис «Погнали?»">
+      <div class="container">
+        <div class="logo">
+          <a class="logo__link" href="index.html">
+            <picture>
+              <source media="(min-width: 1440px)" type="image/png" srcset="img/logo-desktop-blue@1x.png 1x">
+
+              <source media="(min-width: 768px)" type="image/png" srcset="img/logo-tablet-blue@1x.png 1x">
+
+              <img class="no-js-logo" src="img/logo-mobile-blue@1x.png" alt="Сервис «Погнали?»">
+            </picture>
+
+            <picture>
+              <source media="(min-width: 1440px)" type="image/png" srcset="img/logo-desktop-white@1x.png 1x">
+
+              <source media="(min-width: 768px)" type="image/png" srcset="img/logo-tablet-white@1x.png 1x">
+
+              <img class="logo__image js-image" src="img/logo-mobile-white@1x.png" alt="Сервис «Погнали?»">
+            </picture>
           </a>
 
           <button class="logo__menu-btn js-menu-toggle" type="button">
             <span class="visually-hidden js-label">Открыть меню</span>
           </button>
         </div>
-      </div>
 
-      <nav class="main-nav">
-        <div class="main-nav__wrapper container">
-          <ul class="main-nav__list site-list">
-            <li class="site-list__item site-list__item--active">
-              <a class="site-list__link" href="index.html">о сервисе</a>
+        <nav class="main-nav">
+          <div class="main-nav__wrapper container">
+            <ul class="main-nav__list site-list">
+              <li class="site-list__item">
+                <a class="site-list__link" href="index.html">о сервисе</a>
+              </li>
+
+              <li class="site-list__item">
+                <a class="site-list__link" href="form.html">направления</a>
+              </li>
+
+              <li class="site-list__item site-list__item--active">
+                <a class="site-list__link">попутчики</a>
+              </li>
+            </ul>
+
+            <ul class="main-nav__list user-list">
+              <li class="user-list__item">
+                <a href="#" class="user-list__login button top-login">авторизация</a>
+              </li>
+            </ul>
+
+            <ul class="main-nav__list contact-list">
+              <li class="contact-list__item">
+                <a href="tel:88005558628" class="contact-list__link top-tell">8 800 555-86-28</a>
+              </li>
+
+              <li class="contact-list__item">
+                <a href="mailto:mail@htmlacademy.ru" class="contact-list__link top-mail">mail@htmlacademy.ru</a>
+              </li>
+            </ul>
+
+            <ul class="main-nav__list social-list social">
+              <li class="social__item">
+                <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy" aria-label="Мы в Фейсбуке"></a>
+              </li>
+
+              <li class="social__item">
+                <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy" aria-label="Мы в Вконтакте"></a>
+              </li>
+
+              <li class="social__item">
+                <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy" aria-label="Мы в Инстаграме"></a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+
+        <div class="page-header__login">
+          <ul class="page-header__list contact-list">
+            <li class="contact-list__item">
+              <a href="tel:88005558628" class="contact-list__link icon-tel" aria-label="позвонить с сайта"></a>
             </li>
 
-            <li class="site-list__item">
-              <a class="site-list__link" href="form.html">направления</a>
-            </li>
-
-            <li class="site-list__item">
-              <a class="site-list__link">попутчики</a>
+            <li class="contact-list__item">
+              <a href="mailto:mail@htmlacademy.ru" class="contact-list__link icon-mail" aria-label="написать письмо"></a>
             </li>
           </ul>
 
-          <ul class="main-nav__list user-list">
+          <ul class="page-header__list user-list">
             <li class="user-list__item">
-              <a href="#" class="user-list__login button top-login">авторизация</a>
-            </li>
-          </ul>
-
-          <ul class="main-nav__list contact-list">
-            <li class="contact-list__item">
-              <a href="tel:88005558628" class="contact-list__link top-tell">8 800 555-86-28</a>
-            </li>
-
-            <li class="contact-list__item">
-              <a href="mailto:mail@htmlacademy.ru" class="contact-list__link top-mail">mail@htmlacademy.ru</a>
-            </li>
-          </ul>
-
-          <ul class="main-nav__list social-list social">
-            <li class="social__item">
-              <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy" aria-label="Мы в Фейсбуке"></a>
-            </li>
-
-            <li class="social__item">
-              <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy" aria-label="Мы в Вконтакте"></a>
-            </li>
-
-            <li class="social__item">
-              <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy" aria-label="Мы в Инстаграме"></a>
+              <a href="#" class="user-list__login button">авторизация</a>
             </li>
           </ul>
         </div>
-      </nav>
-
-      <div class="container">
-        <h1 class="page-header__title">Попутчики</h1>
       </div>
     </header>
 
-    <main class="catalog-body__main">
+    <main class="catalog-body__main page-main">
+      <section class="page-main__header main-header">
+        <div class="container">
+          <h1 class="main-header__title">Попутчики</h1>
+
+          <a href="index.html" class="main-header__button button">на главную</a>
+        </div>
+      </section>
+
       <section class="catalog-filter js-filter">
         <div class="container">
           <h2 class="catalog-filter__title">Фильтрация по странам:</h2>
@@ -327,47 +362,67 @@
         <h2 class="visually-hidden">Список попутчиков</h2>
         <div class="container">
           <div class="catalog-companions__list">
-            <article class="catalog-companions__item profile-item companion-offline like-active">
-              <div class="profile-item__info">
-                <div class="profile-item__image">
-                  <img src="img/firsova-mobile@1x.jpg" width="70" height="70" alt="Фото Тани" >
-                </div>
+            <article class="catalog-companions__item profile-catalog companion-offline like-active">
+              <div class="profile-catalog__image">
+                <picture>
+                  <source media="(min-width: 1440px)" type="image/jpg" srcset="img/firsova-desktop@1x.jpg 1x">
 
-                <a href="#">
-                  <h3 class="profile-item__name">Таня Фирсова
-                    <span class="profile-item__distance">1,5 М</span>
-                  </h3>
-                </a>
+                  <source media="(min-width: 768px)" type="image/jpg" srcset="img/firsova-tablet@1x.jpg 1x">
+
+                  <img src="img/firsova-mobile@1x.jpg" alt="Фото Тани">
+                </picture>
               </div>
 
-              <p class="profile-item__interests">
+              <a class="profile-catalog__link" href="#">
+                <h3 class="profile-catalog__name">Таня Фирсова</h3>
+              </a>
+
+              <div class="profile-catalog__like">
+                <span class="profile-catalog__like-icon" aria-label="иконка сердечко"></span>
+
+                <span class="profile-catalog__distance">1,5 М</span>
+              </div>
+
+              <p class="profile-catalog__interests">
                 #ЗОЖ #ПП #Фитнес #пляж #авокадо #смузи
               </p>
 
-              <div class="profile-item__request country-request">
-                <ul class="country-request__list">
-                  <li class="country-request__item">
-                    <span class="country-request__flag country-request__flag--sri_lanka" aria-label="Флаг шри-ланки"></span>
+              <div class="profile-catalog__country country">
+                <ul class="country__list">
+                  <li class="country__item">
+                    <picture>
+                      <source media="(min-width: 768px)" type="image/png" srcset="img/sriLanka-flag-tablet-companions.png 1x">
 
-                    <span class="country-request__name">шри-ланка</span>
+                      <img class="country__flag" src="img/sri-lanka-flag-mobile-companions.png" alt="Флаг шри-ланки">
+                    </picture>
+
+                    <span class="country__name">шри-ланка</span>
                   </li>
 
-                  <li class="country-request__item">
-                    <span class="country-request__flag country-request__flag--thailand" aria-label="Флаг тайланда"></span>
+                  <li class="country__item">
+                    <picture>
+                      <source media="(min-width: 768px)" type="image/png" srcset="img/thailand-flag-tablet-companions.png 1x">
 
-                    <span class="country-request__name">тайланд</span>
+                      <img class="country__flag" src="img/thailand-flag-mobile-companions.png" alt="Флаг тайланда">
+                    </picture>
+
+                    <span class="country__name">тайланд</span>
                   </li>
 
-                  <li class="country-request__item">
-                    <span class="country-request__flag country-request__flag--seychelles" aria-label="Флаг сейшел"></span>
+                  <li class="country__item">
+                    <picture>
+                      <source media="(min-width: 768px)" type="image/png" srcset="img/seychelles-flag-tablet-companions.png 1x">
 
-                    <span class=" country-request__name">сейшелы</span>
+                      <img class="country__flag" src="img/seychelles-flag-mobile-companions.png" alt="Флаг сейшел">
+                    </picture>
+
+                    <span class=" country__name">сейшелы</span>
                   </li>
                 </ul>
               </div>
 
-              <div class="profile-item__properties properties-info">
-                <ul class="properties-info__transport transport-list">
+              <div class="profile-catalog__properties">
+                <ul class="profile-catalog__transport transport-list">
                   <li class="transport-list__item">
                     <span class="transport-list__icon transport-air transport-enable" aria-label="самолет"></span>
                   </li>
@@ -385,57 +440,73 @@
                   </li>
                 </ul>
 
-                <div class="properties-info__level level level--firsova">
+                <div class="profile-catalog__level level level--firsova">
                   <b class="level__number">99</b>
 
-                  <small class="level__text visually-hidden">level</small>
+                  <small class="level__text">level</small>
                 </div>
               </div>
 
-              <a href="#" class="profile-item__invite button">позвать!</a>
+              <a href="#" class="profile-catalog__invite button">позвать!</a>
             </article>
 
-            <article class="catalog-companions__item profile-item companion-offline">
-              <div class="profile-item__info">
-                <div class="profile-item__image">
-                  <img src="img/demin-mobile@1x.jpg" width="70" height="70" alt="Фото Пети" >
-                </div>
+            <article class="catalog-companions__item profile-catalog companion-offline">
+              <div class="profile-catalog__image">
+                <picture>
+                  <source media="(min-width: 1440px)" type="image/jpg" srcset="img/demin-desktop@1x.jpg 1x">
 
-                <a href="#">
-                  <h3 class="profile-item__name">Петя Демин
-                    <span class="profile-item__distance">1500</span>
-                  </h3>
-                </a>
+                  <source media="(min-width: 768px)" type="image/jpg" srcset="img/demin-tablet@1x.jpg 1x">
+
+                  <img src="img/demin-mobile@1x.jpg" alt="Фото Пети">
+                </picture>
               </div>
 
-              <p class="profile-item__interests">
+              <a class="profile-catalog__link" href="#">
+                <h3 class="profile-catalog__name">Петя Демин</h3>
+              </a>
+
+              <div class="profile-catalog__like">
+                <span class="profile-catalog__like-icon" aria-label="иконка сердечко"></span>
+
+                <span class="profile-catalog__distance">1500</span>
+              </div>
+
+              <p class="profile-catalog__interests">
                 #бургер #бар #футбол #концерт #крафт
               </p>
 
-              <div class="profile-item__request country-request">
-                <ul class="country-request__list">
-                  <li class="country-request__item">
-                    <span class="country-request__flag country-request__flag--belgium" aria-label="Флаг белгии"></span>
+              <div class="profile-catalog__country country">
+                <ul class="country__list">
+                  <li class="country__item">
+                    <picture>
+                      <source media="(min-width: 768px)" type="image/png" srcset="img/belgium-flag-tablet-companions.png 1x">
 
-                    <span class="country-request__name">бельгия</span>
+                      <img class="country__flag" src="img/belgium-flag-mobile-companions.png" alt="Флаг белгии">
+                    </picture>
+
+                    <span class="country__name">бельгия</span>
                   </li>
 
-                  <li class="country-request__item">
-                    <span class="country-request__flag country-request__flag--czech" aria-label="Флаг чехии"></span>
+                  <li class="country__item">
+                    <picture>
+                      <source media="(min-width: 768px)" type="image/png" srcset="img/czech-flag-tablet-companions.png 1x">
 
-                    <span class="country-request__name">чехия</span>
+                      <img class="country__flag" src="img/czech-flag-mobile-companions.png" alt="Флаг чехии">
+                    </picture>
+
+                    <span class="country__name">чехия</span>
                   </li>
                 </ul>
               </div>
 
-              <div class="profile-item__properties properties-info">
-                <ul class="properties-info__transport transport-list">
+              <div class="profile-catalog__properties">
+                <ul class="profile-catalog__transport transport-list">
                   <li class="transport-list__item">
                     <span class="transport-list__icon transport-air transport-enable" aria-label="самолет"></span>
                   </li>
 
                   <li class="transport-list__item">
-                    <span class="transport-list__icon transport-bus" aria-label="автобус"></span>
+                    <span class="transport-list__icon transport-bus transport-enable" aria-label="автобус"></span>
                   </li>
 
                   <li class="transport-list__item">
@@ -443,61 +514,81 @@
                   </li>
 
                   <li class="transport-list__item">
-                    <span class="transport-list__icon transport-walk" aria-label="пешком"></span>
+                    <span class="transport-list__icon transport-walk transport-enable" aria-label="пешком"></span>
                   </li>
                 </ul>
 
-                <div class="properties-info__level level level--demin">
+                <div class="profile-catalog__level level level--demin">
                   <b class="level__number">80</b>
 
-                  <small class="level__text visually-hidden">level</small>
+                  <small class="level__text">level</small>
                 </div>
               </div>
 
-              <a href="#" class="profile-item__invite button">позвать!</a>
+              <a href="#" class="profile-catalog__invite button">позвать!</a>
             </article>
 
-            <article class="catalog-companions__item profile-item companion-offline">
-              <div class="profile-item__info">
-                <div class="profile-item__image">
-                  <img src="img/smolov-mobile@1x.jpg" width="70" height="70" alt="Фото Марка" >
-                </div>
+            <article class="catalog-companions__item profile-catalog companion-offline">
+              <div class="profile-catalog__image">
+                <picture>
+                  <source media="(min-width: 1440px)" type="image/jpg" srcset="img/smolov-desktop@1x.jpg 1x">
 
-                <a href="#">
-                  <h3 class="profile-item__name">Марк Смолов
-                    <span class="profile-item__distance">170</span>
-                  </h3>
-                </a>
+                  <source media="(min-width: 768px)" type="image/jpg" srcset="img/smolov-tablet@1x.jpg 1x">
+
+                  <img src="img/smolov-mobile@1x.jpg" alt="Фото Марка">
+                </picture>
               </div>
 
-              <p class="profile-item__interests">
+              <a class="profile-catalog__link" href="#">
+                <h3 class="profile-catalog__name">Марк Смолов</h3>
+              </a>
+
+              <div class="profile-catalog__like">
+                <span class="profile-catalog__like-icon" aria-label="иконка сердечко"></span>
+
+                <span class="profile-catalog__distance">170</span>
+              </div>
+
+              <p class="profile-catalog__interests">
                 #рэп #тату #хайпбист #кроссовки #суприм
               </p>
 
-              <div class="profile-item__request country-request">
-                <ul class="country-request__list">
-                  <li class="country-request__item">
-                    <span class="country-request__flag country-request__flag--usa" aria-label="Флаг США"></span>
+              <div class="profile-catalog__country country">
+                <ul class="country__list">
+                  <li class="country__item">
+                    <picture>
+                      <source media="(min-width: 768px)" type="image/png" srcset="img/united-states-of-america-flag-tablet-companions.png 1x">
 
-                    <span class="country-request__name">сша</span>
+                      <img class="country__flag" src="img/united-states-of-america-flag-mobile-companions.png" alt="Флаг США">
+                    </picture>
+
+                    <span class="country__name">сша</span>
                   </li>
 
-                  <li class="country-request__item">
-                    <span class="country-request__flag country-request__flag--aus" aria-label="Флаг австралии"></span>
+                  <li class="country__item">
+                    <picture>
+                      <source media="(min-width: 768px)" type="image/png" srcset="img/australia-flag-tablet-companions.png 1x">
 
-                    <span class="country-request__name">австралия</span>
+                      <img class="country__flag" src="img/australia-flag-mobile-companions.png" alt="Флаг австралии">
+                    </picture>
+
+                    <span class="country__name">австралия</span>
                   </li>
 
-                  <li class="country-request__item">
-                    <span class="country-request__flag country-request__flag--dom" aria-label="Флаг доминиканы"></span>
+                  <li class="country__item">
+                    <picture>
+                      <source media="(min-width: 768px)" type="image/png" srcset="img/dominica-flag-tablet-companions.png 1x">
 
-                    <span class="country-request__name">доминикана</span>
+                      <img class="country__flag" src="img/dominica-flag-mobile-companions.png" alt="Флаг доминиканы">
+                    </picture>
+
+                    <span class=" country__name">доминикана</span>
                   </li>
                 </ul>
               </div>
 
-              <div class="profile-item__properties properties-info">
-                <ul class="properties-info__transport transport-list">
+              <div class="profile-catalog__properties">
+                <ul class="profile-catalog__transport transport-list">
                   <li class="transport-list__item">
                     <span class="transport-list__icon transport-air transport-enable" aria-label="самолет"></span>
                   </li>
@@ -507,7 +598,7 @@
                   </li>
 
                   <li class="transport-list__item">
-                    <span class="transport-list__icon transport-bicycle" aria-label="велосипед"></span>
+                    <span class="transport-list__icon transport-bicycle transport-enable" aria-label="велосипед"></span>
                   </li>
 
                   <li class="transport-list__item">
@@ -515,61 +606,77 @@
                   </li>
                 </ul>
 
-                <div class="properties-info__level level level--smolov">
+                <div class="profile-catalog__level level level--smolov">
                   <b class="level__number">25</b>
 
-                  <small class="level__text visually-hidden">level</small>
+                  <small class="level__text">level</small>
                 </div>
               </div>
 
-              <a href="#" class="profile-item__invite button">позвать!</a>
+              <a href="#" class="profile-catalog__invite button">позвать!</a>
             </article>
 
-            <article class="catalog-companions__item profile-item companion-online">
-              <div class="profile-item__info">
-                <div class="profile-item__image">
-                  <img src="img/rogovaya-mobile@1x.jpg" width="70" height="70" alt="Фото Ларисы" >
-                </div>
+            <article class="catalog-companions__item profile-catalog companion-online">
+              <div class="profile-catalog__image">
+                <picture>
+                  <source media="(min-width: 1440px)" type="image/jpg" srcset="img/rogovaya-desktop@1x.jpg 1x">
 
-                <a href="#">
-                  <h3 class="profile-item__name">Лариса Роговая
-                    <span class="profile-item__distance">23</span>
-                  </h3>
-                </a>
+                  <source media="(min-width: 768px)" type="image/jpg" srcset="img/rogovaya-tablet@1x.jpg 1x">
+
+                  <img src="img/rogovaya-mobile@1x.jpg" alt="Фото Ларисы">
+                </picture>
               </div>
 
-              <p class="profile-item__interests">
+              <a class="profile-catalog__link" href="#">
+                <h3 class="profile-catalog__name">Лариса Роговая</h3>
+              </a>
+
+              <div class="profile-catalog__like">
+                <span class="profile-catalog__like-icon" aria-label="иконка сердечко"></span>
+
+                <span class="profile-catalog__distance">23</span>
+              </div>
+
+              <p class="profile-catalog__interests">
                 #образование #карьера #учеба #линкедин
               </p>
 
-              <div class="profile-item__request country-request">
-                <ul class="country-request__list">
-                  <li class="country-request__item">
-                    <span class="country-request__flag country-request__flag--gb" aria-label="Флаг великобритании"></span>
+              <div class="profile-catalog__country country">
+                <ul class="country__list">
+                  <li class="country__item">
+                    <picture>
+                      <source media="(min-width: 768px)" type="image/png" srcset="img/united-kingdom-flag-tablet-companions.png 1x">
 
-                    <span class="country-request__name">великобритания</span>
+                      <img class="country__flag" src="img/united-kingdom-flag-mobile-companions.png" alt="Флаг великобритании">
+                    </picture>
+
+                    <span class="country__name">великобритания</span>
                   </li>
 
-                  <li class="country-request__item">
-                    <span class="country-request__flag country-request__flag--germany" aria-label="Флаг германии"></span>
+                  <li class="country__item">
+                    <picture>
+                      <source media="(min-width: 768px)" type="image/png" srcset="img/germany-flag-tablet-companions.png 1x">
 
-                    <span class="country-request__name">германия</span>
+                      <img class="country__flag" src="img/germany-flag-mobile-companions.png" alt="Флаг германии">
+                    </picture>
+
+                    <span class="country__name">германия</span>
                   </li>
                 </ul>
               </div>
 
-              <div class="profile-item__properties properties-info">
-                <ul class="properties-info__transport transport-list">
+              <div class="profile-catalog__properties">
+                <ul class="profile-catalog__transport transport-list">
                   <li class="transport-list__item">
                     <span class="transport-list__icon transport-air transport-enable" aria-label="самолет"></span>
                   </li>
 
                   <li class="transport-list__item">
-                    <span class="transport-list__icon transport-bus" aria-label="автобус"></span>
+                    <span class="transport-list__icon transport-bus transport-enable" aria-label="автобус"></span>
                   </li>
 
                   <li class="transport-list__item">
-                    <span class="transport-list__icon transport-bicycle" aria-label="велосипед"></span>
+                    <span class="transport-list__icon transport-bicycle transport-enable" aria-label="велосипед"></span>
                   </li>
 
                   <li class="transport-list__item">
@@ -577,23 +684,42 @@
                   </li>
                 </ul>
 
-                <div class="properties-info__level level level--rogovay">
+                <div class="profile-catalog__level level level--rogovay">
                   <b class="level__number">50</b>
 
-                  <small class="level__text visually-hidden">level</small>
+                  <small class="level__text">level</small>
                 </div>
               </div>
 
-              <a href="#" class="profile-item__invite button">позвать!</a>
+              <a href="#" class="profile-catalog__invite button">позвать!</a>
             </article>
           </div>
 
           <a href="#" class="catalog-companions__button button">показать еще</a>
 
           <div class="catalog-companions__pagination pagination">
-            <a href="" class="pagination__button button-back" aria-label="назад"></a>
+            <ul class="pagination__list">
+              <li class="pagination__item active-page">
+                <a href="" class="pagination__link">1</a>
+              </li>
 
-            <a href="" class="pagination__button button-forward" aria-label="вперед"></a>
+              <li class="pagination__item">
+                <a href="" class="pagination__link">2</a>
+              </li>
+
+              <li class="pagination__item">
+                <a href="" class="pagination__link">3</a>
+              </li>
+
+              <li class="pagination__item">
+                <a href="" class="pagination__link">4</a>
+              </li>
+            </ul>
+            <div class="pagination__buttons">
+              <a href="" class="pagination__button button-back" aria-label="назад"></a>
+
+              <a href="" class="pagination__button button-forward" aria-label="вперед"></a>
+            </div>
           </div>
         </div>
       </section>
@@ -603,7 +729,13 @@
       <div class="container">
         <div class="page-footer__logo logo">
           <a class="logo__link">
-            <img src="img/logo-mobile-blue@1x.png" width="100" height="19" alt="Сервис «Погнали?»">
+            <picture>
+              <source media="(min-width: 1440px)" type="image/png" srcset="img/logo-desktop-blue@1x.png 1x">
+
+              <source media="(min-width: 768px)" type="image/png" srcset="img/logo-tablet-blue@1x.png 1x">
+
+              <img src="img/logo-mobile-blue@1x.png" alt="Сервис «Погнали?»">
+            </picture>
           </a>
         </div>
 
