@@ -3,17 +3,21 @@
   justify-content: center;
   align-items: center;
   width: 270px;
-  height: 40px;
 
   background-color: @special-blue-light;
 
   border: none;
   border-radius: 20px;
 
+  @media (min-width: @tablet-width) {
+    width: 100%;
+
+    border-radius: 10px;
+  }
+
   @media (min-width: @desktop-width) {
     justify-self: end;
     width: 190px;
-    height: 47px;
 
     border-radius: unset;
     border-bottom-left-radius: 10px;
@@ -32,6 +36,15 @@
   text-align: center;
   text-transform: uppercase;
   color: @basic-blue;
+
+  @media (min-width: @tablet-width) {
+    line-height: 60px;
+    color: @basic-blue-light;
+  }
+
+  @media (min-width: @desktop-width) {
+    line-height: 47px;
+  }
 }
 
 .change-img__btn--mobile {

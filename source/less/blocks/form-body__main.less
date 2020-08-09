@@ -31,8 +31,8 @@
 
   background-color: #dfe3f0;
 
-  border-top-left-radius: 25px;
-  border-top-right-radius: 25px;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
   z-index: 2;
 
   @media (min-width: @desktop-width) {
@@ -53,7 +53,13 @@
   border-top-right-radius: 25px;
   z-index: 3;
 
+  @media (min-width: @tablet-width) {
+    padding-top: 50px;
+  }
+
   @media (min-width: @desktop-width) {
+    padding-top: 47px;
+
     border-top-left-radius: 60px;
     border-top-right-radius: 60px;
   }

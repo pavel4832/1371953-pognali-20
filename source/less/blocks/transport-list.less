@@ -8,6 +8,12 @@
   list-style: none;
 }
 
+.profile .transport-list {
+  @media (min-width: @tablet-width) {
+    width: 176px;
+  }
+}
+
 .transport-list__item {
   display: flex;
   justify-content: center;
@@ -16,6 +22,13 @@
   height: 32px;
 
   border-radius: 50%;
+}
+
+.transport-set__list .transport-list__item {
+  @media (min-width: @tablet-width) {
+    width: 44px;
+    height: 44px;
+  }
 }
 
 .transport-list__icon {
@@ -98,6 +111,11 @@
 .profile .transport-list__icon {
   width: 16px;
   height: 16px;
+
+  @media (min-width: @tablet-width) {
+    width: 23px;
+    height: 22px;
+  }
 }
 
 .search-form__field .transport-list__item {

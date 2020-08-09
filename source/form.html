@@ -120,21 +120,20 @@
         <h2 class="visually-hidden">Профиль пользователя</h2>
 
         <div class="container">
-          <div class="desktop-wrapper">
-            <div class="profile__header">
-              <div class="profile__level level">
-                <b class="level__number">80</b>
+          <div class="profile__wrapper">
 
-                <small class="level__text">level</small>
-              </div>
+            <div class="profile__level level">
+              <b class="level__number">80</b>
 
-              <div class="profile__image">
-                <picture>
-                  <source media="(min-width: 1440px)" type="image/jpg" srcset="img/demin-tablet@1x.jpg 1x">
+              <small class="level__text">level</small>
+            </div>
 
-                  <img src="../img/demin-desktop@1x.jpg" alt="Фото пользователя" >
-                </picture>
-              </div>
+            <div class="profile__image">
+              <picture>
+                <source media="(min-width: 1440px)" type="image/jpg" srcset="img/demin-tablet@1x.jpg 1x">
+
+                <img src="../img/demin-desktop@1x.jpg" alt="Фото пользователя" >
+              </picture>
             </div>
 
             <div class="profile__change-img change-img">
@@ -148,9 +147,12 @@
             <fieldset class="profile__fieldset tags-set">
               <legend class="profile__legend">тэги</legend>
 
-              <label for="tags" class="visually-hidden">тэги</label>
+              <div class="tag-set__wrapper">
 
-              <textarea name="tags" id="tags" cols="30" rows="3" class="profile__textarea">#бургер #бар #футбол #концерт #крафт</textarea>
+                <label for="tags" class="visually-hidden">тэги</label>
+
+                <textarea name="tags" id="tags" cols="30" rows="3" class="profile__textarea">#бургер #бар #футбол #концерт #крафт</textarea>
+              </div>
             </fieldset>
 
             <fieldset class="profile__fieldset transport-set">
@@ -248,125 +250,138 @@
             <fieldset id="step-one" class="plans-form__set step-one">
               <legend class="plans-form__legend">Шаг 1.<br> Даты пребывания</legend>
 
-              <p class="plans-form__text">Укажите предпочтительное количество попутчиков, которых вы хотели бы позвать в поездку и ее предполагаемую длительность.</p>
+              <div class="step-one__wrapper">
+                <p class="plans-form__text">Укажите предпочтительное количество попутчиков, которых вы хотели бы позвать в поездку и ее предполагаемую длительность.</p>
 
-              <div class="step-one__companions">
-                <label class="step-one__label" for="companions">ищу попутчиков:
-                  <span class="step-one__unit">чел.</span>
-                </label>
+                <div class="step-one__companions">
+                  <label class="step-one__label" for="companions">ищу попутчиков:
+                    <span class="step-one__unit">чел.</span>
+                  </label>
 
-                <div class="step-one__button-group">
-                  <button class="step-one__button button-decrease" aria-label="Увеличить"></button>
+                  <div class="step-one__button-group">
+                    <button class="step-one__button button-decrease" aria-label="Увеличить"></button>
 
-                  <input id="companions" class="step-one__input" type="text" name="companions" value="2">
+                    <input id="companions" class="step-one__input" type="text" name="companions" value="2">
 
-                  <button class="step-one__button button-increase" aria-label="Уменьшить"></button>
-                </div>
-              </div>
-
-              <div class="step-one__duration">
-                <label class="step-one__label" for="duration">длительность:
-                  <span class="step-one__unit">дн.</span>
-                </label>
-
-                <div class="step-one__button-group">
-                  <button class="step-one__button button-decrease" aria-label="Увеличить"></button>
-
-                  <input id="duration" class="step-one__input" type="text" name="duration" value="2">
-
-                  <button class="step-one__button button-increase" aria-label="Уменьшить"></button>
-                </div>
-              </div>
-
-              <input id="children" class="step-one__checkbox visually-hidden" type="checkbox" name="children" checked>
-
-              <label class="step-one__children" for="children">Можно с детьми</label>
-
-              <div class="step-one__calendar calendar-form">
-                <label class="visually-hidden" for="month">Март 2019</label>
-
-                <div class="step-one__button-group">
-                  <button class="step-one__button step-one__button--left" aria-label="Увеличить"></button>
-
-                  <input id="month" class="step-one__input" type="text" value="Март 2019">
-
-                  <button class="step-one__button step-one__button--right" aria-label="Уменьшить"></button>
+                    <button class="step-one__button button-increase" aria-label="Уменьшить"></button>
+                  </div>
                 </div>
 
-                <table class="calendar-form__table">
-                  <tr class="calendar-form__rows">
-                    <th class="calendar-form__head">п</th>
-                    <th class="calendar-form__head">в</th>
-                    <th class="calendar-form__head">с</th>
-                    <th class="calendar-form__head">ч</th>
-                    <th class="calendar-form__head">п</th>
-                    <th class="calendar-form__head weekend">с</th>
-                    <th class="calendar-form__head weekend">в</th>
-                  </tr>
+                <div class="step-one__duration">
+                  <label class="step-one__label" for="duration">длительность:
+                    <span class="step-one__unit">дн.</span>
+                  </label>
 
-                  <tr class="calendar-form__rows">
-                    <td class="calendar-form__columns"><a href="#" class="calendar-form__link">23</a></td>
-                    <td class="calendar-form__columns"><a href="#" class="calendar-form__link">24</a></td>
-                    <td class="calendar-form__columns"><a href="#" class="calendar-form__link">25</a></td>
-                    <td class="calendar-form__columns"><a href="#" class="calendar-form__link">26</a></td>
-                    <td class="calendar-form__columns"><a href="#" class="calendar-form__link">27</a></td>
-                    <td class="calendar-form__columns"><a href="#" class="calendar-form__link">28</a></td>
-                    <td class="calendar-form__columns"><a href="#" class="calendar-form__link">1</a></td>
-                  </tr>
+                  <div class="step-one__button-group">
+                    <button class="step-one__button button-decrease" aria-label="Увеличить"></button>
 
-                  <tr class="calendar-form__rows">
-                    <td class="calendar-form__columns"><a href="#" class="calendar-form__link">2</a></td>
-                    <td class="calendar-form__columns"><a href="#" class="calendar-form__link">3</a></td>
-                    <td class="calendar-form__columns"><a href="#" class="calendar-form__link">4</a></td>
-                    <td class="calendar-form__columns"><a href="#" class="calendar-form__link">5</a></td>
-                    <td class="calendar-form__columns"><a href="#" class="calendar-form__link">6</a></td>
-                    <td class="calendar-form__columns"><a href="#" class="calendar-form__link">7</a></td>
-                    <td class="calendar-form__columns"><a href="#" class="calendar-form__link">8</a></td>
-                  </tr>
+                    <input id="duration" class="step-one__input" type="text" name="duration" value="2">
 
-                  <tr class="calendar-form__rows">
-                    <td class="calendar-form__columns"><a href="#" class="calendar-form__link">9</a></td>
-                    <td class="calendar-form__columns"><a href="#" class="calendar-form__link">10</a></td>
-                    <td class="calendar-form__columns"><a href="#" class="calendar-form__link">11</a></td>
-                    <td class="calendar-form__columns"><a href="#" class="calendar-form__link">12</a></td>
-                    <td class="calendar-form__columns"><a href="#" class="calendar-form__link">13</a></td>
-                    <td class="calendar-form__columns"><a href="#" class="calendar-form__link">14</a></td>
-                    <td class="calendar-form__columns"><a href="#" class="calendar-form__link">15</a></td>
-                  </tr>
+                    <button class="step-one__button button-increase" aria-label="Уменьшить"></button>
+                  </div>
+                </div>
 
-                  <tr class="calendar-form__rows">
-                    <td class="calendar-form__columns"><a href="#" class="calendar-form__link">16</a></td>
-                    <td class="calendar-form__columns"><a href="#" class="calendar-form__link">17</a></td>
-                    <td class="calendar-form__columns"><a href="#" class="calendar-form__link">18</a></td>
-                    <td class="calendar-form__columns"><a href="#" class="calendar-form__link">19</a></td>
-                    <td class="calendar-form__columns"><a href="#" class="calendar-form__link">20</a></td>
-                    <td class="calendar-form__columns"><a href="#" class="calendar-form__link">21</a></td>
-                    <td class="calendar-form__columns"><a href="#" class="calendar-form__link">22</a></td>
-                  </tr>
+                <div class="step-one__children">
+                  <input id="children" class="step-one__checkbox visually-hidden" type="checkbox" name="children" checked>
 
-                  <tr class="calendar-form__rows">
-                    <td class="calendar-form__columns"><a href="#" class="calendar-form__link">23</a></td>
-                    <td class="calendar-form__columns"><a href="#" class="calendar-form__link">24</a></td>
-                    <td class="calendar-form__columns"><a href="#" class="calendar-form__link">25</a></td>
-                    <td class="calendar-form__columns choosing-day start-day"><a href="#" class="calendar-form__link">26</a></td>
-                    <td class="calendar-form__columns choosing-day"><a href="#" class="calendar-form__link">27</a></td>
-                    <td class="calendar-form__columns choosing-day"><a href="#" class="calendar-form__link">28</a></td>
-                    <td class="calendar-form__columns enable-day"><a href="#" class="calendar-form__link">29</a></td>
-                  </tr>
+                  <label class="step-one__children--label" for="children">Можно с детьми</label>
+                </div>
+                <div class="step-one__calendar calendar-form">
+                  <label class="visually-hidden" for="month">Март 2019</label>
 
-                  <tr class="calendar-form__rows">
-                    <td class="calendar-form__columns enable-day"><a href="#" class="calendar-form__link">30</a></td>
-                    <td class="calendar-form__columns enable-day"><a href="#" class="calendar-form__link">31</a></td>
-                    <td class="calendar-form__columns enable-day"><a href="#" class="calendar-form__link">1</a></td>
-                    <td class="calendar-form__columns enable-day"><a href="#" class="calendar-form__link">2</a></td>
-                    <td class="calendar-form__columns enable-day"><a href="#" class="calendar-form__link">3</a></td>
-                    <td class="calendar-form__columns enable-day"><a href="#" class="calendar-form__link">4</a></td>
-                    <td class="calendar-form__columns enable-day"><a href="#" class="calendar-form__link">5</a></td>
-                  </tr>
-                </table>
+                  <div class="step-one__button-group">
+                    <button class="step-one__button step-one__button--left" aria-label="Увеличить"></button>
+
+                    <input id="month" class="step-one__input" type="text" value="Март 2019">
+
+                    <button class="step-one__button step-one__button--right" aria-label="Уменьшить"></button>
+                  </div>
+
+                  <table class="calendar-form__table">
+                    <tr class="calendar-form__rows calendar-form__rows--mobile">
+                      <th class="calendar-form__head">п</th>
+                      <th class="calendar-form__head">в</th>
+                      <th class="calendar-form__head">с</th>
+                      <th class="calendar-form__head">ч</th>
+                      <th class="calendar-form__head">п</th>
+                      <th class="calendar-form__head weekend">с</th>
+                      <th class="calendar-form__head weekend">в</th>
+                    </tr>
+
+                    <tr class="calendar-form__rows calendar-form__rows--tablet">
+                      <th class="calendar-form__head">Пн</th>
+                      <th class="calendar-form__head">Вт</th>
+                      <th class="calendar-form__head">Ср</th>
+                      <th class="calendar-form__head">Чт</th>
+                      <th class="calendar-form__head">Пт</th>
+                      <th class="calendar-form__head weekend">Сб</th>
+                      <th class="calendar-form__head weekend">Вс</th>
+                    </tr>
+
+                    <tr class="calendar-form__rows">
+                      <td class="calendar-form__columns"><a href="#" class="calendar-form__link">23</a></td>
+                      <td class="calendar-form__columns"><a href="#" class="calendar-form__link">24</a></td>
+                      <td class="calendar-form__columns"><a href="#" class="calendar-form__link">25</a></td>
+                      <td class="calendar-form__columns"><a href="#" class="calendar-form__link">26</a></td>
+                      <td class="calendar-form__columns"><a href="#" class="calendar-form__link">27</a></td>
+                      <td class="calendar-form__columns"><a href="#" class="calendar-form__link">28</a></td>
+                      <td class="calendar-form__columns"><a href="#" class="calendar-form__link">1</a></td>
+                    </tr>
+
+                    <tr class="calendar-form__rows">
+                      <td class="calendar-form__columns"><a href="#" class="calendar-form__link">2</a></td>
+                      <td class="calendar-form__columns"><a href="#" class="calendar-form__link">3</a></td>
+                      <td class="calendar-form__columns"><a href="#" class="calendar-form__link">4</a></td>
+                      <td class="calendar-form__columns"><a href="#" class="calendar-form__link">5</a></td>
+                      <td class="calendar-form__columns"><a href="#" class="calendar-form__link">6</a></td>
+                      <td class="calendar-form__columns"><a href="#" class="calendar-form__link">7</a></td>
+                      <td class="calendar-form__columns"><a href="#" class="calendar-form__link">8</a></td>
+                    </tr>
+
+                    <tr class="calendar-form__rows">
+                      <td class="calendar-form__columns"><a href="#" class="calendar-form__link">9</a></td>
+                      <td class="calendar-form__columns"><a href="#" class="calendar-form__link">10</a></td>
+                      <td class="calendar-form__columns"><a href="#" class="calendar-form__link">11</a></td>
+                      <td class="calendar-form__columns"><a href="#" class="calendar-form__link">12</a></td>
+                      <td class="calendar-form__columns"><a href="#" class="calendar-form__link">13</a></td>
+                      <td class="calendar-form__columns"><a href="#" class="calendar-form__link">14</a></td>
+                      <td class="calendar-form__columns"><a href="#" class="calendar-form__link">15</a></td>
+                    </tr>
+
+                    <tr class="calendar-form__rows">
+                      <td class="calendar-form__columns"><a href="#" class="calendar-form__link">16</a></td>
+                      <td class="calendar-form__columns"><a href="#" class="calendar-form__link">17</a></td>
+                      <td class="calendar-form__columns"><a href="#" class="calendar-form__link">18</a></td>
+                      <td class="calendar-form__columns"><a href="#" class="calendar-form__link">19</a></td>
+                      <td class="calendar-form__columns"><a href="#" class="calendar-form__link">20</a></td>
+                      <td class="calendar-form__columns"><a href="#" class="calendar-form__link">21</a></td>
+                      <td class="calendar-form__columns"><a href="#" class="calendar-form__link">22</a></td>
+                    </tr>
+
+                    <tr class="calendar-form__rows">
+                      <td class="calendar-form__columns"><a href="#" class="calendar-form__link">23</a></td>
+                      <td class="calendar-form__columns"><a href="#" class="calendar-form__link">24</a></td>
+                      <td class="calendar-form__columns"><a href="#" class="calendar-form__link">25</a></td>
+                      <td class="calendar-form__columns choosing-day start-day"><a href="#" class="calendar-form__link">26</a></td>
+                      <td class="calendar-form__columns choosing-day"><a href="#" class="calendar-form__link">27</a></td>
+                      <td class="calendar-form__columns choosing-day"><a href="#" class="calendar-form__link">28</a></td>
+                      <td class="calendar-form__columns enable-day"><a href="#" class="calendar-form__link">29</a></td>
+                    </tr>
+
+                    <tr class="calendar-form__rows">
+                      <td class="calendar-form__columns enable-day"><a href="#" class="calendar-form__link">30</a></td>
+                      <td class="calendar-form__columns enable-day"><a href="#" class="calendar-form__link">31</a></td>
+                      <td class="calendar-form__columns enable-day"><a href="#" class="calendar-form__link">1</a></td>
+                      <td class="calendar-form__columns enable-day"><a href="#" class="calendar-form__link">2</a></td>
+                      <td class="calendar-form__columns enable-day"><a href="#" class="calendar-form__link">3</a></td>
+                      <td class="calendar-form__columns enable-day"><a href="#" class="calendar-form__link">4</a></td>
+                      <td class="calendar-form__columns enable-day"><a href="#" class="calendar-form__link">5</a></td>
+                    </tr>
+                  </table>
+                </div>
+
+                <a href="#step-two" class="plans-form__next-step button">Следующий шаг</a>
               </div>
-
-              <a href="#step-two" class="plans-form__next-step button">следующий шаг</a>
             </fieldset>
 
             <fieldset id="step-two" class="plans-form__set step-two">
@@ -721,9 +736,9 @@
 
               <button class="step-two__add-btn button" type="button">добавить страну</button>
 
-              <a href="#step-three" class="plans-form__next-step button">следующий шаг</a>
+              <a href="#step-three" class="plans-form__next-step button">Следующий шаг</a>
 
-              <a href="#step-one" class="plans-form__step-before button">на шаг назад</a>
+              <a href="#step-one" class="plans-form__step-before button">На шаг назад</a>
             </fieldset>
 
             <fieldset id="step-three" class="plans-form__set step-three">
@@ -778,7 +793,7 @@
 
               <button class="step-three__submit button" type="submit">отправить</button>
 
-              <a href="#step-two" class="plans-form__step-before button">на шаг назад</a>
+              <a href="#step-two" class="plans-form__step-before button">На шаг назад</a>
             </fieldset>
           </form>
         </div>

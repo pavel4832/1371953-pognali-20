@@ -11,6 +11,14 @@
   border: none;
   border-radius: 10px;
   box-sizing: border-box;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 0;
+    margin-bottom: 39px;
+    padding: 152px 43px 56px 44px;
+
+    border-radius: 30px;
+  }
 }
 
 .plans-form__legend {
@@ -24,6 +32,14 @@
   font-size: 20px;
   line-height: 20px;
   color: @basic-blue-light;
+
+  @media (min-width: @tablet-width) {
+    top: 44px;
+    left: 40px;
+
+    font-size: 36px;
+    line-height: 36px;
+  }
 }
 
 .plans-form__text {
@@ -37,11 +53,21 @@
   font-size: 16px;
   line-height: 22px;
   color: @special-grey;
+
+  @media (min-width: @tablet-width) {
+    order: 1;
+    margin-bottom: 0;
+    padding-bottom: 39px;
+
+    font-size: 20px;
+    line-height: 24px;
+
+    border-bottom: 1px solid #e1e3e9;
+  }
 }
 
 .plans-form__next-step {
   width: 229px;
-  height: 40px;
   margin-left: -4px;
   margin-top: 23px;
 
@@ -51,6 +77,29 @@
 
   background-color: @basic-yellow;
   border-radius: 20px;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    width: 284px;
+    margin-top: 47px;
+    padding-left: 33px;
+    padding-right: 32px;
+
+    font-size: 24px;
+    line-height: 80px;
+    text-transform: none;
+
+    &::after {
+      content: url("../img/show-more-triangle.svg");
+    }
+  }
+}
+
+.step-one .plans-form__next-step {
+  @media (min-width: @tablet-width) {
+    order: 6;
+  }
 }
 
 .plans-form__step-before {
@@ -62,4 +111,23 @@
   line-height: 40px;
   letter-spacing: 0.01em;
   color: @basic-blue-light;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    width: 182px;
+    padding-left: 33px;
+    padding-right: 32px;
+
+    font-size: 24px;
+    line-height: 80px;
+    letter-spacing: normal;
+    text-transform: none;
+
+    box-sizing: border-box;
+
+    &::before {
+      content: url("../img/step-back-triangle.svg");
+    }
+  }
 }

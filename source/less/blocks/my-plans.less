@@ -1,6 +1,17 @@
 .my-plans {
   padding-top: 25px;
   padding-bottom: 40px;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 52px;
+    padding-bottom: 107px;
+  }
+}
+
+.my-plans .container {
+  @media (min-width: @tablet-width) {
+    padding: 0 75px;
+  }
 }
 
 .my-plans__title {
@@ -11,6 +22,11 @@
   font-size: 24px;
   line-height: 24px;
   color: @basic-blue-light;
+
+  @media (min-width: @tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+  }
 }
 
 .my-plans__list {
@@ -22,4 +38,8 @@
   padding: 0;
 
   list-style: none;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 52px;
+  }
 }

@@ -309,7 +309,8 @@
 }
 
 .directions__to-all {
-  position: relative;
+  display: flex;
+  justify-content: space-between;
   width: 270px;
   margin-top: 12px;
   padding: 0 24px;
@@ -326,9 +327,6 @@
 
   &::after {
     content: url("../img/show-more-triangle.svg");
-    position: absolute;
-    top: 1px;
-    right: 22px;
   }
 
   @media (min-width: @tablet-width) {
@@ -341,10 +339,6 @@
     line-height: 82px;
 
     border-radius: 20px;
-
-    &::after {
-      right: 30px;
-    }
   }
 
   @media (min-width: @desktop-width) {
@@ -358,9 +352,5 @@
     margin-left: 143px;
 
     line-height: 80px;
-
-    &::after {
-      right: 34px;
-    }
   }
 }

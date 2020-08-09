@@ -2,6 +2,10 @@
   border-radius: 0;
   border-left: none;
   border-right: none;
+
+  @media (min-width: @tablet-width) {
+    height: 86px;
+  }
 }
 
 .calendar-form .step-one__input {
@@ -12,6 +16,11 @@
   line-height: 20px;
   text-transform: none;
   color: @basic-blue-light;
+
+  @media (min-width: @tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+  }
 }
 
 .calendar-form .step-one__button {
@@ -19,20 +28,51 @@
   height: 21px;
 
   opacity: 0.3;
+
+  @media (min-width: @tablet-width) {
+    width: 29px;
+    height: 36px;
+  }
 }
 
 .step-one__button--left {
   background-image: url("../img/month-arrow-left.svg");
+
+  @media (min-width: @tablet-width) {
+    margin-left: 12px;
+  }
 }
 
 .step-one__button--right {
   background-image: url("../img/month-arrow-right.svg");
+
+  @media (min-width: @tablet-width) {
+    margin-right: 12px;
+  }
 }
 
 .calendar-form__table {
   margin-top: 16px;
 
   border-collapse: collapse;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 35px;
+  }
+}
+
+.calendar-form__rows--mobile {
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+}
+
+.calendar-form__rows--tablet {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: table-row;
+  }
 }
 
 .calendar-form__head {
@@ -47,6 +87,11 @@
   line-height: 18px;
   text-transform: uppercase;
   color: @special-grey;
+
+  @media (min-width: @tablet-width) {
+    font-size: 18px;
+    text-transform: none;
+  }
 }
 
 .weekend {
@@ -64,6 +109,11 @@
 
   border: 1px solid #cbced9;
   box-sizing: border-box;
+
+  @media (min-width: @tablet-width) {
+    width: 77px;
+    height: 69px;
+  }
 }
 
 .enable-day {
@@ -85,6 +135,10 @@
   font-size: 14px;
   line-height: 18px;
   color: fade(@special-grey, 30%);
+
+  @media (min-width: @tablet-width) {
+    font-size: 18px;
+  }
 }
 
 .enable-day .calendar-form__link {
@@ -92,6 +146,11 @@
   font-style: normal;
   font-weight: 500;
   color: @basic-blue-light;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+  }
 }
 
 .choosing-day .calendar-form__link {
@@ -99,4 +158,9 @@
   font-style: normal;
   font-weight: 500;
   color: @basic-white;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+  }
 }

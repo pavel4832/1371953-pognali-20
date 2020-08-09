@@ -6,10 +6,22 @@
 
   border: none;
   border-radius: 10px;
+
+  @media (min-width: @tablet-width) {
+    padding-bottom: 17px;
+  }
 }
 
 .plan-item__wrapper {
   padding: 0 25px;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 0;
+  }
 }
 
 .plan-item__title {
@@ -22,6 +34,32 @@
   font-size: 16px;
   line-height: 16px;
   color: @basic-blue-light;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 38px;
+    margin-bottom: 18px;
+    padding: 0 30px;
+    padding-left: 36px;
+    padding-bottom: 34px;
+
+    font-size: 24px;
+    line-height: 24px;
+
+    border-bottom: 1px solid fade(#cbced9, 30%);
+  }
+}
+
+.plan-item__number {
+  @media (min-width: @tablet-width) {
+    margin-top: 2px;
+
+    font-size: 20px;
+    line-height: 20px;
+  }
 }
 
 .plan-item__text {
@@ -34,11 +72,27 @@
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: @basic-blue-light;
+
+  @media (min-width: @tablet-width) {
+    margin-right: 10px;
+    font-size: 20px;
+    line-height: 20px;
+  }
 }
 
 .plan-item__companions {
   margin-top: 20px;
   margin-bottom: 5px;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 34px;
+
+    font-size: 20px;
+    line-height: 20px;
+    letter-spacing: 0.1em;
+  }
 }
 
 .plan-item__link {
@@ -53,4 +107,13 @@
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: fade(#000000, 30%);
+
+  @media (min-width: @tablet-width) {
+    margin-top: 0;
+    margin-right: 33px;
+
+    font-size: 20px;
+    line-height: 20px;
+    letter-spacing: 0.1em;
+  }
 }
