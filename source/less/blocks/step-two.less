@@ -1,10 +1,26 @@
 .step-two {
   padding-bottom: 7px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 50px;
+    padding-bottom: 53px;
+  }
+}
+
+.step-two .plans-form__text {
+  @media (min-width: @tablet-width) {
+    padding-right: 120px;
+    padding-bottom: 34px;
+  }
 }
 
 .step-two__choosing {
   margin-top: 20px;
   margin-bottom: 0;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 0;
+  }
 }
 
 .step-two__hidden {
@@ -17,7 +33,6 @@
 .step-two__add-btn {
   position: relative;
   width: 220px;
-  height: 42px;
   margin-top: 22px;
   padding-left: 10px;
 
@@ -50,5 +65,43 @@
     border: 1px solid #cbced9;
     box-sizing: border-box;
     border-radius: 50%;
+  }
+
+  @media (min-width: @tablet-width) {
+    width: 369px;
+    margin-top: 12px;
+    padding-left: 23px;
+
+    font-size: 20px;
+    line-height: 70px;
+
+    background-image: url("../img/icon-plus-tablet.svg");
+    background-position: 322px 27px;
+
+    &::after {
+      top: 28px;
+      right: -32px;
+      width: 14px;
+      height: 14px;
+
+      background-color: #edeff6;
+    }
+  }
+}
+
+.step-two__wrapper {
+  @media (min-width: @tablet-width) {
+    width: 395px;
+    padding-bottom: 30px;
+
+    border-right: 1px solid #e1e3e9;
+  }
+}
+
+.step-two__button-wrapper {
+  @media (min-width: @tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 18px;
   }
 }

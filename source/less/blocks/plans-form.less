@@ -81,9 +81,9 @@
   @media (min-width: @tablet-width) {
     display: flex;
     justify-content: space-between;
-    width: 284px;
+    width: 286px;
     margin-top: 47px;
-    padding-left: 33px;
+    padding-left: 38px;
     padding-right: 32px;
 
     font-size: 24px;
@@ -102,6 +102,12 @@
   }
 }
 
+.step-two .plans-form__next-step {
+  @media (min-width: @tablet-width) {
+    margin-top: 0;
+  }
+}
+
 .plans-form__step-before {
   width: 229px;
   margin-top: 6px;
@@ -115,12 +121,12 @@
   @media (min-width: @tablet-width) {
     display: flex;
     justify-content: space-between;
-    width: 182px;
-    padding-left: 33px;
-    padding-right: 32px;
+    width: 185px;
+    margin-top: 0;
+    margin-left: 0;
 
     font-size: 24px;
-    line-height: 80px;
+    line-height: 82px;
     letter-spacing: normal;
     text-transform: none;
 
@@ -128,6 +134,8 @@
 
     &::before {
       content: url("../img/step-back-triangle.svg");
+      width: 16px;
+      height: 16px;
     }
   }
 }
