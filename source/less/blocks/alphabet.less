@@ -1,6 +1,11 @@
 .alphabet {
   border-collapse: collapse;
   box-sizing: border-box;
+
+  @media (min-width: @desktop-width) {
+    border-collapse: separate;
+    border-spacing: 15px 13px;
+  }
 }
 
 .alphabet__columns {
@@ -18,6 +23,11 @@
   @media (min-width: @tablet-width) {
     width: 51px;
     height: 70px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 60px;
+    border-radius: 4px;
   }
 }
 

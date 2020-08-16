@@ -151,7 +151,7 @@
 
                 <label for="tags" class="visually-hidden">тэги</label>
 
-                <textarea name="tags" id="tags" cols="30" rows="3" class="profile__textarea">#бургер #бар #футбол #концерт #крафт</textarea>
+                <textarea name="tags" id="tags" cols="30" rows="2" class="profile__textarea">#бургер #бар #футбол #концерт #крафт</textarea>
               </div>
             </fieldset>
 
@@ -202,7 +202,7 @@
 
                 <p class="plan-item__text plan-item__companions">3 попутчика</p>
 
-                <p class="plan-item__text">26 мар — 29 мар</p>
+                <p class="plan-item__text plan-item__date">26 мар — 29 мар</p>
 
                 <a href="#" class="plan-item__link change-link">изменить</a>
               </div>
@@ -217,7 +217,7 @@
 
                 <p class="plan-item__text plan-item__companions">1 попутчик</p>
 
-                <p class="plan-item__text">1 июл — 15 июл</p>
+                <p class="plan-item__text plan-item__date">1 июл — 15 июл</p>
 
                 <a href="#" class="plan-item__link change-link">изменить</a>
               </div>
@@ -248,10 +248,29 @@
 
           <form class="add-new-plan__form plans-form" action="https://echo.htmlacademy.ru" method="get">
             <fieldset id="step-one" class="plans-form__set step-one">
-              <legend class="plans-form__legend">Шаг 1.<br> Даты пребывания</legend>
+              <legend class="plans-form__legend">
+                <span>Шаг 1.</span>
+                <span>Даты пребывания</span>
+              </legend>
 
               <div class="step-one__wrapper">
-                <p class="plans-form__text">Укажите предпочтительное количество попутчиков, которых вы хотели бы позвать в поездку и ее предполагаемую длительность.</p>
+                <div class="step-one__title-wrapper">
+                  <p class="plans-form__text">Укажите предпочтительное количество попутчиков, которых вы&nbsp;хотели бы позвать в поездку и ее предполагаемую длительность.</p>
+
+                  <ul class="plans-form__menu form-menu">
+                    <li class="form-menu__item item--active">
+                      <a href="" class="form-menu__link">Даты</a>
+                    </li>
+
+                    <li class="form-menu__item">
+                      <a href="" class="form-menu__link">Маршрут</a>
+                    </li>
+
+                    <li class="form-menu__item">
+                      <a href="" class="form-menu__link">Развлечения</a>
+                    </li>
+                  </ul>
+                </div>
 
                 <div class="step-one__companions">
                   <label class="step-one__label" for="companions">ищу попутчиков:
@@ -265,6 +284,8 @@
 
                     <button class="step-one__button button-increase" aria-label="Уменьшить"></button>
                   </div>
+
+                  <span class="step-one__unit step-one__unit--desktop">чел.</span>
                 </div>
 
                 <div class="step-one__duration">
@@ -279,6 +300,8 @@
 
                     <button class="step-one__button button-increase" aria-label="Уменьшить"></button>
                   </div>
+
+                  <span class="step-one__unit step-one__unit--desktop">дн.</span>
                 </div>
 
                 <div class="step-one__children">
@@ -286,6 +309,7 @@
 
                   <label class="step-one__children--label" for="children">Можно с детьми</label>
                 </div>
+
                 <div class="step-one__calendar calendar-form">
                   <label class="visually-hidden" for="month">Март 2019</label>
 
@@ -364,7 +388,7 @@
                       <td class="calendar-form__columns"><a href="#" class="calendar-form__link">25</a></td>
                       <td class="calendar-form__columns choosing-day start-day"><a href="#" class="calendar-form__link">26</a></td>
                       <td class="calendar-form__columns choosing-day"><a href="#" class="calendar-form__link">27</a></td>
-                      <td class="calendar-form__columns choosing-day"><a href="#" class="calendar-form__link">28</a></td>
+                      <td class="calendar-form__columns choosing-day end-day"><a href="#" class="calendar-form__link">28</a></td>
                       <td class="calendar-form__columns enable-day"><a href="#" class="calendar-form__link">29</a></td>
                     </tr>
 
@@ -385,9 +409,28 @@
             </fieldset>
 
             <fieldset id="step-two" class="plans-form__set step-two">
-              <legend class="plans-form__legend">Шаг 2.<br> Маршрут</legend>
+              <legend class="plans-form__legend">
+                <span>Шаг 2.</span>
+                <span>Маршрут</span>
+              </legend>
 
-              <p class="plans-form__text">Укажите страны, которые вы хотели посетить. Это может быть одна или сразу несколько.</p>
+              <div class="step-one__title-wrapper">
+                <p class="plans-form__text">Укажите страны, которые вы хотели посетить. Это&nbsp;может быть одна или сразу несколько.</p>
+
+                <ul class="plans-form__menu form-menu">
+                  <li class="form-menu__item">
+                    <a href="" class="form-menu__link">Даты</a>
+                  </li>
+
+                  <li class="form-menu__item item--active">
+                    <a href="" class="form-menu__link">Маршрут</a>
+                  </li>
+
+                  <li class="form-menu__item">
+                    <a href="" class="form-menu__link">Развлечения</a>
+                  </li>
+                </ul>
+              </div>
 
               <ul class="step-two__choosing choosing-country">
                 <li class="choosing-country__item">
@@ -755,9 +798,29 @@
             </fieldset>
 
             <fieldset id="step-three" class="plans-form__set step-three">
-              <legend class="plans-form__legend">Шаг 3.<br> Развлечения</legend>
+              <legend class="plans-form__legend">
+                <span>Шаг 3.</span>
+                <span>Развлечения</span>
+              </legend>
 
-              <p class="plans-form__text">Наконец, расскажите о своих планах времяпровождения. Можно писать в свободной форме&nbsp;и ставить тэги.</p>
+              <div class="step-one__title-wrapper">
+                <p class="plans-form__text">Наконец, расскажите о своих планах времяпровождения. Можно&nbsp;писать в свободной форме&nbsp;и ставить тэги.</p>
+
+                <ul class="plans-form__menu form-menu">
+                  <li class="form-menu__item">
+                    <a href="" class="form-menu__link">Даты</a>
+                  </li>
+
+                  <li class="form-menu__item">
+                    <a href="" class="form-menu__link">Маршрут</a>
+                  </li>
+
+                  <li class="form-menu__item item--active">
+                    <a href="" class="form-menu__link">Развлечения</a>
+                  </li>
+                </ul>
+              </div>
+
               <div class="step-three__wrapper">
                 <ul class="step-three__list">
                   <li class="step-three__item country-fun">

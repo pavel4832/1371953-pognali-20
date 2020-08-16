@@ -18,7 +18,7 @@ function init(){
 
   myPlacemark = new ymaps.Placemark([59.938635, 30.323118], {}, {
     iconLayout: 'default#imageWithContent',
-    iconImageHref: '../img/map-marker.svg',
+    iconImageHref: 'img/map-marker.svg',
     iconImageSize: [41, 41],
     iconContentLayout: MyIconContentLayout
   });

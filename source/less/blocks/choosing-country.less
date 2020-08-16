@@ -51,6 +51,37 @@
       top: 41px;
     }
   }
+
+  @media (min-width: @desktop-width) {
+    &::after {
+      display: none;
+    }
+
+    &:first-child .choosing-country__selected {
+      padding-top: 60px;
+
+      &::after {
+        top: 87px;
+      }
+    }
+
+    &:first-child .choosing-country__dropdown {
+      top: 75px;
+    }
+
+    &:first-child .choosing-country__flag {
+      padding-top: 99px;
+      margin-left: 40px;
+    }
+
+    &:first-child .choosing-country__close-btn {
+      top: 84px;
+    }
+
+    &:first-child .step-two__hidden {
+      top: 61px;
+    }
+  }
 }
 
 .choosing-country__selected {
@@ -83,6 +114,10 @@
       width: 14px;
       height: 14px;
     }
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-right: 44px;
   }
 }
 
@@ -117,6 +152,11 @@
     line-height: 70px;
     letter-spacing: 0.1em;
   }
+
+  @media (min-width: @desktop-width) {
+    width: 730px;
+    margin-bottom: 13px;
+  }
 }
 
 .choosing-country__dropdown {
@@ -140,6 +180,11 @@
     top: 15px;
     right: 45px;
   }
+
+  @media (min-width: @desktop-width) {
+    right: 64px;
+    background-size: 21px 15px;
+  }
 }
 
 .choosing-country__flag {
@@ -161,6 +206,10 @@
     margin-left: 26px;
 
     border: none;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-left: 40px;
   }
 }
 
@@ -187,5 +236,9 @@
 
     background-image: url("../img/cross-form-tablet.svg");
     background-color: transparent;
+  }
+
+  @media (min-width: @desktop-width) {
+    right: -112px;
   }
 }

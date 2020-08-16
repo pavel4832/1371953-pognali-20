@@ -4,6 +4,9 @@
   }
 
   @media (min-width: @desktop-width) {
+    margin-top: -189px;
+    padding-bottom: 80px;
+
     background-color: transparent;
 
     z-index: 5;
@@ -17,6 +20,7 @@
 
   @media (min-width: @desktop-width) {
     position: relative;
+    padding: 0 60px;
   }
 }
 
@@ -36,7 +40,10 @@
 
   @media (min-width: @desktop-width) {
     grid-template-rows: min-content min-content min-content;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr min-content;
+    align-items: start;
+    justify-items: start;
+    padding-top: 0;
   }
 }
 
@@ -53,6 +60,11 @@
   }
 
   @media (min-width: @desktop-width) {
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    justify-self: end;
     margin-top: 40px;
     margin-right: 40px;
     margin-left: 0;
@@ -84,9 +96,14 @@
   }
 
   @media (min-width: @desktop-width) {
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 3;
+    grid-column-end: -1;
+    justify-self: end;
     width: 190px;
     height: 190px;
-    margin-right: 0;
+    margin-right: 96px;
 
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
@@ -111,14 +128,15 @@
   @media (min-width: @desktop-width) {
     grid-row-start: 2;
     grid-row-end: 3;
-    grid-column-start: 2;
-    grid-column-end: 3;
+    grid-column-start: 3;
+    grid-column-end: -1;
     margin-top: 0;
-    margin-right: 95px;
+    margin-right: 96px;
   }
 }
 
 .profile__fieldset {
+  position: relative;
   margin: 25px 0 0 0;
   padding: 0;
 
@@ -147,7 +165,7 @@
 }
 
 .profile__textarea {
-  padding: 16px 5px 5px 25px;
+  padding: 16px 5px 23px 25px;
   font-family: "BloggerSans", "Arial", sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -164,8 +182,16 @@
     width: 100%;
     padding: 0;
     padding-left: 33px;
+    padding-bottom: 22px;
+
     font-size: 20px;
     line-height: 22px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 32px;
+    padding-left: 37px;
+    padding-bottom: 10px;
   }
 }
 
@@ -184,9 +210,14 @@
 
   @media (min-width: @desktop-width) {
     grid-row-start: 3;
-    grid-row-end: 4;
+    grid-row-end: -1;
     grid-column-start: 1;
     grid-column-end: 2;
+    margin-top: 27px;
+    margin-bottom: 0;
+    margin-left: 64px;
+    padding: 0;
+    width: 732px;
   }
 }
 
@@ -195,6 +226,16 @@
 .tag-set__wrapper {
   @media (min-width: @tablet-width) {
     transform: rotate(180deg);
+  }
+}
+
+.tags-set .profile__legend {
+  @media (min-width: @desktop-width) {
+    position: absolute;
+    top: -10px;
+    right: 23px;
+    z-index: 5;
+    background-color: #edeff6;
   }
 }
 
@@ -217,9 +258,14 @@
 
   @media (min-width: @desktop-width) {
     grid-row-start: 3;
-    grid-row-end: 4;
+    grid-row-end: -1;
     grid-column-start: 2;
-    grid-column-end: 3;
+    grid-column-end: -1;
+    justify-self: end;
+    margin-top: 27px;
+    margin-bottom: 0;
+    margin-right: 0;
+    width: 384px;
   }
 }
 

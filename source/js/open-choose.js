@@ -24,6 +24,9 @@ function closeElement(element) {
 for (var i = 0; i < openChooseField.length; i++) {
   openChooseField[i].addEventListener('click', function (element) {
     element.preventDefault();
+    for (var j = 0; j < openChooseField.length; j++) {
+      chooseElement[j].classList.remove('open-choose');
+    }
     openElement(this);
   })
 }
