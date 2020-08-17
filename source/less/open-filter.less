@@ -5,12 +5,18 @@
   left: 0;
   height: auto;
 
-  opacity: 1;
-  visibility: visible;
-
   border-bottom-left-radius: 15px;
   border-bottom-right-radius: 15px;
   z-index: 2;
+
+  @media (min-width: @tablet-width) {
+    border-bottom-left-radius: 60px;
+    border-bottom-right-radius: 60px;
+  }
+}
+
+.open-filter .catalog-filter__tablet-wrapper {
+  display: block;
 }
 
 .catalog-filter.open-filter {

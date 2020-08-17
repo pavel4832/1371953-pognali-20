@@ -10,6 +10,19 @@
   border-bottom-left-radius: 15px;
   border-bottom-right-radius: 15px;
   z-index: 2;
+
+  @media (min-width: @tablet-width) {
+    padding-bottom: 26px;
+
+    border-bottom-left-radius: 60px;
+    border-bottom-right-radius: 60px;
+  }
+}
+
+.catalog-filter .container {
+  @media (min-width: @tablet-width) {
+    justify-content: space-between;
+  }
 }
 
 .catalog-filter__wrapper {
@@ -17,9 +30,19 @@
 
   background-color: #e2e5f2;
 
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: @tablet-width) {
     display: none;
     width: 100%;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: block;
+  }
+}
+
+.catalog-filter__tablet-wrapper {
+  @media screen and (max-width: @desktop-width) {
+    display: none;
   }
 }
 
@@ -54,6 +77,10 @@
 
     vertical-align: baseline;
   }
+
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
 }
 
 .catalog-filter__btn {
@@ -71,6 +98,31 @@
 
   &:focus {
     outline: none;
+  }
+
+  @media (min-width: @tablet-width) {
+    width: 185px;
+    margin-top: 81px;
+    margin-left: 0px;
+    margin-right: 33px;
+    padding: 0;
+    order: 2;
+
+    background-image: url("../img/dots-tablet.svg");
+    background-position: right;
+
+    &::before {
+      content: "показать все";
+      margin-right: 55px;
+
+      font-family: "BloggerSans-Bold", "Arial", sans-serif;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 20px;
+      line-height: 20px;
+      text-transform: uppercase;
+      color: #192144;
+    }
   }
 }
 
