@@ -8,6 +8,13 @@
   }
 }
 
+.catalog-filter .alphabet {
+  @media (min-width: @tablet-width) {
+    border-collapse: separate;
+    border-spacing: 31px 23px;
+  }
+}
+
 .alphabet__columns {
   width: 44px;
   height: 39.78px;
@@ -28,6 +35,17 @@
   @media (min-width: @desktop-width) {
     width: 60px;
     border-radius: 4px;
+  }
+}
+
+.catalog-filter .alphabet__columns {
+  @media (min-width: @tablet-width) {
+    width: auto;
+    height: auto;
+
+    background-color: #e2e5f2;
+
+    border: none;
   }
 }
 
@@ -52,6 +70,33 @@
   }
 }
 
+.catalog-filter .alphabet__link {
+  @media (min-width: @tablet-width) {
+    font-family: "BloggerSans-Bold", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 60px;
+    line-height: 60px;
+    color: fade(#192144, 30%);
+  }
+}
+
 .choosing-letter .alphabet__link {
   color: @basic-white;
+}
+
+.catalog-filter .choosing-letter {
+  @media (min-width: @tablet-width) {
+    color: #192144;
+
+    background-color: #e2e5f2;
+
+    border: none;
+  }
+}
+
+.catalog-filter .choosing-letter .alphabet__link {
+  @media (min-width: @tablet-width) {
+    color: #192144;
+  }
 }

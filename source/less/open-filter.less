@@ -1,7 +1,7 @@
 .open-filter .catalog-filter__wrapper {
   display: block;
   position: absolute;
-  top: 57px;
+  top: 100px;
   left: 0;
   height: auto;
 
@@ -10,15 +10,34 @@
   z-index: 2;
 
   @media (min-width: @tablet-width) {
-    border-bottom-left-radius: 60px;
-    border-bottom-right-radius: 60px;
+    position: relative;
+    top: auto;
+    left: auto;
   }
 }
 
 .open-filter .catalog-filter__tablet-wrapper {
   display: block;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    position: absolute;
+    top: 135px;
+    left: 0;
+    width: 690px;
+    padding-bottom: 75px;
+
+    background-color: #e2e5f2;
+  }
 }
 
-.catalog-filter.open-filter {
+.catalog-filter .open-filter {
   border-radius: 0;
+}
+
+.open-filter .container {
+  @media (min-width: @tablet-width) {
+    justify-content: flex-end;
+  }
 }
