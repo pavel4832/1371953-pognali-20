@@ -8,6 +8,12 @@
     justify-content: space-between;
     width: 100%;
   }
+
+  @media (min-width: @desktop-width) {
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-top: 2px;
+  }
 }
 
 .range__levels {
@@ -42,6 +48,17 @@
       box-shadow: 0 0 0 8px @basic-white;
     }
   }
+
+  @media (min-width: @desktop-width) {
+    order: -1;
+    margin-top: 9px;
+
+    &::before {
+      top: 73px;
+      left: 89px;
+      right: auto;
+    }
+  }
 }
 
 .range__input {
@@ -71,6 +88,10 @@
 
     font-size: 20px;
   }
+
+  @media (min-width: @desktop-width) {
+    width: 96px;
+  }
 }
 
 .range__min {
@@ -90,6 +111,10 @@
   @media (min-width: @tablet-width) {
     padding-top: 21px;
   }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 12px;
+  }
 }
 
 .range__scale {
@@ -105,6 +130,10 @@
 
     border: none;
     border-radius: 2px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 192px;
   }
 }
 
@@ -140,6 +169,10 @@
     width: 13px;
     height: 13px;
   }
+
+  @media (min-width: @desktop-width) {
+    top: 7px;
+  }
 }
 
 .toggle-min {
@@ -148,6 +181,10 @@
   @media (min-width: @tablet-width) {
     left: 68px;
   }
+
+  @media (min-width: @desktop-width) {
+    left: 62px;
+  }
 }
 
 .toggle-max {
@@ -155,5 +192,9 @@
 
   @media (min-width: @tablet-width) {
     left: 270px;
+  }
+
+  @media (min-width: @desktop-width) {
+    left: 180px;
   }
 }
