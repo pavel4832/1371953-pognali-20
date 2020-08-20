@@ -9,36 +9,98 @@
 
   border: none;
   border-radius: 10px;
+
+  @media (min-width: @tablet-width) {
+    height: 80px;
+    margin-top: 68px;
+
+    border-radius: 20px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: 59px;
+  }
 }
 
 .login-field__input {
+  width: 210px;
+
+  font-size: 18px;
+  line-height: 62px;
+
   border: none;
   border-radius: 10px;
   padding-left: 25px;
+
+  box-sizing: border-box;
 
   &::placeholder {
     font-family: "BloggerSans-Bold", "Arial", sans-serif;
     font-style: normal;
     font-weight: bold;
-    font-size: 18px;
-    line-height: 62px;
     color: fade(#444444, 30%);
+  }
+
+  @media (min-width: @tablet-width) {
+    width: 535px;
+    padding-left: 35px;
+
+    font-size: 24px;
+    line-height: 80px;
+
+    border-radius: 20px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 850px;
   }
 }
 
 .login-field__button {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   width: 60px;
   padding: 0;
 
   background-color: @basic-yellow;
-  background-image: url("../img/show-more-triangle.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 14px 16px;
 
   border: none;
   border-radius: 10px;
   box-sizing: border-box;
+
+  &::after {
+    content: url("../img/show-more-triangle.svg");
+    margin: 0 auto;
+  }
+
+  @media (min-width: @tablet-width) {
+    width: 80px;
+
+    border-radius: unset;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 325px;
+    padding: 0 35px;
+
+    &::before {
+      content: "Регистрация";
+
+      font-family: "BloggerSans-Bold", "Arial", sans-serif;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 24px;
+      line-height: 24px;
+      color: @basic-blue-light;
+    }
+
+    &::after {
+      margin: 0;
+    }
+  }
 }
 
 .sign-up__text {
@@ -51,4 +113,17 @@
   letter-spacing: 0.01em;
   text-align: center;
   color: @basic-white;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 58px;
+    margin-left: 2px;
+
+    font-size: 28px;
+    line-height: 30px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: 70px;
+    margin-left: -8px;
+  }
 }

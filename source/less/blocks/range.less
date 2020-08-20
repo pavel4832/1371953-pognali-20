@@ -1,7 +1,20 @@
 .range {
   display: flex;
   flex-direction: column;
-  margin-top: 2px;
+  margin-top: 13px;
+
+  @media (min-width: @tablet-width) {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 2px;
+  }
+
+  @media (min-width: @desktop-width) {
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-top: 2px;
+  }
 }
 
 .range__levels {
@@ -23,6 +36,29 @@
     box-shadow: 0 0 0 5px @basic-white;
     box-sizing: content-box;
     z-index: 5;
+  }
+
+  @media (min-width: @tablet-width) {
+    order: 2;
+
+    &::before {
+      top: 23px;
+      left: auto;
+      right: 66px;
+
+      box-shadow: 0 0 0 8px @basic-white;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    order: -1;
+    margin-top: 9px;
+
+    &::before {
+      top: 73px;
+      left: 89px;
+      right: auto;
+    }
   }
 }
 
@@ -46,6 +82,17 @@
   border: 1px solid #cbced9;
   box-sizing: border-box;
   border-radius: 4px;
+
+  @media (min-width: @tablet-width) {
+    width: 74px;
+    height: 46px;
+
+    font-size: 20px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 96px;
+  }
 }
 
 .range__min {
@@ -61,6 +108,14 @@
 
 .range__controls {
   position: relative;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 21px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 12px;
+  }
 }
 
 .range__scale {
@@ -68,6 +123,19 @@
   padding-left: 75px;
 
   background-color: fade(@basic-blue-light, 20%);
+
+  @media (min-width: @tablet-width) {
+    width: 281px;
+    height: 3px;
+    padding-left: 75px;
+
+    border: none;
+    border-radius: 2px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 192px;
+  }
 }
 
 .range__bar {
@@ -75,6 +143,10 @@
   height: 2px;
 
   background-color: @basic-blue-light;
+
+  @media (min-width: @tablet-width) {
+    height: 3px;
+  }
 }
 
 .range__toggle {
@@ -92,12 +164,38 @@
   border-radius: 50%;
   background-color: @basic-blue-light;
   cursor: pointer;
+
+  @media (min-width: @tablet-width) {
+    top: 15px;
+    width: 13px;
+    height: 13px;
+  }
+
+  @media (min-width: @desktop-width) {
+    top: 7px;
+  }
 }
 
 .toggle-min {
   left: 67px;
+
+  @media (min-width: @tablet-width) {
+    left: 68px;
+  }
+
+  @media (min-width: @desktop-width) {
+    left: 62px;
+  }
 }
 
 .toggle-max {
   left: 210px;
+
+  @media (min-width: @tablet-width) {
+    left: 270px;
+  }
+
+  @media (min-width: @desktop-width) {
+    left: 180px;
+  }
 }

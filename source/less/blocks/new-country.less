@@ -13,6 +13,12 @@
     background-repeat: no-repeat;
     background-position: center;
   }
+
+  @media (min-width: @tablet-width) {
+    &::after {
+      display: none;
+    }
+  }
 }
 
 .new-country__field {
@@ -31,11 +37,33 @@
     box-sizing: border-box;
     border-radius: 50%;
   }
+
+  @media (min-width: @tablet-width) {
+    max-width: 395px;
+
+    border-right: 1px solid #e1e3e9;
+
+    &::after {
+      top: 26px;
+      right: -7px;
+      width: 14px;
+      height: 14px;
+      background-color: @basic-white;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    max-width: 775px;
+
+    &::after {
+      top: 28px;
+      right: -8px;
+    }
+  }
 }
 
 .new-country__name {
   width: 220px;
-  height: 42px;
   margin-bottom: 0;
   padding-left: 10px;
   padding-right: 60px;
@@ -54,6 +82,26 @@
   border-radius: 4px;
 
   appearance: none;
+
+  @media (min-width: @tablet-width) {
+    position: relative;
+    width: 369px;
+    padding-left: 23px;
+
+    font-size: 20px;
+    line-height: 68px;
+    letter-spacing: 0.1em;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 730px;
+  }
+}
+
+
+.new-country__value {
+  font-size: 20px;
+  line-height: 70px;
 }
 
 .new-country__dropdown {
@@ -71,6 +119,18 @@
 
   border: none;
   opacity: 0.3;
+
+  @media (min-width: @tablet-width) {
+    background-size: 16px 15px;
+    top: 15px;
+    right: 45px;
+  }
+
+  @media (min-width: @desktop-width) {
+    background-size: 21px 15px;
+    top: 15px;
+    right: 64px;
+  }
 }
 
 .new-country__close-btn {
@@ -87,4 +147,18 @@
 
   border: none;
   border-radius: 50%;
+
+  @media (min-width: @tablet-width) {
+    top: 23px;
+    right: -5px;
+    width: 24px;
+    height: 24px;
+
+    background-image: url("../img/cross-form-tablet.svg");
+    background-color: transparent;
+  }
+
+  @media (min-width: @desktop-width) {
+    right: 4px;
+  }
 }

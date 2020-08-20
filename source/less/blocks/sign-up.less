@@ -1,6 +1,15 @@
 .sign-up {
   margin-top: -25px;
   padding-bottom: 27px;
+
+  @media (min-width: @tablet-width) {
+    margin-top: -50px;
+    padding-bottom: 60px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-bottom: 105px;
+  }
 }
 
 .sign-up .container {
@@ -8,6 +17,16 @@
   flex-direction: column;
   align-items: center;
   padding-top: 95px;
+
+  @media (min-width: @tablet-width) {
+    padding: 0 76px;
+    padding-top: 123px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 0 132px;
+    padding-top: 155px;
+  }
 }
 
 .sign-up__title {
@@ -20,6 +39,11 @@
   font-size: 24px;
   line-height: 24px;
   color: @special-orange;
+
+  @media (min-width: @tablet-width) {
+    font-size: 45px;
+    line-height: 45px;
+  }
 }
 
 .sign-up__inviting {
@@ -34,6 +58,18 @@
   line-height: 22px;
   text-align: center;
   color: @basic-white;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 60px;
+    padding: 0;
+
+    font-size: 28px;
+    line-height: 32px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 655px;
+  }
 }
 
 .sign-up__link {
@@ -47,4 +83,8 @@
 
 .sign-up__contact {
   margin-top: 20px;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 42px;
+  }
 }

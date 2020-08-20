@@ -1,18 +1,43 @@
-.open-filter .catalog-filter__wrapper {
-  display: block;
+.catalog-filter.open-filter {
   position: absolute;
-  top: 57px;
+  top: 110px;
   left: 0;
-  height: auto;
 
-  opacity: 1;
-  visibility: visible;
+  @media (min-width: @tablet-width) {
+    top: 264px;
+  }
 
-  border-bottom-left-radius: 15px;
-  border-bottom-right-radius: 15px;
-  z-index: 2;
+  @media (min-width: @desktop-width) {
+    position: static;
+    top: auto;
+    left: auto;
+
+    background-color: #edeff6;
+  }
 }
 
-.catalog-filter.open-filter {
-  border-radius: 0;
+.open-filter .container {
+  @media (min-width: @tablet-width) {
+    justify-content: flex-end;
+  }
+}
+
+.open-filter .compass-list {
+  display: block;
+}
+
+.open-filter .alphabet {
+  display: block;
+}
+
+.open-filter .country-list {
+  display: block;
+
+  @media (min-width: @desktop-width) {
+    display: none;
+  }
+}
+
+.open-filter .catalog-filter__close-btn {
+  display: block;
 }

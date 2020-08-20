@@ -7,6 +7,10 @@
   padding: 0;
 
   list-style: none;
+
+  @media (min-width: @tablet-width) {
+    width: 76px;
+  }
 }
 
 .slider__button {
@@ -17,6 +21,11 @@
   background-color: fade(@basic-blue-light, 30%);
   border: none;
   border-radius: 50%;
+
+  @media (min-width: @tablet-width) {
+    width: 6px;
+    height: 6px;
+  }
 }
 
 .slider-active .slider__button {

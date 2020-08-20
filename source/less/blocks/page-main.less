@@ -2,9 +2,17 @@
   background-color: #edeff6;
 }
 
+.page-main__wrapper {
+  @media (min-width: @desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 345px;
+    margin: 0 auto;
+    width: 1440px;
+  }
+}
+
 .page-main__header {
   position: relative;
-
 
   box-sizing: border-box;
   z-index: 7;
