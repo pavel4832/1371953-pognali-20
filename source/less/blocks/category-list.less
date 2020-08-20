@@ -1,20 +1,23 @@
-.music-list {
-  margin-top: 2px;
-  margin-bottom: 17px;
+.category-list {
+  margin-top: 12px;
+  margin-bottom: 8px;
 
   @media (min-width: @tablet-width) {
     display: flex;
     justify-items: flex-start;
     align-items: flex-start;
+    margin-top: 2px;
+    margin-bottom: 17px;
   }
 
   @media (min-width: @desktop-width) {
     flex-direction: column;
     margin-top: 20px;
+    margin-bottom: 17px;
   }
 }
 
-.music-list-item {
+.category-list-item {
   margin-bottom: 9px;
 
   &:last-child {
@@ -40,7 +43,7 @@
   }
 }
 
-.music-list__label {
+.category-list__label {
   font-family: "BloggerSans", "Arial", sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -65,7 +68,7 @@
     border-radius: 4px;
   }
 
-  .music-list__input:checked + &::before {
+  .category-list__input:checked + &::before {
     content: url("../img/tick-small.svg");
   }
 
@@ -78,7 +81,7 @@
       margin-right: 12px;
     }
 
-    .music-list__input:checked + &::before {
+    .category-list__input:checked + &::before {
       content: url("../img/tick.svg");
     }
   }

@@ -37,61 +37,12 @@
   }
 }
 
-.map__address {
-  display: flex;
-  width: 100%;
-  margin-top: 16px;
-
-  @media (min-width: @tablet-width) {
-    margin-top: 59px;
-  }
-
-  @media (min-width: @desktop-width) {
-    align-items: center;
-    width: auto;
-    margin-top: 0;
-    margin-left: 147px;
-  }
-}
-
-.map__icon {
-  display: inline-block;
-  width: 45px;
-  height: 45px;
-  margin-right: 16px;
-
-  vertical-align: middle;
-
-  background-color: #121936;
-  background-image: url("../img/contacts-location.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 21px 21px;
-
-  border: none;
-  border-radius: 50%;
-  box-sizing: border-box;
-
-  @media (min-width: @tablet-width) {
-    width: 68px;
-    height: 68px;
-    margin-right: 26px;
-
-    background-size: 32px 32px;
-  }
-
-  @media (min-width: @desktop-width) {
-    width: 90px;
-    height: 90px;
-    margin-right: 32px;
-
-    background-size: 42px 42px;
-  }
-}
-
 .map__title {
+  position: relative;
   margin: 0;
-  padding-right: 5px;
+  margin-top: 18px;
+  margin-left: 36px;
+  padding: 0 25px;
 
   font-family: "BloggerSans-Bold", "Arial", sans-serif;
   font-style: normal;
@@ -100,9 +51,60 @@
   text-transform: uppercase;
   color: @basic-blue-light;
 
+  &::before {
+    position: absolute;
+    top: -2px;
+    left: -36px;
+    content: "";
+    display: inline-block;
+    width: 45px;
+    height: 45px;
+    margin-right: 16px;
+
+    vertical-align: middle;
+
+    background-color: #121936;
+    background-image: url("../img/contacts-location.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 21px 21px;
+
+    border: none;
+    border-radius: 50%;
+    box-sizing: border-box;
+  }
+
   @media (min-width: @tablet-width) {
+    margin-top: 58px;
+    margin-left: 0;
+    padding: 0;
+
     font-size: 28px;
     line-height: 68px;
+
+    &::before {
+      position: static;
+      top: auto;
+      left: auto;
+      width: 68px;
+      height: 68px;
+      margin-right: 26px;
+
+      background-size: 32px 32px;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: 0;
+    margin-left: 147px;
+
+    &::before {
+      width: 90px;
+      height: 90px;
+      margin-right: 32px;
+
+      background-size: 42px 42px;
+    }
   }
 }
 
