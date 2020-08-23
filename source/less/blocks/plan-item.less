@@ -8,6 +8,11 @@
   border-radius: 10px;
 
   @media (min-width: @tablet-width) {
+    margin-bottom: 11px;
+    padding-bottom: 17px;
+  }
+
+  @media (min-width: @desktop-width) {
     margin-bottom: 15px;
     padding-bottom: 37px;
   }
@@ -139,6 +144,11 @@
 }
 
 .plan-item__date {
+  @media (min-width: @tablet-width) {
+    align-self: flex-start;
+    margin-left: 10px;
+  }
+
   @media (min-width: @desktop-width) {
     grid-column-start: 3;
     grid-column-end: 4;
