@@ -1,12 +1,12 @@
 .profile-catalog {
   display: grid;
-  grid-template-rows: min-content min-content min-content 1fr min-content min-content;
+  grid-template-rows: min-content min-content min-content min-content min-content min-content;
   grid-template-columns: min-content 1fr;
   justify-items: start;
   align-items: start;
   width: 270px;
   margin-bottom: 11px;
-  padding-top: 13px;
+  padding-top: 14px;
   padding-bottom: 21px;
 
   background-color: @basic-white;
@@ -14,6 +14,16 @@
   border: none;
   border-radius: 20px;
   overflow: hidden;
+
+  &:nth-of-type(2) {
+    padding-top: 12px;
+    padding-bottom: 25px;
+  }
+
+  &:nth-of-type(4) {
+    padding-top: 14px;
+    padding-bottom: 26px;
+  }
 
   @media (min-width: @tablet-width) {
     display: grid;
@@ -54,6 +64,7 @@
   grid-column-end: 2;
   width: 70px;
   height: 70px;
+  margin-top: 2px;
   margin-left: 18px;
 
 
@@ -340,7 +351,7 @@
   align-self: stretch;
   justify-self: stretch;
   margin-top: 22px;
-  padding-top: 25px;
+  padding-top: 27px;
 
   border-top: 1px solid #edeff6;
 
@@ -368,6 +379,7 @@
     grid-column-end: -1;
     margin-top: 0;
     margin-bottom: -2px;
+    padding-top: 25px;
 
     &::before {
       top: -10px;
@@ -403,7 +415,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 17px;
+  margin-top: 13px;
   padding-top: 16px;
   padding-bottom: 0;
 
@@ -501,7 +513,7 @@
   position: relative;
   width: 45px;
   height: 45px;
-  margin-right: 21px;
+  margin-right: 23px;
 
   z-index: 5;
 
@@ -509,7 +521,7 @@
     content: "левел:";
     position: absolute;
     top: -26px;
-    left: -8px;
+    left: -6px;
     padding: 0 12px;
 
     font-family: "BloggerSans", "Arial", sans-serif;
@@ -615,7 +627,7 @@
   align-self: end;
   justify-self: center;
   width: 230px;
-  margin-top: 0;
+  margin-top: 15px;
 
   font-size: 17px;
   line-height: 40px;
