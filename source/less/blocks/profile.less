@@ -55,8 +55,8 @@
     grid-row-end: 2;
     grid-column-start: 1;
     grid-column-end: 2;
-    margin-top: 0;
-    margin-left: 0;
+    margin-top: -1px;
+    margin-left: -2px;
   }
 
   @media (min-width: @desktop-width) {
@@ -137,6 +137,7 @@
 
 .profile__fieldset {
   position: relative;
+  width: 100%;
   margin: 25px 0 0 0;
   padding: 0;
 
@@ -242,7 +243,7 @@
 .transport-set {
   width: 100%;
   margin-top: 15px;
-  padding-bottom: 11px;
+  padding-bottom: 0;
 
   @media (min-width: @tablet-width) {
     grid-row-start: 1;

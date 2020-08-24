@@ -22,15 +22,15 @@
   padding: 0 25px;
 
   @media (min-width: @tablet-width) {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    align-items: center;
+    display: grid;
+    grid-template-rows: min-content min-content;
+    grid-template-columns: 1fr 1fr 1fr;
     padding: 0;
   }
 
   @media (min-width: @desktop-width) {
     display: grid;
+    grid-template-rows: 1fr;
     grid-template-columns: 50% 145px max-content 1fr;
     justify-content: flex-start;
     padding-top: 36px;
@@ -49,6 +49,10 @@
   color: @basic-blue-light;
 
   @media (min-width: @tablet-width) {
+    grid-column-start: 1;
+    grid-column-end: -1;
+    grid-row-start: 1;
+    grid-row-end: 2;
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;
@@ -68,6 +72,8 @@
   @media (min-width: @desktop-width) {
     grid-column-start: 1;
     grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: -1;
     justify-items: start;
     flex-direction: row;
     justify-content: flex-start;
@@ -125,6 +131,11 @@
   margin-bottom: 5px;
 
   @media (min-width: @tablet-width) {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: -1;
+    justify-self: start;
     margin-top: 0;
     margin-bottom: 0;
     margin-left: 34px;
@@ -137,6 +148,8 @@
   @media (min-width: @desktop-width) {
     grid-column-start: 2;
     grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: -1;
     justify-self: start;
     margin-left: 0;
     margin-right: 0;
@@ -145,16 +158,26 @@
 
 .plan-item__date {
   @media (min-width: @tablet-width) {
-    align-self: flex-start;
-    margin-left: 10px;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: -1;
+    justify-self: start;
+    margin-left: 12px;
+
+    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
   }
 
   @media (min-width: @desktop-width) {
     grid-column-start: 3;
     grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: -1;
     justify-self: end;
     margin-left: 30px;
     margin-right: 0;
+
+    text-shadow: none;
   }
 }
 
@@ -172,6 +195,11 @@
   color: fade(#000000, 30%);
 
   @media (min-width: @tablet-width) {
+    grid-column-start: 3;
+    grid-column-end: -1;
+    grid-row-start: 2;
+    grid-row-end: -1;
+    justify-self: end;
     margin-top: 0;
     margin-right: 33px;
 
@@ -183,6 +211,8 @@
   @media (min-width: @desktop-width) {
     grid-column-start: 4;
     grid-column-end: -1;
+    grid-row-start: 1;
+    grid-row-end: -1;
     justify-self: end;
     margin-right: 38px;
   }
