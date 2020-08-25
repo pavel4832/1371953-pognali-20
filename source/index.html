@@ -47,7 +47,7 @@
           <div class="main-nav__wrapper container">
             <ul class="main-nav__list site-list">
               <li class="site-list__item site-list__item--active">
-                <a class="site-list__link">о сервисе</a>
+                <a class="site-list__link active-now">о сервисе</a>
               </li>
 
               <li class="site-list__item">
@@ -472,7 +472,7 @@
             </li>
           </ul>
 
-          <a class="prices__link" href="#">Показать тарифы для бизнеса</a>
+          <a class="prices__link js-open-popup" href="#">Показать тарифы для бизнеса</a>
         </div>
       </section>
 
@@ -555,19 +555,52 @@
           </li>
         </ul>
 
-        <div class="page-footer__copyright copyright">
+        <a class="copyright__link copyright" href="https://htmlacademy.ru/intensive/adaptive">
           <b class="copyright__text">Разработано</b>
 
-          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-            <img src="img/htmlacademy.svg" width="27" height="34" alt="Логотип академии">
-          </a>
-        </div>
+          <img src="img/htmlacademy.svg" width="27" height="34" alt="Логотип академии">
+        </a>
       </div>
     </footer>
+
+    <section class="index-body__popup business-rates-modal js-popup">
+      <div class="business-rates-modal__container">
+        <h2 class="business-rates-modal__title">Бизнес-тарифы</h2>
+
+        <ul class="business-rates-modal__list">
+          <li class="business-rates-modal__item">
+            <p class="business-rates-modal__text">Реклама у блоггера</p>
+
+            <p class="business-rates-modal__price">300 000 руб./пост</p>
+          </li>
+
+          <li class="business-rates-modal__item">
+            <p class="business-rates-modal__text">Накрутка подписчиков.</p>
+
+            <p class="business-rates-modal__price">от 1 руб./шт</p>
+          </li>
+
+          <li class="business-rates-modal__item">
+            <p class="business-rates-modal__text">Лайки от ботов</p>
+
+            <p class="business-rates-modal__price">от 20 коп./лайк</p>
+          </li>
+
+          <li class="business-rates-modal__item">
+            <p class="business-rates-modal__text">Ваш продакт-плейсмент</p>
+
+            <p class="business-rates-modal__price">Индивидуально</p>
+          </li>
+        </ul>
+
+        <button class="business-rates-modal__button button js-close-popup" type="button">Закрыть окно</button>
+      </div>
+    </section>
 
     <script src="js/script-no-js.js"></script>
     <script src="js/open-menu.js"></script>
     <script src="https://api-maps.yandex.ru/2.1/?apikey=11ce66be-ec32-4218-8fea-46eb1c11e5be&lang=ru_RU" type="text/javascript"></script>
     <script src="js/map.js"></script>
+    <script src="js/popup.js"></script>
   </body>
 </html>

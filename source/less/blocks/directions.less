@@ -342,6 +342,18 @@
     content: url("../img/show-more-triangle.svg");
   }
 
+  &:hover {
+    background-color: @special-yellow-dark;
+  }
+
+  &:active {
+    color: fade(@basic-blue, 30%);
+
+    &::after {
+      opacity: 0.3;
+    }
+  }
+
   @media (min-width: @tablet-width) {
     width: 616px;
     margin-left: 35px;

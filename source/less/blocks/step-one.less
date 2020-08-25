@@ -14,15 +14,27 @@
 
 .step-one__title-wrapper {
   @media (min-width: @desktop-width) {
-    display: grid;
-    grid-template-columns: 585px 1fr;
+    display: flex;
+    justify-content: space-between;
     grid-row-start: 1;
     grid-row-end: 2;
     grid-column-start: 1;
     grid-column-end: -1;
-    padding-bottom: 42px;
+    width: 100%;
+    padding-bottom: 18px;
 
     border-bottom: 1px solid #e1e3e9;
+  }
+}
+
+.step-one .plans-form__text {
+  @media (min-width: @tablet-width) {
+    padding-bottom: 38px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: 64px;
+    padding-right: 200px;
   }
 }
 

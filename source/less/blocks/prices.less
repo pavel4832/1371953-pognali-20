@@ -111,6 +111,22 @@
   text-align: center;
   vertical-align: middle;
 
+  &:hover {
+    color: fade(#132576, 70%);
+
+    &::before {
+      opacity: 0.7;
+    }
+  }
+
+  &:active {
+    color: fade(#132576, 30%);
+
+    &::before {
+      opacity: 0.3;
+    }
+  }
+
   @media (min-width: @tablet-width) {
     align-self: flex-start;
     margin-left: 0;

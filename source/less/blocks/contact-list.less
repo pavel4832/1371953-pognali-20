@@ -56,7 +56,6 @@
     height: 45px;
     margin-right: 16px;
 
-    background-color: #121936;
     border-radius: 50%;
   }
 
@@ -80,16 +79,24 @@
 }
 
 .page-header__list .contact-list__link {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+
+  border-radius: 50%;
+
   &::before {
     width: 40px;
     height: 40px;
     margin-right: 0;
 
-    background-color: @special-orange;
     border-radius: 50%;
   }
 
   @media (min-width: @tablet-width) {
+    width: 68px;
+    height: 68px;
+
     &::before {
       width: 68px;
       height: 68px;
@@ -97,6 +104,9 @@
   }
 
   @media (min-width: @desktop-width) {
+    width: 50px;
+    height: 50px;
+
     &::before {
       width: 50px;
       height: 50px;
@@ -110,6 +120,14 @@
 
   &::before {
     margin-right: 12px;
+  }
+
+  &:hover {
+    color: @special-yellow-dark;
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 
   @media (min-width: @tablet-width) {
@@ -138,9 +156,19 @@
 }
 
 .sign-up__contact .top-tell {
+  &:hover {
+    color: @special-yellow-dark;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
   @media (min-width: @desktop-width) {
     &::before {
       content: url("../img/contacts-phone-desktop.svg");
+
+      background-color: #121936;
     }
   }
 }
@@ -159,18 +187,44 @@
   @media (min-width: @desktop-width) {
     &::before {
       content: url("../img/contacts-mail-desktop.svg");
+
+      background-color: #121936;
     }
   }
 }
 
 .icon-tel {
+  background-color: @special-orange;
+
   &::before {
     content: url("../img/topmenu-phone.svg");
+  }
+
+  &:hover {
+    background-color: #f26926;
+  }
+
+  &:active {
+    &::before {
+      opacity: 0.3;
+    }
   }
 }
 
 .icon-mail {
+  background-color: @special-yellow-dark;
+
   &::before {
     content: url("../img/topmenu-mail.svg");
+  }
+
+  &:hover {
+    background-color: @special-orange;
+  }
+
+  &:active {
+    &::before {
+      opacity: 0.3;
+    }
   }
 }

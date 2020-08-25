@@ -132,6 +132,18 @@
     vertical-align: top;
   }
 
+  &:hover {
+    color: @basic-white;
+
+    background-color: #192144;
+  }
+
+  &:active {
+    color: fade(@basic-white, 30%);
+
+    background-color: #192144;
+  }
+
   @media (min-width: @tablet-width) {
     display: inline-flex;
     justify-content: space-between;
