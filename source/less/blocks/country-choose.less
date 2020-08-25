@@ -8,14 +8,14 @@
   border-radius: 4px;
 
   @media (min-width: @tablet-width) {
-    width: 100%;
+    width: 575px;
   }
 }
 
 .country-choose__header {
   display: flex;
   justify-content: space-between;
-  padding-top: 11px;
+  padding-top: 13px;
   padding-bottom: 10px;
 
   background-color: @basic-blue-light;
@@ -47,6 +47,8 @@
   color: @basic-white;
 
   @media (min-width: @tablet-width) {
+    margin-left: 24px;
+
     font-size: 20px;
     line-height: 70px;
     letter-spacing: 0.1em;
@@ -73,16 +75,23 @@
     width: 22px;
     height: 21px;
     margin-top: 25px;
-    margin-right: 29px;
+    margin-right: 25px;
 
     background-image: url("../img/cross-white.svg");
+  }
+}
+
+.country-choose__table {
+  @media (min-width: @tablet-width) {
+    margin-top: 34px;
+    margin-left: 27px;
   }
 }
 
 .country-choose__list {
   width: 100%;
   margin-top: 0;
-  padding-top: 15px;
+  padding-top: 16px;
   padding-left: 18px;
 
   background-color: @basic-white;
@@ -94,8 +103,10 @@
   box-sizing: border-box;
 
   @media (min-width: @tablet-width) {
-    width: 163px;
-    padding-top: 35px;
+    width: 184px;
+    margin-right: 23px;
+    padding-top: 34px;
+    padding-left: 24px;
 
     border: none;
     border-left: 1px solid fade(#d6d9e6, 50%);
@@ -110,7 +121,7 @@
 .country-choose__list .country-list__item {
   margin-bottom: 4px;
 
-  @media (min-width: @desktop-width) {
+  @media (min-width: @tablet-width) {
     margin-bottom: 8px;
   }
 }
@@ -133,8 +144,10 @@
 }
 
 .country-choose__wrapper .alphabet {
-  margin-top: 35px;
-  margin-left: 27px;
+  @media (min-width: @desktop-width) {
+    margin-top: 35px;
+    margin-left: 27px;
+  }
 
   @media (min-width: @desktop-width) {
     margin-top: 21px;
