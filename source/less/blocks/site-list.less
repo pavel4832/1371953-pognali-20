@@ -37,6 +37,14 @@
   text-transform: uppercase;
   color: #192144;
 
+  &:not(.active-now):hover {
+    color: @basic-yellow;
+  }
+
+  &:not(.active-now):active {
+    color: fade(@basic-yellow, 30%);
+  }
+
   @media (min-width: @tablet-width) {
     font-size: 60px;
     line-height: 71px;

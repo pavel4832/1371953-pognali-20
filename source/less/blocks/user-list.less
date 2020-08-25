@@ -18,6 +18,14 @@
   background-color: @basic-yellow;
   border-radius: 25px;
 
+  &:hover {
+    background-color: @special-yellow-dark;
+  }
+
+  &:active {
+    color: fade(@basic-blue, 30%);
+  }
+
   @media (min-width: @tablet-width) {
     width: 188px;
     height: 50px;

@@ -163,6 +163,18 @@
 .service__bth {
   display: none;
 
+  &:hover {
+    background-color: @special-yellow-dark;
+  }
+
+  &:active {
+    color: fade(@basic-blue, 30%);
+
+    &::after {
+      opacity: 0.3;
+    }
+  }
+
   @media (min-width: @tablet-width) {
     display: inline-block;
     position: relative;
