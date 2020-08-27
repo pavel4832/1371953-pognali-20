@@ -38,11 +38,11 @@
   color: #192144;
 
   &:not(.active-now):hover {
-    color: @basic-yellow;
+    opacity: 0.7;
   }
 
   &:not(.active-now):active {
-    color: fade(@basic-yellow, 30%);
+    opacity: 0.3;
   }
 
   @media (min-width: @tablet-width) {
@@ -54,5 +54,14 @@
     font-size: 20px;
     line-height: 20px;
     color: @basic-white;
+
+    &:not(.active-now):hover {
+      color: @basic-yellow;
+      opacity: 1;
+    }
+
+    &:not(.active-now):active {
+      opacity: 0.3;
+    }
   }
 }

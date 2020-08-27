@@ -22,19 +22,19 @@
         <div class="logo">
           <a class="logo__link">
             <picture>
-              <source media="(min-width: 1440px)" type="image/png" srcset="img/logo-desktop-blue@1x.png 1x">
+              <source media="(min-width: 1440px)" type="image/png" srcset="img/logo-desktop-blue@1x.png 1x, img/logo-desktop-blue@2x.png 2x">
 
-              <source media="(min-width: 768px)" type="image/png" srcset="img/logo-tablet-blue@1x.png 1x">
+              <source media="(min-width: 768px)" type="image/png" srcset="img/logo-tablet-blue@1x.png 1x, img/logo-tablet-blue@2x.png 2x">
 
-              <img class="no-js-logo" src="img/logo-mobile-blue@1x.png" alt="Сервис «Погнали?»">
+              <img class="logo__image no-js-logo" src="img/logo-mobile-blue@1x.png" srcset="img/logo-mobile-blue@2x.png 2x" width="100" height="19" alt="Сервис «Погнали»">
             </picture>
 
             <picture>
-              <source media="(min-width: 1440px)" type="image/png" srcset="img/logo-desktop-white@1x.png 1x">
+              <source media="(min-width: 1440px)" type="image/png" srcset="img/logo-desktop-white@1x.png 1x, img/logo-desktop-white@2x.png 2x">
 
-              <source media="(min-width: 768px)" type="image/png" srcset="img/logo-tablet-white@1x.png 1x">
+              <source media="(min-width: 768px)" type="image/png" srcset="img/logo-tablet-white@1x.png 1x, img/logo-tablet-white@2x.png 2x">
 
-              <img class="logo__image js-image" src="img/logo-mobile-white@1x.png" alt="Сервис «Погнали?»">
+              <img class="logo__image js-image" src="img/logo-mobile-white@1x.png" srcset="img/logo-mobile-white@2x.png 2x" width="100" height="19" alt="Сервис «Погнали»">
             </picture>
           </a>
 
@@ -201,16 +201,12 @@
           <ul class="directions__list">
             <li class="directions__item directions-country">
               <picture>
-                <source media="(min-width: 768px)" type="image/jpg" srcset="img/thailand-desktop@1x.jpg 1x">
+                <source media="(min-width: 768px)" type="image/jpg" srcset="img/thailand-desktop@1x.jpg 1x, img/thailand-desktop@2x.jpg 2x">
 
-                <img class="directions-country__image" src="img/thailand-mobile@1x.jpg" alt="Тайланд">
+                <img class="directions-country__image" src="img/thailand-mobile@1x.jpg" srcset="img/thailand-mobile@2x.jpg 2x" width="270" height="110" alt="Тайланд">
               </picture>
 
-              <picture>
-                <source media="(min-width: 768px)" type="image/png" srcset="img/thailand-flag-tablet.png 1x">
-
-                <img class="directions-country__flag" src="img/thailand-flag-mobile.png" alt="Флаг Тайланда">
-              </picture>
+              <img class="directions-country__flag" src="img/flag-thailand.svg" width="35" height="24" alt="Флаг Тайланда">
 
               <div class="directions-country__info">
                 <a class="directions-country__link" href="#">
@@ -227,16 +223,12 @@
 
             <li class="directions__item directions-country">
               <picture>
-                <source media="(min-width: 768px)" type="image/jpg" srcset="img/france-desktop@1x.jpg 1x">
+                <source media="(min-width: 768px)" type="image/jpg" srcset="img/france-desktop@1x.jpg 1x, img/france-desktop@2x.jpg 2x">
 
-                <img class="directions-country__image" src="img/france-mobile@1x.jpg" alt="Франция">
+                <img class="directions-country__image" src="img/france-mobile@1x.jpg" srcset="img/france-mobile@2x.jpg 2x" width="270" height="110" alt="Франция">
               </picture>
 
-              <picture>
-                <source media="(min-width: 768px)" type="image/png" srcset="img/france-flag-tablet.png 1x">
-
-                <img class="directions-country__flag" src="img/france-flag-mobile.png" alt="Флаг Франции">
-              </picture>
+              <img class="directions-country__flag" src="img/flag-france.svg" width="35" height="24" alt="Флаг Франции">
 
               <div class="directions-country__info">
                 <a class="directions-country__link" href="#">
@@ -253,16 +245,12 @@
 
             <li class="directions__item directions-country">
               <picture>
-                <source media="(min-width: 768px)" type="image/jpg" srcset="img/czech-desktop@1x.jpg 1x">
+                <source media="(min-width: 768px)" type="image/jpg" srcset="img/czech-desktop@1x.jpg 1x, img/czech-desktop@2x.jpg 2x">
 
-                <img class="directions-country__image" src="img/czech-mobile@1x.jpg" alt="Чехия">
+                <img class="directions-country__image" src="img/czech-mobile@1x.jpg" srcset="img/czech-mobile@2x.jpg 2x" width="270" height="110" alt="Чехия">
               </picture>
 
-              <picture>
-                <source media="(min-width: 768px)" type="image/png" srcset="img/czech-flag-tablet.png 1x">
-
-                <img class="directions-country__flag" src="img/czech-flag-mobile.png" alt="Флаг Чехии">
-              </picture>
+              <img class="directions-country__flag" src="img/flag-czech.svg" width="35" height="24" alt="Флаг Чехии">
 
               <div class="directions-country__info">
                 <a class="directions-country__link" href="#">
@@ -300,21 +288,22 @@
             <div class="companions__list">
               <article class="companions__item profile-item companion-offline">
                 <div class="profile-item__image">
-                  <img src="img/firsova-desktop@1x.jpg" width="285" height="285" alt="Фото Тани" >
+
+                  <img src="img/firsova-desktop@1x.jpg" srcset="img/firsova-desktop@2x.jpg 2x" width="285" height="285" alt="Фото Тани" >
                 </div>
 
                 <div class="profile-item__request country-request">
                   <ul class="country-request__list">
                     <li class="country-request__item">
-                      <img class="country-request__flag" src="img/sri-lanka-flag-mobile.png" height="25" width="35" alt="Флаг шри-ланки">
+                      <img class="country-request__flag" src="img/flag-sri-lanka.svg" height="25" width="35" alt="Флаг шри-ланки">
                     </li>
 
                     <li class="country-request__item">
-                      <img class="country-request__flag" src="img/thailand-flag-mobile.png" height="25" width="35" alt="Флаг тайланд">
+                      <img class="country-request__flag" src="img/flag-thailand.svg" height="25" width="35" alt="Флаг тайланд">
                     </li>
 
                     <li class="country-request__item">
-                      <img class="country-request__flag" src="img/seychelles-flag-mobile.png" height="25" width="35" alt="Флаг сейшел">
+                      <img class="country-request__flag" src="img/flag-seychelles.svg" height="25" width="35" alt="Флаг сейшел">
                     </li>
                   </ul>
                 </div>
@@ -360,17 +349,17 @@
 
               <article class="companions__item profile-item companion-online">
                 <div class="profile-item__image">
-                  <img src="img/demin-desktop@1x.jpg" width="285" height="285" alt="Фото Пети" >
+                  <img src="img/demin-desktop@1x.jpg" srcset="img/demin-desktop@2x.jpg 2x" width="285" height="285" alt="Фото Пети" >
                 </div>
 
                 <div class="profile-item__request country-request">
                   <ul class="country-request__list">
                     <li class="country-request__item">
-                      <img class="country-request__flag" src="img/belgium-flag-mobile.png" height="24" width="35" alt="Флаг белгии">
+                      <img class="country-request__flag" src="img/flag-belgium.svg" height="25" width="35" alt="Флаг белгии">
                     </li>
 
                     <li class="country-request__item">
-                      <img class="country-request__flag" src="img/czech-flag-mobile.png" height="25" width="35" alt="Флаг чехии">
+                      <img class="country-request__flag" src="img/flag-czech.svg" height="25" width="35" alt="Флаг чехии">
                     </li>
                   </ul>
                 </div>
@@ -520,7 +509,13 @@
         </div>
 
         <div class="map__background js-background">
-          <img src="img/background_map.png" height="424" width="100%" alt="Карта">
+          <picture>
+            <source media="(min-width: 1440px)" type="image/jpg" srcset="img/map-desktop@1x.jpg 1x, img/map-desktop@2x.jpg 2x">
+
+            <source media="(min-width: 768px)" type="image/jpg" srcset="img/map-tablet@1x.jpg 1x, img/map-tablet@2x.jpg 2x">
+
+            <img class="map__image" src="img/map-mobile@1x.jpg" srcset="img/map-mobile@1x.jpg 2x" width="320" height="546" alt="Карта">
+          </picture>
         </div>
 
         <div id="map" class="map__yamap" aria-label="Карта"></div>
@@ -532,11 +527,11 @@
         <div class="page-footer__logo logo">
           <a class="logo__link">
             <picture>
-              <source media="(min-width: 1440px)" type="image/png" srcset="img/logo-desktop-blue@1x.png 1x">
+              <source media="(min-width: 1440px)" type="image/png" srcset="img/logo-desktop-blue@1x.png 1x, img/logo-desktop-blue@2x.png 2x">
 
-              <source media="(min-width: 768px)" type="image/png" srcset="img/logo-tablet-blue@1x.png 1x">
+              <source media="(min-width: 768px)" type="image/png" srcset="img/logo-tablet-blue@1x.png 1x, img/logo-tablet-blue@2x.png 2x">
 
-              <img src="img/logo-mobile-blue@1x.png" alt="Сервис «Погнали?»">
+              <img class="logo__image" src="img/logo-mobile-blue@1x.png" srcset="img/logo-mobile-blue@2x.png 2x" width="100" height="19" alt="Сервис «Погнали»">
             </picture>
           </a>
         </div>

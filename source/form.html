@@ -20,19 +20,19 @@
         <div class="logo">
           <a class="logo__link" href="index.html">
             <picture>
-              <source media="(min-width: 1440px)" type="image/png" srcset="img/logo-desktop-blue@1x.png 1x">
+              <source media="(min-width: 1440px)" type="image/png" srcset="img/logo-desktop-blue@1x.png 1x, img/logo-desktop-blue@2x.png 2x">
 
-              <source media="(min-width: 768px)" type="image/png" srcset="img/logo-tablet-blue@1x.png 1x">
+              <source media="(min-width: 768px)" type="image/png" srcset="img/logo-tablet-blue@1x.png 1x, img/logo-tablet-blue@2x.png 2x">
 
-              <img class="no-js-logo" src="img/logo-mobile-blue@1x.png" alt="Сервис «Погнали?»">
+              <img class="logo__image no-js-logo" src="img/logo-mobile-blue@1x.png" srcset="img/logo-mobile-blue@2x.png 2x" width="100" height="19" alt="Сервис «Погнали»">
             </picture>
 
             <picture>
-              <source media="(min-width: 1440px)" type="image/png" srcset="img/logo-desktop-white@1x.png 1x">
+              <source media="(min-width: 1440px)" type="image/png" srcset="img/logo-desktop-white@1x.png 1x, img/logo-desktop-white@2x.png 2x">
 
-              <source media="(min-width: 768px)" type="image/png" srcset="img/logo-tablet-white@1x.png 1x">
+              <source media="(min-width: 768px)" type="image/png" srcset="img/logo-tablet-white@1x.png 1x, img/logo-tablet-white@2x.png 2x">
 
-              <img class="logo__image js-image" src="img/logo-mobile-white@1x.png" alt="Сервис «Погнали?»">
+              <img class="logo__image js-image" src="img/logo-mobile-white@1x.png" srcset="img/logo-mobile-white@2x.png 2x" width="100" height="19" alt="Сервис «Погнали»">
             </picture>
           </a>
 
@@ -130,9 +130,9 @@
 
             <div class="profile__image">
               <picture>
-                <source media="(min-width: 1440px)" type="image/jpg" srcset="img/demin-tablet@1x.jpg 1x">
+                <source media="(min-width: 1440px)" type="image/jpg" srcset="img/demin-tablet@1x.jpg 1x, img/demin-tablet@2x.jpg 2x">
 
-                <img src="../img/demin-desktop@1x.jpg" alt="Фото пользователя" >
+                <img class="profile__photo" src="img/demin-desktop@1x.jpg" srcset="img/demin-desktop@2x.jpg 2x" width="285" height="285" alt="Фото пользователя" >
               </picture>
             </div>
 
@@ -542,12 +542,8 @@
                     <span class="choosing-country__dropdown" aria-label="открыть выбор"></span>
                   </div>
 
-                  <div class="choosing-country__flag">
-                    <picture>
-                      <source media="(min-width: 768px)" type="image/png" srcset="img/bosnia-and-Herzegovina-flag-tablet.png 1x">
-
-                      <img src="img/bosnia-and-Herzegovina-flag-mobile.png" alt="Флаг Боснии">
-                    </picture>
+                  <div class="choosing-country__flag-container">
+                    <img class="choosing-country__flag" src="img/flag-bosnia.svg" width="35" height="24" alt="Флаг Боснии">
 
                     <button class="choosing-country__close-btn js-remove-btn" type="button" aria-label="удалить из выбора"></button>
                   </div>
@@ -662,12 +658,8 @@
                     <span class="choosing-country__dropdown" aria-label="открыть выбор"></span>
                   </div>
 
-                  <div class="choosing-country__flag">
-                    <picture>
-                      <source media="(min-width: 768px)" type="image/png" srcset="img/czech-flag-tablet.png 1x">
-
-                      <img src="img/czech-flag-mobile.png" alt="Флаг Чехии">
-                    </picture>
+                  <div class="choosing-country__flag-container">
+                    <img class="choosing-country__flag" src="img/flag-czech.svg" width="35" height="24" alt="Флаг Чехии">
 
                     <button class="choosing-country__close-btn js-remove-btn" type="button" aria-label="удалить из выбора"></button>
                   </div>
@@ -831,11 +823,7 @@
                         <div class="country-fun__mask"></div>
                       </div>
 
-                      <picture>
-                        <source media="(min-width: 768px)" type="image/png" srcset="img/bosnia-and-Herzegovina-flag-tablet.png 1x">
-
-                        <img class="country-fun__flag" src="img/bosnia-and-Herzegovina-flag-mobile.png" alt="Флаг Боснии">
-                      </picture>
+                      <img class="country-fun__flag" src="img/flag-bosnia.svg" width="35" height="24" alt="Флаг Боснии">
                     </div>
 
                     <textarea class="country-fun__description" name="fun1" id="fun1" cols="30" rows="5" placeholder="План действий"></textarea>
@@ -849,11 +837,7 @@
                         <div class="country-fun__mask"></div>
                       </div>
 
-                      <picture>
-                        <source media="(min-width: 768px)" type="image/png" srcset="img/czech-flag-tablet.png 1x">
-
-                        <img class="country-fun__flag" src="img/czech-flag-mobile.png" alt="Флаг Чехии">
-                      </picture>
+                      <img class="country-fun__flag" src="img/flag-czech.svg" width="35" height="24" alt="Флаг Чехии">
                     </div>
 
                     <textarea class="country-fun__description" name="fun2" id="fun2" cols="30" rows="5">Пить пиво и лазить по&nbsp;старым замкам, наслаждаться&nbsp;архитектурой и&nbsp;вот это все.</textarea>
@@ -879,11 +863,11 @@
         <div class="page-footer__logo logo">
           <a class="logo__link">
             <picture>
-              <source media="(min-width: 1440px)" type="image/png" srcset="img/logo-desktop-blue@1x.png 1x">
+              <source media="(min-width: 1440px)" type="image/png" srcset="img/logo-desktop-blue@1x.png 1x, img/logo-desktop-blue@2x.png 2x">
 
-              <source media="(min-width: 768px)" type="image/png" srcset="img/logo-tablet-blue@1x.png 1x">
+              <source media="(min-width: 768px)" type="image/png" srcset="img/logo-tablet-blue@1x.png 1x, img/logo-tablet-blue@2x.png 2x">
 
-              <img src="img/logo-mobile-blue@1x.png" alt="Сервис «Погнали?»">
+              <img class="logo__image" src="img/logo-mobile-blue@1x.png" srcset="img/logo-mobile-blue@2x.png 2x" width="100" height="19" alt="Сервис «Погнали»">
             </picture>
           </a>
         </div>
