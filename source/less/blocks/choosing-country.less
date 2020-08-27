@@ -41,7 +41,7 @@
       top: 56px;
     }
 
-    &:first-child .choosing-country__flag {
+    &:first-child .choosing-country__flag-container {
       padding-top: 80px;
       margin-left: 25px;
     }
@@ -72,7 +72,7 @@
       top: 75px;
     }
 
-    &:first-child .choosing-country__flag {
+    &:first-child .choosing-country__flag-container {
       padding-top: 99px;
       margin-left: 40px;
     }
@@ -189,7 +189,7 @@
   }
 }
 
-.choosing-country__flag {
+.choosing-country__flag-container {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -212,6 +212,13 @@
 
   @media (min-width: @desktop-width) {
     margin-left: 40px;
+  }
+}
+
+.choosing-country__flag {
+  @media (min-width: @tablet-width) {
+    width: 70px;
+    height: 47px;
   }
 }
 
