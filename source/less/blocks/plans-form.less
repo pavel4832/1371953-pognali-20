@@ -124,6 +124,20 @@
   background-color: @basic-yellow;
   border-radius: 20px;
 
+  cursor: pointer;
+
+  &:hover {
+    background-color: @special-yellow-dark;
+  }
+
+  &:active {
+    color: fade(@basic-blue, 30%);
+
+    &::after {
+      opacity: 0.3;
+    }
+  }
+
   @media (min-width: @tablet-width) {
     display: flex;
     justify-content: space-between;
@@ -176,6 +190,14 @@
   line-height: 40px;
   letter-spacing: 0.01em;
   color: @basic-blue-light;
+
+  &:hover {
+    opacity: 0.7;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 
   @media (min-width: @tablet-width) {
     display: flex;

@@ -9,6 +9,18 @@
   border: none;
   border-radius: 20px;
 
+  &:hover {
+    background-color: #d1d7e9;
+  }
+
+  &:active {
+    background-color: @special-blue-light;
+  }
+
+  &:active .change-img__btn {
+    color: fade(@basic-blue, 30%);
+  }
+
   @media (min-width: @tablet-width) {
     width: 100%;
 
@@ -36,6 +48,8 @@
   text-align: center;
   text-transform: uppercase;
   color: @basic-blue;
+
+  cursor: pointer;
 
   @media (min-width: @tablet-width) {
     line-height: 60px;

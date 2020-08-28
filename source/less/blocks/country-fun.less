@@ -93,6 +93,19 @@
     color: fade(@special-grey, 30%);
   }
 
+  &:hover {
+    border: 1px solid #959bb2;
+  }
+
+  &:focus {
+    outline: none;
+    border: 1px solid #161c35;
+  }
+
+  &:invalid {
+    border: 1px solid @special-red;
+  }
+
   @media (min-width: @tablet-width) {
     width: 500px;
     margin-top: 29px;

@@ -65,19 +65,64 @@
   margin-right: 12px;
 
   background-color: transparent;
-  background-image: url("../img/small-cross-white.svg");
-  background-repeat: no-repeat;
-  background-position: center;
 
   border: none;
+
+  &::before {
+    content: "";
+    display: inline-block;
+    width: 1px;
+    height: 12px;
+    background-color: fade(@basic-white, 30%);
+    transform: rotate(45deg);
+  }
+
+  &::after {
+    content: "";
+    display: inline-block;
+    width: 1px;
+    height: 12px;
+    background-color: fade(@basic-white, 30%);
+    transform: rotate(-45deg);
+  }
+
+  &:hover {
+    &::after,
+    &::before {
+      background-color: @basic-white;
+    }
+  }
+
+  &:active {
+    &::after,
+    &::before {
+      background-color: fade(@basic-white, 10%);
+    }
+  }
 
   @media (min-width: @tablet-width) {
     width: 22px;
     height: 21px;
-    margin-top: 25px;
+    margin-top: 20px;
     margin-right: 25px;
 
-    background-image: url("../img/cross-white.svg");
+    &::before {
+      content: "";
+      display: inline-block;
+      width: 1px;
+      height: 32px;
+      background-color: fade(@basic-white, 30%);
+      transform: rotate(45deg);
+    }
+
+    &::after {
+      content: "";
+      display: inline-block;
+      width: 1px;
+      height: 32px;
+      background-color: fade(@basic-white, 30%);
+      transform: rotate(-45deg);
+    }
   }
 }
 

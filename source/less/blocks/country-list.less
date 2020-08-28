@@ -5,6 +5,14 @@
 .country-list__link {
   color: @special-grey;
 
+  &:hover {
+    color: @basic-blue-light;
+  }
+
+  &:active {
+    color: fade(@basic-blue-light, 30%);
+  }
+
   @media (min-width: @tablet-width) {
     font-size: 20px;
     line-height: 20px;
