@@ -185,25 +185,38 @@
   border: none;
 
   resize: none;
+  outline: none;
+
+  &:focus {
+    color: #444444;
+  }
 
   @media (min-width: @tablet-width) {
     width: 100%;
     padding: 0;
     padding-left: 33px;
-    padding-bottom: 22px;
+    padding-bottom: 17px;
 
     font-size: 20px;
     line-height: 22px;
   }
 
   @media (min-width: @desktop-width) {
-    padding-top: 32px;
+    padding-top: 27px;
     padding-left: 37px;
-    padding-bottom: 10px;
+    padding-bottom: 5px;
   }
 }
 
 .tags-set {
+  &:hover {
+    border: 1px solid #aeb4cb;
+  }
+
+  &:focus-within {
+    border: 1px solid @basic-blue;
+  }
+
   @media (min-width: @tablet-width) {
     grid-row-start: 3;
     grid-row-end: -1;
@@ -225,6 +238,8 @@
     margin-bottom: 0;
     margin-left: 64px;
     padding: 0;
+    padding-top: 5px;
+    padding-bottom: 5px;
     width: 732px;
   }
 }

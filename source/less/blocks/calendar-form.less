@@ -36,8 +36,6 @@
   width: 15px;
   height: 21px;
 
-  opacity: 0.3;
-
   @media (min-width: @tablet-width) {
     width: 29px;
     height: 36px;
@@ -147,9 +145,18 @@
   border: 1px solid #cbced9;
   box-sizing: border-box;
 
+  &:hover {
+    background-color: @basic-blue-light;
+    box-shadow: inset 0 0 0 2px #ff5c23;
+  }
+
   @media (min-width: @tablet-width) {
     width: 77px;
     height: 69px;
+
+    &:hover {
+      box-shadow: inset 0 0 0 4px #ff5c23;
+    }
   }
 
   @media (min-width: @desktop-width) {
@@ -172,15 +179,14 @@
 }
 
 .start-day {
-  border: 2px solid #ff5c23;
-
   @media (min-width: @desktop-width) {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding-top: 7px;
-    padding-bottom: 9px;
-    border: 4px solid #ff5c23;
+
+    border-spacing: 0;
+    border: none;
+    box-sizing: border-box;
 
     &::after {
       content: "Заезд";
@@ -189,7 +195,6 @@
       font-style: normal;
       font-weight: normal;
       font-size: 18px;
-      line-height: 20px;
       color: @basic-white;
     }
   }
@@ -200,9 +205,10 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding-top: 11px;
-    padding-bottom: 13px;
+
+    border-spacing: 0;
     border: none;
+    box-sizing: border-box;
 
     &::after {
       content: "Выезд";
@@ -211,7 +217,6 @@
       font-style: normal;
       font-weight: normal;
       font-size: 18px;
-      line-height: 20px;
       color: @basic-white;
     }
   }
@@ -224,6 +229,10 @@
   font-size: 14px;
   line-height: 18px;
   color: fade(@special-grey, 30%);
+
+  .calendar-form__columns:hover > & {
+    color: @basic-white;
+  }
 
   @media (min-width: @tablet-width) {
     font-size: 18px;

@@ -32,6 +32,10 @@
   border: 1px solid #cbced9;
   box-sizing: border-box;
 
+  &:hover {
+    border: 1px solid #959bb2;
+  }
+
   @media (min-width: @tablet-width) {
     width: 52px;
     height: 69px;
@@ -76,17 +80,26 @@
 }
 
 .alphabet__link {
+  display: block;
+  width: 100%;
+  height: 100%;
   font-family: "BloggerSans-Medium", "Arial", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
-  line-height: 40px;
+  line-height: 39.78px;
   text-transform: uppercase;
   color: @basic-blue-light;
 
+  &:active {
+    color: @basic-white;
+
+    background-color: @basic-blue-light;
+  }
+
   @media (min-width: @tablet-width) {
     font-size: 20px;
-    line-height: 20px;
+    line-height: 69px;
   }
 }
 
