@@ -14,7 +14,8 @@
   justify-content: flex-start;
   align-items: center;
   flex-wrap: wrap;
-  padding-top: 44px;
+  padding-top: 68px;
+  padding-bottom: 30px;
 
   background-color: @basic-white;
   z-index: 2;
@@ -22,6 +23,7 @@
   @media (min-width: @tablet-width) {
     align-items: start;
     padding-top: 88px;
+    padding-bottom: 2px;
   }
 
   @media (min-width: @desktop-width) {
@@ -37,7 +39,7 @@
 
 .main-nav__list {
   margin-top: 0;
-  margin-bottom: 52px;
+  margin-bottom: 54px;
 
   @media (min-width: @desktop-width) {
     margin: 0;
@@ -45,7 +47,7 @@
 }
 
 .main-nav__list.user-list {
-  margin-bottom: 51px;
+  margin-bottom: 50px;
 
   @media (min-width: @tablet-width) {
     display: none;
@@ -54,6 +56,11 @@
 
 .main-nav__list.contact-list {
   margin-bottom: 30px;
+  padding-left: 15px;
+
+  @media (min-width: @tablet-width) {
+    padding-left: 80px;
+  }
 
   @media (min-width: @desktop-width) {
     display: none;

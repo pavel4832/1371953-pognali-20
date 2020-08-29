@@ -36,14 +36,24 @@
   width: 32px;
   height: 32px;
 
-  border-radius: 50%;
+  color: fade(@basic-blue-light, 15%);
 
-  &:hover {
-    filter: drop-shadow(0 2px 6px rgba(22, 28, 53, 0.17));
-  }
+  border-radius: 50%;
 }
 
 .transport-set__list .transport-list__item {
+  &:hover {
+    filter: drop-shadow(0 2px 6px rgba(22, 28, 53, 0.17));
+
+    .transport-list__icon {
+      color: #b2b2b2;
+    }
+
+    .transport-list__choose:checked + .transport-list__icon {
+      color: fade(@basic-blue-light, 70%);
+    }
+  }
+
   @media (min-width: @tablet-width) {
     width: 44px;
     height: 44px;
@@ -66,22 +76,20 @@
 }
 
 .transport-list__icon {
-  display: inline-block;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
   width: 30px;
   height: 25px;
 
-  opacity: 0.15;
+  color: #d9d9d9;
 
   .transport-list__choose:checked + & {
-    opacity: 1;
+    color: @basic-blue-light;
   }
 
   .transport-list__choose:checked + &:active {
     opacity: 0.3;
-  }
-
-  .transport-list__item:hover > &:not(:active) {
-    opacity: 0.7;
   }
 
   &:active {
@@ -106,95 +114,7 @@
   }
 }
 
-
-.transport-air {
-  background-image: url("../img/plane.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.catalog-companions__list .transport-air {
-  background-image: url("../img/plane-small.svg");
-
-  @media (min-width: @tablet-width) {
-    background-image: url("../img/plane.svg");
-    background-size: 22px 22px;
-  }
-}
-
-.search-form__list .transport-air {
-  @media (min-width: @tablet-width) {
-    background-image: url("../img/plane.svg");
-    background-size: 22px 22px;
-  }
-}
-
-.transport-bus {
-  background-image: url("../img/bus.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.catalog-companions__list .transport-bus {
-  background-image: url("../img/bus-small.svg");
-
-  @media (min-width: @tablet-width) {
-    background-image: url("../img/bus.svg");
-    background-size: 22px 22px;
-  }
-}
-
-.search-form__list .transport-bus {
-  @media (min-width: @tablet-width) {
-    background-image: url("../img/bus.svg");
-    background-size: 22px 22px;
-  }
-}
-
-.transport-bicycle {
-  background-image: url("../img/bike.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.catalog-companions__list .transport-bicycle {
-  background-image: url("../img/bike-small.svg");
-
-  @media (min-width: @tablet-width) {
-    background-image: url("../img/bike.svg");
-    background-size: 22px 22px;
-  }
-}
-
-.search-form__list .transport-bicycle {
-  @media (min-width: @tablet-width) {
-    background-image: url("../img/bike.svg");
-    background-size: 22px 22px;
-  }
-}
-
-.transport-walk {
-  background-image: url("../img/run.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.catalog-companions__list .transport-walk {
-  background-image: url("../img/run-small.svg");
-
-  @media (min-width: @tablet-width) {
-    background-image: url("../img/run.svg");
-    background-size: 22px 22px;
-  }
-}
-
-.search-form__list .transport-walk {
-  @media (min-width: @tablet-width) {
-    background-image: url("../img/run.svg");
-    background-size: 22px 22px;
-  }
-}
-
-.transport-list__icon.transport-enable {
+.transport-enable {
+  color: @basic-blue-light;
   opacity: 1;
 }

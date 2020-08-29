@@ -1,6 +1,6 @@
 .sign-up {
   margin-top: -25px;
-  padding-bottom: 27px;
+  padding-bottom: 29px;
 
   @media (min-width: @tablet-width) {
     margin-top: -50px;
@@ -8,7 +8,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    padding-bottom: 105px;
+    padding-bottom: 103px;
   }
 }
 
@@ -91,9 +91,34 @@
 }
 
 .sign-up__contact {
-  margin-top: 20px;
+  margin-top: 18px;
+  padding-left: 15px;
 
   @media (min-width: @tablet-width) {
     margin-top: 42px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: 45px;
+  }
+}
+
+.sign-up .contact-list__link {
+  color: @basic-yellow;
+
+  &:hover {
+    color: @special-yellow-dark;
+
+    & .top-tell__icon {
+      color: @special-yellow-dark;
+    }
+  }
+
+  &:active {
+    color: fade(@special-yellow-dark, 30%);
+
+    & .top-tell__icon {
+      color: fade(@basic-yellow, 30%);
+    }
   }
 }
