@@ -109,9 +109,13 @@
 }
 
 .map__button {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   position: relative;
   width: 270px;
   margin-top: 33px;
+  padding: 0 19px;
 
   font-size: 18px;
   line-height: 54px;
@@ -121,16 +125,6 @@
   border: 3px solid #192144;
   box-sizing: border-box;
   border-radius: 10px;
-
-  &::after {
-    content: url("../img/show-more-triangle.svg");
-    display: inline-block;
-    width: 14px;
-    height: 16px;
-    margin-left: 48px;
-
-    vertical-align: top;
-  }
 
   &:hover {
     color: @basic-white;
@@ -146,7 +140,6 @@
 
   @media (min-width: @tablet-width) {
     display: inline-flex;
-    justify-content: space-between;
     width: 100%;
     margin-top: 42px;
     padding: 0 35px;

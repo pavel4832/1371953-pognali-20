@@ -333,8 +333,9 @@
 }
 
 .directions__to-all {
-  display: flex;
+  display: inline-flex;
   justify-content: space-between;
+  align-items: center;
   width: 270px;
   margin-top: 27px;
   padding: 0 24px;
@@ -349,26 +350,18 @@
   border-radius: 10px;
   box-sizing: border-box;
 
-  &::after {
-    content: url("../img/show-more-triangle.svg");
-  }
-
   &:hover {
     background-color: @special-yellow-dark;
   }
 
   &:active {
     color: fade(@basic-blue, 30%);
-
-    &::after {
-      opacity: 0.3;
-    }
   }
 
   @media (min-width: @tablet-width) {
     width: 616px;
     margin-left: 35px;
-    margin-top: 42px;
+    margin-top: 26px;
     padding: 0 33px;
 
     font-size: 24px;

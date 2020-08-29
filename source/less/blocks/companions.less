@@ -229,20 +229,12 @@
   border-radius: 10px;
   box-sizing: border-box;
 
-  &::after {
-    content: url("../img/show-more-triangle.svg");
-  }
-
   &:hover {
     background-color: @special-yellow-dark;
   }
 
   &:active {
     color: fade(@basic-blue, 30%);
-
-    &::after {
-      opacity: 0.3;
-    }
   }
 
   @media (min-width: @tablet-width) {

@@ -100,6 +100,10 @@
 }
 
 .prices__link {
+  position: relative;
+  display: inline-flex;
+  justify-content: flex-start;
+  align-items: center;
   margin-left: 0;
 
   font-family: "BloggerSans-Bold", "Arial", sans-serif;
@@ -113,47 +117,50 @@
 
   &:hover {
     color: fade(#132576, 70%);
-
-    &::before {
-      opacity: 0.7;
-    }
   }
 
   &:active {
     color: fade(#132576, 30%);
-
-    &::before {
-      opacity: 0.3;
-    }
   }
 
   @media (min-width: @tablet-width) {
     align-self: flex-start;
-    margin-left: 0;
+    margin-top: 2px;
+    margin-left: 25px;
     font-size: 20px;
     line-height: 68px;
 
     &::before {
       content: "";
-      display: inline-block;
+      position: absolute;
+      top: 0;
+      left: -25px;
       width: 68px;
       height: 68px;
-      margin-right: 21px;
-
-      vertical-align: middle;
 
       background-color: #e2e5f2;
-      background-image: url("../img/business.svg");
-      background-repeat: no-repeat;
-      background-position: center;
-      background-size: 24px 24px;
 
       border: none;
       border-radius: 50%;
+
+      z-index: -1;
     }
   }
 
   @media (min-width: @desktop-width) {
-    margin-left: 70px;
+    margin-left: 95px;
+
+    &::before {
+      left: -25px;
+    }
+  }
+}
+
+.prices__icon {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: inline-block;
+    margin-right: 45px;
   }
 }

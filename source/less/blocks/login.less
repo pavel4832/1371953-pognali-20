@@ -1,0 +1,79 @@
+.login__list {
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 0;
+  list-style: none;
+
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: flex;
+  }
+}
+
+.login__item {
+  width: 40px;
+  height: 40px;
+
+  border-radius: 50%;
+
+  @media (min-width: @desktop-width) {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+.login__link {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+
+  border-radius: 50%;
+
+  @media (min-width: @tablet-width) {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+.login-tel {
+  background-color: @special-orange;
+
+  &:hover {
+    background-color: #f26926;
+  }
+
+  &:active {
+    & .login-tel__icon {
+      opacity: 0.3;
+    }
+  }
+}
+
+.login-mail {
+  background-color: @special-yellow-dark;
+
+  &:hover {
+    background-color: @special-orange;
+  }
+
+  &:active {
+    & .login-mail__icon {
+      opacity: 0.3;
+    }
+  }
+}
+
+.login-tel__icon {
+  color: @basic-blue;
+}
+
+.login-mail__icon {
+  color: @basic-blue;
+}

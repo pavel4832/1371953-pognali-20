@@ -7,224 +7,146 @@
   list-style: none;
 
   @media (min-width: @tablet-width) {
-    margin-top: 82px;
+    margin-top: 76px;
     padding-left: 57px;
     flex-direction: column;
   }
 
   @media (min-width: @desktop-width) {
+    width: 100%;
     margin-top: 0;
     padding-left: 0;
     flex-direction: row;
   }
 }
 
-.sign-up__contact.contact-list {
-  flex-direction: column;
-  align-self: flex-start;
-
-  @media (min-width: @tablet-width) {
-    padding-left: 0;
-  }
-
-  @media (min-width: @desktop-width) {
-    flex-direction: row;
-    justify-content: space-between;
-    width: 100%;
-    padding: 0 152px;
-  }
-}
-
 .contact-list__item {
   display: inline-block;
+
+  @media (min-width: @desktop-width) {
+    &:first-child {
+      margin-left: 166px;
+      margin-right: 138px;
+    }
+  }
 }
 
 .contact-list__link {
+  display: inline-flex;
+  align-items: center;
+  position: relative;
   font-family: "BloggerSans-Bold", "Arial", sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 16px;
-  line-height: 18px;
+  line-height: 45px;
   text-transform: uppercase;
   color: #192144;
 
   &::before {
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -15px;
     width: 45px;
     height: 45px;
-    margin-right: 16px;
 
     border-radius: 50%;
+    background-color: #121936;
+    z-index: -1;
   }
 
   @media (min-width: @tablet-width) {
     font-size: 28px;
-    line-height: 28px;
+    line-height: 68px;
 
     &::before {
-      width: 68px;
-      height: 68px;
-      margin-right: 23px;
-    }
-  }
-
-  @media (min-width: @desktop-width) {
-    &::before {
-      width: 50px;
-      height: 50px;
-    }
-  }
-}
-
-.page-header__list .contact-list__link {
-  display: inline-block;
-  width: 40px;
-  height: 40px;
-
-  border-radius: 50%;
-
-  &::before {
-    width: 40px;
-    height: 40px;
-    margin-right: 0;
-
-    border-radius: 50%;
-  }
-
-  @media (min-width: @tablet-width) {
-    width: 68px;
-    height: 68px;
-
-    &::before {
+      left: -22px;
       width: 68px;
       height: 68px;
     }
   }
 
   @media (min-width: @desktop-width) {
-    width: 50px;
-    height: 50px;
+    line-height: 90px;
 
     &::before {
-      width: 50px;
-      height: 50px;
-    }
-  }
-}
-
-.sign-up__contact .contact-list__link {
-  line-height: 22px;
-  color: @basic-yellow;
-
-  &::before {
-    margin-right: 12px;
-  }
-
-  &:hover {
-    color: @special-yellow-dark;
-  }
-
-  &:active {
-    opacity: 0.3;
-  }
-
-  @media (min-width: @tablet-width) {
-    &::before {
-      margin-right: 13px;
-    }
-  }
-
-  @media (min-width: @desktop-width) {
-    &::before {
+      left: -28px;
       width: 90px;
       height: 90px;
-      margin-right: 24px;
     }
   }
 }
 
 .top-tell {
-  &::before {
-    content: url("../img/contacts-phone.svg");
+  position: relative;
 
-    @media (min-width: @tablet-width) {
-      content: url("../img/contacts-phone-tablet.svg");
+  &:hover {
+    color: fade(#192144, 70%);
+
+    & .top-tell__icon {
+      color: @special-yellow-dark;
+    }
+  }
+
+  &:active {
+    color: fade(#192144, 30%);
+
+    & .top-tell__icon {
+      color: fade(@basic-yellow, 30%);
     }
   }
 }
 
-.sign-up__contact .top-tell {
-  &:hover {
-    color: @special-yellow-dark;
-  }
+.top-tell__icon,
+.top-mail__icon {
+  margin-right: 31px;
 
-  &:active {
-    opacity: 0.3;
+  color: @basic-yellow;
+
+  @media (min-width: @tablet-width) {
+    width: 24px;
+    height: 24px;
+    margin-right: 44px;
   }
 
   @media (min-width: @desktop-width) {
-    &::before {
-      content: url("../img/contacts-phone-desktop.svg");
+    width: 32px;
+    height: 30px;
+    margin-right: 60px;
+  }
+}
 
-      background-color: #121936;
-    }
+.top-mail__icon {
+  margin-right: 28px;
+
+  @media (min-width: @tablet-width) {
+    margin-right: 44px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 37px;
+    height: 26px;
+    margin-right: 56px;
   }
 }
 
 .top-mail {
-  &::before {
-    content: url("../img/contacts-mail.svg");
-
-    @media (min-width: @tablet-width) {
-      content: url("../img/contacts-mail-tablet.svg");
-    }
-  }
-}
-
-.sign-up__contact .top-mail {
-  @media (min-width: @desktop-width) {
-    &::before {
-      content: url("../img/contacts-mail-desktop.svg");
-
-      background-color: #121936;
-    }
-  }
-}
-
-.icon-tel {
-  background-color: @special-orange;
-
-  &::before {
-    content: url("../img/topmenu-phone.svg");
-  }
+  position: relative;
 
   &:hover {
-    background-color: #f26926;
+    color: fade(#192144, 70%);
+
+    & .top-mail__icon {
+      color: @special-yellow-dark;
+    }
   }
 
   &:active {
-    &::before {
-      opacity: 0.3;
-    }
-  }
-}
+    color: fade(#192144, 30%);
 
-.icon-mail {
-  background-color: @special-yellow-dark;
-
-  &::before {
-    content: url("../img/topmenu-mail.svg");
-  }
-
-  &:hover {
-    background-color: @special-orange;
-  }
-
-  &:active {
-    &::before {
-      opacity: 0.3;
+    & .top-mail__icon {
+      color: fade(@basic-yellow, 30%);
     }
   }
 }
