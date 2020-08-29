@@ -93,6 +93,7 @@
 }
 
 .step-three__submit {
+  justify-content: center;
   width: 230px;
   margin-left: -5px;
   margin-top: 15px;
@@ -114,10 +115,6 @@
 
   &:active {
     color: fade(@basic-blue, 30%);
-
-    &::after {
-      opacity: 0.3;
-    }
   }
 
   @media (min-width: @tablet-width) {
@@ -131,10 +128,6 @@
     font-size: 24px;
     line-height: 80px;
     text-transform: none;
-
-    &::after {
-      content: url("../img/show-more-triangle.svg");
-    }
   }
 }
 

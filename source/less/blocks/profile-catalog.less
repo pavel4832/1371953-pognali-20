@@ -353,7 +353,6 @@
     width: 50px;
     height: 50px;
 
-    background-image: url("../img/heart-tablet.svg");
     background-size: 20px 20px;
   }
 }
@@ -366,7 +365,6 @@
   background-position: center;
 
   @media (min-width: @tablet-width) {
-    background-image: url("../img/heart-active-tablet.svg");
     background-size: 20px 20px;
   }
 }
@@ -607,6 +605,8 @@
   height: 45px;
   margin-right: 23px;
 
+  background-color: @basic-white;
+
   z-index: 5;
 
   &::before {
@@ -646,39 +646,12 @@
   }
 }
 
-.profile-catalog__level.level--firsova {
-  background-image: url("../img/subtract-firsova.svg");
-  background-repeat: no-repeat;
+.profile-catalog__level .level-range {
+  background-color: @basic-white;
 
   @media (min-width: @tablet-width) {
-    background-image: url("../img/subtract-1.svg");
-  }
-}
-
-.profile-catalog__level.level--demin {
-  background-image: url("../img/subtract-demin.svg");
-  background-repeat: no-repeat;
-
-  @media (min-width: @tablet-width) {
-    background-image: url("../img/subtract-2.svg");
-  }
-}
-
-.profile-catalog__level.level--smolov {
-  background-image: url("../img/subtract-smolov.svg");
-  background-repeat: no-repeat;
-
-  @media (min-width: @tablet-width) {
-    background-image: url("../img/subtract-3.svg");
-  }
-}
-
-.profile-catalog__level.level--rogovay {
-  background-image: url("../img/subtract-rogovay.svg");
-  background-repeat: no-repeat;
-
-  @media (min-width: @tablet-width) {
-    background-image: url("../img/subtract-4.svg");
+    width: 60px;
+    height: 60px;
   }
 }
 
@@ -712,6 +685,7 @@
 }
 
 .profile-catalog__invite {
+  justify-content: center;
   grid-row-start: 6;
   grid-row-end: -1;
   grid-column-start: 1;

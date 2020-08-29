@@ -82,6 +82,16 @@
         <path d="M15.4545 6C16.4587 6 17.2727 5.10457 17.2727 4C17.2727 2.89543 16.4587 2 15.4545 2C14.4504 2 13.6364 2.89543 13.6364 4C13.6364 5.10457 14.4504 6 15.4545 6Z" fill="currentColor"/>
         <path d="M14.3428 10.969C14.5514 11.311 14.8508 11.5742 15.2001 11.7227C15.5495 11.8712 15.9319 11.8978 16.2955 11.799L19.31 10.97L18.8709 9.02997L15.8564 9.85897L14.6027 7.79197C14.3349 7.35053 13.9192 7.04354 13.4464 6.93797L9.95002 6.16797C9.55888 6.08162 9.15277 6.13933 8.79441 6.33217C8.43606 6.52502 8.14539 6.84229 7.9673 7.23497L6.46002 10.551L8.08639 11.446L9.59366 8.12897L11.3818 8.52297L6.7582 17H2.72729V19H6.7582C7.39275 19 7.99002 18.628 8.3173 18.029L10.0609 14.833L14.76 15.867L16.4109 21.316L18.1346 20.683L16.4846 15.235C16.3827 14.9005 16.2026 14.6014 15.9622 14.3679C15.7219 14.1345 15.4298 13.9748 15.1155 13.905L12.3527 13.298L13.9637 10.344L14.3428 10.969Z" fill="currentColor"/>
       </symbol>
+      <!---------------------------------------------------------->
+      <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60" id="level-firsova" fill="none">
+        <circle cx="30" cy="30" r="30" fill="black" fill-opacity="0.6"/>
+        <path d="M22.5503 3.00922C15.7757 4.87906 9.95203 9.22814 6.23551 15.1929C2.51899 21.1577 1.18146 28.302 2.48848 35.2073C3.7955 42.1126 7.65149 48.2739 13.2908 52.4678C18.9302 56.6618 25.9405 58.5817 32.9298 57.8463C39.9191 57.1109 46.3763 53.7741 51.0193 48.4983C55.6623 43.2226 58.1516 36.3937 57.9929 29.3676C57.8341 22.3415 55.039 15.632 50.1625 10.5713C45.2859 5.51057 38.6846 2.46876 31.6692 2.0498" stroke="#FF8D30" stroke-width="4" stroke-linecap="round"/>
+      </symbol>
+
+      <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60" id="level-demin" fill="none">
+        <circle cx="30" cy="30" r="30" fill="black" fill-opacity="0.6"/>
+        <path d="M4.74236 17.9148C2.16557 23.3002 1.37757 29.3683 2.4934 35.2332C3.60922 41.0982 6.57045 46.4529 10.9448 50.5159C15.3192 54.5788 20.8777 57.1372 26.8089 57.8176C32.7402 58.498 38.7336 57.2647 43.9144 54.2979C49.0952 51.3311 53.1921 46.786 55.607 41.3261C58.022 35.8662 58.6285 29.7773 57.3382 23.9483C56.0478 18.1193 52.9282 12.8553 48.4345 8.92466C43.9408 4.99408 38.3084 2.6027 32.3595 2.0996" stroke="#FF8D30" stroke-width="4" stroke-linecap="round"/>
+      </symbol>
     </svg>
 
     <header class="index-body__header page-header js-header">
@@ -474,12 +484,14 @@
                       </li>
                     </ul>
 
-                    <div class="properties-info__level level level--firsova">
-                      <div class="level__wrapper">
-                        <b class="level__number">99</b>
+                    <div class="properties-info__level level">
+                      <svg class="level-range" width="60" height="60">
+                        <use xlink:href="#level-firsova"></use>
+                      </svg>
 
-                        <small class="level__text">level</small>
-                      </div>
+                      <b class="level__number">99</b>
+
+                      <small class="level__text">level</small>
                     </div>
                   </div>
                 </div>
@@ -542,7 +554,11 @@
                       </li>
                     </ul>
 
-                    <div class="properties-info__level level level--demin">
+                    <div class="properties-info__level level">
+                      <svg class="level-range" width="60" height="60">
+                        <use xlink:href="#level-demin"></use>
+                      </svg>
+
                       <b class="level__number">80</b>
 
                       <small class="level__text">level</small>

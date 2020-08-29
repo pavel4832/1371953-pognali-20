@@ -168,7 +168,12 @@
     transform: rotate(-45deg);
   }
 
-  &:hover {
+  &:focus {
+    outline: none;
+  }
+
+  &:hover,
+  &:focus {
     &::after,
     &::before {
       background-color: fade(@basic-black, 30%);

@@ -80,6 +80,24 @@
         <path d="M15.4545 6C16.4587 6 17.2727 5.10457 17.2727 4C17.2727 2.89543 16.4587 2 15.4545 2C14.4504 2 13.6364 2.89543 13.6364 4C13.6364 5.10457 14.4504 6 15.4545 6Z" fill="currentColor"/>
         <path d="M14.3428 10.969C14.5514 11.311 14.8508 11.5742 15.2001 11.7227C15.5495 11.8712 15.9319 11.8978 16.2955 11.799L19.31 10.97L18.8709 9.02997L15.8564 9.85897L14.6027 7.79197C14.3349 7.35053 13.9192 7.04354 13.4464 6.93797L9.95002 6.16797C9.55888 6.08162 9.15277 6.13933 8.79441 6.33217C8.43606 6.52502 8.14539 6.84229 7.9673 7.23497L6.46002 10.551L8.08639 11.446L9.59366 8.12897L11.3818 8.52297L6.7582 17H2.72729V19H6.7582C7.39275 19 7.99002 18.628 8.3173 18.029L10.0609 14.833L14.76 15.867L16.4109 21.316L18.1346 20.683L16.4846 15.235C16.3827 14.9005 16.2026 14.6014 15.9622 14.3679C15.7219 14.1345 15.4298 13.9748 15.1155 13.905L12.3527 13.298L13.9637 10.344L14.3428 10.969Z" fill="currentColor"/>
       </symbol>
+
+      <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60" id="level-firsova">
+        <circle cx="30" cy="30" r="30" fill="black" fill-opacity="0.6"/>
+        <path d="M22.5503 3.00922C15.7757 4.87906 9.95203 9.22814 6.23551 15.1929C2.51899 21.1577 1.18146 28.302 2.48848 35.2073C3.7955 42.1126 7.65149 48.2739 13.2908 52.4678C18.9302 56.6618 25.9405 58.5817 32.9298 57.8463C39.9191 57.1109 46.3763 53.7741 51.0193 48.4983C55.6623 43.2226 58.1516 36.3937 57.9929 29.3676C57.8341 22.3415 55.039 15.632 50.1625 10.5713C45.2859 5.51057 38.6846 2.46876 31.6692 2.0498" stroke="#FF8D30" stroke-width="4" stroke-linecap="round"/>
+      </symbol>
+
+      <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60" id="level-demin">
+        <circle cx="30" cy="30" r="30" fill="black" fill-opacity="0.6"/>
+        <path d="M4.74236 17.9148C2.16557 23.3002 1.37757 29.3683 2.4934 35.2332C3.60922 41.0982 6.57045 46.4529 10.9448 50.5159C15.3192 54.5788 20.8777 57.1372 26.8089 57.8176C32.7402 58.498 38.7336 57.2647 43.9144 54.2979C49.0952 51.3311 53.1921 46.786 55.607 41.3261C58.022 35.8662 58.6285 29.7773 57.3382 23.9483C56.0478 18.1193 52.9282 12.8553 48.4345 8.92466C43.9408 4.99408 38.3084 2.6027 32.3595 2.0996" stroke="#FF8D30" stroke-width="4" stroke-linecap="round"/>
+      </symbol>
+      <!----------------------------------------------------------------->
+      <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 94 94" id="level-profile">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M5.42096 25.0667C1.95978 31.6144 0 39.0784 0 47C0 72.9574 21.0426 94 47 94C72.9574 94 94 72.9574 94 47C94 21.0426 72.9574 0 47 0V3C71.3005 3 91 22.6995 91 47C91 71.3005 71.3005 91 47 91C22.6995 91 3 71.3005 3 47C3 39.0132 5.12799 31.5234 8.84793 25.0667H5.42096Z" fill="#FF8D30"/>
+      </symbol>
+
+      <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 14" id="step-back-triangle">
+        <path d="M0 7L12 .072v13.856L0 7z" fill="currentColor"/>
+      </symbol>
     </svg>
 
     <header class="form-body__header page-header js-header">
@@ -230,6 +248,10 @@
           <div class="profile__wrapper">
 
             <div class="profile__level level">
+              <svg class="level-range" width="100" height="100">
+                <use xlink:href="#level-profile"></use>
+              </svg>
+
               <b class="level__number">80</b>
 
               <small class="level__text">level</small>
@@ -273,25 +295,41 @@
                 <li class="transport-list__item">
                   <input id="air" type="checkbox" class="transport-list__choose visually-hidden" checked>
 
-                  <label class="transport-list__icon transport-air" for="air" aria-label="Самолет"></label>
+                  <label class="transport-list__icon" for="air" aria-label="Самолет">
+                    <svg class="transport-air" width="23" height="22" role="img" aria-label="самолет">
+                      <use xlink:href="#transport-air"></use>
+                    </svg>
+                  </label>
                 </li>
 
                 <li class="transport-list__item">
                   <input id="bus" type="checkbox" class="transport-list__choose visually-hidden" checked>
 
-                  <label class="transport-list__icon transport-bus" for="bus" aria-label="Автобус"></label>
+                  <label class="transport-list__icon" for="bus" aria-label="Автобус">
+                    <svg class="transport-bus" width="18" height="20" role="img" aria-label="автобус">
+                      <use xlink:href="#transport-bus"></use>
+                    </svg>
+                  </label>
                 </li>
 
                 <li class="transport-list__item">
                   <input id="bike" type="checkbox" class="transport-list__choose visually-hidden">
 
-                  <label class="transport-list__icon transport-bicycle" for="bike" aria-label="Велосипед"></label>
+                  <label class="transport-list__icon" for="bike" aria-label="Велосипед">
+                    <svg class="transport-bicycle" width="25" height="25" role="img" aria-label="велосипед">
+                      <use xlink:href="#transport-bicycle"></use>
+                    </svg>
+                  </label>
                 </li>
 
                 <li class="transport-list__item">
                   <input id="walk" type="checkbox" class="transport-list__choose visually-hidden" checked>
 
-                  <label class="transport-list__icon transport-walk" for="walk" aria-label="Пешком"></label>
+                  <label class="transport-list__icon" for="walk" aria-label="Пешком">
+                    <svg class="transport-walk" width="22" height="24" role="img" aria-label="пешком">
+                      <use xlink:href="#transport-walk"></use>
+                    </svg>
+                  </label>
                 </li>
               </ul>
             </fieldset>
@@ -370,15 +408,15 @@
 
                   <ul class="plans-form__menu form-menu">
                     <li class="form-menu__item item--active">
-                      <a href="" class="form-menu__link">Даты</a>
+                      <a class="form-menu__link">Даты</a>
                     </li>
 
                     <li class="form-menu__item">
-                      <a href="" class="form-menu__link">Маршрут</a>
+                      <a href="#step-two" class="form-menu__link">Маршрут</a>
                     </li>
 
                     <li class="form-menu__item">
-                      <a href="" class="form-menu__link">Развлечения</a>
+                      <a href="#step-three" class="form-menu__link">Развлечения</a>
                     </li>
                   </ul>
                 </div>
@@ -515,7 +553,11 @@
                   </table>
                 </div>
 
-                <a href="#step-two" class="plans-form__next-step button">Следующий шаг</a>
+                <a href="#step-two" class="plans-form__next-step button">Следующий шаг
+                  <svg class="button__icon" width="14" height="15">
+                    <use xlink:href="#show-more-triangle"></use>
+                  </svg>
+                </a>
               </div>
             </fieldset>
 
@@ -530,15 +572,15 @@
 
                 <ul class="plans-form__menu form-menu">
                   <li class="form-menu__item">
-                    <a href="" class="form-menu__link">Даты</a>
+                    <a href="#step-one" class="form-menu__link">Даты</a>
                   </li>
 
                   <li class="form-menu__item item--active">
-                    <a href="" class="form-menu__link">Маршрут</a>
+                    <a class="form-menu__link">Маршрут</a>
                   </li>
 
                   <li class="form-menu__item">
-                    <a href="" class="form-menu__link">Развлечения</a>
+                    <a href="#step-three" class="form-menu__link">Развлечения</a>
                   </li>
                 </ul>
               </div>
@@ -894,9 +936,17 @@
               </div>
 
               <div class="step-two__button-wrapper">
-                <a href="#step-three" class="plans-form__next-step button">Следующий шаг</a>
+                <a href="#step-three" class="plans-form__next-step button">Следующий шаг
+                  <svg class="button__icon" width="14" height="15">
+                    <use xlink:href="#show-more-triangle"></use>
+                  </svg>
+                </a>
 
-                <a href="#step-one" class="plans-form__step-before button">На шаг назад</a>
+                <a href="#step-one" class="plans-form__step-before button">
+                  <svg class="button__icon" width="14" height="15">
+                    <use xlink:href="#step-back-triangle"></use>
+                  </svg>
+                  На шаг назад</a>
               </div>
             </fieldset>
 
@@ -911,15 +961,15 @@
 
                 <ul class="plans-form__menu form-menu">
                   <li class="form-menu__item">
-                    <a href="" class="form-menu__link">Даты</a>
+                    <a href="#step-one" class="form-menu__link">Даты</a>
                   </li>
 
                   <li class="form-menu__item">
-                    <a href="" class="form-menu__link">Маршрут</a>
+                    <a href="#step-two" class="form-menu__link">Маршрут</a>
                   </li>
 
                   <li class="form-menu__item item--active">
-                    <a href="" class="form-menu__link">Развлечения</a>
+                    <a class="form-menu__link">Развлечения</a>
                   </li>
                 </ul>
               </div>
@@ -959,9 +1009,17 @@
               </div>
 
               <div class="step-three__button-wrapper">
-                <button class="step-three__submit button" type="submit">Отправить</button>
+                <button class="step-three__submit button" type="submit">Отправить
+                  <svg class="button__icon" width="14" height="15">
+                    <use xlink:href="#show-more-triangle"></use>
+                  </svg>
+                </button>
 
-                <a href="#step-two" class="plans-form__step-before button">На шаг назад</a>
+                <a href="#step-two" class="plans-form__step-before button">
+                  <svg class="button__icon" width="14" height="15">
+                    <use xlink:href="#step-back-triangle"></use>
+                  </svg>
+                  На шаг назад</a>
               </div>
             </fieldset>
           </form>

@@ -48,7 +48,11 @@
 }
 
 .profile__level {
-  margin-left: 16px;
+  position: relative;
+  width: 94px;
+  height: 94px;
+  margin-left: 20px;
+  margin-top: 2px;
 
   @media (min-width: @tablet-width) {
     grid-row-start: 1;
@@ -65,9 +69,22 @@
     grid-column-start: 2;
     grid-column-end: 3;
     justify-self: end;
-    margin-top: 40px;
-    margin-right: 40px;
+    margin-top: 42px;
+    margin-right: 45px;
     margin-left: 0;
+  }
+}
+
+.profile__level .level-range {
+  top: 0;
+  left: auto;
+  right: 0;
+
+  @media (min-width: @tablet-width) {
+    top: 0;
+    right: 0;
+    width: 94px;
+    height: 94px;
   }
 }
 
@@ -226,7 +243,7 @@
     width: 100%;
     margin-bottom: 5px;
     margin-top: 53px;
-    padding: 6px;
+    padding: 9px;
   }
 
   @media (min-width: @desktop-width) {
@@ -275,7 +292,7 @@
     width: 308px;
     margin-top: 0;
     margin-bottom: 38px;
-    margin-right: 8px;
+    margin-right: 0;
     padding-bottom: 0;
   }
 
