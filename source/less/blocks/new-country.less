@@ -25,6 +25,10 @@
   position: relative;
   max-width: 220px;
 
+  &:hover .new-country__dropdown {
+    opacity: 0.7;
+  }
+
   &::after {
     content: "";
     position: absolute;
@@ -110,30 +114,26 @@
 
 .new-country__dropdown {
   position: absolute;
-  top: 3px;
-  right: 1px;
-  width: 51px;
-  height: 36px;
+  top: 14px;
+  right: 13px;
 
-  background-color: @basic-white;
-  background-image: url("../img/dropdown-form.svg");
-  background-repeat: no-repeat;
-  background-position: 25px 14px;
-  background-size: 11px 11px;
+  color: @basic-black;
 
   border: none;
   opacity: 0.3;
 
   @media (min-width: @tablet-width) {
-    background-size: 16px 15px;
-    top: 15px;
-    right: 45px;
+    top: 24px;
+    right: 53px;
+    width: 17px;
+    height: 20px;
   }
 
   @media (min-width: @desktop-width) {
-    background-size: 21px 15px;
-    top: 15px;
-    right: 64px;
+    top: 23px;
+    right: 67px;
+    width: 25px;
+    height: 25px;
   }
 }
 

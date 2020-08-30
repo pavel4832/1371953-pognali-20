@@ -34,6 +34,14 @@
   letter-spacing: 0.1em;
   text-transform: uppercase;
   color: fade(@basic-black, 60%);
+
+  &:hover {
+    color: @basic-black;
+  }
+
+  &:active {
+    color: fade(@basic-black, 30%);
+  }
 }
 
 .item--active {

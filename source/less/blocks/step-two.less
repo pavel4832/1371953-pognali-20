@@ -48,9 +48,13 @@
 
 .step-two__add-btn {
   position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   width: 220px;
   margin-top: 20px;
   padding-left: 10px;
+  padding-right: 14px;
 
   font-family: "BloggerSans-Medium", "Arial", sans-serif;
   font-style: normal;
@@ -62,16 +66,21 @@
   color: @basic-blue-light;
   text-align: left;
 
-  background-color: #edeff6;
-  background-image: url("../img/icon-plus.svg");
-  background-repeat: no-repeat;
-  background-position: 192px 13px;
-
   border: none;
   border-radius: 4px;
 
   &:hover {
     background-color: #dfe3f0;
+
+    .add-button__icon {
+      color: fade(@basic-black, 30%);
+    }
+  }
+
+  &:active {
+    .add-button__icon {
+      color: fade(@basic-black, 10%);
+    }
   }
 
   &::after {
@@ -91,12 +100,10 @@
     width: 369px;
     margin-top: 12px;
     padding-left: 23px;
+    padding-right: 24px;
 
     font-size: 20px;
     line-height: 70px;
-
-    background-image: url("../img/icon-plus-tablet.svg");
-    background-position: 322px 27px;
 
     &::after {
       top: 28px;
@@ -112,12 +119,19 @@
     width: 730px;
     margin-top: 14px;
 
-    background-position: 684px 27px;
-
     &::after {
       top: 27px;
       right: -52px;
     }
+  }
+}
+
+.add-button__icon {
+  color: fade(@basic-black, 20%);
+
+  @media (min-width: @tablet-width) {
+    width: 21px;
+    height: 21px;
   }
 }
 
