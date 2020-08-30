@@ -25,6 +25,11 @@
     padding-bottom: 26px;
   }
 
+  &:hover {
+    filter: drop-shadow(0 4px 9px rgba(0, 0, 0, 0.16));
+    transform: scale(1.002);
+  }
+
   @media (min-width: @tablet-width) {
     display: grid;
     grid-template-rows: min-content 1fr 1fr min-content;
@@ -203,6 +208,14 @@
   margin-left: 15px;
   padding-right: 55px;
 
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
   @media (min-width: @tablet-width) {
     grid-row-start: 1;
     grid-row-end: 2;
@@ -336,33 +349,64 @@
 }
 
 .profile-catalog__like-icon {
-  display: inline-block;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
   width: 30px;
   height: 30px;
 
+  color: fade(#192144, 30%);
+
   background-color: #e2e5f2;
-  background-image: url("../img/heart.svg");
-  background-size: 13px 13px;
-  background-repeat: no-repeat;
-  background-position: center;
 
   border: none;
   border-radius: 50%;
 
+  .profile-catalog__choose:checked + & {
+    background-color: #f9eaea;
+  }
+
+  &:hover {
+    color: #192144;
+
+    .profile-catalog__choose:checked + & {
+      color: #f02323;
+
+      background-color: #f9d8d8;
+    }
+  }
+
+  &:active {
+    color: fade(#192144, 30%);
+  }
+
   @media (min-width: @tablet-width) {
     width: 50px;
     height: 50px;
+  }
+}
 
-    background-size: 20px 20px;
+.like-icon {
+  fill: none;
+
+  .profile-catalog__choose:checked + .profile-catalog__like-icon > & {
+    color: #f02323;
+    fill: #f02323;
+  }
+
+  .profile-catalog__choose:checked + .profile-catalog__like-icon:active > & {
+    color: fade(#f02323, 2%);
+    fill: fade(#f02323, 30%);
+  }
+
+  @media (min-width: @tablet-width) {
+    width: 21px;
+    height: 19px;
   }
 }
 
 .like-active .profile-catalog__like-icon {
   background-color: #f9eaea;
-  background-image: url("../img/heart-active.svg");
-  background-size: 13px 13px;
-  background-repeat: no-repeat;
-  background-position: center;
 
   @media (min-width: @tablet-width) {
     background-size: 20px 20px;
@@ -703,6 +747,14 @@
   background: @basic-yellow;
 
   border-radius: 25px;
+
+  &:hover {
+    background-color: @special-yellow-dark;
+  }
+
+  &:active {
+    color: fade(@basic-blue, 30%);
+  }
 
   @media (min-width: @tablet-width) {
     grid-row-start: 3;

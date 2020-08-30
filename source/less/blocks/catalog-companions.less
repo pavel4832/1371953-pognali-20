@@ -48,6 +48,9 @@
 
 .catalog-companions__button {
   position: relative;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
   margin-top: 6px;
   margin-left: 30px;
 
@@ -56,17 +59,12 @@
   text-transform: uppercase;
   color: @basic-blue-light;
 
-  &::before {
-    content: url("../img/show-more-plus.svg");
-    position: absolute;
-    top: 3px;
-    left: -33px;
-    display: inline-block;
-    width: 18px;
-    height: 18px;
-    margin-right: 10px;
+  &:hover > .button__icon {
+    color: fade(@basic-blue-light, 60%);
+  }
 
-    vertical-align: baseline;
+  &:active > .button__icon {
+    color: fade(@basic-blue-light, 30%);
   }
 
   @media (min-width: @tablet-width) {
@@ -75,18 +73,21 @@
 
     font-size: 20px;
     line-height: 20px;
-
-    &::before {
-      width: 26px;
-      height: 26px;
-      top: -3px;
-      left: -51px;
-    }
   }
 
   @media (min-width: @desktop-width) {
     margin-top: 33px;
     margin-left: -25px;
+  }
+}
+
+.catalog-companions__button .button__icon {
+  margin-right: 15px;
+
+  @media (min-width: @tablet-width) {
+    width: 26px;
+    height: 26px;
+    margin-right: 25px;
   }
 }
 

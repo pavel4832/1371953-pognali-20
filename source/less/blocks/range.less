@@ -83,6 +83,19 @@
   box-sizing: border-box;
   border-radius: 4px;
 
+  &:focus {
+    outline: none;
+    border: 2px solid #c4c4c4;
+  }
+
+  &:hover {
+    border: 2px solid #c4c4c4;
+  }
+
+  &:active {
+    border: 2px solid @basic-blue;
+  }
+
   @media (min-width: @tablet-width) {
     width: 74px;
     height: 46px;
@@ -164,6 +177,14 @@
   border-radius: 50%;
   background-color: @basic-blue-light;
   cursor: pointer;
+
+  &:hover {
+    transform: scale(1.46);
+  }
+
+  &:active {
+    box-shadow: 0 3px 7px rgba(0, 0, 0, 0.24);
+  }
 
   @media (min-width: @tablet-width) {
     top: 15px;

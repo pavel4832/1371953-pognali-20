@@ -1,6 +1,7 @@
 .pagination {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   width: 100%;
 
   background-color: transparent;
@@ -41,6 +42,10 @@
 .pagination__item.active-page {
   background-color: @basic-yellow;
   border-radius: 50%;
+
+  & > .pagination__link:hover {
+    color: @basic-blue-light;
+  }
 }
 
 .pagination__link {
@@ -50,6 +55,14 @@
   font-size: 20px;
   line-height: 50px;
   color: @basic-blue-light;
+
+  &:hover {
+    color: fade(@basic-blue-light, 60%);
+  }
+
+  &:active {
+    color: fade(@basic-blue-light, 30%);
+  }
 }
 
 .pagination__buttons {
@@ -71,14 +84,25 @@
 }
 
 .pagination__button {
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
   width: 135px;
   height: 51px;
+
+  color: @basic-blue-light;
 
   background-color: @basic-white;
   background-repeat: no-repeat;
   background-position: center;
   background-size: 13px 20px;
+
+  &:hover {
+    color: fade(@basic-blue-light, 60%);
+  }
+
+  &:active {
+    color: fade(@basic-blue-light, 30%);
+  }
 
   @media (min-width: @tablet-width) {
     width: 13px;
@@ -86,7 +110,6 @@
 }
 
 .button-back {
-  background-image: url("../img/triangle-arrow-left.svg");
   border-right: 1px solid #edeff6;
   border-top-left-radius: 20px;
   border-bottom-left-radius: 20px;
@@ -97,7 +120,6 @@
 }
 
 .button-forward {
-  background-image: url("../img/triangle-arrow-right.svg");
   border-left: 1px solid #edeff6;
   border-top-right-radius: 20px;
   border-bottom-right-radius: 20px;
