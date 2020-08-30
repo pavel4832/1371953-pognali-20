@@ -22,6 +22,14 @@
   border: none;
   border-radius: 50%;
 
+  &:hover {
+    background-color: @basic-blue-light;
+  }
+
+  &:active {
+    background-color: fade(@basic-blue-light, 10%);
+  }
+
   @media (min-width: @tablet-width) {
     width: 6px;
     height: 6px;
@@ -30,4 +38,5 @@
 
 .slider-active .slider__button {
   background-color: @basic-blue-light;
+  cursor: auto;
 }

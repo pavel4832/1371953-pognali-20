@@ -38,13 +38,17 @@
 
   border: none;
 
-  &::after {
-    content: url("../img/dropdown.svg");
-    width: 10px;
-    height: 18px;
+  &:focus {
+    outline: none;
+    color: fade(@basic-blue-light, 60%);
+  }
 
+  &:hover {
+    color: fade(@basic-blue-light, 60%);
+  }
 
-    border: none;
+  &:active {
+    color: fade(@basic-blue-light, 60%);
   }
 
   @media (min-width: @tablet-width) {
@@ -60,10 +64,8 @@
   }
 }
 
-.close-arrow {
-  &::after {
-    transform: rotate(180deg);
-  }
+.close-arrow .search-form__icon {
+  transform: rotate(180deg);
 }
 
 .search-form__field {
@@ -207,6 +209,21 @@
   border: none;
   border-radius: 25px;
   box-sizing: border-box;
+
+  &:focus {
+    outline: none;
+    filter: drop-shadow(0 3px 6px rgba(0, 0, 0, 0.14));
+  }
+
+  &:hover {
+    filter: drop-shadow(0 3px 6px rgba(0, 0, 0, 0.14));
+  }
+
+  &:active {
+    color: fade(@basic-blue, 30%);
+
+    background-color: #f3c72b;
+  }
 
   @media (min-width: @tablet-width) {
     width: 100%;

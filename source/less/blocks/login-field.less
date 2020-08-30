@@ -85,10 +85,12 @@
 
 .login-field__button {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   width: 60px;
   padding: 0;
+
+  color: @basic-blue-light;
 
   background-color: @basic-yellow;
 
@@ -96,20 +98,12 @@
   border-radius: 10px;
   box-sizing: border-box;
 
-  &::after {
-    content: url("../img/show-more-triangle.svg");
-    margin: 0 auto;
-  }
-
   &:hover {
     background-color: @special-yellow-dark;
   }
 
   &:active {
-    &::after,
-    &::before {
-      opacity: 0.3;
-    }
+    opacity: 0.3;
   }
 
   @media (min-width: @tablet-width) {
@@ -121,6 +115,7 @@
   }
 
   @media (min-width: @desktop-width) {
+    justify-content: space-between;
     width: 325px;
     padding: 0 35px;
 
@@ -133,10 +128,6 @@
       font-size: 24px;
       line-height: 24px;
       color: @basic-blue-light;
-    }
-
-    &::after {
-      margin: 0;
     }
   }
 }

@@ -21,11 +21,16 @@
 }
 
 .catalog-filter__grid-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
   @media (min-width: @tablet-width) {
     display: grid;
     grid-template-rows: min-content 1fr max-content;
     grid-template-columns: 1fr min-content;
     width: 100%;
+    margin-top: 0;
   }
 
   @media (min-width: @desktop-width) {
@@ -72,7 +77,7 @@
     grid-row-end: 2;
     grid-column-start: 1;
     grid-column-end: 2;
-    margin-top: 107px;
+    margin-top: 117px;
     margin-left: 20px;
 
     font-size: 20px;
@@ -85,26 +90,44 @@
       height: 15px;
       margin-right: 22px;
     }
+
+    &::after {
+      content: ":";
+    }
   }
 }
 
 .catalog-filter__btn {
   position: relative;
-  display: inline-block;
-  width: 16px;
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 17px;
   height: 16px;
-  margin-left: 19px;
+  margin-top: 40px;
+  margin-right: 4px;
   padding: 0;
 
-  background-color: transparent;
-  background-image: url("../img/dots.svg");
-  background-repeat: no-repeat;
-  background-position: center;
+  color: #192144;
+
   border: none;
+
+  background-color: transparent;
+
   z-index: 3;
+
+  cursor: pointer;
 
   &:focus {
     outline: none;
+  }
+
+  &:hover {
+    color: fade(#192144, 60%);
+  }
+
+  &:active {
+    color: fade(#192144, 30%);
   }
 
   @media (min-width: @tablet-width) {
@@ -113,18 +136,15 @@
     grid-column-start: 2;
     grid-column-end: -1;
     justify-self: end;
-    width: 185px;
-    margin-top: 110px;
+    width: 201px;
+    margin-top: 113px;
     margin-left: 0;
-    margin-right: 33px;
+    margin-right: 29px;
     padding: 0;
-
-    background-image: url("../img/dots-tablet.svg");
-    background-position: right;
 
     &::before {
       content: "показать все";
-      margin-right: 55px;
+      margin-left: 11px;
 
       font-family: "BloggerSans-Bold", "Arial", sans-serif;
       font-style: normal;
@@ -132,7 +152,7 @@
       font-size: 20px;
       line-height: 20px;
       text-transform: uppercase;
-      color: #192144;
+      color: inherit;
     }
   }
 
@@ -141,8 +161,30 @@
     grid-row-end: 2;
     grid-column-start: 3;
     grid-column-end: -1;
-    margin-top: 107px;
-    margin-right: 65px;
+    margin-top: 115px;
+    margin-right: 60px;
+
+    &::before {
+      margin-left: 16px;
+    }
+  }
+}
+
+.catalog-filter__icon {
+  display: block;
+
+  @media (min-width: @tablet-width) {
+    width: 30px;
+    height: 6px;
+  }
+}
+
+.close-btn {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    width: 22px;
+    height: 24px;
   }
 }
 
@@ -150,15 +192,16 @@
   display: none;
 }
 
+.close-filter .open-btn {
+  display: none;
+}
+
+.close-filter .close-btn {
+  display: block;
+}
+
 .close-filter {
-  background-image: url("../img/filter-close.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-
   @media (min-width: @tablet-width) {
-    background-image: url("../img/cross-filter.svg");
-    background-position: right;
-
     &::before {
       content: "свернуть";
       margin-right: 73px;
@@ -207,6 +250,8 @@
 
 .catalog-filter__close-btn {
   display: none;
+  justify-content: center;
+  align-items: center;
   position: relative;
   width: 270px;
   margin-top: 16px;
@@ -222,13 +267,17 @@
   border: none;
   border-radius: 20px;
 
-  &::before {
-    content: url("../img/small-cross.svg");
-    position: absolute;
-    top: 2px;
-    left: 84px;
-    width: 14px;
-    height: 14px;
+  &:focus {
+    outline: none;
+    background-color: #c8cee8;
+  }
+
+  &:hover {
+    background-color: #c8cee8;
+  }
+
+  &:active {
+    color: fade(#192144, 30%);
   }
 
   @media (min-width: @tablet-width) {
@@ -244,15 +293,6 @@
     font-size: 20px;
     line-height: 100px;
     letter-spacing: normal;
-
-    &::before {
-      content: url("../img/cross-filter.svg");
-      position: absolute;
-      top: 6px;
-      left: 242px;
-      width: 22px;
-      height: 24px;
-    }
   }
 
   @media (min-width: @desktop-width) {
@@ -271,6 +311,11 @@
   }
 }
 
+.catalog-filter__close-btn .close-btn {
+  display: block;
+  margin-right: 16px;
+}
+
 .catalog-filter__list.compass-list {
   @media (min-width: @tablet-width) {
     display: flex;
@@ -287,7 +332,7 @@
     grid-column-start: 2;
     grid-column-end: 3;
     width: 366px;
-    margin-top: 107px;
+    margin-top: 124px;
     margin-left: 28px;
     padding-left: 0;
   }

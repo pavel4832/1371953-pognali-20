@@ -10,9 +10,9 @@ function toggleFilter() {
   }
 
   if(openMenuBtn.classList.contains('close-filter')) {
-    labelFilterElement.textContent = 'Закрыть фильтр';
+    labelFilterElement.setAttribute(aria-label, 'Закрыть фильтр');
   } else {
-    labelFilterElement.textContent = 'Открыть фильтр';
+    labelFilterElement.setAttribute(aria-label, 'Открыть фильтр');
   }
 }
 

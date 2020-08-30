@@ -193,9 +193,14 @@
 }
 
 .step-one__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 14px;
   height: 14px;
-  padding: 0 7px;
+  padding: 0;
+
+  color: @basic-black;
 
   background-color: @basic-white;
   background-repeat: no-repeat;
@@ -208,6 +213,11 @@
     opacity: 0.5;
   }
 
+  &:focus {
+    outline: none;
+    opacity: 0.5;
+  }
+
   &:active {
     opacity: 0.1;
   }
@@ -215,31 +225,37 @@
   @media (min-width: @tablet-width) {
     width: 20px;
     height: 20px;
-    padding: 0 10px;
+    padding: 0;
   }
 }
 
 .button-decrease {
   margin-left: 14px;
 
-  background-image: url("../img/qty-minus-mobile.svg");
-
   @media (min-width: @tablet-width) {
     margin-left: 22px;
-
-    background-image: url("../img/qty-minus.svg");
   }
 }
 
 .button-increase {
   margin-right: 14px;
 
-  background-image: url("../img/qty-plus-mobile.svg");
-
   @media (min-width: @tablet-width) {
     margin-right: 19px;
+  }
+}
 
-    background-image: url("../img/qty-plus.svg");
+.button-decrease__icon {
+  @media (min-width: @tablet-width) {
+    width: 20px;
+    height: 3px;
+  }
+}
+
+.button-increase__icon {
+  @media (min-width: @tablet-width) {
+    width: 20px;
+    height: 20px;
   }
 }
 
