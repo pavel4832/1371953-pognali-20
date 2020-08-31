@@ -37,8 +37,15 @@
 }
 
 .country-request__item {
+  position: relative;
   display: flex;
   margin: 0 10px;
+
+  &:hover {
+    .tooltip {
+      display: flex;
+    }
+  }
 }
 
 .country-request__flag {

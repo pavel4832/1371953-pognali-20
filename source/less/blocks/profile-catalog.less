@@ -13,7 +13,6 @@
 
   border: none;
   border-radius: 20px;
-  overflow: hidden;
 
   &:nth-of-type(2) {
     padding-top: 12px;
@@ -389,27 +388,9 @@
 .like-icon {
   fill: none;
 
-  .profile-catalog__choose:checked + .profile-catalog__like-icon > & {
-    color: #f02323;
-    fill: #f02323;
-  }
-
-  .profile-catalog__choose:checked + .profile-catalog__like-icon:active > & {
-    color: fade(#f02323, 2%);
-    fill: fade(#f02323, 30%);
-  }
-
   @media (min-width: @tablet-width) {
     width: 21px;
     height: 19px;
-  }
-}
-
-.like-active .profile-catalog__like-icon {
-  background-color: #f9eaea;
-
-  @media (min-width: @tablet-width) {
-    background-size: 20px 20px;
   }
 }
 

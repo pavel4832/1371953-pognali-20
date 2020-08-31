@@ -6,11 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.8">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="preload" href="fonts/bloggersans.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="preload" href="fonts/bloggersans.woff" as="font" type="font/woff" crossorigin>
     <link rel="preload" href="fonts/bloggersans-medium.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="preload" href="fonts/bloggersans-medium.woff" as="font" type="font/woff" crossorigin>
     <link rel="preload" href="fonts/bloggersans-bold.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="preload" href="fonts/bloggersans-bold.woff" as="font" type="font/woff" crossorigin>
     <link rel="stylesheet" href="css/style.css">
   </head>
 
@@ -56,16 +53,22 @@
         <nav class="main-nav">
           <div class="main-nav__wrapper container">
             <ul class="main-nav__list site-list">
+              <li class="site-list__item">
+                <a class="site-list__link" href="index.html">
+                  <span class="site-list__text" data-hover="о сервисе">о сервисе</span>
+                </a>
+              </li>
+
               <li class="site-list__item site-list__item--active">
-                <a class="site-list__link" href="index.html">о сервисе</a>
+                <a class="site-list__link active-now">
+                  <span class="site-list__text" data-hover="направления">направления</span>
+                </a>
               </li>
 
               <li class="site-list__item">
-                <a class="site-list__link active-now">направления</a>
-              </li>
-
-              <li class="site-list__item">
-                <a class="site-list__link" href="catalog.html">попутчики</a>
+                <a class="site-list__link" href="catalog.html">
+                  <span class="site-list__text" data-hover="попутчики">попутчики</span>
+                </a>
               </li>
             </ul>
 
@@ -215,6 +218,14 @@
                       <use xlink:href="img/sprite.svg#icon-transport-air"></use>
                     </svg>
                   </label>
+
+                  <div class="transport-list__tooltip tooltip">
+                    <svg class="tooltip__icon" width="12" height="8">
+                      <use xlink:href="img/sprite.svg#icon-tooltip"></use>
+                    </svg>
+
+                    <span class="tooltip__body">Авиаперелет</span>
+                  </div>
                 </li>
 
                 <li class="transport-list__item">
@@ -225,6 +236,14 @@
                       <use xlink:href="img/sprite.svg#icon-transport-bus"></use>
                     </svg>
                   </label>
+
+                  <div class="transport-list__tooltip tooltip">
+                    <svg class="tooltip__icon" width="12" height="8">
+                      <use xlink:href="img/sprite.svg#icon-tooltip"></use>
+                    </svg>
+
+                    <span class="tooltip__body">Автотранспорт</span>
+                  </div>
                 </li>
 
                 <li class="transport-list__item">
@@ -235,6 +254,14 @@
                       <use xlink:href="img/sprite.svg#icon-transport-bicycle"></use>
                     </svg>
                   </label>
+
+                  <div class="transport-list__tooltip tooltip">
+                    <svg class="tooltip__icon" width="12" height="8">
+                      <use xlink:href="img/sprite.svg#icon-tooltip"></use>
+                    </svg>
+
+                    <span class="tooltip__body">Велосипед</span>
+                  </div>
                 </li>
 
                 <li class="transport-list__item">
@@ -245,6 +272,14 @@
                       <use xlink:href="img/sprite.svg#icon-transport-walk"></use>
                     </svg>
                   </label>
+
+                  <div class="transport-list__tooltip tooltip">
+                    <svg class="tooltip__icon" width="12" height="8">
+                      <use xlink:href="img/sprite.svg#icon-tooltip"></use>
+                    </svg>
+
+                    <span class="tooltip__body">Пешком</span>
+                  </div>
                 </li>
               </ul>
             </fieldset>
@@ -310,7 +345,7 @@
             </ul>
           </div>
 
-          <form class="add-new-plan__form plans-form" action="https://echo.htmlacademy.ru" method="get">
+          <form class="add-new-plan__form plans-form js-form" action="https://echo.htmlacademy.ru" method="get">
             <fieldset id="step-one" class="plans-form__set step-one">
               <legend class="plans-form__legend">
                 <span>Шаг 1.</span>
@@ -352,7 +387,7 @@
 
                     <button class="step-one__button button-increase" type="button" aria-label="Увеличить">
                       <svg class="button-increase__icon" width="14" height="14">
-                        <use xlink:href="img/sprite.svg#icon-button-increase"></use>
+                        <use xlink:href="img/sprite.svg#icon-add-button"></use>
                       </svg>
                     </button>
                   </div>
@@ -376,7 +411,7 @@
 
                     <button class="step-one__button button-increase" type="button" aria-label="Увеличить">
                       <svg class="button-increase__icon" width="14" height="14">
-                        <use xlink:href="img/sprite.svg#icon-button-increase"></use>
+                        <use xlink:href="img/sprite.svg#icon-add-button"></use>
                       </svg>
                     </button>
                   </div>
@@ -640,6 +675,14 @@
                     <img class="choosing-country__flag" src="img/flag-bosnia.svg" width="35" height="24" alt="Флаг Боснии">
 
                     <button class="choosing-country__close-btn js-remove-btn" type="button" aria-label="удалить из выбора"></button>
+
+                    <div class="country__list tooltip">
+                      <svg class="tooltip__icon" width="12" height="8">
+                        <use xlink:href="img/sprite.svg#icon-tooltip"></use>
+                      </svg>
+
+                      <span class="tooltip__body">Босния и Герцеговина</span>
+                    </div>
                   </div>
                 </li>
 
@@ -758,6 +801,14 @@
                     <img class="choosing-country__flag" src="img/flag-czech.svg" width="35" height="24" alt="Флаг Чехии">
 
                     <button class="choosing-country__close-btn js-remove-btn" type="button" aria-label="удалить из выбора"></button>
+
+                    <div class="country__list tooltip">
+                      <svg class="tooltip__icon" width="12" height="8">
+                        <use xlink:href="img/sprite.svg#icon-tooltip"></use>
+                      </svg>
+
+                      <span class="tooltip__body">Чехия</span>
+                    </div>
                   </div>
                 </li>
               </ul>
@@ -933,10 +984,22 @@
                         <div class="country-fun__mask"></div>
                       </div>
 
-                      <img class="country-fun__flag" src="img/flag-bosnia.svg" width="35" height="24" alt="Флаг Боснии">
+                      <div class="country-fun__flag-wrapper">
+                        <img class="country-fun__flag" src="img/flag-bosnia.svg" width="35" height="24" alt="Флаг Боснии">
+
+                        <div class="country__list tooltip">
+                          <svg class="tooltip__icon" width="12" height="8">
+                            <use xlink:href="img/sprite.svg#icon-tooltip"></use>
+                          </svg>
+
+                          <span class="tooltip__body">Босния и Герцеговина</span>
+                        </div>
+                      </div>
                     </div>
 
-                    <textarea class="country-fun__description" name="fun1" id="fun1" cols="30" rows="5" placeholder="План действий"></textarea>
+                    <textarea class="country-fun__description js-text-area" name="fun1" id="fun1" cols="30" rows="5" placeholder="План действий"></textarea>
+
+                    <span class="country-fun__error-message js-error">Это поле должно быть заполнено</span>
                   </li>
 
                   <li class="step-three__item">
@@ -947,7 +1010,17 @@
                         <div class="country-fun__mask"></div>
                       </div>
 
-                      <img class="country-fun__flag" src="img/flag-czech.svg" width="35" height="24" alt="Флаг Чехии">
+                      <div class="country-fun__flag-wrapper">
+                        <img class="country-fun__flag" src="img/flag-czech.svg" width="35" height="24" alt="Флаг Чехии">
+
+                        <div class="country__list tooltip">
+                          <svg class="tooltip__icon" width="12" height="8">
+                            <use xlink:href="img/sprite.svg#icon-tooltip"></use>
+                          </svg>
+
+                          <span class="tooltip__body">Чехия</span>
+                        </div>
+                      </div>
                     </div>
 
                     <textarea class="country-fun__description" name="fun2" id="fun2" cols="30" rows="5">Пить пиво и лазить по&nbsp;старым замкам, наслаждаться&nbsp;архитектурой и&nbsp;вот это все.</textarea>
