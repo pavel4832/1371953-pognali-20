@@ -56,7 +56,7 @@ const sprite = () => {
   return gulp.src('build/img/**/icon-*.svg')
     .pipe(svgstore())
     .pipe(rename('sprite.svg'))
-    .pipe(gulp.dest('build/img'))
+    .pipe(gulp.dest('build/img'));
 }
 
 exports.sprite = sprite;
@@ -106,6 +106,7 @@ const images = () => {
       imagemin.jpegtran({progressive: true}),
       imagemin.svgo()
     ]))
+    .pipe(gulp.dest('source/img'));
 }
 
 exports.images = images;
@@ -114,7 +115,7 @@ exports.images = images;
 const createWebp = () => {
   return gulp.src('source/img/**/*.{png,jpg}')
     .pipe(webp({quality: 90}))
-    .pipe(gulp.dest('source/img'))
+    .pipe(gulp.dest('source/img'));
 }
 
 exports.webp = createWebp;
