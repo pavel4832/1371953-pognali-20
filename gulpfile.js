@@ -11,13 +11,13 @@ const imagemin = require('gulp-imagemin-fix');
 const webp = require('gulp-webp');
 const svgstore = require('gulp-svgstore');
 const sync = require('browser-sync').create();
+const  terser = require('gulp-terser');
 
 // Copy
 const copy = () => {
   return gulp.src([
     'source/fonts/**/*.{woff,woff2}',
-    'source/img/**',
-    'source/js/**'
+    'source/img/**'
   ], {
     base: 'source'
   })
@@ -60,6 +60,16 @@ const sprite = () => {
 }
 
 exports.sprite = sprite;
+
+// Js
+const js = () => {
+  return gulp.src('source/js/**/*.js')
+    .pipe(terser())
+    .pipe(rename('script.min.js'))
+    .pipe(gulp.dest('build/js'));
+}
+
+exports.js = js;
 
 // Html
 const html = () => {
@@ -122,5 +132,5 @@ exports.webp = createWebp;
 
 // Build
 exports.build = gulp.series (
-  clean, copy, styles, sprite, html
+  clean, copy, styles, js, sprite, html
 );
