@@ -19,9 +19,18 @@
 }
 
 .country__item {
+  position: relative;
   display: flex;
   align-items: center;
   margin-bottom: 4px;
+
+  box-sizing: border-box;
+
+  &:hover {
+    .tooltip {
+      display: flex;
+    }
+  }
 
   @media (min-width: @tablet-width) {
     margin-right: 26px;

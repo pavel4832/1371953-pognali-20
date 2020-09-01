@@ -3,6 +3,7 @@ let openFilterBtn = document.querySelector('.js-filter-toggle');
 let closeFilterBtn = document.querySelector('.js-filter-close')
 let labelFilterElement = document.querySelector('.js-filter-label')
 
+// Переключатель классов
 function toggleFilter() {
   if(filterElement) {
     filterElement.classList.toggle('open-filter');
@@ -16,12 +17,15 @@ function toggleFilter() {
   }
 }
 
-openFilterBtn.addEventListener('click', function (element) {
-  element.preventDefault();
-  toggleFilter();
-})
+// Реализация открытия фильтра
+if (openFilterBtn) {
+  openFilterBtn.addEventListener('click', function (element) {
+    element.preventDefault();
+    toggleFilter();
+  })
 
-closeFilterBtn.addEventListener('click', function (element) {
-  element.preventDefault();
-  toggleFilter();
-})
+  closeFilterBtn.addEventListener('click', function (element) {
+    element.preventDefault();
+    toggleFilter();
+  })
+}
