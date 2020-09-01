@@ -12,6 +12,7 @@ const webp = require('gulp-webp');
 const svgstore = require('gulp-svgstore');
 const sync = require('browser-sync').create();
 const  terser = require('gulp-terser');
+const htmlmin = require('');
 
 // Copy
 const copy = () => {
@@ -73,11 +74,8 @@ exports.js = js;
 
 // Html
 const html = () => {
-  return gulp.src([
-    'source/*.html'
-  ], {
-    base: 'source'
-  })
+  return gulp.src('source/*.html')
+    .pipe(htmlmin({ collapseWhitespace: true }))
     .pipe(gulp.dest('build'));
 }
 
