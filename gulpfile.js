@@ -12,7 +12,7 @@ const webp = require('gulp-webp');
 const svgstore = require('gulp-svgstore');
 const sync = require('browser-sync').create();
 const  terser = require('gulp-terser');
-const htmlmin = require('');
+const htmlmin = require('gulp-htmlmin');
 
 // Copy
 const copy = () => {
