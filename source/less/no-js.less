@@ -1,8 +1,21 @@
+.no-js-logo {
+  display: none;
+}
+
 @media screen and (max-width: 768px) {
+  .no-js .page-header {
+    background-color: @basic-white;
+  }
+
   .no-js .main-nav {
+    display: block;
     height: 100%;
-    opacity: 1;
-    visibility: visible;
+
+    .main-nav__wrapper.container {
+      width: 100%;
+      padding-left: 0;
+      padding-right: 0;
+    }
   }
 
   .no-js .logo {

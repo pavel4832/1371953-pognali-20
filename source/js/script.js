@@ -225,7 +225,7 @@ ymaps.ready(init);
 
 function init(){
 
-  let myMap = new ymaps.Map("map", {
+  let myMap = new ymaps.Map('map', {
       center: [59.938635, 30.323118],
       zoom: 16,
       controls: []
@@ -239,6 +239,7 @@ function init(){
       iconLayout: 'default#imageWithContent',
       iconImageHref: 'img/map-marker.svg',
       iconImageSize: [41, 41],
+      iconImageOffset: [-20, -25],
       iconContentLayout: MyIconContentLayout
     });
 

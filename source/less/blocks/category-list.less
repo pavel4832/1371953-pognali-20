@@ -61,7 +61,9 @@
 
   &::before {
     content: "";
-    display: inline-block;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
     width: 18px;
     height: 18px;
     margin-right: 9px;
@@ -77,7 +79,7 @@
   }
 
   .category-list__input:checked + &::before {
-    content: url("../img/tick-small.svg");
+    content: url("../img/icon-check-mark.svg");
   }
 
   @media (min-width: @tablet-width) {
@@ -90,7 +92,7 @@
     }
 
     .category-list__input:checked + &::before {
-      content: url("../img/tick.svg");
+      content: url("../img/icon-check-mark2.svg");
     }
   }
 }

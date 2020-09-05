@@ -103,7 +103,7 @@ const watcher = () => {
 }
 
 exports.default = gulp.series(
-  server, watcher
+  styles, server, watcher
 );
 
 // Images

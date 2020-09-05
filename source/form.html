@@ -74,7 +74,7 @@
 
             <ul class="main-nav__list user-list">
               <li class="user-list__item">
-                <a href="#" class="user-list__login button top-login">авторизация</a>
+                <a href="#" class="user-list__login button user-list__login--top">авторизация</a>
               </li>
             </ul>
 
@@ -99,7 +99,7 @@
             <ul class="main-nav__list social-list social">
               <li class="social__item">
                 <a class="social__link " href="https://www.facebook.com/htmlacademy" aria-label="Мы в Фейсбуке">
-                  <svg class="facebook__icon" width="23" height="21">
+                  <svg class="social__icon social__icon--facebook" width="23" height="21">
                     <use xlink:href="img/sprite.svg#icon-facebook"></use>
                   </svg>
                 </a>
@@ -107,7 +107,7 @@
 
               <li class="social__item">
                 <a class="social__link" href="https://vk.com/htmlacademy" aria-label="Мы в Вконтакте">
-                  <svg class="vkontakte__icon" width="21" height="21">
+                  <svg class="social__icon social__icon--vkontakte" width="21" height="21">
                     <use xlink:href="img/sprite.svg#icon-vkontakte"></use>
                   </svg>
                 </a>
@@ -115,7 +115,7 @@
 
               <li class="social__item">
                 <a class="social__link" href="https://www.instagram.com/htmlacademy" aria-label="Мы в Инстаграме">
-                  <svg class="instagram__icon" width="18" height="18">
+                  <svg class="social__icon social__icon--instagram" width="18" height="18">
                     <use xlink:href="img/sprite.svg#icon-instagram"></use>
                   </svg>
                 </a>
@@ -198,7 +198,7 @@
             <fieldset class="profile__fieldset tags-set">
               <legend class="profile__legend">тэги</legend>
 
-              <div class="tag-set__wrapper">
+              <div class="tags-set__wrapper">
 
                 <label for="tags" class="visually-hidden">тэги</label>
 
@@ -357,7 +357,7 @@
                   <p class="plans-form__text">Укажите предпочтительное количество попутчиков, которых вы&nbsp;хотели бы позвать в поездку и ее предполагаемую длительность.</p>
 
                   <ul class="plans-form__menu form-menu">
-                    <li class="form-menu__item item--active">
+                    <li class="form-menu__item form-menu__item--active">
                       <a class="form-menu__link">Даты</a>
                     </li>
 
@@ -377,16 +377,16 @@
                   </label>
 
                   <div class="step-one__button-group">
-                    <button class="step-one__button button-decrease" type="button" aria-label="Уменьшить">
-                      <svg class="button-decrease__icon" width="14" height="3">
+                    <button class="step-one__button step-one__button--decrease" type="button" aria-label="Уменьшить">
+                      <svg class="step-one__icon step-one__icon--decrease" width="14" height="3">
                         <use xlink:href="img/sprite.svg#icon-button-decrease"></use>
                       </svg>
                     </button>
 
                     <input id="companions" class="step-one__input" type="text" name="companions" value="2">
 
-                    <button class="step-one__button button-increase" type="button" aria-label="Увеличить">
-                      <svg class="button-increase__icon" width="14" height="14">
+                    <button class="step-one__button step-one__button--increase" type="button" aria-label="Увеличить">
+                      <svg class="step-one__icon step-one__icon--increase" width="14" height="14">
                         <use xlink:href="img/sprite.svg#icon-add-button"></use>
                       </svg>
                     </button>
@@ -401,16 +401,16 @@
                   </label>
 
                   <div class="step-one__button-group">
-                    <button class="step-one__button button-decrease" type="button" aria-label="Уменьшить">
-                      <svg class="button-decrease__icon" width="14" height="3">
+                    <button class="step-one__button step-one__button--decrease" type="button" aria-label="Уменьшить">
+                      <svg class="step-one__icon step-one__icon--decrease" width="14" height="3">
                         <use xlink:href="img/sprite.svg#icon-button-decrease"></use>
                       </svg>
                     </button>
 
                     <input id="duration" class="step-one__input" type="text" name="companions" value="2">
 
-                    <button class="step-one__button button-increase" type="button" aria-label="Увеличить">
-                      <svg class="button-increase__icon" width="14" height="14">
+                    <button class="step-one__button step-one__button--increase" type="button" aria-label="Увеличить">
+                      <svg class="step-one__icon step-one__icon--increase" width="14" height="14">
                         <use xlink:href="img/sprite.svg#icon-add-button"></use>
                       </svg>
                     </button>
@@ -430,7 +430,7 @@
 
                   <div class="step-one__button-group">
                     <button class="step-one__button step-one__button--left" aria-label="Увеличить">
-                      <svg class="button-left__icon" width="15" height="21">
+                      <svg class="step-one__icon step-one__icon--left" width="15" height="21">
                         <use xlink:href="img/sprite.svg#icon-button-left"></use>
                       </svg>
                     </button>
@@ -438,7 +438,7 @@
                     <input id="month" class="step-one__input" type="text" value="Март 2019">
 
                     <button class="step-one__button step-one__button--right" aria-label="Уменьшить">
-                      <svg class="button-right__icon" width="15" height="21">
+                      <svg class="step-one__icon step-one__icon--right" width="15" height="21">
                         <use xlink:href="img/sprite.svg#icon-button-right"></use>
                       </svg>
                     </button>
@@ -451,8 +451,8 @@
                       <th class="calendar-form__head">с</th>
                       <th class="calendar-form__head">ч</th>
                       <th class="calendar-form__head">п</th>
-                      <th class="calendar-form__head weekend">с</th>
-                      <th class="calendar-form__head weekend">в</th>
+                      <th class="calendar-form__head calendar-form__head--weekend">с</th>
+                      <th class="calendar-form__head calendar-form__head--weekend">в</th>
                     </tr>
 
                     <tr class="calendar-form__rows calendar-form__rows--tablet">
@@ -461,8 +461,8 @@
                       <th class="calendar-form__head">Ср</th>
                       <th class="calendar-form__head">Чт</th>
                       <th class="calendar-form__head">Пт</th>
-                      <th class="calendar-form__head weekend">Сб</th>
-                      <th class="calendar-form__head weekend">Вс</th>
+                      <th class="calendar-form__head calendar-form__head--weekend">Сб</th>
+                      <th class="calendar-form__head calendar-form__head--weekend">Вс</th>
                     </tr>
 
                     <tr class="calendar-form__rows">
@@ -509,20 +509,20 @@
                       <td class="calendar-form__columns"><a href="#" class="calendar-form__link">23</a></td>
                       <td class="calendar-form__columns"><a href="#" class="calendar-form__link">24</a></td>
                       <td class="calendar-form__columns"><a href="#" class="calendar-form__link">25</a></td>
-                      <td class="calendar-form__columns choosing-day start-day"><a href="#" class="calendar-form__link">26</a></td>
-                      <td class="calendar-form__columns choosing-day"><a href="#" class="calendar-form__link">27</a></td>
-                      <td class="calendar-form__columns choosing-day end-day"><a href="#" class="calendar-form__link">28</a></td>
-                      <td class="calendar-form__columns enable-day"><a href="#" class="calendar-form__link">29</a></td>
+                      <td class="calendar-form__columns calendar-form__columns--choosing-day calendar-form__columns--start-day"><a href="#" class="calendar-form__link">26</a></td>
+                      <td class="calendar-form__columns calendar-form__columns--choosing-day"><a href="#" class="calendar-form__link">27</a></td>
+                      <td class="calendar-form__columns calendar-form__columns--choosing-day calendar-form__columns--end-day"><a href="#" class="calendar-form__link">28</a></td>
+                      <td class="calendar-form__columns calendar-form__columns--enable-day"><a href="#" class="calendar-form__link">29</a></td>
                     </tr>
 
                     <tr class="calendar-form__rows">
-                      <td class="calendar-form__columns enable-day"><a href="#" class="calendar-form__link">30</a></td>
-                      <td class="calendar-form__columns enable-day"><a href="#" class="calendar-form__link">31</a></td>
-                      <td class="calendar-form__columns enable-day"><a href="#" class="calendar-form__link">1</a></td>
-                      <td class="calendar-form__columns enable-day"><a href="#" class="calendar-form__link">2</a></td>
-                      <td class="calendar-form__columns enable-day"><a href="#" class="calendar-form__link">3</a></td>
-                      <td class="calendar-form__columns enable-day"><a href="#" class="calendar-form__link">4</a></td>
-                      <td class="calendar-form__columns enable-day"><a href="#" class="calendar-form__link">5</a></td>
+                      <td class="calendar-form__columns calendar-form__columns--enable-day"><a href="#" class="calendar-form__link">30</a></td>
+                      <td class="calendar-form__columns calendar-form__columns--enable-day"><a href="#" class="calendar-form__link">31</a></td>
+                      <td class="calendar-form__columns calendar-form__columns--enable-day"><a href="#" class="calendar-form__link">1</a></td>
+                      <td class="calendar-form__columns calendar-form__columns--enable-day"><a href="#" class="calendar-form__link">2</a></td>
+                      <td class="calendar-form__columns calendar-form__columns--enable-day"><a href="#" class="calendar-form__link">3</a></td>
+                      <td class="calendar-form__columns calendar-form__columns--enable-day"><a href="#" class="calendar-form__link">4</a></td>
+                      <td class="calendar-form__columns calendar-form__columns--enable-day"><a href="#" class="calendar-form__link">5</a></td>
                     </tr>
                   </table>
                 </div>
@@ -549,7 +549,7 @@
                     <a href="#step-one" class="form-menu__link">Даты</a>
                   </li>
 
-                  <li class="form-menu__item item--active">
+                  <li class="form-menu__item form-menu__item--active">
                     <a class="form-menu__link">Маршрут</a>
                   </li>
 
@@ -968,7 +968,7 @@
                     <a href="#step-two" class="form-menu__link">Маршрут</a>
                   </li>
 
-                  <li class="form-menu__item item--active">
+                  <li class="form-menu__item form-menu__item--active">
                     <a class="form-menu__link">Развлечения</a>
                   </li>
                 </ul>
@@ -1072,7 +1072,7 @@
         <ul class="page-footer__socials social">
           <li class="social__item">
             <a class="social__link " href="https://www.facebook.com/htmlacademy" aria-label="Мы в Фейсбуке">
-              <svg class="facebook__icon" width="23" height="21">
+              <svg class="social__icon social__icon--facebook" width="23" height="21">
                 <use xlink:href="img/sprite.svg#icon-facebook"></use>
               </svg>
             </a>
@@ -1080,7 +1080,7 @@
 
           <li class="social__item">
             <a class="social__link" href="https://vk.com/htmlacademy" aria-label="Мы в Вконтакте">
-              <svg class="vkontakte__icon" width="21" height="21">
+              <svg class="social__icon social__icon--vkontakte" width="21" height="21">
                 <use xlink:href="img/sprite.svg#icon-vkontakte"></use>
               </svg>
             </a>
@@ -1088,7 +1088,7 @@
 
           <li class="social__item">
             <a class="social__link" href="https://www.instagram.com/htmlacademy" aria-label="Мы в Инстаграме">
-              <svg class="instagram__icon" width="18" height="18">
+              <svg class="social__icon social__icon--instagram" width="18" height="18">
                 <use xlink:href="img/sprite.svg#icon-instagram"></use>
               </svg>
             </a>

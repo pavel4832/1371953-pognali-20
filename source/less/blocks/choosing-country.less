@@ -29,33 +29,35 @@
       display: none;
     }
 
-    &:first-child .choosing-country__selected {
-      padding-top: 41px;
+    &:first-child {
+      .choosing-country__selected {
+        padding-top: 41px;
 
-      &::after {
-        top: 68px;
+        &::after {
+          top: 68px;
+        }
       }
-    }
 
-    &:first-child .choosing-country__dropdown {
-      top: 67px;
-    }
-
-    &:first-child .choosing-country__flag-container {
-      padding-top: 80px;
-      margin-left: 25px;
-
-      & .tooltip {
-        top: calc(100% + 24px);
+      .choosing-country__dropdown {
+        top: 67px;
       }
-    }
 
-    &:first-child .choosing-country__close-btn {
-      top: 64px;
-    }
+      .choosing-country__flag-container {
+        padding-top: 80px;
+        margin-left: 25px;
 
-    &:first-child .step-two__hidden {
-      top: 41px;
+        & .tooltip {
+          top: calc(100% + 24px);
+        }
+      }
+
+      .choosing-country__close-btn {
+        top: 64px;
+      }
+
+      .step-two__hidden {
+        top: 41px;
+      }
     }
   }
 
@@ -64,33 +66,35 @@
       display: none;
     }
 
-    &:first-child .choosing-country__selected {
-      padding-top: 61px;
+    &:first-child {
+      .choosing-country__selected {
+        padding-top: 61px;
 
-      &::after {
-        top: 87px;
+        &::after {
+          top: 87px;
+        }
       }
-    }
 
-    &:first-child .choosing-country__dropdown {
-      top: 85px;
-    }
-
-    &:first-child .choosing-country__flag-container {
-      padding-top: 99px;
-      margin-left: 40px;
-
-      & .tooltip {
-        top: calc(100% + 24px);
+      .choosing-country__dropdown {
+        top: 85px;
       }
-    }
 
-    &:first-child .choosing-country__close-btn {
-      top: 84px;
-    }
+      .choosing-country__flag-container {
+        padding-top: 99px;
+        margin-left: 40px;
 
-    &:first-child .step-two__hidden {
-      top: 61px;
+        & .tooltip {
+          top: calc(100% + 24px);
+        }
+      }
+
+      .choosing-country__close-btn {
+        top: 84px;
+      }
+
+      .step-two__hidden {
+        top: 61px;
+      }
     }
   }
 }
@@ -98,8 +102,10 @@
 .choosing-country__selected {
   position: relative;
 
-  &:hover .choosing-country__dropdown {
-    opacity: 0.7;
+  &:hover {
+    .choosing-country__dropdown {
+      opacity: 0.7;
+    }
   }
 
   &::after {
@@ -232,6 +238,15 @@
 
   @media (min-width: @desktop-width) {
     margin-left: 40px;
+  }
+}
+
+.choosing-country__flag-container .tooltip {
+  top: calc(100% - 6px);
+  left: 0;
+
+  @media (min-width: @desktop-width) {
+    left: 35px;
   }
 }
 

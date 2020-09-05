@@ -1,4 +1,11 @@
+.index-body {
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+}
+
 .index-body__header {
+  grid-row-start: 1;
+  grid-row-end: 2;
   position: relative;
   z-index: 2;
 
@@ -8,6 +15,8 @@
 }
 
 .index-body__main {
+  grid-row-start: 2;
+  grid-row-end: 3;
   position: relative;
   z-index: 1;
 
@@ -17,6 +26,8 @@
 }
 
 .index-body__footer {
+  grid-row-start: 3;
+  grid-row-end: -1;
   position: relative;
 
   background-color: @basic-white;
@@ -28,5 +39,11 @@
   @media (min-width: @tablet-width) {
     border-top-left-radius: 60px;
     border-top-right-radius: 60px;
+  }
+}
+
+.index-body .page-footer {
+  @media (min-width: @tablet-width) {
+    margin-top: -68px;
   }
 }

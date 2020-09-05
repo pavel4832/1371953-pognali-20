@@ -1,12 +1,29 @@
 .form-body {
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+
   background-color: #edeff6;
 }
 
 .form-body__header {
+  grid-row-start: 1;
+  grid-row-end: 2;
   position: relative;
   padding-bottom: 12px;
   background-color: @basic-blue;
   background-image: none;
+}
+
+.form-body__header .logo {
+  padding-top: 17px;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 43px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 45px;
+  }
 }
 
 .form-body__header .page-header__login {
@@ -18,6 +35,8 @@
 }
 
 .form-body__main {
+  grid-row-start: 2;
+  grid-row-end: 3;
   position: relative;
   margin-top: -25px;
 
@@ -25,7 +44,54 @@
   z-index: 1;
 }
 
+.form-body__main .main-header__title {
+  position: relative;
+  padding-top: 38px;
+  padding-bottom: 14px;
+
+  text-align: left;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: block;
+    width: 214px;
+    height: 5px;
+
+    background-color: @special-orange;
+
+    border-radius: 4px;
+  }
+
+  @media (min-width: @tablet-width) {
+    padding-top: 114px;
+    padding-left: 35px;
+    padding-bottom: 0;
+
+    &::after {
+      bottom: -70px;
+      left: 36px;
+      width: 354px;
+      height: 8px;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 124px;
+    padding-left: 63px;
+
+    &::after {
+      width: 358px;
+      left: 65px;
+    }
+  }
+}
+
 .form-body__footer {
+  grid-row-start: 3;
+  grid-row-end: -1;
   position: relative;
 
   background-color: @basic-white;

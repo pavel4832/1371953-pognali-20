@@ -13,6 +13,14 @@
   }
 }
 
+.step-two .form-menu__item {
+  margin-bottom: 20px;
+}
+
+.step-two .plans-form__menu {
+  margin-right: 45px;
+}
+
 .step-two .plans-form__text {
   @media (min-width: @tablet-width) {
     padding-right: 120px;
@@ -23,6 +31,58 @@
     margin-top: 62px;
     padding-bottom: 0;
     padding-right: 330px;
+  }
+}
+
+.step-two .plans-form__next-step {
+  @media (min-width: @tablet-width) {
+    margin-top: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    height: 81px;
+  }
+}
+
+.step-two .plans-form__step-before {
+  @media (min-width: @desktop-width) {
+    width: 226px;
+    padding-left: 38px;
+    padding-bottom: 16px;
+
+    border-left: 1px solid #e1e3e9;
+  }
+}
+
+.step-two .step-one__title-wrapper {
+  @media (min-width: @desktop-width) {
+    padding-bottom: 35px;
+  }
+}
+
+.step-two .alphabet__rows {
+  @media (min-width: @desktop-width) {
+    .alphabet__columns {
+      padding: 0;
+    }
+
+    &:nth-of-type(2) {
+      .alphabet__columns {
+        padding-bottom: 0;
+      }
+    }
+
+    &:nth-of-type(3) {
+      .alphabet__columns {
+        padding-bottom: 0;
+      }
+    }
+
+    &:nth-of-type(4) {
+      .alphabet__columns {
+        padding-bottom: 0;
+      }
+    }
   }
 }
 
@@ -123,15 +183,6 @@
       top: 27px;
       right: -52px;
     }
-  }
-}
-
-.add-button__icon {
-  color: fade(@basic-black, 20%);
-
-  @media (min-width: @tablet-width) {
-    width: 21px;
-    height: 21px;
   }
 }
 

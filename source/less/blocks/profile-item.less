@@ -27,15 +27,6 @@
   }
 }
 
-.profile-item.like-active {
-  &::after {
-    background-color: #f9eaea;
-    background-image: url("../img/heart-active.svg");
-    background-repeat: no-repeat;
-    background-position: center;
-  }
-}
-
 .profile-item__info {
   display: flex;
   margin-left: 19px;
@@ -64,7 +55,7 @@
   align-items: center;
   margin-top: -1px;
   padding-top: 25px;
-  padding-bottom: 14px;
+  padding-bottom: 16px;
 
   background-color: @basic-white;
   border-bottom-right-radius: 10px;
@@ -132,18 +123,6 @@
   }
 }
 
-.companion-offline .profile-item__name {
-  &::before {
-    background-color: #f97676;
-  }
-}
-
-.companion-online .profile-item__name {
-  &::before {
-    background-color: #bbf085;
-  }
-}
-
 .profile-item__distance {
   display: block;
   margin-top: 9px;
@@ -186,7 +165,7 @@
 }
 
 .profile-item__properties {
-  margin-top: 14px;
+  margin-top: 12px;
 
   @media (min-width: @tablet-width) {
     display: flex;

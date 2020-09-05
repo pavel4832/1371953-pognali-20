@@ -18,11 +18,21 @@
   }
 }
 
+.country__list .tooltip {
+  left: -2px;
+  transform: translateX(-60%);
+
+  @media (min-width: @tablet-width) {
+    left: 16px;
+    transform: translateX(-50%);
+  }
+}
+
 .country__item {
   position: relative;
   display: flex;
   align-items: center;
-  margin-bottom: 4px;
+  margin-bottom: 9px;
 
   box-sizing: border-box;
 
@@ -37,7 +47,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    margin-bottom: 8px;
+    margin-bottom: 14px;
   }
 }
 

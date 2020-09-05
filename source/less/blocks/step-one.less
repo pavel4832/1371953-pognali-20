@@ -38,9 +38,18 @@
   }
 }
 
-.step-two .step-one__title-wrapper {
+.step-one .plans-form__next-step {
+  @media (min-width: @tablet-width) {
+    order: 6;
+  }
+
   @media (min-width: @desktop-width) {
-    padding-bottom: 35px;
+    grid-row-start: 5;
+    grid-row-end: 6;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    justify-self: start;
+    margin-top: 56px;
   }
 }
 
@@ -229,7 +238,29 @@
   }
 }
 
-.button-decrease {
+.step-one__button--left {
+  @media (min-width: @tablet-width) {
+    margin-left: 12px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-left: -10px;
+    padding-left: 0;
+  }
+}
+
+.step-one__button--right {
+  @media (min-width: @tablet-width) {
+    margin-right: 12px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-right: -10px;
+    padding-right: 0;
+  }
+}
+
+.step-one__button--decrease {
   margin-left: 14px;
 
   @media (min-width: @tablet-width) {
@@ -237,7 +268,7 @@
   }
 }
 
-.button-increase {
+.step-one__button--increase {
   margin-right: 14px;
 
   @media (min-width: @tablet-width) {
@@ -245,17 +276,41 @@
   }
 }
 
-.button-decrease__icon {
+.step-one__icon--decrease {
   @media (min-width: @tablet-width) {
     width: 20px;
     height: 3px;
   }
 }
 
-.button-increase__icon {
+.step-one__icon--increase {
   @media (min-width: @tablet-width) {
     width: 20px;
     height: 20px;
+  }
+}
+
+.step-one__icon--left {
+  @media (min-width: @tablet-width) {
+    width: 29px;
+    height: 36px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 35px;
+    height: 30px;
+  }
+}
+
+.step-one__icon--right {
+  @media (min-width: @tablet-width) {
+    width: 29px;
+    height: 36px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 35px;
+    height: 30px;
   }
 }
 
@@ -350,7 +405,7 @@
   }
 
   .step-one__checkbox:checked + &::before {
-    content: url("../img/tick-small.svg");
+    content: url("../img/icon-check-mark.svg");
   }
 
   @media (min-width: @tablet-width) {
@@ -371,7 +426,7 @@
     }
 
     .step-one__checkbox:checked + &::before {
-      content: url("../img/tick-tablet.svg");
+      content: url("../img/icon-check-mark2.svg");
     }
   }
 }

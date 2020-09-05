@@ -1,0 +1,22 @@
+.login-mail {
+  background-color: @special-yellow-dark;
+
+  &:hover {
+    background-color: @special-orange;
+  }
+
+  &:active {
+    .login-mail__icon {
+      opacity: 0.3;
+    }
+  }
+}
+
+.login-mail__icon {
+  color: @basic-blue;
+
+  @media (min-width: @tablet-width) {
+    width: 16px;
+    height: 14px;
+  }
+}

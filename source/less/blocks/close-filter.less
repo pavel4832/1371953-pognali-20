@@ -1,0 +1,15 @@
+.close-filter {
+  @media (min-width: @tablet-width) {
+    &::before {
+      content: "свернуть";
+    }
+  }
+}
+
+.close-filter .catalog-filter__icon--open {
+  display: none;
+}
+
+.close-filter .catalog-filter__icon--close {
+  display: block;
+}

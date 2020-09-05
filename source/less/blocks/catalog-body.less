@@ -1,10 +1,29 @@
+.catalog-body {
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+}
+
 .catalog-body__header {
+  grid-row-start: 1;
+  grid-row-end: 2;
   position: relative;
   padding-bottom: 10px;
   background-color: @basic-blue;
   background-image: none;
 
   z-index: 2;
+}
+
+.catalog-body .logo {
+  padding-top: 17px;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 44px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 45px;
+  }
 }
 
 .catalog-body__header .page-header__login {
@@ -16,6 +35,8 @@
 }
 
 .catalog-body__main {
+  grid-row-start: 2;
+  grid-row-end: 3;
   position: relative;
   margin-top: -40px;
 
@@ -23,7 +44,79 @@
   z-index: 1;
 }
 
+.catalog-body__main .main-header {
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+
+  @media (min-width: @tablet-width) {
+    padding-bottom: 66px;
+
+    border-bottom-left-radius: 60px;
+    border-bottom-right-radius: 60px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-bottom: 65px;
+  }
+}
+
+.catalog-body__main .container {
+  @media (min-width: @tablet-width) {
+    display: flex;
+  }
+}
+
+.catalog-body__main .main-header__title {
+  position: relative;
+  margin-left: 0;
+  padding-top: 56px;
+  padding-bottom: 13px;
+
+  text-align: left;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: block;
+    width: 173px;
+    height: 5px;
+    background-color: @special-orange;
+  }
+
+  @media (min-width: @tablet-width) {
+    margin-left: 0;
+    padding-top: 130px;
+    padding-left: 35px;
+    padding-bottom: 0;
+
+    &::after {
+      bottom: -70px;
+      left: 36px;
+      width: 288px;
+      height: 8px;
+      border-radius: 4px;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 50%;
+    margin-left: 0;
+    padding-top: 141px;
+    padding-left: 67px;
+    padding-right: 0;
+
+    &::after {
+      width: 288px;
+      left: 65px;
+    }
+  }
+}
+
 .catalog-body__footer {
+  grid-row-start: 3;
+  grid-row-end: -1;
   position: relative;
 
   background-color: @basic-white;
@@ -35,5 +128,17 @@
   @media (min-width: @tablet-width) {
     border-top-left-radius: 60px;
     border-top-right-radius: 60px;
+  }
+}
+
+.catalog-body .page-footer__logo {
+  margin-top: 16px;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 4px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: 4px;
   }
 }

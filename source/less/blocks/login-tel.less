@@ -1,0 +1,22 @@
+.login-tel {
+  background-color: @special-orange;
+
+  &:hover {
+    background-color: #f26926;
+  }
+
+  &:active {
+    .login-tel__icon {
+      opacity: 0.3;
+    }
+  }
+}
+
+.login-tel__icon {
+  color: @basic-blue;
+
+  @media (min-width: @tablet-width) {
+    width: 18px;
+    height: 18px;
+  }
+}

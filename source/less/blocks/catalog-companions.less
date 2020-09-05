@@ -46,38 +46,85 @@
   }
 }
 
+.catalog-companions__list .country-request {
+  justify-content: flex-start;
+}
+
+.catalog-companions__list .country-request__list {
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: 23px;
+  margin-left: 10px;
+
+  @media (min-width: @tablet-width) {
+    flex-direction: row;
+    margin-top: 28px;
+    margin-left: 27px;
+  }
+
+  @media (min-width: @desktop-width) {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 0;
+    margin-left: 0;
+  }
+}
+
+.catalog-companions__list .country-request__item {
+  margin-bottom: 3px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 3px;
+    margin-right: 19px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 12px;
+  }
+}
+
+.catalog-companions__list .country-request__flag {
+  @media (min-width: @desktop-width) {
+    margin-right: 8px;
+  }
+}
+
 .catalog-companions__button {
   position: relative;
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  margin-top: 6px;
-  margin-left: 30px;
+  margin-top: 4px;
+  margin-left: 0;
 
   font-size: 17px;
   line-height: 30px;
   text-transform: uppercase;
   color: @basic-blue-light;
 
-  &:hover > .button__icon {
-    color: fade(@basic-blue-light, 60%);
+  &:hover {
+    .button__icon {
+      color: fade(@basic-blue-light, 60%);
+    }
   }
 
-  &:active > .button__icon {
-    color: fade(@basic-blue-light, 30%);
+  &:active {
+    .button__icon {
+      color: fade(@basic-blue-light, 30%);
+    }
   }
 
   @media (min-width: @tablet-width) {
-    margin-top: 9px;
-    margin-left: 44px;
+    margin-top: 6px;
+    margin-left: -6px;
 
     font-size: 20px;
     line-height: 20px;
   }
 
   @media (min-width: @desktop-width) {
-    margin-top: 33px;
-    margin-left: -25px;
+    margin-top: 30px;
+    margin-left: -75px;
   }
 }
 
@@ -95,10 +142,10 @@
   margin-top: 20px;
 
   @media (min-width: @tablet-width) {
-    margin-top: 55px;
+    margin-top: 52px;
   }
 
   @media (min-width: @desktop-width) {
-    margin-top: 75px;
+    margin-top: 72px;
   }
 }

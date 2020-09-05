@@ -40,7 +40,7 @@
   line-height: 20px;
   color: @basic-blue-light;
 
-  & span {
+  span {
     display: block;
 
     @media (min-width: @desktop-width) {
@@ -104,14 +104,6 @@
   }
 }
 
-.step-two .plans-form__menu {
-  margin-right: 45px;
-}
-
-.step-three .plans-form__menu {
-  margin-right: 45px;
-}
-
 .plans-form__next-step {
   justify-content: center;
   width: 229px;
@@ -153,31 +145,6 @@
   }
 }
 
-.step-one .plans-form__next-step {
-  @media (min-width: @tablet-width) {
-    order: 6;
-  }
-
-  @media (min-width: @desktop-width) {
-    grid-row-start: 5;
-    grid-row-end: 6;
-    grid-column-start: 1;
-    grid-column-end: 2;
-    justify-self: start;
-    margin-top: 56px;
-  }
-}
-
-.step-two .plans-form__next-step {
-  @media (min-width: @tablet-width) {
-    margin-top: 0;
-  }
-
-  @media (min-width: @desktop-width) {
-    height: 81px;
-  }
-}
-
 .plans-form__step-before {
   justify-content: center;
   width: 229px;
@@ -210,16 +177,6 @@
     text-transform: none;
 
     box-sizing: border-box;
-  }
-}
-
-.step-two .plans-form__step-before {
-  @media (min-width: @desktop-width) {
-    width: 226px;
-    padding-left: 38px;
-    padding-bottom: 16px;
-
-    border-left: 1px solid #e1e3e9;
   }
 }
 

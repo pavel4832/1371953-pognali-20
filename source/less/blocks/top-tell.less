@@ -1,0 +1,37 @@
+.top-tell {
+  position: relative;
+
+  &:hover {
+    color: fade(#192144, 70%);
+
+    .top-tell__icon {
+      color: @special-yellow-dark;
+    }
+  }
+
+  &:active {
+    color: fade(#192144, 30%);
+
+    .top-tell__icon {
+      color: fade(@basic-yellow, 30%);
+    }
+  }
+}
+
+.top-tell__icon {
+  margin-right: 31px;
+
+  color: @basic-yellow;
+
+  @media (min-width: @tablet-width) {
+    width: 24px;
+    height: 24px;
+    margin-right: 44px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 32px;
+    height: 30px;
+    margin-right: 60px;
+  }
+}

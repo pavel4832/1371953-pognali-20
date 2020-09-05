@@ -298,26 +298,6 @@
   }
 }
 
-.companion-offline .profile-catalog__name {
-  &::before {
-    background-color: #f97676;
-  }
-
-  &::after {
-    background-color: #f97676;
-  }
-}
-
-.companion-online .profile-catalog__name {
-  &::before {
-    background-color: #bbf085;
-  }
-
-  &::after {
-    background-color: #bbf085;
-  }
-}
-
 .profile-catalog__like {
   grid-row-start: 2;
   grid-row-end: 3;
@@ -379,21 +359,12 @@
   }
 
   &:active {
-    color: fade(#192144, 30%);
+    color: fade(#192144, 10%);
   }
 
   @media (min-width: @tablet-width) {
     width: 50px;
     height: 50px;
-  }
-}
-
-.like-icon {
-  fill: none;
-
-  @media (min-width: @tablet-width) {
-    width: 21px;
-    height: 19px;
   }
 }
 
@@ -469,7 +440,7 @@
   align-self: stretch;
   justify-self: stretch;
   margin-top: 22px;
-  padding-top: 27px;
+  padding-top: 29px;
 
   border-top: 1px solid #edeff6;
 
@@ -617,6 +588,10 @@
     height: 60px;
     margin-left: 0;
   }
+}
+
+.profile-catalog__transport .tooltip {
+  left: 16px;
 }
 
 .profile-catalog__transport .transport-list__item {

@@ -17,22 +17,6 @@
   }
 }
 
-.catalog-body__main .main-header {
-  border-bottom-left-radius: 25px;
-  border-bottom-right-radius: 25px;
-
-  @media (min-width: @tablet-width) {
-    padding-bottom: 66px;
-
-    border-bottom-left-radius: 60px;
-    border-bottom-right-radius: 60px;
-  }
-
-  @media (min-width: @desktop-width) {
-    padding-bottom: 65px;
-  }
-}
-
 .main-header__wrapper {
   background-image: url("../img/globe-back-mobile@1x.jpg");
   background-repeat: no-repeat;
@@ -129,7 +113,7 @@
   @media (min-width: @desktop-width) {
     display: inline-block;
     width: 980px;
-    padding-top: 101px;
+    padding-top: 105px;
     padding-right: 265px;
     padding-left: 67px;
     padding-bottom: 0;
@@ -140,108 +124,9 @@
   }
 }
 
-.form-body__main .main-header__title {
-  position: relative;
-  padding-top: 38px;
-  padding-bottom: 14px;
-
-  text-align: left;
-
-  &::after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    display: block;
-    width: 214px;
-    height: 5px;
-
-    background-color: @special-orange;
-
-    border-radius: 4px;
-  }
-
-  @media (min-width: @tablet-width) {
-    padding-top: 114px;
-    padding-left: 35px;
-    padding-bottom: 0;
-
-    &::after {
-      bottom: -70px;
-      left: 36px;
-      width: 354px;
-      height: 8px;
-    }
-  }
-
-  @media (min-width: @desktop-width) {
-    padding-top: 124px;
-    padding-left: 63px;
-
-    &::after {
-      width: 358px;
-      left: 65px;
-    }
-  }
-}
-
 .main-header .container {
   @media (min-width: @desktop-width) {
     display: flex;
-  }
-}
-
-.catalog-body__main .container {
-  @media (min-width: @tablet-width) {
-    display: flex;
-  }
-}
-
-.catalog-body__main .main-header__title {
-  position: relative;
-  margin-left: 0;
-  padding-top: 56px;
-  padding-bottom: 13px;
-
-  text-align: left;
-
-  &::after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    display: block;
-    width: 173px;
-    height: 5px;
-    background-color: @special-orange;
-  }
-
-  @media (min-width: @tablet-width) {
-    margin-left: 0;
-    padding-top: 130px;
-    padding-left: 35px;
-    padding-bottom: 0;
-
-    &::after {
-      bottom: -70px;
-      left: 36px;
-      width: 288px;
-      height: 8px;
-      border-radius: 4px;
-    }
-  }
-
-  @media (min-width: @desktop-width) {
-    width: 50%;
-    margin-left: 0;
-    padding-top: 141px;
-    padding-left: 67px;
-    padding-right: 0;
-
-    &::after {
-      width: 288px;
-      left: 65px;
-    }
   }
 }
 

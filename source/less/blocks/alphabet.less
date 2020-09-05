@@ -8,15 +8,29 @@
   }
 }
 
-.catalog-filter .alphabet {
-  @media (min-width: @tablet-width) {
-    border-collapse: separate;
-    border-spacing: 31px 23px;
-  }
-
+.alphabet__rows {
   @media (min-width: @desktop-width) {
-    border-collapse: separate;
-    border-spacing: 0 40px;
+    &:nth-of-type(2) > .alphabet__columns {
+      padding-bottom: 29px;
+    }
+
+    &:nth-of-type(3) > .alphabet__columns {
+      padding-bottom: 73px;
+
+      .country-list {
+        margin-top: 34px;
+      }
+    }
+
+    &:nth-of-type(4) > .alphabet__columns {
+      padding-bottom: 28px;
+    }
+
+    &:last-of-type > .alphabet__columns {
+      .country-list {
+        margin-top: 36px;
+      }
+    }
   }
 }
 
@@ -43,39 +57,12 @@
 
   @media (min-width: @desktop-width) {
     width: 60px;
+    padding-bottom: 33px;
     border-radius: 4px;
-  }
-}
 
-.catalog-filter .alphabet__columns {
-  @media (min-width: @tablet-width) {
-    width: auto;
-    height: auto;
-
-    background-color: #e2e5f2;
-
-    border: none;
-  }
-
-  @media (min-width: @desktop-width) {
-    width: 250px;
-    height: auto;
-    border: none;
-
-    text-align: left;
-    vertical-align: top;
-
-    background-color: #edeff6;
-  }
-}
-
-.choosing-letter {
-  background-color: #edeff6;
-
-  @media (min-width: @tablet-width) {
-    background-color: @basic-blue-light;
-
-    border: 1px solid @basic-blue-light;
+    .country-list {
+      margin-top: 32px;
+    }
   }
 }
 
@@ -110,48 +97,6 @@
 
   @media (min-width: @desktop-width) {
     display: block;
-    margin-top: 2px;
     padding-left: 0;
-  }
-}
-
-.catalog-filter .alphabet__link {
-  @media (min-width: @tablet-width) {
-    font-family: "BloggerSans-Bold", "Arial", sans-serif;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 60px;
-    line-height: 60px;
-    color: fade(#192144, 30%);
-  }
-
-  @media (min-width: @desktop-width) {
-    color: #192144;
-  }
-}
-
-.choosing-letter .alphabet__link {
-  @media (min-width: @tablet-width) {
-    color: @basic-white;
-  }
-}
-
-.catalog-filter .choosing-letter {
-  @media (min-width: @tablet-width) {
-    color: #192144;
-
-    background-color: #e2e5f2;
-
-    border: none;
-  }
-
-  @media (min-width: @desktop-width) {
-    background-color: #edeff6;
-  }
-}
-
-.catalog-filter .choosing-letter .alphabet__link {
-  @media (min-width: @tablet-width) {
-    color: #192144;
   }
 }

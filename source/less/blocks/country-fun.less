@@ -61,6 +61,19 @@
   position: relative;
 }
 
+.country-fun__flag-wrapper .tooltip {
+  top: calc(100% - 5px);
+  left: -7px;
+
+  @media (min-width: @tablet-width) {
+    left: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    left: 35px;
+  }
+}
+
 .country-fun__flag {
   margin-right: 10px;
 
@@ -115,7 +128,7 @@
 
   @media (min-width: @tablet-width) {
     width: 500px;
-    margin-top: 29px;
+    margin-top: 24px;
     margin-bottom: 0;
     padding-top: 16px;
     padding-left: 18px;
@@ -127,18 +140,10 @@
 
   @media (min-width: @desktop-width) {
     width: 730px;
-    margin-top: 25px;
+    margin-top: 20px;
     padding-top: 23px;
     padding-left: 24px;
     padding-bottom: 18px;
-  }
-}
-
-.step-three__item:last-child .country-fun__description {
-  margin-bottom: 0;
-
-  @media (min-width: @desktop-width) {
-    padding-bottom: 0;
   }
 }
 

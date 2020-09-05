@@ -1,0 +1,37 @@
+.top-mail {
+  position: relative;
+
+  &:hover {
+    color: fade(#192144, 70%);
+
+    .top-mail__icon {
+      color: @special-yellow-dark;
+    }
+  }
+
+  &:active {
+    color: fade(#192144, 30%);
+
+    .top-mail__icon {
+      color: fade(@basic-yellow, 30%);
+    }
+  }
+}
+
+.top-mail__icon {
+  margin-right: 28px;
+
+  color: @basic-yellow;
+
+  @media (min-width: @tablet-width) {
+    width: 36px;
+    height: 38px;
+    margin-right: 37px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 47px;
+    height: 50px;
+    margin-right: 50px;
+  }
+}

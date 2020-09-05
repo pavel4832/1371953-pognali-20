@@ -75,7 +75,7 @@
 
             <ul class="main-nav__list user-list">
               <li class="user-list__item">
-                <a href="#" class="user-list__login button top-login">авторизация</a>
+                <a href="#" class="user-list__login button user-list__login--top">авторизация</a>
               </li>
             </ul>
 
@@ -90,7 +90,7 @@
 
               <li class="contact-list__item">
                 <a href="mailto:mail@htmlacademy.ru" class="contact-list__link top-mail">
-                  <svg class="top-mail__icon" width="18" height="13">
+                  <svg class="top-mail__icon" width="24" height="25">
                     <use xlink:href="img/sprite.svg#icon-contacts-mail"></use>
                   </svg>
                   mail@htmlacademy.ru</a>
@@ -100,7 +100,7 @@
             <ul class="main-nav__list social-list social">
               <li class="social__item">
                 <a class="social__link " href="https://www.facebook.com/htmlacademy" aria-label="Мы в Фейсбуке">
-                  <svg class="facebook__icon" width="23" height="21">
+                  <svg class="social__icon social__icon--facebook" width="23" height="21">
                     <use xlink:href="img/sprite.svg#icon-facebook"></use>
                   </svg>
                 </a>
@@ -108,7 +108,7 @@
 
               <li class="social__item">
                 <a class="social__link" href="https://vk.com/htmlacademy" aria-label="Мы в Вконтакте">
-                  <svg class="vkontakte__icon" width="21" height="21">
+                  <svg class="social__icon social__icon--vkontakte" width="21" height="21">
                     <use xlink:href="img/sprite.svg#icon-vkontakte"></use>
                   </svg>
                 </a>
@@ -116,7 +116,7 @@
 
               <li class="social__item">
                 <a class="social__link" href="https://www.instagram.com/htmlacademy" aria-label="Мы в Инстаграме">
-                  <svg class="instagram__icon" width="18" height="18">
+                  <svg class="social__icon social__icon--instagram" width="18" height="18">
                     <use xlink:href="img/sprite.svg#icon-instagram"></use>
                   </svg>
                 </a>
@@ -259,7 +259,7 @@
               <div class="directions-country__flag-wrapper">
                 <img class="directions-country__flag" src="img/flag-thailand.svg" width="35" height="24" alt="Флаг Тайланда">
 
-                <div class="country__list tooltip">
+                <div class="directions-country__tooltip tooltip">
                   <svg class="tooltip__icon" width="12" height="8">
                     <use xlink:href="img/sprite.svg#icon-tooltip"></use>
                   </svg>
@@ -271,13 +271,13 @@
               <div class="directions-country__info">
                 <a class="directions-country__link" href="#">
                   <h3 class="directions-country__title">Таиланд</h3>
+
+                  <p class="directions-country__description">
+                    Джунгли зовут!
+                  </p>
                 </a>
 
                 <span class="directions-country__count">18321</span>
-
-                <p class="directions-country__description">
-                  Джунгли зовут!
-                </p>
               </div>
             </li>
 
@@ -295,7 +295,7 @@
               <div class="directions-country__flag-wrapper">
                 <img class="directions-country__flag" src="img/flag-france.svg" width="35" height="24" alt="Флаг Франции">
 
-                <div class="country__list tooltip">
+                <div class="directions-country__tooltip tooltip">
                   <svg class="tooltip__icon" width="12" height="8">
                     <use xlink:href="img/sprite.svg#icon-tooltip"></use>
                   </svg>
@@ -306,13 +306,13 @@
               <div class="directions-country__info">
                 <a class="directions-country__link" href="#">
                   <h3 class="directions-country__title">Франция</h3>
+
+                  <p class="directions-country__description">
+                    Трэ бьен, манифик!
+                  </p>
                 </a>
 
                 <span class="directions-country__count">12518</span>
-
-                <p class="directions-country__description">
-                  Трэ бьен, манифик!
-                </p>
               </div>
             </li>
 
@@ -330,7 +330,7 @@
               <div class="directions-country__flag-wrapper">
                 <img class="directions-country__flag" src="img/flag-czech.svg" width="35" height="24" alt="Флаг Чехии">
 
-                <div class="country__list tooltip">
+                <div class="directions-country__tooltip tooltip">
                   <svg class="tooltip__icon" width="12" height="8">
                     <use xlink:href="img/sprite.svg#icon-tooltip"></use>
                   </svg>
@@ -342,13 +342,13 @@
               <div class="directions-country__info">
                 <a class="directions-country__link" href="#">
                   <h3 class="directions-country__title">Чехия</h3>
+
+                  <p class="directions-country__description">
+                    Закоулки старой Европы
+                  </p>
                 </a>
 
                 <span class="directions-country__count">5326</span>
-
-                <p class="directions-country__description">
-                  Закоулки старой Европы
-                </p>
               </div>
             </li>
           </ul>
@@ -391,7 +391,7 @@
                     <li class="country-request__item">
                       <img class="country-request__flag" src="img/flag-sri-lanka.svg" height="25" width="35" alt="Флаг шри-ланки">
 
-                      <div class="country__list tooltip">
+                      <div class="country-request__tooltip tooltip">
                         <svg class="tooltip__icon" width="12" height="8">
                           <use xlink:href="img/sprite.svg#icon-tooltip"></use>
                         </svg>
@@ -403,7 +403,7 @@
                     <li class="country-request__item">
                       <img class="country-request__flag" src="img/flag-thailand.svg" height="25" width="35" alt="Флаг тайланд">
 
-                      <div class="country__list tooltip">
+                      <div class="country-request__tooltip tooltip">
                         <svg class="tooltip__icon" width="12" height="8">
                           <use xlink:href="img/sprite.svg#icon-tooltip"></use>
                         </svg>
@@ -415,7 +415,7 @@
                     <li class="country-request__item">
                       <img class="country-request__flag" src="img/flag-seychelles.svg" height="25" width="35" alt="Флаг сейшел">
 
-                      <div class="country__list tooltip">
+                      <div class="country-request__tooltip tooltip">
                         <svg class="tooltip__icon" width="12" height="8">
                           <use xlink:href="img/sprite.svg#icon-tooltip"></use>
                         </svg>
@@ -521,7 +521,7 @@
                     <li class="country-request__item">
                       <img class="country-request__flag" src="img/flag-belgium.svg" height="25" width="35" alt="Флаг белгии">
 
-                      <div class="country__list tooltip">
+                      <div class="country-request__tooltip tooltip">
                         <svg class="tooltip__icon" width="12" height="8">
                           <use xlink:href="img/sprite.svg#icon-tooltip"></use>
                         </svg>
@@ -533,7 +533,7 @@
                     <li class="country-request__item">
                       <img class="country-request__flag" src="img/flag-czech.svg" height="25" width="35" alt="Флаг чехии">
 
-                      <div class="country__list tooltip">
+                      <div class="country-request__tooltip tooltip">
                         <svg class="tooltip__icon" width="12" height="8">
                           <use xlink:href="img/sprite.svg#icon-tooltip"></use>
                         </svg>
@@ -626,7 +626,7 @@
               </article>
             </div>
 
-            <a class="companions__to-all button" href="form.html">Показать всех
+            <a class="companions__to-all button" href="catalog.html">Показать всех
               <svg class="button__icon" width="14" height="15">
                 <use xlink:href="img/sprite.svg#icon-show-more-triangle"></use>
               </svg>
@@ -711,7 +711,7 @@
             <input id="login-email" type="email" class="login-field__input" placeholder="E-mail">
 
             <button class="login-field__button" type="submit" aria-label="Регистрация">
-              <svg class="button__icon" width="14" height="15">
+              <svg class="login-field__icon" width="14" height="15">
                 <use xlink:href="img/sprite.svg#icon-show-more-triangle"></use>
               </svg>
             </button>
@@ -730,7 +730,7 @@
 
             <li class="contact-list__item">
               <a href="mailto:mail@htmlacademy.ru" class="contact-list__link top-mail">
-                <svg class="top-mail__icon" width="18" height="13">
+                <svg class="top-mail__icon" width="23" height="25">
                   <use xlink:href="img/sprite.svg#icon-contacts-mail"></use>
                 </svg>
                 mail@htmlacademy.ru</a>
@@ -768,7 +768,7 @@
           </picture>
         </div>
 
-        <div id="map" class="map__yamap" aria-label="Карта"></div>
+        <div id="map" class="map__yamap"></div>
       </section>
     </main>
 
@@ -795,7 +795,7 @@
         <ul class="page-footer__socials social">
           <li class="social__item">
             <a class="social__link " href="https://www.facebook.com/htmlacademy" aria-label="Мы в Фейсбуке">
-              <svg class="facebook__icon" width="23" height="21">
+              <svg class="social__icon social__icon--facebook" width="23" height="21">
                 <use xlink:href="img/sprite.svg#icon-facebook"></use>
               </svg>
             </a>
@@ -803,7 +803,7 @@
 
           <li class="social__item">
             <a class="social__link" href="https://vk.com/htmlacademy" aria-label="Мы в Вконтакте">
-              <svg class="vkontakte__icon" width="21" height="21">
+              <svg class="social__icon social__icon--vkontakte" width="21" height="21">
                 <use xlink:href="img/sprite.svg#icon-vkontakte"></use>
               </svg>
             </a>
@@ -811,7 +811,7 @@
 
           <li class="social__item">
             <a class="social__link" href="https://www.instagram.com/htmlacademy" aria-label="Мы в Инстаграме">
-              <svg class="instagram__icon" width="18" height="18">
+              <svg class="social__icon social__icon--instagram" width="18" height="18">
                 <use xlink:href="img/sprite.svg#icon-instagram"></use>
               </svg>
             </a>
@@ -862,7 +862,7 @@
       </div>
     </section>
 
-    <script src="https://api-maps.yandex.ru/2.1/?apikey=11ce66be-ec32-4218-8fea-46eb1c11e5be&lang=ru_RU" type="text/javascript"></script>
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=11ce66be-ec32-4218-8fea-46eb1c11e5be&lang=ru_RU"></script>
     <script src="js/script.min.js"></script>
 
   </body>

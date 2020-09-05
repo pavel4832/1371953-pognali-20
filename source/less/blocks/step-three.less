@@ -2,7 +2,12 @@
   padding-bottom: 7px;
 
   @media (min-width: @tablet-width) {
+    padding-top: 151px;
     padding-bottom: 53px;
+
+    & > .plans-form__legend {
+      top: 45px;
+    }
   }
 
   @media (min-width: @desktop-width) {
@@ -10,6 +15,14 @@
     padding-top: 105px;
     padding-bottom: 104px;
   }
+}
+
+.step-three .form-menu__item {
+  margin-bottom: 20px;
+}
+
+.step-three .plans-form__menu {
+  margin-right: 45px;
 }
 
 .step-three .plans-form__text {
@@ -37,7 +50,7 @@
   list-style: none;
 
   @media (min-width: @tablet-width) {
-    margin-top: 27px;
+    margin-top: 29px;
   }
 
   @media (min-width: @desktop-width) {
@@ -46,6 +59,10 @@
 }
 
 .step-three__item {
+  &:last-child .country-fun__description {
+    margin-bottom: 0;
+  }
+
   @media (min-width: @tablet-width) {
     margin-bottom: 37px;
 
@@ -62,6 +79,10 @@
 
   @media (min-width: @desktop-width) {
     margin-bottom: 42px;
+
+    &:last-child .country-fun__description {
+      padding-bottom: 0;
+    }
   }
 }
 

@@ -1,15 +1,15 @@
-.country-choose.open-choose {
-  display: block;
-
-  z-index: 10;
-}
-
 .country-choose {
   border-radius: 4px;
 
   @media (min-width: @tablet-width) {
     width: 575px;
   }
+}
+
+.country-choose.open-choose {
+  display: block;
+
+  z-index: 10;
 }
 
 .country-choose__header {
@@ -159,6 +159,9 @@
 
   @media (min-width: @desktop-width) {
     width: 240px;
+    margin-right: 0;
+    margin-bottom: 0;
+    padding-top: 36px;
     padding-left: 24px;
   }
 }
@@ -184,7 +187,7 @@
 
   @media (min-width: @desktop-width) {
     width: 730px;
-    padding-bottom: 20px;
+    padding-bottom: 0;
   }
 }
 
@@ -197,5 +200,6 @@
   @media (min-width: @desktop-width) {
     margin-top: 21px;
     margin-left: 10px;
+    margin-bottom: 24px;
   }
 }

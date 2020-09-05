@@ -47,52 +47,6 @@
   }
 }
 
-.step-one__button--left {
-  @media (min-width: @tablet-width) {
-    margin-left: 12px;
-  }
-
-  @media (min-width: @desktop-width) {
-    margin-left: -10px;
-    padding-left: 0;
-  }
-}
-
-.step-one__button--right {
-  @media (min-width: @tablet-width) {
-    margin-right: 12px;
-  }
-
-  @media (min-width: @desktop-width) {
-    margin-right: -10px;
-    padding-right: 0;
-  }
-}
-
-.button-left__icon {
-  @media (min-width: @tablet-width) {
-    width: 29px;
-    height: 36px;
-  }
-
-  @media (min-width: @desktop-width) {
-    width: 35px;
-    height: 30px;
-  }
-}
-
-.button-right__icon {
-  @media (min-width: @tablet-width) {
-    width: 29px;
-    height: 36px;
-  }
-
-  @media (min-width: @desktop-width) {
-    width: 35px;
-    height: 30px;
-  }
-}
-
 .calendar-form__table {
   margin-top: 16px;
 
@@ -149,7 +103,7 @@
   }
 }
 
-.weekend {
+.calendar-form__head--weekend {
   color: #ff5c23;
 }
 
@@ -190,15 +144,15 @@
   }
 }
 
-.enable-day {
+.calendar-form__columns--enable-day {
   background-color: #edeff6;
 }
 
-.choosing-day {
+.calendar-form__columns--choosing-day {
   background-color: @basic-blue-light;
 }
 
-.start-day {
+.calendar-form__columns--start-day {
   @media (min-width: @desktop-width) {
     display: flex;
     flex-direction: column;
@@ -220,7 +174,7 @@
   }
 }
 
-.end-day {
+.calendar-form__columns--end-day {
   @media (min-width: @desktop-width) {
     display: flex;
     flex-direction: column;
@@ -259,7 +213,7 @@
   }
 }
 
-.enable-day .calendar-form__link {
+.calendar-form__columns--enable-day .calendar-form__link {
   font-family: "BloggerSans-Medium", "Arial", sans-serif;
   font-style: normal;
   font-weight: 500;
@@ -271,7 +225,7 @@
   }
 }
 
-.choosing-day .calendar-form__link {
+.calendar-form__columns--choosing-day .calendar-form__link {
   font-family: "BloggerSans-Medium", "Arial", sans-serif;
   font-style: normal;
   font-weight: 500;
