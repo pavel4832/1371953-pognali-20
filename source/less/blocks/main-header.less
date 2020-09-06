@@ -92,7 +92,7 @@
 .main-header__title {
   margin: 0;
   padding-top: 18px;
-  padding-bottom: 266px;
+  padding-bottom: 246px;
   font-family: "BloggerSans-Bold", "Arial", sans-serif;
   font-style: normal;
   font-weight: bold;
@@ -121,6 +121,18 @@
     font-size: 60px;
     line-height: 70px;
     text-align: left;
+  }
+}
+
+.main-header__login {
+  display: flex;
+  justify-content: space-between;
+  width: 270px;
+  background-color: transparent;
+  z-index: 5;
+
+  @media (min-width: @tablet-width) {
+    display: none;
   }
 }
 

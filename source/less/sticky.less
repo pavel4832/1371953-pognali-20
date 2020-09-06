@@ -1,0 +1,67 @@
+.page-header.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding-bottom: 5px;
+
+  background-color: @basic-white;
+
+  z-index: 10;
+
+  animation: bounce 0.6s;
+
+  .logo__image {
+    display: none;
+  }
+
+  .no-js-logo {
+    display: block;
+  }
+
+  .logo__menu-btn {
+    color: #cccccc;
+  }
+
+  .logo::after {
+    top: 45px;
+    width: 45px;
+
+    background-color: #192144;
+  }
+
+  @media (min-width: @tablet-width) {
+    padding-bottom: 25px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-bottom: 16px;
+
+    .logo {
+      padding-top: 19px;
+    }
+
+    .main-nav {
+      margin-top: -9px;
+    }
+
+    .site-list__link {
+      color: #192144;
+    }
+
+    .page-header__login {
+      padding-top: 20px;
+    }
+  }
+}
+
+.sticky + .page-main {
+  padding-top: 73px;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 115px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 101px;
+  }
+}

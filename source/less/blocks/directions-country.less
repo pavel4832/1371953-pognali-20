@@ -8,15 +8,20 @@
     justify-content: space-between;
     min-height: 140px;
     width: 616px;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
   }
 
   @media (min-width: @desktop-width) {
     width: 560px;
+
+    background-color: @basic-white;
+
+    border-radius: 20px;
   }
 }
 
 .directions-country__image {
+  display: block;
   position: relative;
   border-radius: 10px;
   z-index: 0;
@@ -38,6 +43,11 @@
   left: 25px;
   z-index: 5;
 
+  &:hover {
+    .tooltip {
+      display: flex;
+    }
+  }
 
   @media (min-width: @tablet-width) {
     top: 17px;
@@ -64,12 +74,6 @@
 }
 
 .directions-country__flag {
-  &:hover {
-    .tooltip {
-      display: flex;
-    }
-  }
-
   @media (min-width: @tablet-width) {
     width: 70px;
     height: 47px;
@@ -80,7 +84,6 @@
   display: flex;
   justify-content: flex-start;
   position: relative;
-  height: 89px;
   margin-top: -16px;
   padding: 24px 5px 5px 23px;
 
@@ -107,6 +110,7 @@
   }
 
   @media (min-width: @desktop-width) {
+    width: 374px;
     padding-top: 22px;
     padding-left: 30px;
   }
@@ -161,8 +165,6 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: 14px 14px;
-
-    opacity: 0.1;
   }
 
   @media (min-width: @tablet-width) {
@@ -184,7 +186,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    margin-top: 24px;
+    margin-top: 20px;
     margin-right: 0;
   }
 }
@@ -194,6 +196,7 @@
   margin-top: 2px;
   margin-left: 2px;
   padding-right: 20px;
+  padding-bottom: 5px;
 
   font-family: "BloggerSans-Medium", "Arial", sans-serif;
   font-style: normal;
@@ -205,6 +208,7 @@
   @media (min-width: @tablet-width) {
     margin-top: 5px;
     margin-left: -2px;
+    padding-right: 0;
 
     font-size: 20px;
     line-height: 20px;

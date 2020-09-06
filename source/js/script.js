@@ -19,11 +19,11 @@ let labelFilterElement = document.querySelector('.js-filter-label')
 let headerElement = document.querySelector('.js-header');
 let logoElement = document.querySelector('.js-image');
 let openMenuBtn = document.querySelector('.js-menu-toggle');
-let labelMenuElement = document.querySelector('.js-label')
 let popupElement = document.querySelector('.js-popup');
 let openBtn = document.querySelector('.js-open-popup');
 let closeBtnModal = document.querySelector('.js-close-popup');
 let bodyPage = document.querySelector('body');
+let sticky = 80;
 
 // При успешной загрузке js снимается состояние без скрипта
 bodyPage.classList.remove('no-js');
@@ -58,10 +58,8 @@ if (openMenuBtn) {
     openMenuBtn.classList.toggle('close-menu');
 
     if (openMenuBtn.classList.contains('close-menu')) {
-      labelMenuElement.textContent = 'Закрыть меню';
       logoElement.classList.add('hide');
     } else {
-      labelMenuElement.textContent = 'Открыть меню';
       logoElement.classList.remove('hide');
     }
   })
@@ -93,8 +91,6 @@ if (openFilterBtn) {
     toggleFilter();
   })
 }
-
-
 
 // Открытие выбора списка стран
 function openElement(element) {
@@ -153,17 +149,6 @@ function changeBackground(element, color) {
   }
 }
 
-// Изменение цвета svg картинки для иконки Лайк
-function changeHeartColor(elementFirst, elementSecond) {
-  if (elementFirst.checked) {
-    elementSecond.style.color = '#f02323';
-    elementSecond.style.fill = '#f02323';
-  } else {
-    elementSecond.style.color = 'rgba(25, 33, 68, 0.3)';
-    elementSecond.style.fill = 'none';
-  }
-}
-
 // Обработка наведения на иконку транспорта
 if (controlElement) {
   for (let i = 0; i < controlElement.length; i++) {
@@ -177,25 +162,63 @@ if (controlElement) {
   }
 }
 
+// Изменение цвета svg картинки для иконки Лайк
+function changeHeartColor(elementFirst, elementSecond, elementThird) {
+  if (elementFirst.checked) {
+    elementSecond.style.color = '#f02323';
+    elementSecond.style.fill = '#f02323';
+    elementThird.style.backgroundColor = '#f9eaea';
+  } else {
+    elementSecond.style.color = 'rgba(25, 33, 68, 0.3)';
+    elementSecond.style.fill = 'none';
+    elementThird.style.backgroundColor = '#e2e5f2';
+  }
+}
+
 // Обработка наведения на иконку Лайк
 if (checkBoxElement) {
   for (let j = 0; j < checkBoxElement.length; j++) {
-    changeHeartColor(checkBoxElement[j], iconElement[j]);
+    changeHeartColor(checkBoxElement[j], iconElement[j], labelElement[j]);
 
     checkBoxElement[j].addEventListener('click', function () {
-      changeHeartColor(checkBoxElement[j], iconElement[j]);
+      changeHeartColor(checkBoxElement[j], iconElement[j], labelElement[j]);
     })
 
     labelElement[j].addEventListener('mousedown', function () {
       if (checkBoxElement[j].checked) {
         iconElement[j].style.color = 'rgba(240, 35, 35, 0.02)';
         iconElement[j].style.fill = 'rgba(240, 35, 35, 0.3)';
+      } else {
+        iconElement[j].style.color = 'rgba(25,33,68,.1)';
       }
     })
+
     labelElement[j].addEventListener('mouseup', function () {
       if (checkBoxElement[j].checked) {
         iconElement[j].style.color = '#f02323';
         iconElement[j].style.fill = '#f02323';
+      } else {
+        iconElement[j].style.color = 'rgba(25,33,68,.3)';
+      }
+    })
+
+    labelElement[j].addEventListener('mouseover', function () {
+      if (checkBoxElement[j].checked) {
+        this.style.backgroundColor = '#f9d8d8';
+        iconElement[j].style.color = '#f02323';
+      } else {
+        this.style.backgroundColor = '#e2e5f2';
+        iconElement[j].style.color = '#192144';
+      }
+    })
+
+    labelElement[j].addEventListener('mouseout', function () {
+      if (checkBoxElement[j].checked) {
+        this.style.backgroundColor = '#f9eaea';
+        iconElement[j].style.color = '#f02323';
+      } else {
+        this.style.backgroundColor = '#e2e5f2';
+        iconElement[j].style.color = 'rgba(25,33,68,.3)';
       }
     })
   }
@@ -246,3 +269,17 @@ function init(){
   myMap.geoObjects.add(myPlacemark);
   myMap.behaviors.disable('scrollZoom');
 }
+
+// Функция показа скрол меню
+function scrollMenu() {
+  if (window.pageYOffset > sticky) {
+    headerElement.classList.add("sticky");
+  } else {
+    headerElement.classList.remove("sticky");
+  }
+}
+
+// Скролл меню
+window.onscroll = function() {
+  scrollMenu()
+};
