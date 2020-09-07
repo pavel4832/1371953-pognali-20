@@ -242,9 +242,11 @@ if (formElement) {
 }
 
 // Map
-backgroundMap.style.display = 'none';
+if (backgroundMap) {
+  backgroundMap.style.display = 'none';
 
-ymaps.ready(init);
+  ymaps.ready(init);
+}
 
 function init(){
 
@@ -273,9 +275,9 @@ function init(){
 // Функция показа скрол меню
 function scrollMenu() {
   if (window.pageYOffset > sticky) {
-    headerElement.classList.add("sticky");
+    headerElement.classList.add('sticky');
   } else {
-    headerElement.classList.remove("sticky");
+    headerElement.classList.remove('sticky');
   }
 }
 

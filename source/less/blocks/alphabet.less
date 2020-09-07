@@ -10,25 +10,33 @@
 
 .alphabet__rows {
   @media (min-width: @desktop-width) {
-    &:nth-of-type(2) > .alphabet__columns {
-      padding-bottom: 29px;
-    }
-
-    &:nth-of-type(3) > .alphabet__columns {
-      padding-bottom: 73px;
-
-      .country-list {
-        margin-top: 34px;
+    &:nth-of-type(2) {
+      .alphabet__columns {
+        padding-bottom: 29px;
       }
     }
 
-    &:nth-of-type(4) > .alphabet__columns {
-      padding-bottom: 28px;
+    &:nth-of-type(3) {
+      .alphabet__columns {
+        padding-bottom: 73px;
+
+        .country-list {
+          margin-top: 34px;
+        }
+      }
     }
 
-    &:last-of-type > .alphabet__columns {
-      .country-list {
-        margin-top: 36px;
+    &:nth-of-type(4) {
+      .alphabet__columns {
+        padding-bottom: 28px;
+      }
+    }
+
+    &:last-of-type {
+      .alphabet__columns {
+        .country-list {
+          margin-top: 36px;
+        }
       }
     }
   }
@@ -60,6 +68,10 @@
     padding-bottom: 33px;
     border-radius: 4px;
 
+    &:hover {
+      border: none;
+    }
+
     .country-list {
       margin-top: 32px;
     }
@@ -70,6 +82,7 @@
   display: block;
   width: 100%;
   height: 100%;
+
   font-family: "BloggerSans-Medium", "Arial", sans-serif;
   font-style: normal;
   font-weight: 500;
@@ -77,6 +90,10 @@
   line-height: 39.78px;
   text-transform: uppercase;
   color: @basic-blue-light;
+
+  &:focus {
+    outline: none;
+  }
 
   &:active {
     color: @basic-white;

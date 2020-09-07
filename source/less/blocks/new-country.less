@@ -25,8 +25,10 @@
   position: relative;
   max-width: 220px;
 
-  &:hover .new-country__dropdown {
-    opacity: 0.7;
+  &:hover {
+    .new-country__dropdown {
+      opacity: 0.7;
+    }
   }
 
   &::after {
@@ -188,7 +190,7 @@
   }
 
   @media (min-width: @tablet-width) {
-    top: 23px;
+    top: 19px;
     right: -5px;
     width: 24px;
     height: 24px;

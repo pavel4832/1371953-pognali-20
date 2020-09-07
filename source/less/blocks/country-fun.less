@@ -77,10 +77,6 @@
 .country-fun__flag {
   margin-right: 10px;
 
-  &:hover + .tooltip {
-    display: flex;
-  }
-
   @media (min-width: @tablet-width) {
     width: 70px;
     height: 47px;
@@ -92,9 +88,13 @@
   }
 }
 
+.country-fun__flag:hover + .tooltip {
+  display: flex;
+}
+
 .country-fun__description {
   width: 220px;
-  margin-top: 14px;
+  margin-top: 9px;
   margin-bottom: 19px;
   padding-top: 7px;
   padding-left: 13px;

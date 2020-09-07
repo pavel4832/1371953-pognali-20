@@ -208,7 +208,7 @@
 
                 <label for="tags" class="visually-hidden">тэги</label>
 
-                <textarea name="tags" id="tags" cols="30" rows="2" class="profile__textarea">#бургер #бар #футбол #концерт #крафт</textarea>
+                <textarea name="tags" id="tags" cols="30" rows="1" class="profile__textarea">#бургер #бар #футбол #концерт #крафт</textarea>
               </div>
             </fieldset>
 
@@ -672,7 +672,9 @@
                       <option class="choosing-country__value" value="bos_gerc" selected>босния и герцеговина</option>
                     </select>
 
-                    <svg class="choosing-country__dropdown" width="16" height="16" role="img" aria-label="открыть выбор">
+                    <div class="choosing-country__mask"></div>
+
+                    <svg class="choosing-country__dropdown" width="12" height="16" role="img" aria-label="открыть выбор">
                       <use xlink:href="img/sprite.svg#icon-dropdown"></use>
                     </svg>
                   </div>
@@ -797,6 +799,8 @@
                     <select class="choosing-country__name js-country-select" name="country-name_2" id="country-name_2" data-number="2">
                       <option class="choosing-country__value" value="czech" selected>чехия</option>
                     </select>
+
+                    <div class="choosing-country__mask"></div>
 
                     <svg class="choosing-country__dropdown" width="16" height="16" role="img" aria-label="открыть выбор">
                       <use xlink:href="img/sprite.svg#icon-dropdown"></use>

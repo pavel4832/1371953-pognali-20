@@ -46,7 +46,7 @@
         padding-top: 80px;
         margin-left: 25px;
 
-        & .tooltip {
+        .tooltip {
           top: calc(100% + 24px);
         }
       }
@@ -83,13 +83,13 @@
         padding-top: 99px;
         margin-left: 40px;
 
-        & .tooltip {
+        .tooltip {
           top: calc(100% + 24px);
         }
       }
 
       .choosing-country__close-btn {
-        top: 84px;
+        top: 80px;
       }
 
       .step-two__hidden {
@@ -145,7 +145,7 @@
 .choosing-country__name {
   width: 168px;
   padding-left: 10px;
-  padding-right: 40px;
+  padding-right: 25px;
 
   font-family: "BloggerSans-Medium", "Arial", sans-serif;
   font-style: normal;
@@ -180,6 +180,20 @@
   @media (min-width: @desktop-width) {
     width: 730px;
     margin-bottom: 13px;
+  }
+}
+
+.choosing-country__mask {
+  position: absolute;
+  top: 12px;
+  right: 20px;
+  width: 35px;
+  height: 20px;
+
+  background: linear-gradient(to right, transparent 0%, @basic-white 50%, @basic-white 100%);
+
+  @media (min-width: @tablet-width) {
+    display: none;
   }
 }
 
@@ -308,7 +322,7 @@
   }
 
   @media (min-width: @tablet-width) {
-    top: 23px;
+    top: 19px;
     right: -45px;
     width: 24px;
     height: 24px;
