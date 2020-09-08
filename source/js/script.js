@@ -1,5 +1,5 @@
 let parentElement = document.querySelectorAll('.transport-list__item');
-let controlElement = document.querySelectorAll('.transport-list__icon');
+let controlElement = document.querySelectorAll('.transport-list__label');
 let checkBoxElement = document.querySelectorAll('.profile-catalog__choose');
 let labelElement = document.querySelectorAll('.profile-catalog__like-icon');
 let iconElement = document.querySelectorAll('.like-icon');
